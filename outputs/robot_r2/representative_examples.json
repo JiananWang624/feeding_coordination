@@ -1,0 +1,37 @@
+{
+  "selection_rules": "deterministic quantitative criteria; ties record_id",
+  "examples": [
+    {
+      "name": "A",
+      "value": {
+        "record_id": "trial_0012_bite_014_withdrawal",
+        "score": 0.014201157945813772,
+        "criterion": "maximize positive min(B0,B2) StrongLocal elbow improvement"
+      }
+    },
+    {
+      "name": "B",
+      "value": {
+        "record_id": "trial_0012_bite_002_transfer",
+        "score": 3.3229205794532746,
+        "criterion": "RobotSmooth smoother and more HumanGT-divergent; maximize StrongLocal-minus-RobotSmooth travel"
+      }
+    },
+    {
+      "name": "C",
+      "value": {
+        "record_id": "trial_0020_bite_019_withdrawal",
+        "score": 0.12259804816091553,
+        "criterion": "identical frozen desired U; at least 95% pair common success; maximize RobotSmooth-vs-HumanGT elbow divergence"
+      }
+    },
+    {
+      "name": "D",
+      "value": {
+        "record_id": "trial_0012_bite_007_withdrawal",
+        "score": 2.5990965587184713,
+        "criterion": "withdrawal maximum StrongLocal RMS velocity"
+      }
+    }
+  ]
+}

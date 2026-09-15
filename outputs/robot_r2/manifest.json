@@ -1,0 +1,14 @@
+{
+  "schema_version": "robot-r2-v1",
+  "config": {
+    "robot_r1_output_path": "outputs/robot_r1",
+    "output_path": "outputs/robot_r2",
+    "continuity_threshold_rad": 0.5,
+    "bootstrap_seed": 20260915,
+    "bootstrap_resamples": 2000
+  },
+  "r1_manifest": "F:\\code\\feeding_coordination\\outputs\\robot_r1\\manifest.json",
+  "r1_manifest_sha256": "672f7c6904fd3fc7307aedf9ebeae6511530305ea85113f2973ac4d8399316f4",
+  "robot_smooth_branch_count_provenance": "adjacent successful contiguous saved search_branch transitions",
+  "read_only_input_verified_before_after": true
+}

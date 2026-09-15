@@ -1,0 +1,15 @@
+{
+  "status": "SELF_COLLISION_METRIC_UNAVAILABLE_MODEL_NOT_VALIDATED",
+  "evidence": {
+    "collision_meshes": 8,
+    "explicit_contact_pairs": 0,
+    "explicit_contact_excludes": 0,
+    "zero_configuration_robot_contacts": [
+      {
+        "body_a": "base_link",
+        "body_b": "shoulder_link",
+        "distance_m": -0.012044991076971314
+      }
+    ]
+  }
+}

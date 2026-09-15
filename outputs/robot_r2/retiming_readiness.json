@@ -1,0 +1,15 @@
+{
+  "status": "RETIMING_LIMITS_NOT_YET_FROZEN",
+  "evidence": {
+    "scanned_model_files": [
+      "external\\exact_sew\\assets\\kinova_gen3\\gen3.xml",
+      "external\\exact_sew\\assets\\kinova_gen3\\scene.xml"
+    ],
+    "velocity_or_acceleration_limit_matches": {},
+    "position_limit_joints": [
+      2,
+      4,
+      6
+    ]
+  }
+}

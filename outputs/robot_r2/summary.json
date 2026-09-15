@@ -1,0 +1,167 @@
+{
+  "schema_version": "robot-r2-v1",
+  "strategies": [
+    "B0",
+    "B1",
+    "B2",
+    "B3",
+    "StrongLocal",
+    "H_star",
+    "HumanGT",
+    "RobotSmooth"
+  ],
+  "input_robot_r1_manifest_sha256": "672f7c6904fd3fc7307aedf9ebeae6511530305ea85113f2973ac4d8399316f4",
+  "support": "A=source-valid; B=pairwise SUCCESS_EXACT; C=pairwise common success split by union saved violations; human A-vs-B differences use triple A/B/HumanGT success",
+  "collision": {
+    "status": "SELF_COLLISION_METRIC_UNAVAILABLE_MODEL_NOT_VALIDATED",
+    "evidence": {
+      "collision_meshes": 8,
+      "explicit_contact_pairs": 0,
+      "explicit_contact_excludes": 0,
+      "zero_configuration_robot_contacts": [
+        {
+          "body_a": "base_link",
+          "body_b": "shoulder_link",
+          "distance_m": -0.012044991076971314
+        }
+      ]
+    }
+  },
+  "retiming_status": "RETIMING_LIMITS_NOT_YET_FROZEN",
+  "scope_exclusions": [
+    "IK",
+    "smoothing",
+    "retiming",
+    "calibration optimization",
+    "new learning",
+    "human/environment clearance"
+  ],
+  "empirical_findings": {
+    "stronglocal_vs_b2": {
+      "difference_psi_mae_a_minus_b": 0.0014411193951995947,
+      "difference_elbow_mean_a_minus_b": 0.00020547643530308666,
+      "difference_travel_a_minus_b": 0.19488930616523417,
+      "difference_rms_velocity_a_minus_b": 0.024986758323116868,
+      "difference_rms_acceleration_a_minus_b": 9.005897488821041,
+      "difference_rms_jerk_a_minus_b": 1822.02562125189,
+      "difference_min_margin_a_minus_b": 0.0014193814510306193,
+      "difference_min_jp_sigma_a_minus_b": 0.00029895428617809667,
+      "difference_min_jr_sigma_a_minus_b": -0.002193872157668977,
+      "difference_violations_a_minus_b": 0.01968503937007874
+    },
+    "stronglocal_vs_b3": {
+      "difference_psi_mae_a_minus_b": 0.001825475541730716,
+      "difference_elbow_mean_a_minus_b": 0.00030449833998791526,
+      "difference_travel_a_minus_b": -0.016809401174538083,
+      "difference_rms_velocity_a_minus_b": -0.001578735405038275,
+      "difference_rms_acceleration_a_minus_b": 0.3832402381923021,
+      "difference_rms_jerk_a_minus_b": 171.38287604525405,
+      "difference_min_margin_a_minus_b": 0.007911038216267813,
+      "difference_min_jp_sigma_a_minus_b": 0.00037912078395834745,
+      "difference_min_jr_sigma_a_minus_b": -0.0012647966907039531,
+      "difference_violations_a_minus_b": 0.007874015748031496
+    },
+    "robotsmooth_minus_humangt": {
+      "difference_psi_mae_a_minus_b": 0.1255676272648779,
+      "difference_elbow_mean_a_minus_b": 0.03331964292219971,
+      "difference_travel_a_minus_b": 0.10191864968868089,
+      "difference_rms_velocity_a_minus_b": -0.0518980349057858,
+      "difference_rms_acceleration_a_minus_b": -1.5656204424104239,
+      "difference_rms_jerk_a_minus_b": 367.0962877227483,
+      "difference_min_margin_a_minus_b": -0.030185889655969553,
+      "difference_min_jp_sigma_a_minus_b": 0.0013135761618259557,
+      "difference_min_jr_sigma_a_minus_b": -0.012299098012095855,
+      "difference_violations_a_minus_b": -0.06692913385826772
+    },
+    "withdrawal_to_transfer_rms_velocity_ratio": {
+      "B0": 1.840641347776016,
+      "B1": 1.8067967825923863,
+      "B2": 1.763983865429912,
+      "B3": 1.768923600592828,
+      "H_star": 1.7571330063663981,
+      "HumanGT": 1.7665041463537887,
+      "RobotSmooth": 1.7868939769434014,
+      "StrongLocal": 1.7893413829702751
+    },
+    "highest_per_take_motion_rows": [
+      {
+        "take": "trial_0012",
+        "strategy": "HumanGT",
+        "rms_velocity": 1.5465626518052469,
+        "travel": 7.25786962029184,
+        "margin_min": 0.1738721127462563
+      },
+      {
+        "take": "trial_0012",
+        "strategy": "H_star",
+        "rms_velocity": 1.5208172419041863,
+        "travel": 7.8912243102404505,
+        "margin_min": 0.18044966193188947
+      },
+      {
+        "take": "trial_0012",
+        "strategy": "B0",
+        "rms_velocity": 1.5080585317956363,
+        "travel": 7.050701809250589,
+        "margin_min": 0.17467763015122506
+      },
+      {
+        "take": "trial_0012",
+        "strategy": "B3",
+        "rms_velocity": 1.5032258610051605,
+        "travel": 7.489173658864033,
+        "margin_min": 0.1792532304124252
+      },
+      {
+        "take": "trial_0012",
+        "strategy": "B2",
+        "rms_velocity": 1.4831253084262028,
+        "travel": 7.283352904286344,
+        "margin_min": 0.17791359667821507
+      },
+      {
+        "take": "trial_0012",
+        "strategy": "B1",
+        "rms_velocity": 1.481571681836503,
+        "travel": 7.213035239950477,
+        "margin_min": 0.19022829052111673
+      },
+      {
+        "take": "trial_0012",
+        "strategy": "StrongLocal",
+        "rms_velocity": 1.4581673219877505,
+        "travel": 7.626807882714283,
+        "margin_min": 0.17952282489816826
+      },
+      {
+        "take": "trial_0012",
+        "strategy": "RobotSmooth",
+        "rms_velocity": 1.1474103623778193,
+        "travel": 5.823599130658931,
+        "margin_min": 0.22500291231801983
+      },
+      {
+        "take": "trial_0013",
+        "strategy": "H_star",
+        "rms_velocity": 1.0290354485032784,
+        "travel": 4.8812371133646835,
+        "margin_min": 0.3876328729208776
+      },
+      {
+        "take": "trial_0019",
+        "strategy": "B1",
+        "rms_velocity": 1.0154485009002676,
+        "travel": 5.763477096315897,
+        "margin_min": 0.383152032575597
+      }
+    ]
+  },
+  "rows": {
+    "feasibility": 24,
+    "human": 70,
+    "motion": 45,
+    "kinematic": 45,
+    "bootstrap": 210,
+    "per_bite": 3810
+  }
+}
