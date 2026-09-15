@@ -1,0 +1,50 @@
+{
+  "absolute_reconstruction": "psi_robot=psi_robot0+predicted_delta_psi",
+  "alpha": 1.0,
+  "code_revision": "ecf45f424efe477b03645cb731f974ef78cb406a",
+  "delta_prediction_replay_max_abs_error": 0.0,
+  "delta_prediction_replay_tolerance": 1e-12,
+  "feature_contract_version": "strong-local-l3-v1",
+  "feature_count": 19,
+  "feature_order": [
+    "relative_tool_position_x",
+    "relative_tool_position_y",
+    "relative_tool_position_z",
+    "relative_tool_rotation_x",
+    "relative_tool_rotation_y",
+    "relative_tool_rotation_z",
+    "linear_velocity_x",
+    "linear_velocity_y",
+    "linear_velocity_z",
+    "angular_velocity_x",
+    "angular_velocity_y",
+    "angular_velocity_z",
+    "normalized_phase_s",
+    "phase_transfer",
+    "phase_withdrawal",
+    "plate_relative_x",
+    "plate_relative_y",
+    "plate_relative_z",
+    "plate_valid_mask"
+  ],
+  "input_blocks": {
+    "phase": "normalized s plus transfer/withdrawal one-hot",
+    "plate_context": "segment-local plate-relative position plus validity mask",
+    "relative_tool_pose": "p_rel=R0.T@(p-p0), rotvec(log(R0.T@R))",
+    "velocity": "causal immediate measured predecessor in segment-local coordinates"
+  },
+  "model": "StrongLocal",
+  "output": "predicted_delta_psi",
+  "psi_robot0": "initial redundancy offset for reconstruction, not an ML feature",
+  "ridge": {
+    "coef_key": "coef",
+    "intercept_key": "intercept"
+  },
+  "schema_version": "phase32-final-local-ridge-v1",
+  "target": "delta_psi=psi_unwrapped-psi0",
+  "training_scaler": {
+    "mean_key": "mean",
+    "scale_key": "scale"
+  },
+  "training_source_manifest_sha256": "0bf9e8e05afdd03690f289d547b57a4f72201e135d9c19cc3d7c17440aab2015"
+}

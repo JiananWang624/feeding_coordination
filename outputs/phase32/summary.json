@@ -1,0 +1,1019 @@
+{
+  "bootstrap": [
+    {
+      "comparison": "StrongLocal vs R0_hold_psi0",
+      "convention": "negative means StrongLocal improves",
+      "mae_difference_ci95": [
+        -0.056209338546909134,
+        -0.03382696881591025
+      ],
+      "mae_difference_rad": -0.04485721225663254,
+      "mae_relative_percent_change": -34.261841707748786,
+      "mae_relative_percent_ci95": [
+        -40.23113210429033,
+        -27.803464629852215
+      ],
+      "n_parent_bites": 127,
+      "rmse_difference_ci95": [
+        -0.08284597944479023,
+        -0.05916573661750097
+      ],
+      "rmse_difference_rad": -0.0712995455484872,
+      "rmse_relative_percent_change": -38.500001871730944,
+      "rmse_relative_percent_ci95": [
+        -42.54514598714592,
+        -34.066650178126466
+      ]
+    },
+    {
+      "comparison": "StrongLocal vs R1_phase_only",
+      "convention": "negative means StrongLocal improves",
+      "mae_difference_ci95": [
+        -0.034376495215677226,
+        -0.021583743160369265
+      ],
+      "mae_difference_rad": -0.02817255083722006,
+      "mae_relative_percent_change": -24.660838757461672,
+      "mae_relative_percent_ci95": [
+        -29.411762445495842,
+        -19.478854911231185
+      ],
+      "n_parent_bites": 127,
+      "rmse_difference_ci95": [
+        -0.03490660096799628,
+        -0.020223374394234713
+      ],
+      "rmse_difference_rad": -0.02778789315346704,
+      "rmse_relative_percent_change": -19.612865664817406,
+      "rmse_relative_percent_ci95": [
+        -24.04646123323494,
+        -14.929573647973347
+      ]
+    },
+    {
+      "comparison": "StrongLocal vs R2_pose_only",
+      "convention": "negative means StrongLocal improves",
+      "mae_difference_ci95": [
+        -0.0028601574482860354,
+        0.003506078296994167
+      ],
+      "mae_difference_rad": 0.00022107101941823415,
+      "mae_relative_percent_change": 0.25751922675076416,
+      "mae_relative_percent_ci95": [
+        -3.2040681043391555,
+        4.266563143535388
+      ],
+      "n_parent_bites": 127,
+      "rmse_difference_ci95": [
+        -0.008308175378638698,
+        -0.002299660745027205
+      ],
+      "rmse_difference_rad": -0.005435758119808398,
+      "rmse_relative_percent_change": -4.555238362526679,
+      "rmse_relative_percent_ci95": [
+        -6.761976696569909,
+        -1.9786127993663198
+      ]
+    },
+    {
+      "comparison": "StrongLocal vs R3_pose_velocity",
+      "convention": "negative means StrongLocal improves",
+      "mae_difference_ci95": [
+        -0.0012678572165723922,
+        0.004535874518454039
+      ],
+      "mae_difference_rad": 0.0014684780564810512,
+      "mae_relative_percent_change": 1.7358100566501966,
+      "mae_relative_percent_ci95": [
+        -1.4698251025779372,
+        5.531579505954771
+      ],
+      "n_parent_bites": 127,
+      "rmse_difference_ci95": [
+        -0.00600299698335026,
+        -0.0007023555336960771
+      ],
+      "rmse_difference_rad": -0.003505937651990282,
+      "rmse_relative_percent_change": -2.9863180715771893,
+      "rmse_relative_percent_ci95": [
+        -4.968589189224334,
+        -0.6100551806857699
+      ]
+    }
+  ],
+  "circular_psi0_diagnostic": {
+    "reason": "L3 excludes raw psi0; no broad feature search reopened",
+    "run": false
+  },
+  "dataset": {
+    "eligible_segments": 252,
+    "max_relative_rotation_rad": 2.1778879217844804,
+    "parent_bites": 127,
+    "psi_runs": 286,
+    "records": 254,
+    "source_manifest": "F:\\code\\feeding_coordination\\outputs\\phase1\\manifest.json",
+    "source_schema": "phase1-v1.5",
+    "valid_target_frames": 32216
+  },
+  "deployment_alpha": 1.0,
+  "final_model_contract": {
+    "absolute_reconstruction": "psi_robot=psi_robot0+predicted_delta_psi",
+    "alpha": 1.0,
+    "code_revision": "ecf45f424efe477b03645cb731f974ef78cb406a",
+    "delta_prediction_replay_max_abs_error": 0.0,
+    "delta_prediction_replay_tolerance": 1e-12,
+    "feature_contract_version": "strong-local-l3-v1",
+    "feature_count": 19,
+    "feature_order": [
+      "relative_tool_position_x",
+      "relative_tool_position_y",
+      "relative_tool_position_z",
+      "relative_tool_rotation_x",
+      "relative_tool_rotation_y",
+      "relative_tool_rotation_z",
+      "linear_velocity_x",
+      "linear_velocity_y",
+      "linear_velocity_z",
+      "angular_velocity_x",
+      "angular_velocity_y",
+      "angular_velocity_z",
+      "normalized_phase_s",
+      "phase_transfer",
+      "phase_withdrawal",
+      "plate_relative_x",
+      "plate_relative_y",
+      "plate_relative_z",
+      "plate_valid_mask"
+    ],
+    "input_blocks": {
+      "phase": "normalized s plus transfer/withdrawal one-hot",
+      "plate_context": "segment-local plate-relative position plus validity mask",
+      "relative_tool_pose": "p_rel=R0.T@(p-p0), rotvec(log(R0.T@R))",
+      "velocity": "causal immediate measured predecessor in segment-local coordinates"
+    },
+    "model": "StrongLocal",
+    "output": "predicted_delta_psi",
+    "psi_robot0": "initial redundancy offset for reconstruction, not an ML feature",
+    "ridge": {
+      "coef_key": "coef",
+      "intercept_key": "intercept"
+    },
+    "schema_version": "phase32-final-local-ridge-v1",
+    "target": "delta_psi=psi_unwrapped-psi0",
+    "training_scaler": {
+      "mean_key": "mean",
+      "scale_key": "scale"
+    },
+    "training_source_manifest_sha256": "0bf9e8e05afdd03690f289d547b57a4f72201e135d9c19cc3d7c17440aab2015"
+  },
+  "full_plan_hypothesis": "rejected/not supported by Phase 3.1; not resumed",
+  "human_psi_variation": {
+    "bite_balanced": [
+      {
+        "delta_psi_range": 0.27589952088283026,
+        "group": "overall",
+        "grouping": "overall",
+        "max_abs_change_from_psi0": 0.2525574523060582,
+        "n_bite_phase_units": 252,
+        "n_parent_bites": 127,
+        "psi_range": 0.3101346002530532,
+        "rms_change_from_psi0": 0.16130292308584315,
+        "total_abs_psi_travel": 0.35677659809452106
+      },
+      {
+        "delta_psi_range": 0.17027759247623606,
+        "group": "transfer",
+        "grouping": "phase",
+        "max_abs_change_from_psi0": 0.16472023901887994,
+        "n_bite_phase_units": 125,
+        "n_parent_bites": 125,
+        "psi_range": 0.17394107436556602,
+        "rms_change_from_psi0": 0.11798653692244755,
+        "total_abs_psi_travel": 0.25581348345251875
+      },
+      {
+        "delta_psi_range": 0.3744808331678502,
+        "group": "withdrawal",
+        "grouping": "phase",
+        "max_abs_change_from_psi0": 0.33344874455487666,
+        "n_bite_phase_units": 127,
+        "n_parent_bites": 127,
+        "psi_range": 0.43934520264714466,
+        "rms_change_from_psi0": 0.20012747411040158,
+        "total_abs_psi_travel": 0.45181610123950644
+      }
+    ],
+    "bite_level_file": "psi_variation_by_bite.csv",
+    "stronglocal_over_r0_rmse_ratio": 0.6149999812826905,
+    "stronglocal_rmse_reduction_percent": 38.50000187173095,
+    "travel_boundary_guards": [
+      "same record_id",
+      "adjacent segment_index",
+      "adjacent motive_frame",
+      "same psi_run_id"
+    ]
+  },
+  "models": {
+    "R0_hold_psi0": "no fit; predicted delta psi is exactly zero",
+    "R1_phase_only": "three features [normalized_phase_s, is_transfer, is_withdrawal]; ridge target delta psi; training folds only",
+    "R2_pose_only": "Phase-3 M1_pose",
+    "R3_pose_velocity": "Phase-3 M2_pose_velocity",
+    "StrongLocal": "frozen Phase-3.1 L3, 19 features; no feature selection"
+  },
+  "overall": [
+    {
+      "circular_mae": 0.13092469645753885,
+      "circular_rmse": 0.18519361579782076,
+      "delta_rmse": 0.18197115361243793,
+      "frame_circular_mae": 0.12877974570025263,
+      "frame_circular_rmse": 0.18197115361243793,
+      "group": "overall",
+      "grouping": "overall",
+      "model": "R0_hold_psi0",
+      "n_bites": 127,
+      "n_frames": 32216,
+      "psi_dot_rmse": 0.41976013023295594
+    },
+    {
+      "circular_mae": 0.11424003503812637,
+      "circular_rmse": 0.1416819634028006,
+      "delta_rmse": 0.13953951686443952,
+      "frame_circular_mae": 0.11262444983649596,
+      "frame_circular_rmse": 0.13953951686443952,
+      "group": "overall",
+      "grouping": "overall",
+      "model": "R1_phase_only",
+      "n_bites": 127,
+      "n_frames": 32216,
+      "psi_dot_rmse": 0.41018930622038874
+    },
+    {
+      "circular_mae": 0.08584641318148807,
+      "circular_rmse": 0.11932982836914195,
+      "delta_rmse": 0.11734810923267022,
+      "frame_circular_mae": 0.08377510928003931,
+      "frame_circular_rmse": 0.11734810923267022,
+      "group": "overall",
+      "grouping": "overall",
+      "model": "R2_pose_only",
+      "n_bites": 127,
+      "n_frames": 32216,
+      "psi_dot_rmse": 0.30090321173824836
+    },
+    {
+      "circular_mae": 0.08459900614442525,
+      "circular_rmse": 0.11740000790132384,
+      "delta_rmse": 0.11518972757635082,
+      "frame_circular_mae": 0.08241899326224902,
+      "frame_circular_rmse": 0.11518972757635082,
+      "group": "overall",
+      "grouping": "overall",
+      "model": "R3_pose_velocity",
+      "n_bites": 127,
+      "n_frames": 32216,
+      "psi_dot_rmse": 0.4281893400136065
+    },
+    {
+      "circular_mae": 0.0860674842009063,
+      "circular_rmse": 0.11389407024933355,
+      "delta_rmse": 0.11230825457690834,
+      "frame_circular_mae": 0.08488807091328371,
+      "frame_circular_rmse": 0.11230825457690834,
+      "group": "overall",
+      "grouping": "overall",
+      "model": "StrongLocal",
+      "n_bites": 127,
+      "n_frames": 32216,
+      "psi_dot_rmse": 0.4278332555402884
+    }
+  ],
+  "per_phase": [
+    {
+      "circular_mae": 0.10572833241941242,
+      "circular_rmse": 0.1411061088224289,
+      "delta_rmse": 0.13875248602674395,
+      "frame_circular_mae": 0.10427372483988373,
+      "frame_circular_rmse": 0.13875248602674395,
+      "group": "transfer",
+      "grouping": "phase",
+      "model": "R0_hold_psi0",
+      "n_bites": 125,
+      "n_frames": 18107,
+      "psi_dot_rmse": 0.2439386572242981
+    },
+    {
+      "circular_mae": 0.15817204244083466,
+      "circular_rmse": 0.2238853537634103,
+      "delta_rmse": 0.22561592345831724,
+      "frame_circular_mae": 0.16022992074587603,
+      "frame_circular_rmse": 0.22561592345831724,
+      "group": "withdrawal",
+      "grouping": "phase",
+      "model": "R0_hold_psi0",
+      "n_bites": 127,
+      "n_frames": 14109,
+      "psi_dot_rmse": 0.5713761265577183
+    },
+    {
+      "circular_mae": 0.101023875449435,
+      "circular_rmse": 0.12131271667722796,
+      "delta_rmse": 0.1193758632672075,
+      "frame_circular_mae": 0.09899238575509368,
+      "frame_circular_rmse": 0.1193758632672075,
+      "group": "transfer",
+      "grouping": "phase",
+      "model": "R1_phase_only",
+      "n_bites": 125,
+      "n_frames": 18107,
+      "psi_dot_rmse": 0.2857107249391735
+    },
+    {
+      "circular_mae": 0.1283127193419893,
+      "circular_rmse": 0.15968852604722308,
+      "delta_rmse": 0.1617755110971801,
+      "frame_circular_mae": 0.130119366862646,
+      "frame_circular_rmse": 0.1617755110971801,
+      "group": "withdrawal",
+      "grouping": "phase",
+      "model": "R1_phase_only",
+      "n_bites": 127,
+      "n_frames": 14109,
+      "psi_dot_rmse": 0.5289680117799986
+    },
+    {
+      "circular_mae": 0.07163156135073097,
+      "circular_rmse": 0.09176145259386093,
+      "delta_rmse": 0.08969265174887184,
+      "frame_circular_mae": 0.06949138714434894,
+      "frame_circular_rmse": 0.08969265174887184,
+      "group": "transfer",
+      "grouping": "phase",
+      "model": "R2_pose_only",
+      "n_bites": 125,
+      "n_frames": 18107,
+      "psi_dot_rmse": 0.19130448775195028
+    },
+    {
+      "circular_mae": 0.10203868564049981,
+      "circular_rmse": 0.14433308970738792,
+      "delta_rmse": 0.14532336459754064,
+      "frame_circular_mae": 0.10210634159352328,
+      "frame_circular_rmse": 0.14532336459754064,
+      "group": "withdrawal",
+      "grouping": "phase",
+      "model": "R2_pose_only",
+      "n_bites": 127,
+      "n_frames": 14109,
+      "psi_dot_rmse": 0.4000143389161821
+    },
+    {
+      "circular_mae": 0.07105494288729959,
+      "circular_rmse": 0.09114574542347645,
+      "delta_rmse": 0.0889721726399422,
+      "frame_circular_mae": 0.06871935607652702,
+      "frame_circular_rmse": 0.0889721726399422,
+      "group": "transfer",
+      "grouping": "phase",
+      "model": "R3_pose_velocity",
+      "n_bites": 125,
+      "n_frames": 18107,
+      "psi_dot_rmse": 0.297976676469806
+    },
+    {
+      "circular_mae": 0.1003339176374181,
+      "circular_rmse": 0.1415994849323722,
+      "delta_rmse": 0.14190858752500604,
+      "frame_circular_mae": 0.10000063126082213,
+      "frame_circular_rmse": 0.14190858752500604,
+      "group": "withdrawal",
+      "grouping": "phase",
+      "model": "R3_pose_velocity",
+      "n_bites": 127,
+      "n_frames": 14109,
+      "psi_dot_rmse": 0.5523691746671152
+    },
+    {
+      "circular_mae": 0.07300964816998845,
+      "circular_rmse": 0.09361702403767454,
+      "delta_rmse": 0.09210655088931095,
+      "frame_circular_mae": 0.0717062032266068,
+      "frame_circular_rmse": 0.09210655088931095,
+      "group": "transfer",
+      "grouping": "phase",
+      "model": "StrongLocal",
+      "n_bites": 125,
+      "n_frames": 18107,
+      "psi_dot_rmse": 0.3356790563214845
+    },
+    {
+      "circular_mae": 0.10085822417127586,
+      "circular_rmse": 0.13348192126670455,
+      "delta_rmse": 0.13383884274820906,
+      "frame_circular_mae": 0.10180522154073132,
+      "frame_circular_rmse": 0.13383884274820906,
+      "group": "withdrawal",
+      "grouping": "phase",
+      "model": "StrongLocal",
+      "n_bites": 127,
+      "n_frames": 14109,
+      "psi_dot_rmse": 0.5231150074732989
+    }
+  ],
+  "per_take": [
+    {
+      "circular_mae": 0.0947769793619837,
+      "circular_rmse": 0.12967207529588218,
+      "delta_rmse": 0.13129982228024648,
+      "frame_circular_mae": 0.09633678169886323,
+      "frame_circular_rmse": 0.13129982228024648,
+      "group": "trial_0012",
+      "grouping": "take",
+      "model": "R0_hold_psi0",
+      "n_bites": 15,
+      "n_frames": 4327,
+      "psi_dot_rmse": 0.36087714347095373
+    },
+    {
+      "circular_mae": 0.10895812816640942,
+      "circular_rmse": 0.1600200834084109,
+      "delta_rmse": 0.16360964601824637,
+      "frame_circular_mae": 0.11375034096597897,
+      "frame_circular_rmse": 0.16360964601824637,
+      "group": "trial_0013",
+      "grouping": "take",
+      "model": "R0_hold_psi0",
+      "n_bites": 12,
+      "n_frames": 2756,
+      "psi_dot_rmse": 0.39206858512785964
+    },
+    {
+      "circular_mae": 0.16280942383189853,
+      "circular_rmse": 0.2003466325876978,
+      "delta_rmse": 0.1994348431854801,
+      "frame_circular_mae": 0.16148193572444897,
+      "frame_circular_rmse": 0.1994348431854801,
+      "group": "trial_0014",
+      "grouping": "take",
+      "model": "R0_hold_psi0",
+      "n_bites": 21,
+      "n_frames": 4670,
+      "psi_dot_rmse": 0.4341864889095698
+    },
+    {
+      "circular_mae": 0.14241015085888753,
+      "circular_rmse": 0.1888661485006226,
+      "delta_rmse": 0.18708211793465832,
+      "frame_circular_mae": 0.14062374180404838,
+      "frame_circular_rmse": 0.18708211793465832,
+      "group": "trial_0015",
+      "grouping": "take",
+      "model": "R0_hold_psi0",
+      "n_bites": 19,
+      "n_frames": 5559,
+      "psi_dot_rmse": 0.3394860138608849
+    },
+    {
+      "circular_mae": 0.09908524188505145,
+      "circular_rmse": 0.16053568393035442,
+      "delta_rmse": 0.16591941485290276,
+      "frame_circular_mae": 0.10365445536791669,
+      "frame_circular_rmse": 0.16591941485290276,
+      "group": "trial_0017",
+      "grouping": "take",
+      "model": "R0_hold_psi0",
+      "n_bites": 15,
+      "n_frames": 3846,
+      "psi_dot_rmse": 0.4048856828032522
+    },
+    {
+      "circular_mae": 0.09588273192443021,
+      "circular_rmse": 0.1393128588869801,
+      "delta_rmse": 0.13868359664537352,
+      "frame_circular_mae": 0.09489595419088419,
+      "frame_circular_rmse": 0.13868359664537352,
+      "group": "trial_0019",
+      "grouping": "take",
+      "model": "R0_hold_psi0",
+      "n_bites": 26,
+      "n_frames": 6491,
+      "psi_dot_rmse": 0.4267922052223868
+    },
+    {
+      "circular_mae": 0.1996980945568988,
+      "circular_rmse": 0.26992593558483846,
+      "delta_rmse": 0.2594340590285701,
+      "frame_circular_mae": 0.1900482589985114,
+      "frame_circular_rmse": 0.2594340590285701,
+      "group": "trial_0020",
+      "grouping": "take",
+      "model": "R0_hold_psi0",
+      "n_bites": 19,
+      "n_frames": 4567,
+      "psi_dot_rmse": 0.5448186450910765
+    },
+    {
+      "circular_mae": 0.08775886864509869,
+      "circular_rmse": 0.10692259673157622,
+      "delta_rmse": 0.1066659244850289,
+      "frame_circular_mae": 0.0874781967910743,
+      "frame_circular_rmse": 0.1066659244850289,
+      "group": "trial_0012",
+      "grouping": "take",
+      "model": "R1_phase_only",
+      "n_bites": 15,
+      "n_frames": 4327,
+      "psi_dot_rmse": 0.36827258137370844
+    },
+    {
+      "circular_mae": 0.09445960496062306,
+      "circular_rmse": 0.10914571734895914,
+      "delta_rmse": 0.10834439271443196,
+      "frame_circular_mae": 0.09397012709497453,
+      "frame_circular_rmse": 0.10834439271443196,
+      "group": "trial_0013",
+      "grouping": "take",
+      "model": "R1_phase_only",
+      "n_bites": 12,
+      "n_frames": 2756,
+      "psi_dot_rmse": 0.37411279211348625
+    },
+    {
+      "circular_mae": 0.12042540319848619,
+      "circular_rmse": 0.14465059570791275,
+      "delta_rmse": 0.14360564151899957,
+      "frame_circular_mae": 0.11946631976158872,
+      "frame_circular_rmse": 0.1436056415189996,
+      "group": "trial_0014",
+      "grouping": "take",
+      "model": "R1_phase_only",
+      "n_bites": 21,
+      "n_frames": 4670,
+      "psi_dot_rmse": 0.43195124718604594
+    },
+    {
+      "circular_mae": 0.11543423489330122,
+      "circular_rmse": 0.13828905849011955,
+      "delta_rmse": 0.1384875151155974,
+      "frame_circular_mae": 0.11531389592287401,
+      "frame_circular_rmse": 0.1384875151155974,
+      "group": "trial_0015",
+      "grouping": "take",
+      "model": "R1_phase_only",
+      "n_bites": 19,
+      "n_frames": 5559,
+      "psi_dot_rmse": 0.334840835592504
+    },
+    {
+      "circular_mae": 0.11267012650469008,
+      "circular_rmse": 0.13257421757891683,
+      "delta_rmse": 0.13431514522549015,
+      "frame_circular_mae": 0.11270102168168639,
+      "frame_circular_rmse": 0.13431514522549015,
+      "group": "trial_0017",
+      "grouping": "take",
+      "model": "R1_phase_only",
+      "n_bites": 15,
+      "n_frames": 3846,
+      "psi_dot_rmse": 0.39076560338239447
+    },
+    {
+      "circular_mae": 0.10517466093123058,
+      "circular_rmse": 0.12752429582180905,
+      "delta_rmse": 0.1287138663076923,
+      "frame_circular_mae": 0.10625925247688209,
+      "frame_circular_rmse": 0.1287138663076923,
+      "group": "trial_0019",
+      "grouping": "take",
+      "model": "R1_phase_only",
+      "n_bites": 26,
+      "n_frames": 6491,
+      "psi_dot_rmse": 0.41630961879484857
+    },
+    {
+      "circular_mae": 0.15325311309025316,
+      "circular_rmse": 0.19811138267071213,
+      "delta_rmse": 0.19057031546131517,
+      "frame_circular_mae": 0.14641884173565625,
+      "frame_circular_rmse": 0.19057031546131517,
+      "group": "trial_0020",
+      "grouping": "take",
+      "model": "R1_phase_only",
+      "n_bites": 19,
+      "n_frames": 4567,
+      "psi_dot_rmse": 0.5213078147462498
+    },
+    {
+      "circular_mae": 0.10111315661019417,
+      "circular_rmse": 0.14012151979203213,
+      "delta_rmse": 0.1373293225938342,
+      "frame_circular_mae": 0.09827124303010544,
+      "frame_circular_rmse": 0.1373293225938342,
+      "group": "trial_0012",
+      "grouping": "take",
+      "model": "R2_pose_only",
+      "n_bites": 15,
+      "n_frames": 4327,
+      "psi_dot_rmse": 0.36104893275777306
+    },
+    {
+      "circular_mae": 0.05903214231221404,
+      "circular_rmse": 0.08736260668086815,
+      "delta_rmse": 0.08575110046881848,
+      "frame_circular_mae": 0.057368601803448084,
+      "frame_circular_rmse": 0.08575110046881848,
+      "group": "trial_0013",
+      "grouping": "take",
+      "model": "R2_pose_only",
+      "n_bites": 12,
+      "n_frames": 2756,
+      "psi_dot_rmse": 0.2841776679806774
+    },
+    {
+      "circular_mae": 0.07939923446163903,
+      "circular_rmse": 0.10100892644766836,
+      "delta_rmse": 0.10058840344658798,
+      "frame_circular_mae": 0.07899764853261747,
+      "frame_circular_rmse": 0.10058840344658798,
+      "group": "trial_0014",
+      "grouping": "take",
+      "model": "R2_pose_only",
+      "n_bites": 21,
+      "n_frames": 4670,
+      "psi_dot_rmse": 0.2861024000889012
+    },
+    {
+      "circular_mae": 0.0852538267553366,
+      "circular_rmse": 0.12479141680015193,
+      "delta_rmse": 0.12275769997865851,
+      "frame_circular_mae": 0.08350456741568993,
+      "frame_circular_rmse": 0.12275769997865851,
+      "group": "trial_0015",
+      "grouping": "take",
+      "model": "R2_pose_only",
+      "n_bites": 19,
+      "n_frames": 5559,
+      "psi_dot_rmse": 0.23918437959144043
+    },
+    {
+      "circular_mae": 0.09771696129751174,
+      "circular_rmse": 0.12292150855427583,
+      "delta_rmse": 0.11931033527503483,
+      "frame_circular_mae": 0.09366366675157838,
+      "frame_circular_rmse": 0.11931033527503483,
+      "group": "trial_0017",
+      "grouping": "take",
+      "model": "R2_pose_only",
+      "n_bites": 15,
+      "n_frames": 3846,
+      "psi_dot_rmse": 0.23592365159667328
+    },
+    {
+      "circular_mae": 0.07468874101844218,
+      "circular_rmse": 0.10288476582259562,
+      "delta_rmse": 0.10240021029985001,
+      "frame_circular_mae": 0.07407357406356035,
+      "frame_circular_rmse": 0.10240021029985001,
+      "group": "trial_0019",
+      "grouping": "take",
+      "model": "R2_pose_only",
+      "n_bites": 26,
+      "n_frames": 6491,
+      "psi_dot_rmse": 0.32096704716173546
+    },
+    {
+      "circular_mae": 0.10434437364007991,
+      "circular_rmse": 0.1469561998735738,
+      "delta_rmse": 0.1387562165179568,
+      "frame_circular_mae": 0.09665172868839336,
+      "frame_circular_rmse": 0.1387562165179568,
+      "group": "trial_0020",
+      "grouping": "take",
+      "model": "R2_pose_only",
+      "n_bites": 19,
+      "n_frames": 4567,
+      "psi_dot_rmse": 0.34589973640433797
+    },
+    {
+      "circular_mae": 0.10104204610405813,
+      "circular_rmse": 0.13773996619795636,
+      "delta_rmse": 0.1345568223789185,
+      "frame_circular_mae": 0.09783743703121127,
+      "frame_circular_rmse": 0.1345568223789185,
+      "group": "trial_0012",
+      "grouping": "take",
+      "model": "R3_pose_velocity",
+      "n_bites": 15,
+      "n_frames": 4327,
+      "psi_dot_rmse": 0.4575789497063631
+    },
+    {
+      "circular_mae": 0.0605585627580878,
+      "circular_rmse": 0.08659217551437817,
+      "delta_rmse": 0.08491826964716272,
+      "frame_circular_mae": 0.05874992314578012,
+      "frame_circular_rmse": 0.08491826964716272,
+      "group": "trial_0013",
+      "grouping": "take",
+      "model": "R3_pose_velocity",
+      "n_bites": 12,
+      "n_frames": 2756,
+      "psi_dot_rmse": 0.4229739117252159
+    },
+    {
+      "circular_mae": 0.0777020933805033,
+      "circular_rmse": 0.10166901512819247,
+      "delta_rmse": 0.10142819723868518,
+      "frame_circular_mae": 0.07750770706588778,
+      "frame_circular_rmse": 0.10142819723868518,
+      "group": "trial_0014",
+      "grouping": "take",
+      "model": "R3_pose_velocity",
+      "n_bites": 21,
+      "n_frames": 4670,
+      "psi_dot_rmse": 0.4017458087760006
+    },
+    {
+      "circular_mae": 0.08214379871832898,
+      "circular_rmse": 0.11967429904131037,
+      "delta_rmse": 0.1176386036101288,
+      "frame_circular_mae": 0.08006324820608816,
+      "frame_circular_rmse": 0.1176386036101288,
+      "group": "trial_0015",
+      "grouping": "take",
+      "model": "R3_pose_velocity",
+      "n_bites": 19,
+      "n_frames": 5559,
+      "psi_dot_rmse": 0.2786043182139432
+    },
+    {
+      "circular_mae": 0.09789099194262467,
+      "circular_rmse": 0.12448119410128165,
+      "delta_rmse": 0.12046478553346421,
+      "frame_circular_mae": 0.09345431134481837,
+      "frame_circular_rmse": 0.12046478553346421,
+      "group": "trial_0017",
+      "grouping": "take",
+      "model": "R3_pose_velocity",
+      "n_bites": 15,
+      "n_frames": 3846,
+      "psi_dot_rmse": 0.3436372855706954
+    },
+    {
+      "circular_mae": 0.07529404009405237,
+      "circular_rmse": 0.10084868997343836,
+      "delta_rmse": 0.10038092851333347,
+      "frame_circular_mae": 0.07461855237406342,
+      "frame_circular_rmse": 0.10038092851333347,
+      "group": "trial_0019",
+      "grouping": "take",
+      "model": "R3_pose_velocity",
+      "n_bites": 26,
+      "n_frames": 6491,
+      "psi_dot_rmse": 0.5039033994629614
+    },
+    {
+      "circular_mae": 0.09911864618213323,
+      "circular_rmse": 0.1432328270484251,
+      "delta_rmse": 0.13485575282271922,
+      "frame_circular_mae": 0.09177709985663142,
+      "frame_circular_rmse": 0.13485575282271922,
+      "group": "trial_0020",
+      "grouping": "take",
+      "model": "R3_pose_velocity",
+      "n_bites": 19,
+      "n_frames": 4567,
+      "psi_dot_rmse": 0.5166911459106687
+    },
+    {
+      "circular_mae": 0.12443961200305152,
+      "circular_rmse": 0.14238925776747355,
+      "delta_rmse": 0.14052058931113484,
+      "frame_circular_mae": 0.12263472073233764,
+      "frame_circular_rmse": 0.14052058931113484,
+      "group": "trial_0012",
+      "grouping": "take",
+      "model": "StrongLocal",
+      "n_bites": 15,
+      "n_frames": 4327,
+      "psi_dot_rmse": 0.652239527297664
+    },
+    {
+      "circular_mae": 0.06374113027074661,
+      "circular_rmse": 0.08772242739683192,
+      "delta_rmse": 0.0848173324570168,
+      "frame_circular_mae": 0.06112824815763699,
+      "frame_circular_rmse": 0.0848173324570168,
+      "group": "trial_0013",
+      "grouping": "take",
+      "model": "StrongLocal",
+      "n_bites": 12,
+      "n_frames": 2756,
+      "psi_dot_rmse": 0.3863022045752558
+    },
+    {
+      "circular_mae": 0.07918569305317982,
+      "circular_rmse": 0.10114435783496367,
+      "delta_rmse": 0.10102821698780759,
+      "frame_circular_mae": 0.07919220176806524,
+      "frame_circular_rmse": 0.10102821698780759,
+      "group": "trial_0014",
+      "grouping": "take",
+      "model": "StrongLocal",
+      "n_bites": 21,
+      "n_frames": 4670,
+      "psi_dot_rmse": 0.4245950951936689
+    },
+    {
+      "circular_mae": 0.07639834201971499,
+      "circular_rmse": 0.10695796892204061,
+      "delta_rmse": 0.10665338534750804,
+      "frame_circular_mae": 0.07663092124561406,
+      "frame_circular_rmse": 0.10665338534750804,
+      "group": "trial_0015",
+      "grouping": "take",
+      "model": "StrongLocal",
+      "n_bites": 19,
+      "n_frames": 5559,
+      "psi_dot_rmse": 0.26573699897815056
+    },
+    {
+      "circular_mae": 0.09378669398384541,
+      "circular_rmse": 0.11916719179675563,
+      "delta_rmse": 0.11575194465498162,
+      "frame_circular_mae": 0.08995511523167701,
+      "frame_circular_rmse": 0.11575194465498162,
+      "group": "trial_0017",
+      "grouping": "take",
+      "model": "StrongLocal",
+      "n_bites": 15,
+      "n_frames": 3846,
+      "psi_dot_rmse": 0.3043059440221218
+    },
+    {
+      "circular_mae": 0.07330721875093989,
+      "circular_rmse": 0.09686622275599527,
+      "delta_rmse": 0.09661168548575783,
+      "frame_circular_mae": 0.07286715813351644,
+      "frame_circular_rmse": 0.09661168548575783,
+      "group": "trial_0019",
+      "grouping": "take",
+      "model": "StrongLocal",
+      "n_bites": 26,
+      "n_frames": 6491,
+      "psi_dot_rmse": 0.41037596060765863
+    },
+    {
+      "circular_mae": 0.09851718949720467,
+      "circular_rmse": 0.13799256185674844,
+      "delta_rmse": 0.1307389536773795,
+      "frame_circular_mae": 0.09215617121177076,
+      "frame_circular_rmse": 0.1307389536773795,
+      "group": "trial_0020",
+      "grouping": "take",
+      "model": "StrongLocal",
+      "n_bites": 19,
+      "n_frames": 4567,
+      "psi_dot_rmse": 0.4580961621302883
+    }
+  ],
+  "provenance": {
+    "code_revision": "ecf45f424efe477b03645cb731f974ef78cb406a",
+    "code_worktree_dirty": true,
+    "config_hash": "a2406f04cb7b6779fb1296573058a9bdd56eb9b6fc4ef006a62e33cf61249ee8"
+  },
+  "schema_version": "phase32-v1",
+  "scientific_conclusions": {
+    "H1": {
+      "criterion": "supported if StrongLocal vs R0 paired bite-balanced circular MAE bootstrap CI upper bound is below zero, interpreted with bite-balanced human variation statistics",
+      "mae_ci95": [
+        -0.056209338546909134,
+        -0.03382696881591025
+      ],
+      "supported": true,
+      "variation": [
+        {
+          "delta_psi_range": 0.27589952088283026,
+          "group": "overall",
+          "grouping": "overall",
+          "max_abs_change_from_psi0": 0.2525574523060582,
+          "n_bite_phase_units": 252,
+          "n_parent_bites": 127,
+          "psi_range": 0.3101346002530532,
+          "rms_change_from_psi0": 0.16130292308584315,
+          "total_abs_psi_travel": 0.35677659809452106
+        },
+        {
+          "delta_psi_range": 0.17027759247623606,
+          "group": "transfer",
+          "grouping": "phase",
+          "max_abs_change_from_psi0": 0.16472023901887994,
+          "n_bite_phase_units": 125,
+          "n_parent_bites": 125,
+          "psi_range": 0.17394107436556602,
+          "rms_change_from_psi0": 0.11798653692244755,
+          "total_abs_psi_travel": 0.25581348345251875
+        },
+        {
+          "delta_psi_range": 0.3744808331678502,
+          "group": "withdrawal",
+          "grouping": "phase",
+          "max_abs_change_from_psi0": 0.33344874455487666,
+          "n_bite_phase_units": 127,
+          "n_parent_bites": 127,
+          "psi_range": 0.43934520264714466,
+          "rms_change_from_psi0": 0.20012747411040158,
+          "total_abs_psi_travel": 0.45181610123950644
+        }
+      ]
+    },
+    "H2_revised": {
+      "criterion": "local information is supported only if StrongLocal has paired bite-balanced circular MAE bootstrap CI upper bound below zero against both R0 and R1",
+      "supported": true,
+      "vs_R0_mae_ci95": [
+        -0.056209338546909134,
+        -0.03382696881591025
+      ],
+      "vs_R1_mae_ci95": [
+        -0.034376495215677226,
+        -0.021583743160369265
+      ]
+    },
+    "original_full_plan": {
+      "conclusion": "rejected/not supported by Phase 3.1; not resumed"
+    }
+  },
+  "secondary_temporal_control_from_phase31": {
+    "Gate_A_star_history_over_strong_local": [
+      {
+        "comparison": "H_star vs StrongLocal_star",
+        "mae_difference_ci95": [
+          -0.0031302294070881843,
+          0.00031588130706042245
+        ],
+        "mae_difference_rad": -0.0014610286597957628,
+        "metric": "circular MAE",
+        "reliably_improves": false
+      }
+    ],
+    "H_star_overall": [
+      {
+        "circular_mae": 0.08460645554111054,
+        "circular_rmse": 0.11303901318319408,
+        "delta_rmse": 0.11160516452404236,
+        "frame_circular_mae": 0.08347182093243333,
+        "frame_circular_rmse": 0.11160516452404236,
+        "group": "overall",
+        "grouping": "overall",
+        "model": "H_star",
+        "n_bites": 127,
+        "n_frames": 32216,
+        "psi_dot_rmse": 0.5034438010527158
+      }
+    ],
+    "label": "secondary temporal control; not retrained in Phase 3.2"
+  },
+  "selected_alphas": {
+    "trial_0012": {
+      "R1_phase_only": 10.0,
+      "R2_pose_only": 10.0,
+      "R3_pose_velocity": 10.0,
+      "StrongLocal": 1.0
+    },
+    "trial_0013": {
+      "R1_phase_only": 10.0,
+      "R2_pose_only": 10.0,
+      "R3_pose_velocity": 10.0,
+      "StrongLocal": 10.0
+    },
+    "trial_0014": {
+      "R1_phase_only": 10.0,
+      "R2_pose_only": 10.0,
+      "R3_pose_velocity": 10.0,
+      "StrongLocal": 1.0
+    },
+    "trial_0015": {
+      "R1_phase_only": 10.0,
+      "R2_pose_only": 1.0,
+      "R3_pose_velocity": 1.0,
+      "StrongLocal": 1.0
+    },
+    "trial_0017": {
+      "R1_phase_only": 10.0,
+      "R2_pose_only": 10.0,
+      "R3_pose_velocity": 10.0,
+      "StrongLocal": 10.0
+    },
+    "trial_0019": {
+      "R1_phase_only": 1.0,
+      "R2_pose_only": 10.0,
+      "R3_pose_velocity": 10.0,
+      "StrongLocal": 10.0
+    },
+    "trial_0020": {
+      "R1_phase_only": 10.0,
+      "R2_pose_only": 10.0,
+      "R3_pose_velocity": 10.0,
+      "StrongLocal": 10.0
+    }
+  }
+}
