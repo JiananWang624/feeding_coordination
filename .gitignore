@@ -6,4 +6,5 @@ build/
 dist/
 outputs/phase1/
 outputs/phase2/
+outputs/phase3/
 outputs/*_smoke/

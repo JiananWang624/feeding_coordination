@@ -35,7 +35,13 @@ freezes one mounted base per take, transforms valid B-frame fork poses to that
 base, and passes contiguous measured runs directly to the stateful adapter.
 The `P -> U_R` convention is exactly identity for this virtual replay only.
 
-Phase 1 now provides the upstream human-data boundary: raw Motive landmarks are
-explicitly transformed into B-frame measurements and stored with masks,
-diagnostics and frozen Stereo-SEW. Tool pose remains unavailable until a real
-hand-to-utensil calibration is supplied; Phase 2 and learning remain absent.
+Phase 3 is an independent human-data analysis boundary. It uses Phase 1.5
+tool/psi measurements in a segment-local initial-tool coordinate system and
+evaluates ridge models by leaving complete takes out. It never consumes Phase 2
+outputs, robot statuses, or upstream derived mouth targets.
+
+Phase 1 provides the upstream human-data boundary: raw Motive landmarks are
+transformed into B-frame measurements and stored with masks and frozen
+Stereo-SEW. Phase 1.5 associates the tracked fork rigid-body pose while keeping
+the missing physical fork-tip calibration explicit; Phases 2 and 3 consume
+these records downstream without modifying them.

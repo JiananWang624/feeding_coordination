@@ -7,7 +7,7 @@ name = "feeding-coordination"
 version = "0.1.0"
 description = "Stateful adapter for the frozen Gen3 Exact-SEW solver"
 requires-python = ">=3.11,<3.12"
-dependencies = ["numpy", "pandas", "scipy", "matplotlib"]
+dependencies = ["numpy", "pandas", "scipy", "matplotlib", "scikit-learn"]
 
 [project.optional-dependencies]
 test = ["pytest"]

@@ -37,3 +37,9 @@ Phase 2 replays those immutable B-frame fork poses under the documented virtual
 identity tool convention: `python scripts/process_phase2.py`. It writes derived
 robot results to `outputs/phase2/` and does not calibrate, smooth, retime, or
 learn from the trajectories.
+
+Phase 3 is a human-only, leave-one-session-out ridge study of whether local
+tool state, causal history, or deliberately available future utensil plans
+predict human redundancy: `python scripts/process_phase3.py`. It reads only
+`outputs/phase1/`; Phase 2 feasibility and the derived mouth target are not
+inputs.
