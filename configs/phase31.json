@@ -1,0 +1,9 @@
+{
+  "phase1_output_path": "outputs/phase1",
+  "phase3_output_path": "outputs/phase3",
+  "output_path": "outputs/phase31",
+  "alphas": [0.001, 0.01, 0.1, 1.0, 10.0, 100.0],
+  "bootstrap_resamples": 2000,
+  "bootstrap_seed": 20260915,
+  "spline_basis_functions": 12
+}
