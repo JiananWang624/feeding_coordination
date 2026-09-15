@@ -29,3 +29,8 @@ sole continuation and failure semantics.
 Exact-SEW is the robot-realization dependency, not an implementation owned by
 the future feeding-coordination method and not part of that method's novelty.
 Human-data processing and learning are intentionally deferred beyond Phase 0.
+
+Phase 1 now provides the upstream human-data boundary: raw Motive landmarks are
+explicitly transformed into B-frame measurements and stored with masks,
+diagnostics and frozen Stereo-SEW. Tool pose remains unavailable until a real
+hand-to-utensil calibration is supplied; Phase 2 and learning remain absent.

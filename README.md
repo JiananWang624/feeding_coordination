@@ -27,3 +27,7 @@ formula are recorded in
 [`src/feeding_coordination/contracts/exact_sew.md`](src/feeding_coordination/contracts/exact_sew.md).
 The immutable dependency identity and required assets are recorded in
 [`DEPENDENCY_LOCK.json`](DEPENDENCY_LOCK.json).
+
+Phase 1 processes the audited human dataset into partial task trajectories and
+Stereo-SEW only (no robot replay or learning):
+`python scripts/process_phase1.py`, then `python scripts/plot_phase1.py`.
