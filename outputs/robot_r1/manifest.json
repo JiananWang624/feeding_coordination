@@ -1,0 +1,1284 @@
+{
+  "schema_version": "robot-r1-v1",
+  "config": {
+    "robot_r0_output_path": "outputs/robot_r0",
+    "output_path": "outputs/robot_r1",
+    "continuity_threshold_rad": 0.5,
+    "bootstrap_seed": 20260915,
+    "bootstrap_resamples": 2000
+  },
+  "robot_r0_manifest": "F:\\code\\feeding_coordination\\outputs\\robot_r0\\manifest.json",
+  "robot_r0_manifest_sha256": "1bf8e72f7bd7125f2bc22b1c722598e9619987bf3b376c54db9871d7e2403dbc",
+  "records": [
+    {
+      "file": "results/trial_0012_bite_001_transfer.npz",
+      "record_id": "trial_0012_bite_001_transfer",
+      "source_record": "demos/trial_0012_bite_001_transfer.npz"
+    },
+    {
+      "file": "results/trial_0012_bite_001_withdrawal.npz",
+      "record_id": "trial_0012_bite_001_withdrawal",
+      "source_record": "demos/trial_0012_bite_001_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0012_bite_002_transfer.npz",
+      "record_id": "trial_0012_bite_002_transfer",
+      "source_record": "demos/trial_0012_bite_002_transfer.npz"
+    },
+    {
+      "file": "results/trial_0012_bite_002_withdrawal.npz",
+      "record_id": "trial_0012_bite_002_withdrawal",
+      "source_record": "demos/trial_0012_bite_002_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0012_bite_003_transfer.npz",
+      "record_id": "trial_0012_bite_003_transfer",
+      "source_record": "demos/trial_0012_bite_003_transfer.npz"
+    },
+    {
+      "file": "results/trial_0012_bite_003_withdrawal.npz",
+      "record_id": "trial_0012_bite_003_withdrawal",
+      "source_record": "demos/trial_0012_bite_003_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0012_bite_004_transfer.npz",
+      "record_id": "trial_0012_bite_004_transfer",
+      "source_record": "demos/trial_0012_bite_004_transfer.npz"
+    },
+    {
+      "file": "results/trial_0012_bite_004_withdrawal.npz",
+      "record_id": "trial_0012_bite_004_withdrawal",
+      "source_record": "demos/trial_0012_bite_004_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0012_bite_005_transfer.npz",
+      "record_id": "trial_0012_bite_005_transfer",
+      "source_record": "demos/trial_0012_bite_005_transfer.npz"
+    },
+    {
+      "file": "results/trial_0012_bite_005_withdrawal.npz",
+      "record_id": "trial_0012_bite_005_withdrawal",
+      "source_record": "demos/trial_0012_bite_005_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0012_bite_006_transfer.npz",
+      "record_id": "trial_0012_bite_006_transfer",
+      "source_record": "demos/trial_0012_bite_006_transfer.npz"
+    },
+    {
+      "file": "results/trial_0012_bite_006_withdrawal.npz",
+      "record_id": "trial_0012_bite_006_withdrawal",
+      "source_record": "demos/trial_0012_bite_006_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0012_bite_007_transfer.npz",
+      "record_id": "trial_0012_bite_007_transfer",
+      "source_record": "demos/trial_0012_bite_007_transfer.npz"
+    },
+    {
+      "file": "results/trial_0012_bite_007_withdrawal.npz",
+      "record_id": "trial_0012_bite_007_withdrawal",
+      "source_record": "demos/trial_0012_bite_007_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0012_bite_008_transfer.npz",
+      "record_id": "trial_0012_bite_008_transfer",
+      "source_record": "demos/trial_0012_bite_008_transfer.npz"
+    },
+    {
+      "file": "results/trial_0012_bite_008_withdrawal.npz",
+      "record_id": "trial_0012_bite_008_withdrawal",
+      "source_record": "demos/trial_0012_bite_008_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0012_bite_009_transfer.npz",
+      "record_id": "trial_0012_bite_009_transfer",
+      "source_record": "demos/trial_0012_bite_009_transfer.npz"
+    },
+    {
+      "file": "results/trial_0012_bite_009_withdrawal.npz",
+      "record_id": "trial_0012_bite_009_withdrawal",
+      "source_record": "demos/trial_0012_bite_009_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0012_bite_010_transfer.npz",
+      "record_id": "trial_0012_bite_010_transfer",
+      "source_record": "demos/trial_0012_bite_010_transfer.npz"
+    },
+    {
+      "file": "results/trial_0012_bite_010_withdrawal.npz",
+      "record_id": "trial_0012_bite_010_withdrawal",
+      "source_record": "demos/trial_0012_bite_010_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0012_bite_011_transfer.npz",
+      "record_id": "trial_0012_bite_011_transfer",
+      "source_record": "demos/trial_0012_bite_011_transfer.npz"
+    },
+    {
+      "file": "results/trial_0012_bite_011_withdrawal.npz",
+      "record_id": "trial_0012_bite_011_withdrawal",
+      "source_record": "demos/trial_0012_bite_011_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0012_bite_012_transfer.npz",
+      "record_id": "trial_0012_bite_012_transfer",
+      "source_record": "demos/trial_0012_bite_012_transfer.npz"
+    },
+    {
+      "file": "results/trial_0012_bite_012_withdrawal.npz",
+      "record_id": "trial_0012_bite_012_withdrawal",
+      "source_record": "demos/trial_0012_bite_012_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0012_bite_013_transfer.npz",
+      "record_id": "trial_0012_bite_013_transfer",
+      "source_record": "demos/trial_0012_bite_013_transfer.npz"
+    },
+    {
+      "file": "results/trial_0012_bite_013_withdrawal.npz",
+      "record_id": "trial_0012_bite_013_withdrawal",
+      "source_record": "demos/trial_0012_bite_013_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0012_bite_014_transfer.npz",
+      "record_id": "trial_0012_bite_014_transfer",
+      "source_record": "demos/trial_0012_bite_014_transfer.npz"
+    },
+    {
+      "file": "results/trial_0012_bite_014_withdrawal.npz",
+      "record_id": "trial_0012_bite_014_withdrawal",
+      "source_record": "demos/trial_0012_bite_014_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0012_bite_015_transfer.npz",
+      "record_id": "trial_0012_bite_015_transfer",
+      "source_record": "demos/trial_0012_bite_015_transfer.npz"
+    },
+    {
+      "file": "results/trial_0012_bite_015_withdrawal.npz",
+      "record_id": "trial_0012_bite_015_withdrawal",
+      "source_record": "demos/trial_0012_bite_015_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0013_bite_001_transfer.npz",
+      "record_id": "trial_0013_bite_001_transfer",
+      "source_record": "demos/trial_0013_bite_001_transfer.npz"
+    },
+    {
+      "file": "results/trial_0013_bite_001_withdrawal.npz",
+      "record_id": "trial_0013_bite_001_withdrawal",
+      "source_record": "demos/trial_0013_bite_001_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0013_bite_002_transfer.npz",
+      "record_id": "trial_0013_bite_002_transfer",
+      "source_record": "demos/trial_0013_bite_002_transfer.npz"
+    },
+    {
+      "file": "results/trial_0013_bite_002_withdrawal.npz",
+      "record_id": "trial_0013_bite_002_withdrawal",
+      "source_record": "demos/trial_0013_bite_002_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0013_bite_003_transfer.npz",
+      "record_id": "trial_0013_bite_003_transfer",
+      "source_record": "demos/trial_0013_bite_003_transfer.npz"
+    },
+    {
+      "file": "results/trial_0013_bite_003_withdrawal.npz",
+      "record_id": "trial_0013_bite_003_withdrawal",
+      "source_record": "demos/trial_0013_bite_003_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0013_bite_004_transfer.npz",
+      "record_id": "trial_0013_bite_004_transfer",
+      "source_record": "demos/trial_0013_bite_004_transfer.npz"
+    },
+    {
+      "file": "results/trial_0013_bite_004_withdrawal.npz",
+      "record_id": "trial_0013_bite_004_withdrawal",
+      "source_record": "demos/trial_0013_bite_004_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0013_bite_005_transfer.npz",
+      "record_id": "trial_0013_bite_005_transfer",
+      "source_record": "demos/trial_0013_bite_005_transfer.npz"
+    },
+    {
+      "file": "results/trial_0013_bite_005_withdrawal.npz",
+      "record_id": "trial_0013_bite_005_withdrawal",
+      "source_record": "demos/trial_0013_bite_005_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0013_bite_006_transfer.npz",
+      "record_id": "trial_0013_bite_006_transfer",
+      "source_record": "demos/trial_0013_bite_006_transfer.npz"
+    },
+    {
+      "file": "results/trial_0013_bite_006_withdrawal.npz",
+      "record_id": "trial_0013_bite_006_withdrawal",
+      "source_record": "demos/trial_0013_bite_006_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0013_bite_007_transfer.npz",
+      "record_id": "trial_0013_bite_007_transfer",
+      "source_record": "demos/trial_0013_bite_007_transfer.npz"
+    },
+    {
+      "file": "results/trial_0013_bite_007_withdrawal.npz",
+      "record_id": "trial_0013_bite_007_withdrawal",
+      "source_record": "demos/trial_0013_bite_007_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0013_bite_008_transfer.npz",
+      "record_id": "trial_0013_bite_008_transfer",
+      "source_record": "demos/trial_0013_bite_008_transfer.npz"
+    },
+    {
+      "file": "results/trial_0013_bite_008_withdrawal.npz",
+      "record_id": "trial_0013_bite_008_withdrawal",
+      "source_record": "demos/trial_0013_bite_008_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0013_bite_009_transfer.npz",
+      "record_id": "trial_0013_bite_009_transfer",
+      "source_record": "demos/trial_0013_bite_009_transfer.npz"
+    },
+    {
+      "file": "results/trial_0013_bite_009_withdrawal.npz",
+      "record_id": "trial_0013_bite_009_withdrawal",
+      "source_record": "demos/trial_0013_bite_009_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0013_bite_010_transfer.npz",
+      "record_id": "trial_0013_bite_010_transfer",
+      "source_record": "demos/trial_0013_bite_010_transfer.npz"
+    },
+    {
+      "file": "results/trial_0013_bite_010_withdrawal.npz",
+      "record_id": "trial_0013_bite_010_withdrawal",
+      "source_record": "demos/trial_0013_bite_010_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0013_bite_011_transfer.npz",
+      "record_id": "trial_0013_bite_011_transfer",
+      "source_record": "demos/trial_0013_bite_011_transfer.npz"
+    },
+    {
+      "file": "results/trial_0013_bite_011_withdrawal.npz",
+      "record_id": "trial_0013_bite_011_withdrawal",
+      "source_record": "demos/trial_0013_bite_011_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0013_bite_012_transfer.npz",
+      "record_id": "trial_0013_bite_012_transfer",
+      "source_record": "demos/trial_0013_bite_012_transfer.npz"
+    },
+    {
+      "file": "results/trial_0013_bite_012_withdrawal.npz",
+      "record_id": "trial_0013_bite_012_withdrawal",
+      "source_record": "demos/trial_0013_bite_012_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0014_bite_001_transfer.npz",
+      "record_id": "trial_0014_bite_001_transfer",
+      "source_record": "demos/trial_0014_bite_001_transfer.npz"
+    },
+    {
+      "file": "results/trial_0014_bite_001_withdrawal.npz",
+      "record_id": "trial_0014_bite_001_withdrawal",
+      "source_record": "demos/trial_0014_bite_001_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0014_bite_002_transfer.npz",
+      "record_id": "trial_0014_bite_002_transfer",
+      "source_record": "demos/trial_0014_bite_002_transfer.npz"
+    },
+    {
+      "file": "results/trial_0014_bite_002_withdrawal.npz",
+      "record_id": "trial_0014_bite_002_withdrawal",
+      "source_record": "demos/trial_0014_bite_002_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0014_bite_003_transfer.npz",
+      "record_id": "trial_0014_bite_003_transfer",
+      "source_record": "demos/trial_0014_bite_003_transfer.npz"
+    },
+    {
+      "file": "results/trial_0014_bite_003_withdrawal.npz",
+      "record_id": "trial_0014_bite_003_withdrawal",
+      "source_record": "demos/trial_0014_bite_003_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0014_bite_004_transfer.npz",
+      "record_id": "trial_0014_bite_004_transfer",
+      "source_record": "demos/trial_0014_bite_004_transfer.npz"
+    },
+    {
+      "file": "results/trial_0014_bite_004_withdrawal.npz",
+      "record_id": "trial_0014_bite_004_withdrawal",
+      "source_record": "demos/trial_0014_bite_004_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0014_bite_005_transfer.npz",
+      "record_id": "trial_0014_bite_005_transfer",
+      "source_record": "demos/trial_0014_bite_005_transfer.npz"
+    },
+    {
+      "file": "results/trial_0014_bite_005_withdrawal.npz",
+      "record_id": "trial_0014_bite_005_withdrawal",
+      "source_record": "demos/trial_0014_bite_005_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0014_bite_006_transfer.npz",
+      "record_id": "trial_0014_bite_006_transfer",
+      "source_record": "demos/trial_0014_bite_006_transfer.npz"
+    },
+    {
+      "file": "results/trial_0014_bite_006_withdrawal.npz",
+      "record_id": "trial_0014_bite_006_withdrawal",
+      "source_record": "demos/trial_0014_bite_006_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0014_bite_007_transfer.npz",
+      "record_id": "trial_0014_bite_007_transfer",
+      "source_record": "demos/trial_0014_bite_007_transfer.npz"
+    },
+    {
+      "file": "results/trial_0014_bite_007_withdrawal.npz",
+      "record_id": "trial_0014_bite_007_withdrawal",
+      "source_record": "demos/trial_0014_bite_007_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0014_bite_008_transfer.npz",
+      "record_id": "trial_0014_bite_008_transfer",
+      "source_record": "demos/trial_0014_bite_008_transfer.npz"
+    },
+    {
+      "file": "results/trial_0014_bite_008_withdrawal.npz",
+      "record_id": "trial_0014_bite_008_withdrawal",
+      "source_record": "demos/trial_0014_bite_008_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0014_bite_009_transfer.npz",
+      "record_id": "trial_0014_bite_009_transfer",
+      "source_record": "demos/trial_0014_bite_009_transfer.npz"
+    },
+    {
+      "file": "results/trial_0014_bite_009_withdrawal.npz",
+      "record_id": "trial_0014_bite_009_withdrawal",
+      "source_record": "demos/trial_0014_bite_009_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0014_bite_010_transfer.npz",
+      "record_id": "trial_0014_bite_010_transfer",
+      "source_record": "demos/trial_0014_bite_010_transfer.npz"
+    },
+    {
+      "file": "results/trial_0014_bite_010_withdrawal.npz",
+      "record_id": "trial_0014_bite_010_withdrawal",
+      "source_record": "demos/trial_0014_bite_010_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0014_bite_011_transfer.npz",
+      "record_id": "trial_0014_bite_011_transfer",
+      "source_record": "demos/trial_0014_bite_011_transfer.npz"
+    },
+    {
+      "file": "results/trial_0014_bite_011_withdrawal.npz",
+      "record_id": "trial_0014_bite_011_withdrawal",
+      "source_record": "demos/trial_0014_bite_011_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0014_bite_012_transfer.npz",
+      "record_id": "trial_0014_bite_012_transfer",
+      "source_record": "demos/trial_0014_bite_012_transfer.npz"
+    },
+    {
+      "file": "results/trial_0014_bite_012_withdrawal.npz",
+      "record_id": "trial_0014_bite_012_withdrawal",
+      "source_record": "demos/trial_0014_bite_012_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0014_bite_013_transfer.npz",
+      "record_id": "trial_0014_bite_013_transfer",
+      "source_record": "demos/trial_0014_bite_013_transfer.npz"
+    },
+    {
+      "file": "results/trial_0014_bite_013_withdrawal.npz",
+      "record_id": "trial_0014_bite_013_withdrawal",
+      "source_record": "demos/trial_0014_bite_013_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0014_bite_014_transfer.npz",
+      "record_id": "trial_0014_bite_014_transfer",
+      "source_record": "demos/trial_0014_bite_014_transfer.npz"
+    },
+    {
+      "file": "results/trial_0014_bite_014_withdrawal.npz",
+      "record_id": "trial_0014_bite_014_withdrawal",
+      "source_record": "demos/trial_0014_bite_014_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0014_bite_015_transfer.npz",
+      "record_id": "trial_0014_bite_015_transfer",
+      "source_record": "demos/trial_0014_bite_015_transfer.npz"
+    },
+    {
+      "file": "results/trial_0014_bite_015_withdrawal.npz",
+      "record_id": "trial_0014_bite_015_withdrawal",
+      "source_record": "demos/trial_0014_bite_015_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0014_bite_016_transfer.npz",
+      "record_id": "trial_0014_bite_016_transfer",
+      "source_record": "demos/trial_0014_bite_016_transfer.npz"
+    },
+    {
+      "file": "results/trial_0014_bite_016_withdrawal.npz",
+      "record_id": "trial_0014_bite_016_withdrawal",
+      "source_record": "demos/trial_0014_bite_016_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0014_bite_017_transfer.npz",
+      "record_id": "trial_0014_bite_017_transfer",
+      "source_record": "demos/trial_0014_bite_017_transfer.npz"
+    },
+    {
+      "file": "results/trial_0014_bite_017_withdrawal.npz",
+      "record_id": "trial_0014_bite_017_withdrawal",
+      "source_record": "demos/trial_0014_bite_017_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0014_bite_018_transfer.npz",
+      "record_id": "trial_0014_bite_018_transfer",
+      "source_record": "demos/trial_0014_bite_018_transfer.npz"
+    },
+    {
+      "file": "results/trial_0014_bite_018_withdrawal.npz",
+      "record_id": "trial_0014_bite_018_withdrawal",
+      "source_record": "demos/trial_0014_bite_018_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0014_bite_019_transfer.npz",
+      "record_id": "trial_0014_bite_019_transfer",
+      "source_record": "demos/trial_0014_bite_019_transfer.npz"
+    },
+    {
+      "file": "results/trial_0014_bite_019_withdrawal.npz",
+      "record_id": "trial_0014_bite_019_withdrawal",
+      "source_record": "demos/trial_0014_bite_019_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0014_bite_020_transfer.npz",
+      "record_id": "trial_0014_bite_020_transfer",
+      "source_record": "demos/trial_0014_bite_020_transfer.npz"
+    },
+    {
+      "file": "results/trial_0014_bite_020_withdrawal.npz",
+      "record_id": "trial_0014_bite_020_withdrawal",
+      "source_record": "demos/trial_0014_bite_020_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0014_bite_021_transfer.npz",
+      "record_id": "trial_0014_bite_021_transfer",
+      "source_record": "demos/trial_0014_bite_021_transfer.npz"
+    },
+    {
+      "file": "results/trial_0014_bite_021_withdrawal.npz",
+      "record_id": "trial_0014_bite_021_withdrawal",
+      "source_record": "demos/trial_0014_bite_021_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0015_bite_001_transfer.npz",
+      "record_id": "trial_0015_bite_001_transfer",
+      "source_record": "demos/trial_0015_bite_001_transfer.npz"
+    },
+    {
+      "file": "results/trial_0015_bite_001_withdrawal.npz",
+      "record_id": "trial_0015_bite_001_withdrawal",
+      "source_record": "demos/trial_0015_bite_001_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0015_bite_002_transfer.npz",
+      "record_id": "trial_0015_bite_002_transfer",
+      "source_record": "demos/trial_0015_bite_002_transfer.npz"
+    },
+    {
+      "file": "results/trial_0015_bite_002_withdrawal.npz",
+      "record_id": "trial_0015_bite_002_withdrawal",
+      "source_record": "demos/trial_0015_bite_002_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0015_bite_003_transfer.npz",
+      "record_id": "trial_0015_bite_003_transfer",
+      "source_record": "demos/trial_0015_bite_003_transfer.npz"
+    },
+    {
+      "file": "results/trial_0015_bite_003_withdrawal.npz",
+      "record_id": "trial_0015_bite_003_withdrawal",
+      "source_record": "demos/trial_0015_bite_003_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0015_bite_004_transfer.npz",
+      "record_id": "trial_0015_bite_004_transfer",
+      "source_record": "demos/trial_0015_bite_004_transfer.npz"
+    },
+    {
+      "file": "results/trial_0015_bite_004_withdrawal.npz",
+      "record_id": "trial_0015_bite_004_withdrawal",
+      "source_record": "demos/trial_0015_bite_004_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0015_bite_005_transfer.npz",
+      "record_id": "trial_0015_bite_005_transfer",
+      "source_record": "demos/trial_0015_bite_005_transfer.npz"
+    },
+    {
+      "file": "results/trial_0015_bite_005_withdrawal.npz",
+      "record_id": "trial_0015_bite_005_withdrawal",
+      "source_record": "demos/trial_0015_bite_005_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0015_bite_006_transfer.npz",
+      "record_id": "trial_0015_bite_006_transfer",
+      "source_record": "demos/trial_0015_bite_006_transfer.npz"
+    },
+    {
+      "file": "results/trial_0015_bite_006_withdrawal.npz",
+      "record_id": "trial_0015_bite_006_withdrawal",
+      "source_record": "demos/trial_0015_bite_006_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0015_bite_007_transfer.npz",
+      "record_id": "trial_0015_bite_007_transfer",
+      "source_record": "demos/trial_0015_bite_007_transfer.npz"
+    },
+    {
+      "file": "results/trial_0015_bite_007_withdrawal.npz",
+      "record_id": "trial_0015_bite_007_withdrawal",
+      "source_record": "demos/trial_0015_bite_007_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0015_bite_008_transfer.npz",
+      "record_id": "trial_0015_bite_008_transfer",
+      "source_record": "demos/trial_0015_bite_008_transfer.npz"
+    },
+    {
+      "file": "results/trial_0015_bite_008_withdrawal.npz",
+      "record_id": "trial_0015_bite_008_withdrawal",
+      "source_record": "demos/trial_0015_bite_008_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0015_bite_009_transfer.npz",
+      "record_id": "trial_0015_bite_009_transfer",
+      "source_record": "demos/trial_0015_bite_009_transfer.npz"
+    },
+    {
+      "file": "results/trial_0015_bite_009_withdrawal.npz",
+      "record_id": "trial_0015_bite_009_withdrawal",
+      "source_record": "demos/trial_0015_bite_009_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0015_bite_010_transfer.npz",
+      "record_id": "trial_0015_bite_010_transfer",
+      "source_record": "demos/trial_0015_bite_010_transfer.npz"
+    },
+    {
+      "file": "results/trial_0015_bite_010_withdrawal.npz",
+      "record_id": "trial_0015_bite_010_withdrawal",
+      "source_record": "demos/trial_0015_bite_010_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0015_bite_011_transfer.npz",
+      "record_id": "trial_0015_bite_011_transfer",
+      "source_record": "demos/trial_0015_bite_011_transfer.npz"
+    },
+    {
+      "file": "results/trial_0015_bite_011_withdrawal.npz",
+      "record_id": "trial_0015_bite_011_withdrawal",
+      "source_record": "demos/trial_0015_bite_011_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0015_bite_012_transfer.npz",
+      "record_id": "trial_0015_bite_012_transfer",
+      "source_record": "demos/trial_0015_bite_012_transfer.npz"
+    },
+    {
+      "file": "results/trial_0015_bite_012_withdrawal.npz",
+      "record_id": "trial_0015_bite_012_withdrawal",
+      "source_record": "demos/trial_0015_bite_012_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0015_bite_013_transfer.npz",
+      "record_id": "trial_0015_bite_013_transfer",
+      "source_record": "demos/trial_0015_bite_013_transfer.npz"
+    },
+    {
+      "file": "results/trial_0015_bite_013_withdrawal.npz",
+      "record_id": "trial_0015_bite_013_withdrawal",
+      "source_record": "demos/trial_0015_bite_013_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0015_bite_014_transfer.npz",
+      "record_id": "trial_0015_bite_014_transfer",
+      "source_record": "demos/trial_0015_bite_014_transfer.npz"
+    },
+    {
+      "file": "results/trial_0015_bite_014_withdrawal.npz",
+      "record_id": "trial_0015_bite_014_withdrawal",
+      "source_record": "demos/trial_0015_bite_014_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0015_bite_015_transfer.npz",
+      "record_id": "trial_0015_bite_015_transfer",
+      "source_record": "demos/trial_0015_bite_015_transfer.npz"
+    },
+    {
+      "file": "results/trial_0015_bite_015_withdrawal.npz",
+      "record_id": "trial_0015_bite_015_withdrawal",
+      "source_record": "demos/trial_0015_bite_015_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0015_bite_016_transfer.npz",
+      "record_id": "trial_0015_bite_016_transfer",
+      "source_record": "demos/trial_0015_bite_016_transfer.npz"
+    },
+    {
+      "file": "results/trial_0015_bite_016_withdrawal.npz",
+      "record_id": "trial_0015_bite_016_withdrawal",
+      "source_record": "demos/trial_0015_bite_016_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0015_bite_017_transfer.npz",
+      "record_id": "trial_0015_bite_017_transfer",
+      "source_record": "demos/trial_0015_bite_017_transfer.npz"
+    },
+    {
+      "file": "results/trial_0015_bite_017_withdrawal.npz",
+      "record_id": "trial_0015_bite_017_withdrawal",
+      "source_record": "demos/trial_0015_bite_017_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0015_bite_018_transfer.npz",
+      "record_id": "trial_0015_bite_018_transfer",
+      "source_record": "demos/trial_0015_bite_018_transfer.npz"
+    },
+    {
+      "file": "results/trial_0015_bite_018_withdrawal.npz",
+      "record_id": "trial_0015_bite_018_withdrawal",
+      "source_record": "demos/trial_0015_bite_018_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0015_bite_019_transfer.npz",
+      "record_id": "trial_0015_bite_019_transfer",
+      "source_record": "demos/trial_0015_bite_019_transfer.npz"
+    },
+    {
+      "file": "results/trial_0015_bite_019_withdrawal.npz",
+      "record_id": "trial_0015_bite_019_withdrawal",
+      "source_record": "demos/trial_0015_bite_019_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0017_bite_001_transfer.npz",
+      "record_id": "trial_0017_bite_001_transfer",
+      "source_record": "demos/trial_0017_bite_001_transfer.npz"
+    },
+    {
+      "file": "results/trial_0017_bite_001_withdrawal.npz",
+      "record_id": "trial_0017_bite_001_withdrawal",
+      "source_record": "demos/trial_0017_bite_001_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0017_bite_002_transfer.npz",
+      "record_id": "trial_0017_bite_002_transfer",
+      "source_record": "demos/trial_0017_bite_002_transfer.npz"
+    },
+    {
+      "file": "results/trial_0017_bite_002_withdrawal.npz",
+      "record_id": "trial_0017_bite_002_withdrawal",
+      "source_record": "demos/trial_0017_bite_002_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0017_bite_003_transfer.npz",
+      "record_id": "trial_0017_bite_003_transfer",
+      "source_record": "demos/trial_0017_bite_003_transfer.npz"
+    },
+    {
+      "file": "results/trial_0017_bite_003_withdrawal.npz",
+      "record_id": "trial_0017_bite_003_withdrawal",
+      "source_record": "demos/trial_0017_bite_003_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0017_bite_004_transfer.npz",
+      "record_id": "trial_0017_bite_004_transfer",
+      "source_record": "demos/trial_0017_bite_004_transfer.npz"
+    },
+    {
+      "file": "results/trial_0017_bite_004_withdrawal.npz",
+      "record_id": "trial_0017_bite_004_withdrawal",
+      "source_record": "demos/trial_0017_bite_004_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0017_bite_005_transfer.npz",
+      "record_id": "trial_0017_bite_005_transfer",
+      "source_record": "demos/trial_0017_bite_005_transfer.npz"
+    },
+    {
+      "file": "results/trial_0017_bite_005_withdrawal.npz",
+      "record_id": "trial_0017_bite_005_withdrawal",
+      "source_record": "demos/trial_0017_bite_005_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0017_bite_006_transfer.npz",
+      "record_id": "trial_0017_bite_006_transfer",
+      "source_record": "demos/trial_0017_bite_006_transfer.npz"
+    },
+    {
+      "file": "results/trial_0017_bite_006_withdrawal.npz",
+      "record_id": "trial_0017_bite_006_withdrawal",
+      "source_record": "demos/trial_0017_bite_006_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0017_bite_007_transfer.npz",
+      "record_id": "trial_0017_bite_007_transfer",
+      "source_record": "demos/trial_0017_bite_007_transfer.npz"
+    },
+    {
+      "file": "results/trial_0017_bite_007_withdrawal.npz",
+      "record_id": "trial_0017_bite_007_withdrawal",
+      "source_record": "demos/trial_0017_bite_007_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0017_bite_008_transfer.npz",
+      "record_id": "trial_0017_bite_008_transfer",
+      "source_record": "demos/trial_0017_bite_008_transfer.npz"
+    },
+    {
+      "file": "results/trial_0017_bite_008_withdrawal.npz",
+      "record_id": "trial_0017_bite_008_withdrawal",
+      "source_record": "demos/trial_0017_bite_008_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0017_bite_009_transfer.npz",
+      "record_id": "trial_0017_bite_009_transfer",
+      "source_record": "demos/trial_0017_bite_009_transfer.npz"
+    },
+    {
+      "file": "results/trial_0017_bite_009_withdrawal.npz",
+      "record_id": "trial_0017_bite_009_withdrawal",
+      "source_record": "demos/trial_0017_bite_009_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0017_bite_010_transfer.npz",
+      "record_id": "trial_0017_bite_010_transfer",
+      "source_record": "demos/trial_0017_bite_010_transfer.npz"
+    },
+    {
+      "file": "results/trial_0017_bite_010_withdrawal.npz",
+      "record_id": "trial_0017_bite_010_withdrawal",
+      "source_record": "demos/trial_0017_bite_010_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0017_bite_011_transfer.npz",
+      "record_id": "trial_0017_bite_011_transfer",
+      "source_record": "demos/trial_0017_bite_011_transfer.npz"
+    },
+    {
+      "file": "results/trial_0017_bite_011_withdrawal.npz",
+      "record_id": "trial_0017_bite_011_withdrawal",
+      "source_record": "demos/trial_0017_bite_011_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0017_bite_012_transfer.npz",
+      "record_id": "trial_0017_bite_012_transfer",
+      "source_record": "demos/trial_0017_bite_012_transfer.npz"
+    },
+    {
+      "file": "results/trial_0017_bite_012_withdrawal.npz",
+      "record_id": "trial_0017_bite_012_withdrawal",
+      "source_record": "demos/trial_0017_bite_012_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0017_bite_013_transfer.npz",
+      "record_id": "trial_0017_bite_013_transfer",
+      "source_record": "demos/trial_0017_bite_013_transfer.npz"
+    },
+    {
+      "file": "results/trial_0017_bite_013_withdrawal.npz",
+      "record_id": "trial_0017_bite_013_withdrawal",
+      "source_record": "demos/trial_0017_bite_013_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0017_bite_014_transfer.npz",
+      "record_id": "trial_0017_bite_014_transfer",
+      "source_record": "demos/trial_0017_bite_014_transfer.npz"
+    },
+    {
+      "file": "results/trial_0017_bite_014_withdrawal.npz",
+      "record_id": "trial_0017_bite_014_withdrawal",
+      "source_record": "demos/trial_0017_bite_014_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0017_bite_015_transfer.npz",
+      "record_id": "trial_0017_bite_015_transfer",
+      "source_record": "demos/trial_0017_bite_015_transfer.npz"
+    },
+    {
+      "file": "results/trial_0017_bite_015_withdrawal.npz",
+      "record_id": "trial_0017_bite_015_withdrawal",
+      "source_record": "demos/trial_0017_bite_015_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_001_transfer.npz",
+      "record_id": "trial_0019_bite_001_transfer",
+      "source_record": "demos/trial_0019_bite_001_transfer.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_001_withdrawal.npz",
+      "record_id": "trial_0019_bite_001_withdrawal",
+      "source_record": "demos/trial_0019_bite_001_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_002_transfer.npz",
+      "record_id": "trial_0019_bite_002_transfer",
+      "source_record": "demos/trial_0019_bite_002_transfer.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_002_withdrawal.npz",
+      "record_id": "trial_0019_bite_002_withdrawal",
+      "source_record": "demos/trial_0019_bite_002_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_003_transfer.npz",
+      "record_id": "trial_0019_bite_003_transfer",
+      "source_record": "demos/trial_0019_bite_003_transfer.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_003_withdrawal.npz",
+      "record_id": "trial_0019_bite_003_withdrawal",
+      "source_record": "demos/trial_0019_bite_003_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_004_transfer.npz",
+      "record_id": "trial_0019_bite_004_transfer",
+      "source_record": "demos/trial_0019_bite_004_transfer.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_004_withdrawal.npz",
+      "record_id": "trial_0019_bite_004_withdrawal",
+      "source_record": "demos/trial_0019_bite_004_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_005_transfer.npz",
+      "record_id": "trial_0019_bite_005_transfer",
+      "source_record": "demos/trial_0019_bite_005_transfer.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_005_withdrawal.npz",
+      "record_id": "trial_0019_bite_005_withdrawal",
+      "source_record": "demos/trial_0019_bite_005_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_006_transfer.npz",
+      "record_id": "trial_0019_bite_006_transfer",
+      "source_record": "demos/trial_0019_bite_006_transfer.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_006_withdrawal.npz",
+      "record_id": "trial_0019_bite_006_withdrawal",
+      "source_record": "demos/trial_0019_bite_006_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_007_transfer.npz",
+      "record_id": "trial_0019_bite_007_transfer",
+      "source_record": "demos/trial_0019_bite_007_transfer.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_007_withdrawal.npz",
+      "record_id": "trial_0019_bite_007_withdrawal",
+      "source_record": "demos/trial_0019_bite_007_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_008_transfer.npz",
+      "record_id": "trial_0019_bite_008_transfer",
+      "source_record": "demos/trial_0019_bite_008_transfer.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_008_withdrawal.npz",
+      "record_id": "trial_0019_bite_008_withdrawal",
+      "source_record": "demos/trial_0019_bite_008_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_009_transfer.npz",
+      "record_id": "trial_0019_bite_009_transfer",
+      "source_record": "demos/trial_0019_bite_009_transfer.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_009_withdrawal.npz",
+      "record_id": "trial_0019_bite_009_withdrawal",
+      "source_record": "demos/trial_0019_bite_009_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_010_transfer.npz",
+      "record_id": "trial_0019_bite_010_transfer",
+      "source_record": "demos/trial_0019_bite_010_transfer.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_010_withdrawal.npz",
+      "record_id": "trial_0019_bite_010_withdrawal",
+      "source_record": "demos/trial_0019_bite_010_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_011_transfer.npz",
+      "record_id": "trial_0019_bite_011_transfer",
+      "source_record": "demos/trial_0019_bite_011_transfer.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_011_withdrawal.npz",
+      "record_id": "trial_0019_bite_011_withdrawal",
+      "source_record": "demos/trial_0019_bite_011_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_012_transfer.npz",
+      "record_id": "trial_0019_bite_012_transfer",
+      "source_record": "demos/trial_0019_bite_012_transfer.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_012_withdrawal.npz",
+      "record_id": "trial_0019_bite_012_withdrawal",
+      "source_record": "demos/trial_0019_bite_012_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_013_transfer.npz",
+      "record_id": "trial_0019_bite_013_transfer",
+      "source_record": "demos/trial_0019_bite_013_transfer.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_013_withdrawal.npz",
+      "record_id": "trial_0019_bite_013_withdrawal",
+      "source_record": "demos/trial_0019_bite_013_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_014_transfer.npz",
+      "record_id": "trial_0019_bite_014_transfer",
+      "source_record": "demos/trial_0019_bite_014_transfer.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_014_withdrawal.npz",
+      "record_id": "trial_0019_bite_014_withdrawal",
+      "source_record": "demos/trial_0019_bite_014_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_015_transfer.npz",
+      "record_id": "trial_0019_bite_015_transfer",
+      "source_record": "demos/trial_0019_bite_015_transfer.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_015_withdrawal.npz",
+      "record_id": "trial_0019_bite_015_withdrawal",
+      "source_record": "demos/trial_0019_bite_015_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_016_transfer.npz",
+      "record_id": "trial_0019_bite_016_transfer",
+      "source_record": "demos/trial_0019_bite_016_transfer.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_016_withdrawal.npz",
+      "record_id": "trial_0019_bite_016_withdrawal",
+      "source_record": "demos/trial_0019_bite_016_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_017_transfer.npz",
+      "record_id": "trial_0019_bite_017_transfer",
+      "source_record": "demos/trial_0019_bite_017_transfer.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_017_withdrawal.npz",
+      "record_id": "trial_0019_bite_017_withdrawal",
+      "source_record": "demos/trial_0019_bite_017_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_018_transfer.npz",
+      "record_id": "trial_0019_bite_018_transfer",
+      "source_record": "demos/trial_0019_bite_018_transfer.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_018_withdrawal.npz",
+      "record_id": "trial_0019_bite_018_withdrawal",
+      "source_record": "demos/trial_0019_bite_018_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_019_transfer.npz",
+      "record_id": "trial_0019_bite_019_transfer",
+      "source_record": "demos/trial_0019_bite_019_transfer.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_019_withdrawal.npz",
+      "record_id": "trial_0019_bite_019_withdrawal",
+      "source_record": "demos/trial_0019_bite_019_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_020_transfer.npz",
+      "record_id": "trial_0019_bite_020_transfer",
+      "source_record": "demos/trial_0019_bite_020_transfer.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_020_withdrawal.npz",
+      "record_id": "trial_0019_bite_020_withdrawal",
+      "source_record": "demos/trial_0019_bite_020_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_021_transfer.npz",
+      "record_id": "trial_0019_bite_021_transfer",
+      "source_record": "demos/trial_0019_bite_021_transfer.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_021_withdrawal.npz",
+      "record_id": "trial_0019_bite_021_withdrawal",
+      "source_record": "demos/trial_0019_bite_021_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_022_transfer.npz",
+      "record_id": "trial_0019_bite_022_transfer",
+      "source_record": "demos/trial_0019_bite_022_transfer.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_022_withdrawal.npz",
+      "record_id": "trial_0019_bite_022_withdrawal",
+      "source_record": "demos/trial_0019_bite_022_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_023_transfer.npz",
+      "record_id": "trial_0019_bite_023_transfer",
+      "source_record": "demos/trial_0019_bite_023_transfer.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_023_withdrawal.npz",
+      "record_id": "trial_0019_bite_023_withdrawal",
+      "source_record": "demos/trial_0019_bite_023_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_024_transfer.npz",
+      "record_id": "trial_0019_bite_024_transfer",
+      "source_record": "demos/trial_0019_bite_024_transfer.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_024_withdrawal.npz",
+      "record_id": "trial_0019_bite_024_withdrawal",
+      "source_record": "demos/trial_0019_bite_024_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_025_transfer.npz",
+      "record_id": "trial_0019_bite_025_transfer",
+      "source_record": "demos/trial_0019_bite_025_transfer.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_025_withdrawal.npz",
+      "record_id": "trial_0019_bite_025_withdrawal",
+      "source_record": "demos/trial_0019_bite_025_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_026_transfer.npz",
+      "record_id": "trial_0019_bite_026_transfer",
+      "source_record": "demos/trial_0019_bite_026_transfer.npz"
+    },
+    {
+      "file": "results/trial_0019_bite_026_withdrawal.npz",
+      "record_id": "trial_0019_bite_026_withdrawal",
+      "source_record": "demos/trial_0019_bite_026_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0020_bite_001_transfer.npz",
+      "record_id": "trial_0020_bite_001_transfer",
+      "source_record": "demos/trial_0020_bite_001_transfer.npz"
+    },
+    {
+      "file": "results/trial_0020_bite_001_withdrawal.npz",
+      "record_id": "trial_0020_bite_001_withdrawal",
+      "source_record": "demos/trial_0020_bite_001_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0020_bite_002_transfer.npz",
+      "record_id": "trial_0020_bite_002_transfer",
+      "source_record": "demos/trial_0020_bite_002_transfer.npz"
+    },
+    {
+      "file": "results/trial_0020_bite_002_withdrawal.npz",
+      "record_id": "trial_0020_bite_002_withdrawal",
+      "source_record": "demos/trial_0020_bite_002_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0020_bite_003_transfer.npz",
+      "record_id": "trial_0020_bite_003_transfer",
+      "source_record": "demos/trial_0020_bite_003_transfer.npz"
+    },
+    {
+      "file": "results/trial_0020_bite_003_withdrawal.npz",
+      "record_id": "trial_0020_bite_003_withdrawal",
+      "source_record": "demos/trial_0020_bite_003_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0020_bite_004_transfer.npz",
+      "record_id": "trial_0020_bite_004_transfer",
+      "source_record": "demos/trial_0020_bite_004_transfer.npz"
+    },
+    {
+      "file": "results/trial_0020_bite_004_withdrawal.npz",
+      "record_id": "trial_0020_bite_004_withdrawal",
+      "source_record": "demos/trial_0020_bite_004_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0020_bite_005_transfer.npz",
+      "record_id": "trial_0020_bite_005_transfer",
+      "source_record": "demos/trial_0020_bite_005_transfer.npz"
+    },
+    {
+      "file": "results/trial_0020_bite_005_withdrawal.npz",
+      "record_id": "trial_0020_bite_005_withdrawal",
+      "source_record": "demos/trial_0020_bite_005_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0020_bite_006_transfer.npz",
+      "record_id": "trial_0020_bite_006_transfer",
+      "source_record": "demos/trial_0020_bite_006_transfer.npz"
+    },
+    {
+      "file": "results/trial_0020_bite_006_withdrawal.npz",
+      "record_id": "trial_0020_bite_006_withdrawal",
+      "source_record": "demos/trial_0020_bite_006_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0020_bite_007_transfer.npz",
+      "record_id": "trial_0020_bite_007_transfer",
+      "source_record": "demos/trial_0020_bite_007_transfer.npz"
+    },
+    {
+      "file": "results/trial_0020_bite_007_withdrawal.npz",
+      "record_id": "trial_0020_bite_007_withdrawal",
+      "source_record": "demos/trial_0020_bite_007_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0020_bite_008_transfer.npz",
+      "record_id": "trial_0020_bite_008_transfer",
+      "source_record": "demos/trial_0020_bite_008_transfer.npz"
+    },
+    {
+      "file": "results/trial_0020_bite_008_withdrawal.npz",
+      "record_id": "trial_0020_bite_008_withdrawal",
+      "source_record": "demos/trial_0020_bite_008_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0020_bite_009_transfer.npz",
+      "record_id": "trial_0020_bite_009_transfer",
+      "source_record": "demos/trial_0020_bite_009_transfer.npz"
+    },
+    {
+      "file": "results/trial_0020_bite_009_withdrawal.npz",
+      "record_id": "trial_0020_bite_009_withdrawal",
+      "source_record": "demos/trial_0020_bite_009_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0020_bite_010_transfer.npz",
+      "record_id": "trial_0020_bite_010_transfer",
+      "source_record": "demos/trial_0020_bite_010_transfer.npz"
+    },
+    {
+      "file": "results/trial_0020_bite_010_withdrawal.npz",
+      "record_id": "trial_0020_bite_010_withdrawal",
+      "source_record": "demos/trial_0020_bite_010_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0020_bite_011_transfer.npz",
+      "record_id": "trial_0020_bite_011_transfer",
+      "source_record": "demos/trial_0020_bite_011_transfer.npz"
+    },
+    {
+      "file": "results/trial_0020_bite_011_withdrawal.npz",
+      "record_id": "trial_0020_bite_011_withdrawal",
+      "source_record": "demos/trial_0020_bite_011_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0020_bite_012_transfer.npz",
+      "record_id": "trial_0020_bite_012_transfer",
+      "source_record": "demos/trial_0020_bite_012_transfer.npz"
+    },
+    {
+      "file": "results/trial_0020_bite_012_withdrawal.npz",
+      "record_id": "trial_0020_bite_012_withdrawal",
+      "source_record": "demos/trial_0020_bite_012_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0020_bite_013_transfer.npz",
+      "record_id": "trial_0020_bite_013_transfer",
+      "source_record": "demos/trial_0020_bite_013_transfer.npz"
+    },
+    {
+      "file": "results/trial_0020_bite_013_withdrawal.npz",
+      "record_id": "trial_0020_bite_013_withdrawal",
+      "source_record": "demos/trial_0020_bite_013_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0020_bite_014_transfer.npz",
+      "record_id": "trial_0020_bite_014_transfer",
+      "source_record": "demos/trial_0020_bite_014_transfer.npz"
+    },
+    {
+      "file": "results/trial_0020_bite_014_withdrawal.npz",
+      "record_id": "trial_0020_bite_014_withdrawal",
+      "source_record": "demos/trial_0020_bite_014_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0020_bite_015_transfer.npz",
+      "record_id": "trial_0020_bite_015_transfer",
+      "source_record": "demos/trial_0020_bite_015_transfer.npz"
+    },
+    {
+      "file": "results/trial_0020_bite_015_withdrawal.npz",
+      "record_id": "trial_0020_bite_015_withdrawal",
+      "source_record": "demos/trial_0020_bite_015_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0020_bite_016_transfer.npz",
+      "record_id": "trial_0020_bite_016_transfer",
+      "source_record": "demos/trial_0020_bite_016_transfer.npz"
+    },
+    {
+      "file": "results/trial_0020_bite_016_withdrawal.npz",
+      "record_id": "trial_0020_bite_016_withdrawal",
+      "source_record": "demos/trial_0020_bite_016_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0020_bite_017_transfer.npz",
+      "record_id": "trial_0020_bite_017_transfer",
+      "source_record": "demos/trial_0020_bite_017_transfer.npz"
+    },
+    {
+      "file": "results/trial_0020_bite_017_withdrawal.npz",
+      "record_id": "trial_0020_bite_017_withdrawal",
+      "source_record": "demos/trial_0020_bite_017_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0020_bite_018_transfer.npz",
+      "record_id": "trial_0020_bite_018_transfer",
+      "source_record": "demos/trial_0020_bite_018_transfer.npz"
+    },
+    {
+      "file": "results/trial_0020_bite_018_withdrawal.npz",
+      "record_id": "trial_0020_bite_018_withdrawal",
+      "source_record": "demos/trial_0020_bite_018_withdrawal.npz"
+    },
+    {
+      "file": "results/trial_0020_bite_019_transfer.npz",
+      "record_id": "trial_0020_bite_019_transfer",
+      "source_record": "demos/trial_0020_bite_019_transfer.npz"
+    },
+    {
+      "file": "results/trial_0020_bite_019_withdrawal.npz",
+      "record_id": "trial_0020_bite_019_withdrawal",
+      "source_record": "demos/trial_0020_bite_019_withdrawal.npz"
+    }
+  ]
+}
