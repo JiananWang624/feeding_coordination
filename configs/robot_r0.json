@@ -1,0 +1,11 @@
+{
+  "phase1_output_path": "outputs/phase1",
+  "phase32_output_path": "outputs/phase32",
+  "phase31_output_path": "outputs/phase31",
+  "output_path": "outputs/robot_r0",
+  "mounting": {"name": "Rx(+90deg)", "robot_world_offset_m": [0.0, 0.15, 0.2]},
+  "virtual_P_to_U": {
+    "translation_m": [0.0, 0.0, 0.0],
+    "rotation": [[0.0, -1.0, 0.0], [1.0, 0.0, 0.0], [0.0, 0.0, 1.0]]
+  }
+}
