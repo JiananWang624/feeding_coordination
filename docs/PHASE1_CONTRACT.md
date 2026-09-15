@@ -5,7 +5,9 @@ as `outputs/phase1/demos/<trajectory_id>.npz`; `manifest.json` is deterministic
 metadata and schema index. Arrays retain time, source event/phase and phase
 progress, B-frame landmarks, raw and interpolation masks, Euler degrees and
 reconstructed hand SO(3), position-only plate/mouth target semantics, SEW,
-and diagnostic body features.
+and diagnostic body features. Phase 1.5 also retains raw NatNet/host source
+identifiers, exact-match flags/errors, tracked fork SE(3), tool status, and
+per-frame consistency diagnostics.
 
 `L` is Motive Global in mm. `B` is project body/world in m. The only transform
 is configured in `configs/phase1.json`: `p_B=.001 R_B_L p_L + t`, with the
@@ -19,10 +21,18 @@ reprocessed here.
 
 `Hand_XYZ` is the upstream derived fork-center plus 100 mm times negative local
 Y, not an independent marker. It is retained as an observed derived hand field.
-There is no reliable H-to-U calibration: `tool_position` and `tool_orientation`
-are NaN and `tool_pose_valid` false with `missing_tool_calibration`; no identity
-transform is assumed. `target_xyz` is mouth-target XYZ only and untrusted as an
-actual mouth measurement; plate has position only.
+Phase 1.5 defines `U` directly as the tracked `fork` rigid-body frame, so no
+anatomical H-to-U calibration is needed. Recorder rows are joined only by the
+verified exact identifier `motive_frame == natnet_frame_number`, never by
+timestamp nearest-neighbour. Their metre-valued positions use
+`p_B=R_B_L p_L+t_B` (no millimetre scale), and normalized xyzw quaternions use
+`R_B_U=R_B_L R_L_U`. `tool_pose_valid` requires an exact match, valid tracking,
+and finite nonzero raw pose; `unmatched`, `tracking_invalid`, and
+`invalid_raw_pose` remain explicit and NaN. Fork-tip/food-point calibration is
+still unavailable: `tool_tip_calibrated=false` and
+`tool_tip_calibration_status=missing_fork_tip_calibration`. `target_xyz` is
+mouth-target XYZ only and untrusted as an actual mouth measurement; plate has
+position only.
 
 SEW uses the frozen `StereoSew(project_stereo_sew_reference())` directly on
 measured B-frame S/E/W. Its frozen reference is defined in native Gen3 base

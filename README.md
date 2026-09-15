@@ -28,6 +28,7 @@ formula are recorded in
 The immutable dependency identity and required assets are recorded in
 [`DEPENDENCY_LOCK.json`](DEPENDENCY_LOCK.json).
 
-Phase 1 processes the audited human dataset into partial task trajectories and
-Stereo-SEW only (no robot replay or learning):
+Phase 1.5 processes the audited human dataset into B-frame landmarks,
+Stereo-SEW, and exact-frame-associated OptiTrack fork rigid-body trajectories
+(no robot replay or learning):
 `python scripts/process_phase1.py`, then `python scripts/plot_phase1.py`.

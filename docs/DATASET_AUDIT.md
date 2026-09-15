@@ -76,8 +76,10 @@ bite. It is not a measured mouth position or pose and is stored as untrusted.
 
 No independently measured hand-to-utensil transform, calibration ID,
 tool/grasp calibration, grasp event, or physical justification for the 100 mm
-and 80 mm offsets was found. The only named tool is `fork`. Consequently Phase
-1 emits no utensil pose and labels every record `missing_tool_calibration`.
+and 80 mm offsets was found. The only named tool is `fork`. Phase 1.5 uses its
+tracked rigid-body origin and axes directly as `U(t)`; this does not need an
+anatomical hand-to-tool transform. Fork-tip/food-point calibration is still
+missing and distinct from availability of the rigid tool trajectory.
 
 ## Missing data and exclusions
 
@@ -96,9 +98,8 @@ statistics.
 
 ## Unresolved semantics
 
-No structured demonstrator, recipient, participant, or session identifiers
-exist, so those manifest fields remain null; take names are not promoted to
-participant identities. Cross-sensor synchronization accuracy, true mouth
-pose, plate orientation, anatomical hand pose, and physical hand/tool/grasp
-calibration remain unresolved. No unsupported identities or semantic phases
-are inferred.
+Each take is its own session. The frozen metadata mapping is `trial_0015 -> D1`
+and all six other included takes -> `D0`; `recipient_id` remains null because
+recipient identities are unavailable. Cross-sensor synchronization accuracy,
+true mouth pose, plate orientation, anatomical hand pose, and a fork-tip/
+food-point transform remain unresolved.

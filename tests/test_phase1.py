@@ -19,8 +19,8 @@ def test_transform_roundtrip():
  x=np.array([[3.,4.,5.]]); y=transform_points(x,CFG); assert np.allclose((y-np.array(CFG.translation_B_m))@np.array(CFG.R_B_L)/CFG.scale_m_per_mm,x)
 def test_euler_extrinsic_xyz():
  out=process_frame(rows(),CFG); expected=np.array(CFG.R_B_L)@Rotation.from_euler('z',30,degrees=True).as_matrix()@Rotation.from_euler('y',20,degrees=True).as_matrix()@Rotation.from_euler('x',10,degrees=True).as_matrix(); assert np.allclose(out['hand_orientation'][0],expected)
-def test_missing_calibration_and_interpolation():
- d=rows(); d.loc[1,['Wrist_X','Wrist_Y','Wrist_Z']]=np.nan; d.loc[1,'wrist_valid']=False; out=process_frame(d,CFG); assert out['wrist_interpolated'][1] and not out['tool_pose_valid'].any(); assert set(out['calibration_status'])=={'missing_tool_calibration'}
+def test_pending_fork_association_and_interpolation():
+ d=rows(); d.loc[1,['Wrist_X','Wrist_Y','Wrist_Z']]=np.nan; d.loc[1,'wrist_valid']=False; out=process_frame(d,CFG); assert out['wrist_interpolated'][1] and not out['tool_pose_valid'].any(); assert set(out['calibration_status'])=={'fork_rigid_body_pending_association'}; assert not out['tool_tip_calibrated'].any()
 def test_long_gap_is_explicit_and_shoulder_motion_retained():
  d=rows(6); d.loc[1:4,['Wrist_X','Wrist_Y','Wrist_Z']]=np.nan; d.loc[1:4,'wrist_valid']=False; out=process_frame(d,CFG); assert out['wrist_long_missing'][1:5].all(); assert np.linalg.norm(out['shoulder_displacement'][-1])>0
 def test_psi_translation_wrap_and_singular():

@@ -1,7 +1,8 @@
 from __future__ import annotations
 import argparse
 from pathlib import Path
-from feeding_coordination.phase1 import Phase1Config, process_csv
+from feeding_coordination.phase1 import Phase1Config
+from feeding_coordination.phase15 import process_csv
 ROOT=Path(__file__).resolve().parents[1]
 p=argparse.ArgumentParser(); p.add_argument('--input'); p.add_argument('--output'); p.add_argument('--config',default=ROOT/'configs/phase1.json')
 if __name__=='__main__':
