@@ -32,3 +32,8 @@ Phase 1.5 processes the audited human dataset into B-frame landmarks,
 Stereo-SEW, and exact-frame-associated OptiTrack fork rigid-body trajectories
 (no robot replay or learning):
 `python scripts/process_phase1.py`, then `python scripts/plot_phase1.py`.
+
+Phase 2 replays those immutable B-frame fork poses under the documented virtual
+identity tool convention: `python scripts/process_phase2.py`. It writes derived
+robot results to `outputs/phase2/` and does not calibrate, smooth, retime, or
+learn from the trajectories.

@@ -1,0 +1,6 @@
+{
+  "phase1_output_path": "outputs/phase1",
+  "output_path": "outputs/phase2",
+  "virtual_P_to_UR": {"translation_m": [0, 0, 0], "rotation": [[1, 0, 0], [0, 1, 0], [0, 0, 1]]},
+  "mounting": {"name": "Rx(+90deg)", "robot_world_offset_m": [0.0, 0.15, 0.2]}
+}

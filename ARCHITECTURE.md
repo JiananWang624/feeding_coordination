@@ -30,6 +30,11 @@ Exact-SEW is the robot-realization dependency, not an implementation owned by
 the future feeding-coordination method and not part of that method's novelty.
 Human-data processing and learning are intentionally deferred beyond Phase 0.
 
+Phase 2 is the integration boundary between Phase 1.5 and the adapter. It
+freezes one mounted base per take, transforms valid B-frame fork poses to that
+base, and passes contiguous measured runs directly to the stateful adapter.
+The `P -> U_R` convention is exactly identity for this virtual replay only.
+
 Phase 1 now provides the upstream human-data boundary: raw Motive landmarks are
 explicitly transformed into B-frame measurements and stored with masks,
 diagnostics and frozen Stereo-SEW. Tool pose remains unavailable until a real
