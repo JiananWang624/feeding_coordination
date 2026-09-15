@@ -1,0 +1,530 @@
+{
+  "authoritative_success_residual_max": {
+    "A": {
+      "orientation_rad": 9.042989909889113e-09,
+      "position_m": 1.5142733571128556e-09,
+      "psi_rad": 3.630873379734112e-12
+    },
+    "B": {
+      "orientation_rad": 5.923805304477843e-09,
+      "position_m": 9.91952450752643e-10,
+      "psi_rad": 2.6345592374354965e-11
+    },
+    "C": {
+      "orientation_rad": 9.83077091059567e-09,
+      "position_m": 1.6462426366710942e-09,
+      "psi_rad": 3.878275478541582e-11
+    },
+    "D": {
+      "orientation_rad": 9.740925216444879e-09,
+      "position_m": 1.6311383403190575e-09,
+      "psi_rad": 3.3924418829656133e-11
+    }
+  },
+  "classification": {
+    "primary": "ORIENTATION_TARGET_CHANGE",
+    "secondary": "POSITION_TARGET_CHANGE"
+  },
+  "current_target": {
+    "lifecycle": "fresh ExactSewTrajectoryAdapter/solver per contiguous valid run in each segment",
+    "mounting": "earliest-valid shoulder per take; frozen [0,.15,.2] offset; Rx(+90deg)",
+    "position": "tracked fork rigid-body origin",
+    "psi": "stored Phase-1 psi_wrapped",
+    "rotation": "tracked raw fork rigid-body orientation",
+    "virtual_tool": "P_to_U_R identity"
+  },
+  "dependency_commit": "52d74327d98a89b82012d311dde8d6dba066b843",
+  "direct_adapter_parity": {
+    "max_abs_q_error": 0.0,
+    "samples": [
+      {
+        "adapter_status": "JOINT_LIMIT",
+        "chronological_index": 0,
+        "direct_status": "JOINT_LIMIT",
+        "max_abs_q_error": null,
+        "motive_frame": 315
+      },
+      {
+        "adapter_status": "NO_VALID_BRANCH",
+        "chronological_index": 393,
+        "direct_status": "NO_VALID_BRANCH",
+        "max_abs_q_error": null,
+        "motive_frame": 2324
+      },
+      {
+        "adapter_status": "SUCCESS_EXACT",
+        "chronological_index": 786,
+        "direct_status": "SUCCESS_EXACT",
+        "max_abs_q_error": 0.0,
+        "motive_frame": 4299
+      },
+      {
+        "adapter_status": "NO_VALID_BRANCH",
+        "chronological_index": 1179,
+        "direct_status": "NO_VALID_BRANCH",
+        "max_abs_q_error": null,
+        "motive_frame": 7131
+      },
+      {
+        "adapter_status": "SUCCESS_EXACT",
+        "chronological_index": 1573,
+        "direct_status": "SUCCESS_EXACT",
+        "max_abs_q_error": 0.0,
+        "motive_frame": 8496
+      },
+      {
+        "adapter_status": "NO_VALID_BRANCH",
+        "chronological_index": 1966,
+        "direct_status": "NO_VALID_BRANCH",
+        "max_abs_q_error": null,
+        "motive_frame": 12459
+      },
+      {
+        "adapter_status": "NO_VALID_BRANCH",
+        "chronological_index": 2359,
+        "direct_status": "NO_VALID_BRANCH",
+        "max_abs_q_error": null,
+        "motive_frame": 13826
+      },
+      {
+        "adapter_status": "SUCCESS_EXACT",
+        "chronological_index": 2752,
+        "direct_status": "SUCCESS_EXACT",
+        "max_abs_q_error": 0.0,
+        "motive_frame": 15450
+      },
+      {
+        "adapter_status": "NO_VALID_BRANCH",
+        "chronological_index": 3146,
+        "direct_status": "NO_VALID_BRANCH",
+        "max_abs_q_error": null,
+        "motive_frame": 17065
+      },
+      {
+        "adapter_status": "NO_VALID_BRANCH",
+        "chronological_index": 3539,
+        "direct_status": "NO_VALID_BRANCH",
+        "max_abs_q_error": null,
+        "motive_frame": 19554
+      },
+      {
+        "adapter_status": "NO_VALID_BRANCH",
+        "chronological_index": 3932,
+        "direct_status": "NO_VALID_BRANCH",
+        "max_abs_q_error": null,
+        "motive_frame": 22203
+      },
+      {
+        "adapter_status": "JOINT_LIMIT",
+        "chronological_index": 4326,
+        "direct_status": "JOINT_LIMIT",
+        "max_abs_q_error": null,
+        "motive_frame": 24200
+      }
+    ],
+    "status_mismatches": 0
+  },
+  "joint1_target_distances": {
+    "fork_m": {
+      "count": 4327,
+      "max": 0.7239290855850908,
+      "mean": 0.5839129130262197,
+      "median": 0.5773007004019454,
+      "p95": 0.7126260824731625
+    },
+    "old_wrist_m": {
+      "count": 4327,
+      "max": 0.6433043062088034,
+      "mean": 0.5182314737509433,
+      "median": 0.5120782545620531,
+      "p95": 0.6181333927904114
+    }
+  },
+  "mounting_parity": {
+    "base_position_difference_norm_m": 0.0,
+    "base_rotation_geodesic_difference_rad": 0.0,
+    "joint1_difference_norm_m": 0.0,
+    "joint1_native_base": [
+      0.0,
+      -3.473443754842265e-17,
+      0.15643
+    ],
+    "new": {
+      "R_B_from_base": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.220446049250313e-16,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0,
+          2.220446049250313e-16
+        ]
+      ],
+      "joint1_B": [
+        -0.448858765,
+        0.085956741,
+        0.5421983640000001
+      ],
+      "p_B_of_base": [
+        -0.448858765,
+        0.24238674100000002,
+        0.5421983640000001
+      ]
+    },
+    "new_shoulder_anchor_B": [
+      -0.448858765,
+      -0.064043259,
+      0.34219836400000003
+    ],
+    "old": {
+      "R_B_from_base": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.220446049250313e-16,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0,
+          2.220446049250313e-16
+        ]
+      ],
+      "joint1_B": [
+        -0.448858765,
+        0.085956741,
+        0.5421983640000001
+      ],
+      "p_B_of_base": [
+        -0.448858765,
+        0.24238674100000002,
+        0.5421983640000001
+      ]
+    },
+    "old_shoulder_anchor_B": [
+      -0.448858765,
+      -0.064043259,
+      0.34219836400000003
+    ],
+    "shoulder_difference_norm_m": 0.0
+  },
+  "notes": [
+    "No spherical reach threshold was assumed.",
+    "D uses identical current Phase-2 target and reset semantics."
+  ],
+  "official_phase2_D_status_mismatches": 0,
+  "old_adapter_parity": {
+    "canonical_orientation_error_rad": {
+      "count": 4344,
+      "max": 8.808532742836102e-10,
+      "mean": 1.4616122729360957e-10,
+      "median": 8.587845331618591e-11,
+      "p95": 6.411361515695463e-10
+    },
+    "wrist_position_error_m": {
+      "count": 4344,
+      "max": 0.0,
+      "mean": 0.0,
+      "median": 0.0,
+      "p95": 0.0
+    }
+  },
+  "old_target": {
+    "lifecycle": "one ExactSewSolver reused over selected trajectory",
+    "mounting": "first adapted shoulder + frozen [0,.15,.2] robot offset; Rx(+90deg)",
+    "position": "Wrist_XYZ transformed by HumanCSVAdapter; task_point.mode=wrist",
+    "rotation": "R_body_from_csv @ R_wrist_extrinsic_xyz_degrees @ rotation_input_align",
+    "rotation_body_from_csv": [
+      [
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ]
+    ],
+    "rotation_input_align": [
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "task_point_offset_m": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "ruled_out": [
+    "MOUNTING_DIFFERENCE",
+    "SOLVER_LIFECYCLE_DIFFERENCE",
+    "ADAPTER_DIFFERENCE"
+  ],
+  "schema_version": "phase2-trial0012-diagnostic-v1",
+  "scope": {
+    "common_frames": 4327,
+    "common_mask": [
+      "wrist_valid_observation",
+      "orientation_valid",
+      "tool_pose_valid",
+      "psi_valid",
+      "finite required values"
+    ],
+    "common_transfer": 2503,
+    "common_withdrawal": 1824,
+    "source_frames": 4344,
+    "take": "trial_0012"
+  },
+  "solver_lifecycle": {
+    "A1_current_reset": {
+      "JOINT_LIMIT": 112,
+      "NO_VALID_BRANCH": 0,
+      "SUCCESS_EXACT": 4215,
+      "attempted": 4327,
+      "other_statuses": {},
+      "success_percent": 97.41160157152761
+    },
+    "A2_old_single_solver": {
+      "JOINT_LIMIT": 112,
+      "NO_VALID_BRANCH": 0,
+      "SUCCESS_EXACT": 4215,
+      "attempted": 4327,
+      "other_statuses": {},
+      "success_percent": 97.41160157152761
+    },
+    "A_success_percentage_point_change_A2_minus_A1": 0.0,
+    "D1_current_reset": {
+      "JOINT_LIMIT": 964,
+      "NO_VALID_BRANCH": 2290,
+      "SUCCESS_EXACT": 1073,
+      "attempted": 4327,
+      "other_statuses": {},
+      "success_percent": 24.797781372775596
+    },
+    "D2_old_single_solver": {
+      "JOINT_LIMIT": 964,
+      "NO_VALID_BRANCH": 2290,
+      "SUCCESS_EXACT": 1073,
+      "attempted": 4327,
+      "other_statuses": {},
+      "success_percent": 24.797781372775596
+    },
+    "D_success_percentage_point_change_D2_minus_D1": 0.0
+  },
+  "status_tables": {
+    "A": {
+      "overall": {
+        "JOINT_LIMIT": 112,
+        "NO_VALID_BRANCH": 0,
+        "SUCCESS_EXACT": 4215,
+        "attempted": 4327,
+        "other_statuses": {},
+        "success_percent": 97.41160157152761
+      },
+      "transfer": {
+        "JOINT_LIMIT": 0,
+        "NO_VALID_BRANCH": 0,
+        "SUCCESS_EXACT": 2503,
+        "attempted": 2503,
+        "other_statuses": {},
+        "success_percent": 100.0
+      },
+      "withdrawal": {
+        "JOINT_LIMIT": 112,
+        "NO_VALID_BRANCH": 0,
+        "SUCCESS_EXACT": 1712,
+        "attempted": 1824,
+        "other_statuses": {},
+        "success_percent": 93.85964912280701
+      }
+    },
+    "A2": {
+      "overall": {
+        "JOINT_LIMIT": 112,
+        "NO_VALID_BRANCH": 0,
+        "SUCCESS_EXACT": 4215,
+        "attempted": 4327,
+        "other_statuses": {},
+        "success_percent": 97.41160157152761
+      },
+      "transfer": {
+        "JOINT_LIMIT": 0,
+        "NO_VALID_BRANCH": 0,
+        "SUCCESS_EXACT": 2503,
+        "attempted": 2503,
+        "other_statuses": {},
+        "success_percent": 100.0
+      },
+      "withdrawal": {
+        "JOINT_LIMIT": 112,
+        "NO_VALID_BRANCH": 0,
+        "SUCCESS_EXACT": 1712,
+        "attempted": 1824,
+        "other_statuses": {},
+        "success_percent": 93.85964912280701
+      }
+    },
+    "B": {
+      "overall": {
+        "JOINT_LIMIT": 101,
+        "NO_VALID_BRANCH": 556,
+        "SUCCESS_EXACT": 3670,
+        "attempted": 4327,
+        "other_statuses": {},
+        "success_percent": 84.81626993297897
+      },
+      "transfer": {
+        "JOINT_LIMIT": 0,
+        "NO_VALID_BRANCH": 512,
+        "SUCCESS_EXACT": 1991,
+        "attempted": 2503,
+        "other_statuses": {},
+        "success_percent": 79.54454654414702
+      },
+      "withdrawal": {
+        "JOINT_LIMIT": 101,
+        "NO_VALID_BRANCH": 44,
+        "SUCCESS_EXACT": 1679,
+        "attempted": 1824,
+        "other_statuses": {},
+        "success_percent": 92.05043859649123
+      }
+    },
+    "C": {
+      "overall": {
+        "JOINT_LIMIT": 1525,
+        "NO_VALID_BRANCH": 1280,
+        "SUCCESS_EXACT": 1522,
+        "attempted": 4327,
+        "other_statuses": {},
+        "success_percent": 35.17448578691934
+      },
+      "transfer": {
+        "JOINT_LIMIT": 905,
+        "NO_VALID_BRANCH": 823,
+        "SUCCESS_EXACT": 775,
+        "attempted": 2503,
+        "other_statuses": {},
+        "success_percent": 30.962844586496203
+      },
+      "withdrawal": {
+        "JOINT_LIMIT": 620,
+        "NO_VALID_BRANCH": 457,
+        "SUCCESS_EXACT": 747,
+        "attempted": 1824,
+        "other_statuses": {},
+        "success_percent": 40.953947368421055
+      }
+    },
+    "D": {
+      "overall": {
+        "JOINT_LIMIT": 964,
+        "NO_VALID_BRANCH": 2290,
+        "SUCCESS_EXACT": 1073,
+        "attempted": 4327,
+        "other_statuses": {},
+        "success_percent": 24.797781372775596
+      },
+      "transfer": {
+        "JOINT_LIMIT": 668,
+        "NO_VALID_BRANCH": 1583,
+        "SUCCESS_EXACT": 252,
+        "attempted": 2503,
+        "other_statuses": {},
+        "success_percent": 10.067918497802637
+      },
+      "withdrawal": {
+        "JOINT_LIMIT": 296,
+        "NO_VALID_BRANCH": 707,
+        "SUCCESS_EXACT": 821,
+        "attempted": 1824,
+        "other_statuses": {},
+        "success_percent": 45.0109649122807
+      }
+    },
+    "D2": {
+      "overall": {
+        "JOINT_LIMIT": 964,
+        "NO_VALID_BRANCH": 2290,
+        "SUCCESS_EXACT": 1073,
+        "attempted": 4327,
+        "other_statuses": {},
+        "success_percent": 24.797781372775596
+      },
+      "transfer": {
+        "JOINT_LIMIT": 668,
+        "NO_VALID_BRANCH": 1583,
+        "SUCCESS_EXACT": 252,
+        "attempted": 2503,
+        "other_statuses": {},
+        "success_percent": 10.067918497802637
+      },
+      "withdrawal": {
+        "JOINT_LIMIT": 296,
+        "NO_VALID_BRANCH": 707,
+        "SUCCESS_EXACT": 821,
+        "attempted": 1824,
+        "other_statuses": {},
+        "success_percent": 45.0109649122807
+      }
+    }
+  },
+  "target_differences": {
+    "old_canonical_to_raw_fork_geodesic_rad": {
+      "count": 4327,
+      "max": 1.5708951776889604,
+      "mean": 1.5708003040068519,
+      "median": 1.5707978039582593,
+      "p95": 1.5708305553826267
+    },
+    "old_wrist_to_fork_m": {
+      "count": 4327,
+      "max": 0.14727108999734967,
+      "mean": 0.12899634496398985,
+      "median": 0.12914804876207647,
+      "p95": 0.14278986745943037
+    },
+    "relative_rotation_mean_rotvec": [
+      -2.186442603137633e-06,
+      5.9144811244826415e-09,
+      1.5708003039938883
+    ],
+    "residual_to_constant_local_rotation_rad": {
+      "count": 4327,
+      "max": 0.00010311303685239788,
+      "mean": 1.111846862707607e-05,
+      "median": 7.695400541065798e-06,
+      "p95": 3.412837380062814e-05
+    }
+  }
+}
