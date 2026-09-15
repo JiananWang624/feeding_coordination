@@ -1,0 +1,30 @@
+{
+  "exact_sew": {
+    "dependency_name": "kinova-gen3-retargeting-comparison",
+    "repository": "https://github.com/JiananWang624/kinova-gen3-retargeting-comparison.git",
+    "submodule_path": "external/exact_sew",
+    "commit": "52d74327d98a89b82012d311dde8d6dba066b843",
+    "branch_metadata": "perf/exact-sew-speedup (informational; checkout is detached)",
+    "working_tree_clean_when_pinned": true,
+    "python_requirement": ">=3.11,<3.12",
+    "entry_points": {
+      "trajectory_solver": "sew_mimic.exact.ExactSewSolver",
+      "target": "sew_mimic.common.ExactSewTarget",
+      "robot": "sew_mimic.kinematics.gen3_kinematics",
+      "geometry": "sew_mimic.sew.Gen3StereoSewGeometry.from_robot",
+      "stereo_reference": "sew_mimic.sew.project_stereo_sew_reference"
+    },
+    "required_assets": [
+      "config.yaml",
+      "assets/kinova_gen3/scene.xml",
+      "assets/kinova_gen3/gen3.xml",
+      "cpp/exact_sew_core.cpp",
+      "CMakeLists.txt"
+    ],
+    "required_context_sha256": {
+      "config.yaml": "78f854f99ff7c0b2a348d9fcf4735ceadbeb4ece661d5d4252aabe319c93a011",
+      "assets/kinova_gen3/scene.xml": "5d3a6e91fea4da5fd7fbaf1fd7b466901ce590395ff78b61c8772b9834310815",
+      "CMakeLists.txt": "3f6de318c2110baaef95c9e94c69ef97c8d6e522cce9b582491ca13a8862ca78"
+    }
+  }
+}

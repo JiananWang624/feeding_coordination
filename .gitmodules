@@ -1,0 +1,3 @@
+[submodule "external/exact_sew"]
+	path = external/exact_sew
+	url = https://github.com/JiananWang624/kinova-gen3-retargeting-comparison.git
