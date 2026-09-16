@@ -1,0 +1,3087 @@
+{
+  "bite_metrics": "bite_metrics.csv",
+  "config": {
+    "alphas": [
+      0.001,
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "basis_functions": 12,
+    "bootstrap_resamples": 2000,
+    "bootstrap_seed": 20260915,
+    "generated_samples": 101,
+    "output_path": "outputs/generator_g0",
+    "phase1_output_path": "outputs/phase1"
+  },
+  "context_audit": "context_audit.csv",
+  "deployment_context_validated": false,
+  "duration_metrics": "duration_metrics.csv",
+  "fold_metrics": "fold_metrics.csv",
+  "generated_artifacts": [
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0012_bite_001_transfer.npz",
+      "record_id": "trial_0012_bite_001_transfer",
+      "sha256": "dd8b1e793e17613699d56e44126a0314cc0131d37c9bafc5f27caa0e22e49de4"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0012_bite_001_transfer.npz",
+      "record_id": "trial_0012_bite_001_transfer",
+      "sha256": "0296f9a285838c9d6a8f9bd3f71c65b686d30efcfedd6f25b03fb462e3a102ae"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0012_bite_001_withdrawal.npz",
+      "record_id": "trial_0012_bite_001_withdrawal",
+      "sha256": "1c94a1fb0f984c56dea7d30293a8fbd3a962fe2093fcd1ba53298518cf2a0aee"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0012_bite_001_withdrawal.npz",
+      "record_id": "trial_0012_bite_001_withdrawal",
+      "sha256": "43335d6d2e5a6dbeaa7b0c085c25b21e519e59b3b86c52e2d106b399d8866b6f"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0012_bite_002_transfer.npz",
+      "record_id": "trial_0012_bite_002_transfer",
+      "sha256": "7ffcdfc6af0fa615e46b221471e018e00e932dd9ac637e64b78b6f46bf24e150"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0012_bite_002_transfer.npz",
+      "record_id": "trial_0012_bite_002_transfer",
+      "sha256": "8a0f35f839940434de6cf4719b12d2932702d7814eaf9d51f14c18fe9735502e"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0012_bite_002_withdrawal.npz",
+      "record_id": "trial_0012_bite_002_withdrawal",
+      "sha256": "a8fa3b4e34a77c69048eb6db39119514ad019998fb2a20bafc4175d9e59707a5"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0012_bite_002_withdrawal.npz",
+      "record_id": "trial_0012_bite_002_withdrawal",
+      "sha256": "0db54fd48dd673e2f62af7e85f5bc90a3ecf4283a995a52461e74b878b0202fb"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0012_bite_003_transfer.npz",
+      "record_id": "trial_0012_bite_003_transfer",
+      "sha256": "a150a313881c38ba2bc4e66016805e5f40f2599898a4e287f5be907cae2c055d"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0012_bite_003_transfer.npz",
+      "record_id": "trial_0012_bite_003_transfer",
+      "sha256": "8cc1f376a4861fd1317b862a9fe91b63d1e36323afa89bd9fd81668321c3083f"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0012_bite_003_withdrawal.npz",
+      "record_id": "trial_0012_bite_003_withdrawal",
+      "sha256": "305396bf4a26100bd469367eee6d195c94aabf90aa38122cd996c444a6331ded"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0012_bite_003_withdrawal.npz",
+      "record_id": "trial_0012_bite_003_withdrawal",
+      "sha256": "1045b831b1d9fa6be6f927bfaa06db33ac231ba39ff98e987b59109885b64510"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0012_bite_004_transfer.npz",
+      "record_id": "trial_0012_bite_004_transfer",
+      "sha256": "ba49f69f3dd59e70bb54600928e8ed5fde5ca4d4bbb7a850fd37ec7b7e679e9c"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0012_bite_004_transfer.npz",
+      "record_id": "trial_0012_bite_004_transfer",
+      "sha256": "6e4f1fa2411f4db87a1d00315149bb6a84f95677dfb839f5f6402c7ad6789f4c"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0012_bite_004_withdrawal.npz",
+      "record_id": "trial_0012_bite_004_withdrawal",
+      "sha256": "fd02f1291da3f588ddafa6946a28bf51a3f8745af14447d4e5e5e6c76fd531db"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0012_bite_004_withdrawal.npz",
+      "record_id": "trial_0012_bite_004_withdrawal",
+      "sha256": "9e568acb3c99fe84e0ef4626d77bdf37bd78ca059ad071b3ffe468fecdcfcf31"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0012_bite_005_transfer.npz",
+      "record_id": "trial_0012_bite_005_transfer",
+      "sha256": "63fe0c10dca02588ff3efd9e0953794ee161ff8623e32a9a80e27365b7250682"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0012_bite_005_transfer.npz",
+      "record_id": "trial_0012_bite_005_transfer",
+      "sha256": "3ca8271f0f5c5ad392b9fcfc0d64c683ef7d7945a232d74173ae7f42cafd2b48"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0012_bite_005_withdrawal.npz",
+      "record_id": "trial_0012_bite_005_withdrawal",
+      "sha256": "f169df37dd3d79d8edf70d627386d24cfdce782e5d6615e8d9c0262e27cb0d75"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0012_bite_005_withdrawal.npz",
+      "record_id": "trial_0012_bite_005_withdrawal",
+      "sha256": "de145dad407d39485566d49357e3b4444c38f603d98473ce988fb0272ee024d2"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0012_bite_006_transfer.npz",
+      "record_id": "trial_0012_bite_006_transfer",
+      "sha256": "f58be7cda925a1d8c976d368c0c44f57fde636cdecd23aeba958fa9e12ec966d"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0012_bite_006_transfer.npz",
+      "record_id": "trial_0012_bite_006_transfer",
+      "sha256": "0316a403db0cc65cce433a200f943e1adb390f1101b8070723600856e48eaf4a"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0012_bite_006_withdrawal.npz",
+      "record_id": "trial_0012_bite_006_withdrawal",
+      "sha256": "c5072d750c000f7a4c8b396cc25ced48efe8d5aee45dba7a04ce704463c5342d"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0012_bite_006_withdrawal.npz",
+      "record_id": "trial_0012_bite_006_withdrawal",
+      "sha256": "088516c4333b465cbb916512d73d5ea89eec1a87d9901b0ef959fdf776c6aedf"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0012_bite_007_transfer.npz",
+      "record_id": "trial_0012_bite_007_transfer",
+      "sha256": "037169df3e59f225029f527b94d1e9cc19d7448dd66ad6a0c45b770e9bb8a761"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0012_bite_007_transfer.npz",
+      "record_id": "trial_0012_bite_007_transfer",
+      "sha256": "151aeab8206dd0605e0ded637b5a044b7b226bc5159ce7f1660e5d2a10edbc34"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0012_bite_007_withdrawal.npz",
+      "record_id": "trial_0012_bite_007_withdrawal",
+      "sha256": "fbcd05ec7dba089d45d7bf3a6e012317def1fe2e00140892ab7cc3233ea104eb"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0012_bite_007_withdrawal.npz",
+      "record_id": "trial_0012_bite_007_withdrawal",
+      "sha256": "3e505135cf5088baf00aa852a7a049ee34581d858afe0295efd83571a5120e67"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0012_bite_008_transfer.npz",
+      "record_id": "trial_0012_bite_008_transfer",
+      "sha256": "98f297b4b6f1ea83406f026d5701e07154194c2f1c6eeb5aed5de6c24d51e0cc"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0012_bite_008_transfer.npz",
+      "record_id": "trial_0012_bite_008_transfer",
+      "sha256": "a9fc962ead465644b19b1e3fc8520101880d5fd7002f20118dfa0faf0c348266"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0012_bite_008_withdrawal.npz",
+      "record_id": "trial_0012_bite_008_withdrawal",
+      "sha256": "6058987f68a8b8386e4279b58363d6282a8599c2111ea9db757a8f7cd61bfd5c"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0012_bite_008_withdrawal.npz",
+      "record_id": "trial_0012_bite_008_withdrawal",
+      "sha256": "b21a85a8ad4c4595c80fd63a949f4a06253ca62390e39903b0f6c7a33031548e"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0012_bite_009_transfer.npz",
+      "record_id": "trial_0012_bite_009_transfer",
+      "sha256": "09b201b6d8c93ce9cf151c95d2dd86a7dcc01ab686e66fc0d5ae09cf63782316"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0012_bite_009_transfer.npz",
+      "record_id": "trial_0012_bite_009_transfer",
+      "sha256": "4fa8964bb9a9efb43edb790265ec2939ef14662c8e3bf26e804fbb90e292d172"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0012_bite_009_withdrawal.npz",
+      "record_id": "trial_0012_bite_009_withdrawal",
+      "sha256": "2d74b664756f2ed0797982ef3e037580973fa1e79cfe10ad7e4901d7f5f85fe0"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0012_bite_009_withdrawal.npz",
+      "record_id": "trial_0012_bite_009_withdrawal",
+      "sha256": "02f48a40f0ca139cd368ded5dc683a2b9aaf63d66dc62df364dae3c1d2e60723"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0012_bite_010_transfer.npz",
+      "record_id": "trial_0012_bite_010_transfer",
+      "sha256": "8b202719559b67b842311cec4aaead8ffb9353cc1247dcce5afd244b17991481"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0012_bite_010_transfer.npz",
+      "record_id": "trial_0012_bite_010_transfer",
+      "sha256": "7ffe7a6228cb0b182814324bb30445c2cdead8dd5de3355e54d0574e3d4c44e6"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0012_bite_010_withdrawal.npz",
+      "record_id": "trial_0012_bite_010_withdrawal",
+      "sha256": "b42e3ce609b30501c9c70f0298d46dddeb986702f4a702c09da0c4c1e98d04c8"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0012_bite_010_withdrawal.npz",
+      "record_id": "trial_0012_bite_010_withdrawal",
+      "sha256": "37dea16e51e8bf94f7da7017816daccf901d5f3742c180899f5825089ca7e744"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0012_bite_011_transfer.npz",
+      "record_id": "trial_0012_bite_011_transfer",
+      "sha256": "c8c8b4b6f783f0c2a2472132e07965c1d0c08269c376b7df8291ad913de1cd35"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0012_bite_011_transfer.npz",
+      "record_id": "trial_0012_bite_011_transfer",
+      "sha256": "8bec31dc5daec0aab997357e5c2cf9d6f40d34873949cf2d5a2711b2e4b58f09"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0012_bite_011_withdrawal.npz",
+      "record_id": "trial_0012_bite_011_withdrawal",
+      "sha256": "d04cd58c18fb5b2faefcafb61c19b3b89dc5114f05b58bc56c8e62afe8c180f9"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0012_bite_011_withdrawal.npz",
+      "record_id": "trial_0012_bite_011_withdrawal",
+      "sha256": "4f5813bfd1520124fbc6c42e347f272d99a976b59bc273c09a70cc351b3a8d8a"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0012_bite_012_transfer.npz",
+      "record_id": "trial_0012_bite_012_transfer",
+      "sha256": "49b35472515f19b290d84b542e076a82be0760c71601995447073cdfaaa6d6b2"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0012_bite_012_transfer.npz",
+      "record_id": "trial_0012_bite_012_transfer",
+      "sha256": "b089ad2a963e158993220d9e13f877d6506c03885358b9d3aece76ee0f20c5c2"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0012_bite_012_withdrawal.npz",
+      "record_id": "trial_0012_bite_012_withdrawal",
+      "sha256": "3e3f0c66f50426adaec39617bc8abbe2c64df3c870c9f004d85f74d6616c7dc7"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0012_bite_012_withdrawal.npz",
+      "record_id": "trial_0012_bite_012_withdrawal",
+      "sha256": "d1fe864d7fd9f6018a898f88b29b16dcba0b2ba4be1c7baa249d1fd71e960735"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0012_bite_013_transfer.npz",
+      "record_id": "trial_0012_bite_013_transfer",
+      "sha256": "8037f2b29ff52885203c29e6c6d0b765a5a75aa19d6d6f6160e602d4b102ead4"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0012_bite_013_transfer.npz",
+      "record_id": "trial_0012_bite_013_transfer",
+      "sha256": "5790b068f4b942b751fdc05ba629181b406787755458a62383da38bae8af60bf"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0012_bite_013_withdrawal.npz",
+      "record_id": "trial_0012_bite_013_withdrawal",
+      "sha256": "326fed3217f4067ceff6d4578beabdae9937b73c6ea4205d7495e22943cd2fd3"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0012_bite_013_withdrawal.npz",
+      "record_id": "trial_0012_bite_013_withdrawal",
+      "sha256": "84aa2479c155c8ecc30ae055aaf191ead9084dff4e92b7a24f25a78d5519cd5b"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0012_bite_014_transfer.npz",
+      "record_id": "trial_0012_bite_014_transfer",
+      "sha256": "8c2538acc69fc0dafba27ba79fa4c6dda5aa41ed0dbe9168cb7006670b429d24"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0012_bite_014_transfer.npz",
+      "record_id": "trial_0012_bite_014_transfer",
+      "sha256": "1d661c45090bbf692089e6534ff1b38fdadb116278c2f9eeb9fde6c0824c8a40"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0012_bite_014_withdrawal.npz",
+      "record_id": "trial_0012_bite_014_withdrawal",
+      "sha256": "6de23982fbd7134f6df7159889249e5f8f4ea2afadc5e323d52f8d6269dcba3a"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0012_bite_014_withdrawal.npz",
+      "record_id": "trial_0012_bite_014_withdrawal",
+      "sha256": "2eb8e8e1b6f9872b45aa4f47d1d3ca545b145a101cac37cc8c6d180be4905c0a"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0012_bite_015_transfer.npz",
+      "record_id": "trial_0012_bite_015_transfer",
+      "sha256": "17d6e4f5ce3c75a82ba3674816db84a2ef1478f6da9f105a97f1b045e45eadb9"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0012_bite_015_transfer.npz",
+      "record_id": "trial_0012_bite_015_transfer",
+      "sha256": "6fc05be8a9628f06f5a861e8ae58072d75e793de2c660fab0c1bee2205314c1b"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0012_bite_015_withdrawal.npz",
+      "record_id": "trial_0012_bite_015_withdrawal",
+      "sha256": "d7aa1e4dd9961da20e2b99920de3875481d2920fd8597eacef96e7ce773dd837"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0012_bite_015_withdrawal.npz",
+      "record_id": "trial_0012_bite_015_withdrawal",
+      "sha256": "375a1f96cd6f78e90dff038bb07067701c2f7ed4a1616cfb89613beca7ce8ef9"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0013_bite_001_transfer.npz",
+      "record_id": "trial_0013_bite_001_transfer",
+      "sha256": "a150d7aefe80f44885519a5f28d3d3157d79ae2e37c1d0b565eac3bfa61967cf"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0013_bite_001_transfer.npz",
+      "record_id": "trial_0013_bite_001_transfer",
+      "sha256": "1d4dc5b64a9dfa001b1ef41fb43981a8af33186febf213604e2d4642c90f2b88"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0013_bite_001_withdrawal.npz",
+      "record_id": "trial_0013_bite_001_withdrawal",
+      "sha256": "aab72e7d75a96fe34510e50da002980fcf0965b9d7015bfb311d72d13e1c9a67"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0013_bite_001_withdrawal.npz",
+      "record_id": "trial_0013_bite_001_withdrawal",
+      "sha256": "345b9ed06b5346ee113a0fab93af58290cc4b6459cc965e91907d2ac00353c64"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0013_bite_002_transfer.npz",
+      "record_id": "trial_0013_bite_002_transfer",
+      "sha256": "c6f17d9f6d097e9a00b0c17e4369e8f7f1fedbdf3f73f18252a64ca8bbb1c6bd"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0013_bite_002_transfer.npz",
+      "record_id": "trial_0013_bite_002_transfer",
+      "sha256": "3822bef7056b0dc199a7ed5b1698d205c35285d94aa20ff431bd326e21e5e6b1"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0013_bite_002_withdrawal.npz",
+      "record_id": "trial_0013_bite_002_withdrawal",
+      "sha256": "e90ff22e2868504862fdd355afbd841a2b5174e070e96cc84d648fde0f00888f"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0013_bite_002_withdrawal.npz",
+      "record_id": "trial_0013_bite_002_withdrawal",
+      "sha256": "6ee23f1099eb7d6ef0b8c744a9312462533fe451b166bd7a2cf179877a25eee6"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0013_bite_003_transfer.npz",
+      "record_id": "trial_0013_bite_003_transfer",
+      "sha256": "ea7082498a6b1e2eff55199c5124c6a490b7bded5eb6424b1ba3114f3bedb1bc"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0013_bite_003_transfer.npz",
+      "record_id": "trial_0013_bite_003_transfer",
+      "sha256": "77c39a8c50b5d182d2ed124d65aa43b3a693053368ebbca057972cf7bea793bc"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0013_bite_003_withdrawal.npz",
+      "record_id": "trial_0013_bite_003_withdrawal",
+      "sha256": "1f4ddc9996cbd19a2726f5af976f8a05bd556196e5f2a0b532de44b554dfbdfb"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0013_bite_003_withdrawal.npz",
+      "record_id": "trial_0013_bite_003_withdrawal",
+      "sha256": "0b3294603e44716f6d710c4bafa778edbf292e194e8f0d64639657a8e0b30439"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0013_bite_004_transfer.npz",
+      "record_id": "trial_0013_bite_004_transfer",
+      "sha256": "6475f2ea41cd35d72604ee17c2eb6db8cae4148b5a3c81e70ec7829aab3845eb"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0013_bite_004_transfer.npz",
+      "record_id": "trial_0013_bite_004_transfer",
+      "sha256": "39e9ee9e171590474a3981b0b803ea4b357256772934205e93f06054531057a5"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0013_bite_004_withdrawal.npz",
+      "record_id": "trial_0013_bite_004_withdrawal",
+      "sha256": "63d4b0be430dd44c4eb9022f0761ce4b3dde7499e0b845a65e0784f1d90a758d"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0013_bite_004_withdrawal.npz",
+      "record_id": "trial_0013_bite_004_withdrawal",
+      "sha256": "a292cd0422e27b45753747591fbefee6e502a4690cf706e783830afa06492d77"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0013_bite_005_transfer.npz",
+      "record_id": "trial_0013_bite_005_transfer",
+      "sha256": "0b6911a81305b362950945aea5235f6f30ba06600675cff9e069fea8db5a2f26"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0013_bite_005_transfer.npz",
+      "record_id": "trial_0013_bite_005_transfer",
+      "sha256": "f4ecd4bdf51c29b7f89f481cefec5a211a4cc4fb2bbed424840df70cb725780b"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0013_bite_005_withdrawal.npz",
+      "record_id": "trial_0013_bite_005_withdrawal",
+      "sha256": "4a3f8e517c949de22d7ab6a6e29c2cd3b298b5e0e6b5ad3dec60db0af1929a43"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0013_bite_005_withdrawal.npz",
+      "record_id": "trial_0013_bite_005_withdrawal",
+      "sha256": "b4860ed2116c9f71f89c87433a4e62504e5599d56bfee91eff0181363a698a25"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0013_bite_006_transfer.npz",
+      "record_id": "trial_0013_bite_006_transfer",
+      "sha256": "cef8c036985eae09717c6dbceb7d4bcb218ed302f37583c351f2138405c22b54"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0013_bite_006_transfer.npz",
+      "record_id": "trial_0013_bite_006_transfer",
+      "sha256": "0eb50b7d263be84bfdc5d8a55fa940c68ce923faf0a3e6d4048b2b2a9adaa461"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0013_bite_006_withdrawal.npz",
+      "record_id": "trial_0013_bite_006_withdrawal",
+      "sha256": "5c8c301ce5be82d24fe089a5f3594497cae39c5117aacb5339a4a670679db8ca"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0013_bite_006_withdrawal.npz",
+      "record_id": "trial_0013_bite_006_withdrawal",
+      "sha256": "97260a0e7c12dfeb26d2882c43627e98b0ec6247a6eb4e455499d376e82747c6"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0013_bite_007_transfer.npz",
+      "record_id": "trial_0013_bite_007_transfer",
+      "sha256": "7d4a4128c1c3f795330821f3e153d5b5e76ec079655fd644c37d74b743ee0b31"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0013_bite_007_transfer.npz",
+      "record_id": "trial_0013_bite_007_transfer",
+      "sha256": "9c230e4a97f93a5077d52a24360603867faaa0440367ff2fc430ed6b78b22e6e"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0013_bite_007_withdrawal.npz",
+      "record_id": "trial_0013_bite_007_withdrawal",
+      "sha256": "756fe6dfa69539cb3761fb498c4edef678947c0e675cb9b3e61888f23a6b4841"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0013_bite_007_withdrawal.npz",
+      "record_id": "trial_0013_bite_007_withdrawal",
+      "sha256": "101d5fe6b3b833a94aa178db0916fc8e36c008caaee683ea9837a76dae7e5b7d"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0013_bite_008_transfer.npz",
+      "record_id": "trial_0013_bite_008_transfer",
+      "sha256": "dd0b38311f123ff4763847e9252415a2fe252422a2169d76ae94e2462d783dba"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0013_bite_008_transfer.npz",
+      "record_id": "trial_0013_bite_008_transfer",
+      "sha256": "b6675c286e5b729557c13856f3d04125a4c72da633a87520a3460c7dc6672969"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0013_bite_008_withdrawal.npz",
+      "record_id": "trial_0013_bite_008_withdrawal",
+      "sha256": "2ce4b3f5505711cd99a0b0dc3231b61385b1eef95f63636ec51d74c6666a2714"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0013_bite_008_withdrawal.npz",
+      "record_id": "trial_0013_bite_008_withdrawal",
+      "sha256": "0be1ee7ce5ca81da98499450419567e2e3d420f0159d7ff2b6108bf8d04dd5ec"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0013_bite_009_transfer.npz",
+      "record_id": "trial_0013_bite_009_transfer",
+      "sha256": "55ac97fc3a46222f69a9bf61397d4d4df9a99e6d507df1a4c426b7acbf7ffd2e"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0013_bite_009_transfer.npz",
+      "record_id": "trial_0013_bite_009_transfer",
+      "sha256": "956c1b5adfb9d2e1552013cb83e9f1306fba298168d540cf77d1104c5559e7b9"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0013_bite_009_withdrawal.npz",
+      "record_id": "trial_0013_bite_009_withdrawal",
+      "sha256": "d5e2bf2f92fed7525e431a99d2c0a23c43b3feb6d27f14841219bba21d841ff0"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0013_bite_009_withdrawal.npz",
+      "record_id": "trial_0013_bite_009_withdrawal",
+      "sha256": "4968afc26ff98e1024a4930b31ced8c494e570826b1f0c2185e1e30fed6fac70"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0013_bite_010_transfer.npz",
+      "record_id": "trial_0013_bite_010_transfer",
+      "sha256": "f43306d98f199740bafdb324e9ce6de97212f43fe23ddb462a64cb7c7ce7be16"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0013_bite_010_transfer.npz",
+      "record_id": "trial_0013_bite_010_transfer",
+      "sha256": "d5af81d7d0bac14693adfab4e2be187485b1824212185ca6a67a3e421270e63e"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0013_bite_010_withdrawal.npz",
+      "record_id": "trial_0013_bite_010_withdrawal",
+      "sha256": "721bfcd224edbcf85747139860854ebe39aa0a237e8dc89de6a0b20e720d74dd"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0013_bite_010_withdrawal.npz",
+      "record_id": "trial_0013_bite_010_withdrawal",
+      "sha256": "c68539ec0d689e76eeab08ad5d8f707bfdf4f00b1ba85b8d19ec5cfbb1dc29d5"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0013_bite_011_transfer.npz",
+      "record_id": "trial_0013_bite_011_transfer",
+      "sha256": "fe0990894cc59fc025c57b0140da5e9374176e82aeb2d2b916df838d56ef87bf"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0013_bite_011_transfer.npz",
+      "record_id": "trial_0013_bite_011_transfer",
+      "sha256": "948a689ca6aff641dad16b87644d2f98feb2747c8a3156a5f6a32bc18bd2d935"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0013_bite_011_withdrawal.npz",
+      "record_id": "trial_0013_bite_011_withdrawal",
+      "sha256": "7bedb2a110b18def5a53baab4de7c76b4247a18ef42c5b26190fc5ae3c5f4a0a"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0013_bite_011_withdrawal.npz",
+      "record_id": "trial_0013_bite_011_withdrawal",
+      "sha256": "942541da7573ee052757bbfb1f6d24264f49b481997527bdbb1ef3b381b3cbc1"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0013_bite_012_transfer.npz",
+      "record_id": "trial_0013_bite_012_transfer",
+      "sha256": "59d811b37fb3b16514d5095965c810bcde94d70fb956c91e2c80cdda0d26237f"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0013_bite_012_transfer.npz",
+      "record_id": "trial_0013_bite_012_transfer",
+      "sha256": "e0a6b4f19005d005c5c9abf69b7b8a930921a285d2bac422b9c4ba7023d28e9a"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0013_bite_012_withdrawal.npz",
+      "record_id": "trial_0013_bite_012_withdrawal",
+      "sha256": "800a6353400569c67e69d8dcf1ad2553487087c77dd2cb8850549d4ff88ec367"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0013_bite_012_withdrawal.npz",
+      "record_id": "trial_0013_bite_012_withdrawal",
+      "sha256": "d94cd031448ba99fec60d927b8f4fe66e6b3f1198af71ae0179e6d9860363914"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0014_bite_001_transfer.npz",
+      "record_id": "trial_0014_bite_001_transfer",
+      "sha256": "27708caf9354d70be00b8c07bd7c72cbd270c79b5a537754c7833e13d107dca8"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0014_bite_001_transfer.npz",
+      "record_id": "trial_0014_bite_001_transfer",
+      "sha256": "721069e4868c7be9aa48359fc696b36bf4366e76c7632ac434e34ddcd3b80dda"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0014_bite_001_withdrawal.npz",
+      "record_id": "trial_0014_bite_001_withdrawal",
+      "sha256": "d5e95f4712355b2daaa03b5b6ccd93f945643552aa7ec6051612afe369b11673"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0014_bite_001_withdrawal.npz",
+      "record_id": "trial_0014_bite_001_withdrawal",
+      "sha256": "eb8ba049c2a7fb9ef5fc35c0a597b91aca5ffca4877319a6b6a8e80515af4d45"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0014_bite_002_transfer.npz",
+      "record_id": "trial_0014_bite_002_transfer",
+      "sha256": "385faa3d2fb5d3da19289d6a2f436b5deeb4d70eb230e3d61ca87d750b1795e9"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0014_bite_002_transfer.npz",
+      "record_id": "trial_0014_bite_002_transfer",
+      "sha256": "0ad2260978a08d3a64c88d295384b50018261a3e9e9001e9c952e818457d2e30"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0014_bite_002_withdrawal.npz",
+      "record_id": "trial_0014_bite_002_withdrawal",
+      "sha256": "5bfa1fd9f043a668babe1dda068f9a61b03f4496e5174c8e1b3973424aa909da"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0014_bite_002_withdrawal.npz",
+      "record_id": "trial_0014_bite_002_withdrawal",
+      "sha256": "168ecfa072f9381ab102f788c1351d759814fbd18746e0d4a71d95efff2673fb"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0014_bite_003_transfer.npz",
+      "record_id": "trial_0014_bite_003_transfer",
+      "sha256": "c47f8840e7df4507424da8b63c16921f868c8fd8fa60447e9e4ec17d363215d3"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0014_bite_003_transfer.npz",
+      "record_id": "trial_0014_bite_003_transfer",
+      "sha256": "bbb5c3a590f3ae775c29ad47fe1f2d113b1b127550a4179f0ad4c72264f7c325"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0014_bite_003_withdrawal.npz",
+      "record_id": "trial_0014_bite_003_withdrawal",
+      "sha256": "caef67e26c8c4fd773af22f53d82dc91c25b195933017648904c3bf087545bce"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0014_bite_003_withdrawal.npz",
+      "record_id": "trial_0014_bite_003_withdrawal",
+      "sha256": "1796b883cfcf5b6214d3dcf5b98497943946cf3dd8e4b10b5706110c7cb06d68"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0014_bite_004_transfer.npz",
+      "record_id": "trial_0014_bite_004_transfer",
+      "sha256": "d886a5435df28b3ff06713fd02099fff64fbac82c40a163784f3046bfc0dbbe5"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0014_bite_004_transfer.npz",
+      "record_id": "trial_0014_bite_004_transfer",
+      "sha256": "59c3d894a974b147447efbc30987a19bb3aa83ef0f23f40dacd4da1301548243"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0014_bite_004_withdrawal.npz",
+      "record_id": "trial_0014_bite_004_withdrawal",
+      "sha256": "c6247e57361103bb4cfca04659e0b131fae026a8f6734af0613b60242bfb3720"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0014_bite_004_withdrawal.npz",
+      "record_id": "trial_0014_bite_004_withdrawal",
+      "sha256": "a13c92f0a7514f56ca9fac234d2ad1298b0cce13a02a9a139ae13fb26eb2e877"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0014_bite_005_transfer.npz",
+      "record_id": "trial_0014_bite_005_transfer",
+      "sha256": "dc1a2b7f01361cbcf0f4efb2f8f6ede314afc08dc5f5b67404585ad41299a671"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0014_bite_005_transfer.npz",
+      "record_id": "trial_0014_bite_005_transfer",
+      "sha256": "470796b893e7f1d6e658febe22b8749a26cbde7b6c8330f67d0277613a109c24"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0014_bite_005_withdrawal.npz",
+      "record_id": "trial_0014_bite_005_withdrawal",
+      "sha256": "37fc6c5a6111f10e60f9bcfb2fb816792c4a79afefed534105b986dcdd4b99f2"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0014_bite_005_withdrawal.npz",
+      "record_id": "trial_0014_bite_005_withdrawal",
+      "sha256": "bd06d63abbde5d4c08a7a329386e1c3b1c103cc44e27489c8217b57063822541"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0014_bite_006_transfer.npz",
+      "record_id": "trial_0014_bite_006_transfer",
+      "sha256": "9d7599f557932b493e9a5c7b9e417d120746e645434adb65a49878a5bb057e9b"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0014_bite_006_transfer.npz",
+      "record_id": "trial_0014_bite_006_transfer",
+      "sha256": "e85bb223fd26672c6dfe1d623e2b6b0436670c87afa54ab3a75ec47bb830d2de"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0014_bite_006_withdrawal.npz",
+      "record_id": "trial_0014_bite_006_withdrawal",
+      "sha256": "2ca190afe3f88fd67bca1c639be9e245b533b71cc2a85a58eb86b20c43213793"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0014_bite_006_withdrawal.npz",
+      "record_id": "trial_0014_bite_006_withdrawal",
+      "sha256": "c826503237c716e8b64237ce1993427f3e551c4c98e3c22f2084c9d130d0edfa"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0014_bite_007_transfer.npz",
+      "record_id": "trial_0014_bite_007_transfer",
+      "sha256": "0dbf9a30571233054d9af99588f9cf089d23ec1797495a289e131050bb964c2f"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0014_bite_007_transfer.npz",
+      "record_id": "trial_0014_bite_007_transfer",
+      "sha256": "5d48036aa3e44128d89c5a88ddacabdf06d0744c02b6a5d90253eaf11e4d126b"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0014_bite_007_withdrawal.npz",
+      "record_id": "trial_0014_bite_007_withdrawal",
+      "sha256": "bf4e89d7c93877afe16dd7c1fac57e2044e61ad7f69d18b6401bd992fbbb0920"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0014_bite_007_withdrawal.npz",
+      "record_id": "trial_0014_bite_007_withdrawal",
+      "sha256": "f22e32352a1b5f8f82bae4f28a90ac52962201e47c6501143946e03c2078485e"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0014_bite_008_transfer.npz",
+      "record_id": "trial_0014_bite_008_transfer",
+      "sha256": "c9f0628a9b6ba5e8842018ab428ed6aa88f5574ec7aef240b65eb22e2b9be2be"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0014_bite_008_transfer.npz",
+      "record_id": "trial_0014_bite_008_transfer",
+      "sha256": "076d6496661433233b4974c164bc9cfd48f63a40f65d63ff143ac98855466ee0"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0014_bite_008_withdrawal.npz",
+      "record_id": "trial_0014_bite_008_withdrawal",
+      "sha256": "4f29850e531c4b134771e7b3b32e5504f57c675c26d511f510e3cd3690753d81"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0014_bite_008_withdrawal.npz",
+      "record_id": "trial_0014_bite_008_withdrawal",
+      "sha256": "923e19a5036b116216a44941ef42029ea903a4968dd066e456322f75440281e3"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0014_bite_009_transfer.npz",
+      "record_id": "trial_0014_bite_009_transfer",
+      "sha256": "f949cabf89f98cf3d2967ac9540d6d347d9ae4e593ff73628772381ccdce5eba"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0014_bite_009_transfer.npz",
+      "record_id": "trial_0014_bite_009_transfer",
+      "sha256": "8f858759159b2c225cc26eb0c84f24f5d09b998d6a57a63655bd61506786ad02"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0014_bite_009_withdrawal.npz",
+      "record_id": "trial_0014_bite_009_withdrawal",
+      "sha256": "f7a65d1b5804e379e1922d1459b1270fdf783c56ebf841293ee83db8b905fa68"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0014_bite_009_withdrawal.npz",
+      "record_id": "trial_0014_bite_009_withdrawal",
+      "sha256": "9cd05a08fa171c07d369deba75264bb19218f23aa1200a9854d866f0fca13281"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0014_bite_010_transfer.npz",
+      "record_id": "trial_0014_bite_010_transfer",
+      "sha256": "273bc51b5a93fafd4fab9960c32ce1ba32918cb0121c2f110d99b785318f307c"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0014_bite_010_transfer.npz",
+      "record_id": "trial_0014_bite_010_transfer",
+      "sha256": "455b9c453feeee9dbae1274230e739e6893b2fcf8afd26a97c6382af41cd4034"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0014_bite_010_withdrawal.npz",
+      "record_id": "trial_0014_bite_010_withdrawal",
+      "sha256": "3c0824904426a2c6a0165e791fdb34f205576ed5d458ea1f79f822d4c3970713"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0014_bite_010_withdrawal.npz",
+      "record_id": "trial_0014_bite_010_withdrawal",
+      "sha256": "d8303bca43b599bd7727a67a997b726fda383cf4d8f3d3b8e536c33e800c555e"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0014_bite_011_transfer.npz",
+      "record_id": "trial_0014_bite_011_transfer",
+      "sha256": "0f8d5abd37afa365ef5ec0d0e63344104cf5d40b47fed74902370850a569ad9e"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0014_bite_011_transfer.npz",
+      "record_id": "trial_0014_bite_011_transfer",
+      "sha256": "9deaf90518d2be288269658d77dacfd1dfd6677ec18b1fb2544500981b85a531"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0014_bite_011_withdrawal.npz",
+      "record_id": "trial_0014_bite_011_withdrawal",
+      "sha256": "22536e5819a820a9616496ab673a3a312c29f4a028d60fe19653e995a940665e"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0014_bite_011_withdrawal.npz",
+      "record_id": "trial_0014_bite_011_withdrawal",
+      "sha256": "5e27667a59caca0ce0ba2eab8c999fc5f122267bbfd3d3e798fa5b3d2f8ff0f6"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0014_bite_012_transfer.npz",
+      "record_id": "trial_0014_bite_012_transfer",
+      "sha256": "7ac46cadefad96bc97e72ec7fc6968bce3eeda4119e80d7c7a315138382ad755"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0014_bite_012_transfer.npz",
+      "record_id": "trial_0014_bite_012_transfer",
+      "sha256": "544b7b6f7d56e313435d4d323b91a8ae9107da28f77bec63e504e49b9b392e86"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0014_bite_012_withdrawal.npz",
+      "record_id": "trial_0014_bite_012_withdrawal",
+      "sha256": "b50b2e4c504d6db11c50da5f07a858f0b03f793fd7392dd6b263f42804f0e9c8"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0014_bite_012_withdrawal.npz",
+      "record_id": "trial_0014_bite_012_withdrawal",
+      "sha256": "81c3c10692ca0f8d55e12fae7c1cb3fe42f386ed7d2baaf08b191d1e06ea772d"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0014_bite_013_transfer.npz",
+      "record_id": "trial_0014_bite_013_transfer",
+      "sha256": "6ec9997409e8628e75aa1114e1d618ada51d276fbadbfb3db0400421fdfd55d7"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0014_bite_013_transfer.npz",
+      "record_id": "trial_0014_bite_013_transfer",
+      "sha256": "dde140d17fc4c570841cff9081844678c1a5bf2f7554fcee91426e4c37ffcfc4"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0014_bite_013_withdrawal.npz",
+      "record_id": "trial_0014_bite_013_withdrawal",
+      "sha256": "25fc442e05b5ed5f42895486cbbb25c6700e0d1469f943cce520d72ea372f1a2"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0014_bite_013_withdrawal.npz",
+      "record_id": "trial_0014_bite_013_withdrawal",
+      "sha256": "70d09d15a9638fa9586ecb8686115372f69df316d5b2036df0a74557ef812abf"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0014_bite_014_transfer.npz",
+      "record_id": "trial_0014_bite_014_transfer",
+      "sha256": "02255c14f3dbcc3fdbf7996dda082329e4293a136bf059b8b1e20023028431d4"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0014_bite_014_transfer.npz",
+      "record_id": "trial_0014_bite_014_transfer",
+      "sha256": "5419f273d66f0f556b2cd2b3a299b2a3df9ac178261ef437d255f9d8df13c58c"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0014_bite_014_withdrawal.npz",
+      "record_id": "trial_0014_bite_014_withdrawal",
+      "sha256": "3f458b70397c15083bc3c778c525e54d3e5529955be0a5e86c6238b0b03d7ef3"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0014_bite_014_withdrawal.npz",
+      "record_id": "trial_0014_bite_014_withdrawal",
+      "sha256": "de8192432c1ac14ae1d8bf2ad90e804041a3eb4741c8000a7de3fbbbe55d15ab"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0014_bite_015_transfer.npz",
+      "record_id": "trial_0014_bite_015_transfer",
+      "sha256": "82ec6838c84cc8a3cc3b9ed6eb587d7e71b0fc61163f7211a6f4f8ed6907d638"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0014_bite_015_transfer.npz",
+      "record_id": "trial_0014_bite_015_transfer",
+      "sha256": "4400755f7e5580b6a6b97eddea076197231b17099aa593459f4cc7f2f75a4396"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0014_bite_015_withdrawal.npz",
+      "record_id": "trial_0014_bite_015_withdrawal",
+      "sha256": "a29128ee12048a40a6d65b5f716f46c15f7ca80aed049c021df3d1bb7bd6879a"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0014_bite_015_withdrawal.npz",
+      "record_id": "trial_0014_bite_015_withdrawal",
+      "sha256": "05cc589e8694cfb36a3b3ac115603cf3046be794e3d170c340a7c71ada7f87c8"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0014_bite_016_transfer.npz",
+      "record_id": "trial_0014_bite_016_transfer",
+      "sha256": "1145536b8cb7584e70029a7dee210e2f66dbe40c48bc96c8be817f909a1d54be"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0014_bite_016_transfer.npz",
+      "record_id": "trial_0014_bite_016_transfer",
+      "sha256": "92e09cea74128540f41bf9d65c35d7f0e04ebe5393b7a2bf0b7814531c24af44"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0014_bite_016_withdrawal.npz",
+      "record_id": "trial_0014_bite_016_withdrawal",
+      "sha256": "3d8e9ba29637ae30b92607435aacef75987569036a97c76b7f38a01ac7e9c21a"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0014_bite_016_withdrawal.npz",
+      "record_id": "trial_0014_bite_016_withdrawal",
+      "sha256": "d26fa258411098cb2f4e462a41c19a54fa1c714cb193ec901342cc239349bec8"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0014_bite_017_transfer.npz",
+      "record_id": "trial_0014_bite_017_transfer",
+      "sha256": "e93b2b2130f3b0565ab1557b1980676258f62cbc1748d229745740041eda9e2e"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0014_bite_017_transfer.npz",
+      "record_id": "trial_0014_bite_017_transfer",
+      "sha256": "40e30525d14e6a637052724e6e9515860ccb7092e103d1cf58a7468fd5d3e7d7"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0014_bite_017_withdrawal.npz",
+      "record_id": "trial_0014_bite_017_withdrawal",
+      "sha256": "65deaac4dee290505bff148423f5f29bce2d55a40829757a954caf4b0dd73d88"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0014_bite_017_withdrawal.npz",
+      "record_id": "trial_0014_bite_017_withdrawal",
+      "sha256": "874f15ed28a708eeb98bf96c240146575c4dd2cec471cec68d83af0f0e4c2278"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0014_bite_018_transfer.npz",
+      "record_id": "trial_0014_bite_018_transfer",
+      "sha256": "9db4617456d33386dd2df3b1c37d4f5b8f82f8d534c4455e5bae7faa743d210e"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0014_bite_018_transfer.npz",
+      "record_id": "trial_0014_bite_018_transfer",
+      "sha256": "8ae360c3f457aae7a14b4970f310bdd0b4844b116c5c65fab4491e8770d963f4"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0014_bite_018_withdrawal.npz",
+      "record_id": "trial_0014_bite_018_withdrawal",
+      "sha256": "066b78ec72df02bd68da643f97af80749ddcec2d5acf72f2c7e1132b1f735a1d"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0014_bite_018_withdrawal.npz",
+      "record_id": "trial_0014_bite_018_withdrawal",
+      "sha256": "b3119cee31a749ccee8cf5dc72c357d6bd2f244fb68b392332814c0260579464"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0014_bite_019_transfer.npz",
+      "record_id": "trial_0014_bite_019_transfer",
+      "sha256": "e34c22c8cd92f920aa373fbf027d405f708e50182f888443f40f2f9ccd6ca02a"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0014_bite_019_transfer.npz",
+      "record_id": "trial_0014_bite_019_transfer",
+      "sha256": "bcbd40ea043a0b0d9c1d0eb88893f603acf5646891a409c1988c7a5f503b8971"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0014_bite_019_withdrawal.npz",
+      "record_id": "trial_0014_bite_019_withdrawal",
+      "sha256": "dd28404e29db97a66b866b21c3e02e9b27cb1ad6bba21fe0e52428d1ccbaf28b"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0014_bite_019_withdrawal.npz",
+      "record_id": "trial_0014_bite_019_withdrawal",
+      "sha256": "68c7181f3b2b3908e8ad541acf5e6a00d75201f2f20b4659d8ae0a182f636fe3"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0014_bite_020_transfer.npz",
+      "record_id": "trial_0014_bite_020_transfer",
+      "sha256": "6fe0cb74740a495ec717218629ba277eb9e10d1574b5d03db9fdf448d19485f8"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0014_bite_020_transfer.npz",
+      "record_id": "trial_0014_bite_020_transfer",
+      "sha256": "4c65a90742b807af5baebfe1d98e35ca68c2e8f68b9d1e3560954327ebbdad3f"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0014_bite_020_withdrawal.npz",
+      "record_id": "trial_0014_bite_020_withdrawal",
+      "sha256": "28783526eb2185541cc1148ff0e22e40b7b16193afcbc9224e24ac77a88cc5a8"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0014_bite_020_withdrawal.npz",
+      "record_id": "trial_0014_bite_020_withdrawal",
+      "sha256": "3c5f9a60c941c897031aa408216bcc24922851891aafbaf490fef2cb364324c4"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0014_bite_021_transfer.npz",
+      "record_id": "trial_0014_bite_021_transfer",
+      "sha256": "90c38ec6b645b152666465007a5f138a289909fd6f878a15f7e25f9e8155e3a1"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0014_bite_021_transfer.npz",
+      "record_id": "trial_0014_bite_021_transfer",
+      "sha256": "086c25474406cdc3e49b337cbef1dd1416faf41ac0c4b773a98f63a8b6975a91"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0014_bite_021_withdrawal.npz",
+      "record_id": "trial_0014_bite_021_withdrawal",
+      "sha256": "fc994a1f998f9b7bae8ec185ed8fed9728b0eda85f4195a00c55a8b072e7c3dd"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0014_bite_021_withdrawal.npz",
+      "record_id": "trial_0014_bite_021_withdrawal",
+      "sha256": "c42f33eb1f431c259a228860e0d4f029d33a53c29a0d6fad94857bc3c6cb6d60"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0015_bite_001_transfer.npz",
+      "record_id": "trial_0015_bite_001_transfer",
+      "sha256": "3a8ca349b7ca5df731161813cca3bd2f9835a22c5bbd03b9affed232f3dc32e0"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0015_bite_001_transfer.npz",
+      "record_id": "trial_0015_bite_001_transfer",
+      "sha256": "637be3a582892c7ecfec9a1a701fd20a19aed1cd535547b23f4b6de9f65b6751"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0015_bite_001_withdrawal.npz",
+      "record_id": "trial_0015_bite_001_withdrawal",
+      "sha256": "df928a9b8548602b14c4c50cf1c06d54eb2ac063eb71865ffd58320f57b457dd"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0015_bite_001_withdrawal.npz",
+      "record_id": "trial_0015_bite_001_withdrawal",
+      "sha256": "1f548c0ec03913960dfdda9113e214c850b0b5c5b7e36466fcd7688aa4a86f9d"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0015_bite_002_transfer.npz",
+      "record_id": "trial_0015_bite_002_transfer",
+      "sha256": "3ca36ddfea0f2d0f6fc52ad520967ae78b373110fab89263772bf0195466cdad"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0015_bite_002_transfer.npz",
+      "record_id": "trial_0015_bite_002_transfer",
+      "sha256": "db7b7a92ebf1150393ff5240e532edce758c5b51b00d3f482f723a3a74844ef2"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0015_bite_002_withdrawal.npz",
+      "record_id": "trial_0015_bite_002_withdrawal",
+      "sha256": "881fe9f96491fcfdc8de5e2c70e7ca430654febeb6608c80c681226bd845334b"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0015_bite_002_withdrawal.npz",
+      "record_id": "trial_0015_bite_002_withdrawal",
+      "sha256": "6b63e0dd58efb8150286e91a1b34c3ad3003d679cabe12c07cf50bcb9a191b31"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0015_bite_003_transfer.npz",
+      "record_id": "trial_0015_bite_003_transfer",
+      "sha256": "3e54b8da6e3aa8c5ed7d64ae67bcfeea18b24da6360cd0cba6c44293b38be7d9"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0015_bite_003_transfer.npz",
+      "record_id": "trial_0015_bite_003_transfer",
+      "sha256": "365605772ca675efa9b1fde6e4f5a5551babb031511dd280ac88202e307c2950"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0015_bite_003_withdrawal.npz",
+      "record_id": "trial_0015_bite_003_withdrawal",
+      "sha256": "231268e09344e1e42f050d6ac6dca154941789231fe671e51424161d74ddfe86"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0015_bite_003_withdrawal.npz",
+      "record_id": "trial_0015_bite_003_withdrawal",
+      "sha256": "d885bf6f9ce00ad59e8688b18657a6960ade0101bbce9f1cf8f6df72b87cbbfd"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0015_bite_004_transfer.npz",
+      "record_id": "trial_0015_bite_004_transfer",
+      "sha256": "3d6c2da61fc3ff48e02b2dca67acd6786b766263a51ba643d51efd95def194fc"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0015_bite_004_transfer.npz",
+      "record_id": "trial_0015_bite_004_transfer",
+      "sha256": "cb73d1f598dd1927339435838126f975b432b92379588cf19f15f485c6642c36"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0015_bite_004_withdrawal.npz",
+      "record_id": "trial_0015_bite_004_withdrawal",
+      "sha256": "f0175e258e96e24ba2c5aad5b094d2b374b88472815de68f4a408633c9772ad9"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0015_bite_004_withdrawal.npz",
+      "record_id": "trial_0015_bite_004_withdrawal",
+      "sha256": "d2beb9613324214c091f8c9d0a5a667bbd70551aeed5a3938400c26a1215c5c6"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0015_bite_005_transfer.npz",
+      "record_id": "trial_0015_bite_005_transfer",
+      "sha256": "36ffcf5f512efe975785ce857a72d6853db1e2961fde0dc7df0d3d09b8fa8c1d"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0015_bite_005_transfer.npz",
+      "record_id": "trial_0015_bite_005_transfer",
+      "sha256": "4991db844c769594b1bb11f4d594f2e3ac004c89295283660935d474e002476d"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0015_bite_005_withdrawal.npz",
+      "record_id": "trial_0015_bite_005_withdrawal",
+      "sha256": "5db5014a06281aa3d73250e6b48fb44afa0a1dc0d7f3de9ad3efc9e65c308d4c"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0015_bite_005_withdrawal.npz",
+      "record_id": "trial_0015_bite_005_withdrawal",
+      "sha256": "0d379e58f0389ebe748406624509035722a29a3afa09cc349e79480fab5941ab"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0015_bite_006_transfer.npz",
+      "record_id": "trial_0015_bite_006_transfer",
+      "sha256": "af33d7dd51503ab656433fe7ec1a486d460db1f2346b7f94c0270f7f2f7f28ab"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0015_bite_006_transfer.npz",
+      "record_id": "trial_0015_bite_006_transfer",
+      "sha256": "9d555e583fcb602638578ea7043ad108df32e568f06108af773bb61c2369f00a"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0015_bite_006_withdrawal.npz",
+      "record_id": "trial_0015_bite_006_withdrawal",
+      "sha256": "45eb9baa9c54dcc7e5ae436097e8354b223bdfedc7dd93b06ffeb51c0655379a"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0015_bite_006_withdrawal.npz",
+      "record_id": "trial_0015_bite_006_withdrawal",
+      "sha256": "280e7fa86d2d7ce11a3825a575b69858a8f48a1f56e8f9a7da48eb26135f995a"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0015_bite_007_transfer.npz",
+      "record_id": "trial_0015_bite_007_transfer",
+      "sha256": "0b6256c3b5c3623ed4980f12fab52036149eb334aed8237d5272b43bbb579925"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0015_bite_007_transfer.npz",
+      "record_id": "trial_0015_bite_007_transfer",
+      "sha256": "e6031a26919da480a8e1fee0e4c8a57ef4fe4d69ebc77bb9f0b3eb25a744efde"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0015_bite_007_withdrawal.npz",
+      "record_id": "trial_0015_bite_007_withdrawal",
+      "sha256": "20120a8bebaf55ceb21dd1d891deccdb3326fbe09300182c130b2e37006bc8f1"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0015_bite_007_withdrawal.npz",
+      "record_id": "trial_0015_bite_007_withdrawal",
+      "sha256": "40f4fa6f6d4e28b0945f8c7d071adb944d50ca791ea38d8adb94e7e01fc71ec0"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0015_bite_008_transfer.npz",
+      "record_id": "trial_0015_bite_008_transfer",
+      "sha256": "0790d6d54cbc216fbca10ef885ebf2f9fdad09461e70ebda53d4f2ba425d912e"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0015_bite_008_transfer.npz",
+      "record_id": "trial_0015_bite_008_transfer",
+      "sha256": "a285def5d56209c3a47e91135b7839fe48259e7e6e8b79eabdcfd421ad18c409"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0015_bite_008_withdrawal.npz",
+      "record_id": "trial_0015_bite_008_withdrawal",
+      "sha256": "69dd68092465abc8ab576a9284956bace7245cccaf828aaa9851d4e8cbb97759"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0015_bite_008_withdrawal.npz",
+      "record_id": "trial_0015_bite_008_withdrawal",
+      "sha256": "2a833e999c15887b977f7523201162e16182b169432b698787825f3faa62a8ed"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0015_bite_009_transfer.npz",
+      "record_id": "trial_0015_bite_009_transfer",
+      "sha256": "b09623cfe32ed31b3b9631e1e8b500f2b5a5f0aa01decde97d3f81e42e3ae3a8"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0015_bite_009_transfer.npz",
+      "record_id": "trial_0015_bite_009_transfer",
+      "sha256": "d564cdd1fb8a2290fced3f64396469d7e32e4c3e5377af841ce1b87d6ab35ee3"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0015_bite_009_withdrawal.npz",
+      "record_id": "trial_0015_bite_009_withdrawal",
+      "sha256": "167544b13a16b6766f92177207b44736519672d6196ab99dd22fbb19b0152709"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0015_bite_009_withdrawal.npz",
+      "record_id": "trial_0015_bite_009_withdrawal",
+      "sha256": "4c796a4ebcc486c67b228caffb448b11ca327a97ef31c2e79a9b3966f3cd8dea"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0015_bite_010_transfer.npz",
+      "record_id": "trial_0015_bite_010_transfer",
+      "sha256": "6307b9f832d1a0c3bfb54ba4e96c2429580e2484c12e47c86a5d2faea9666442"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0015_bite_010_transfer.npz",
+      "record_id": "trial_0015_bite_010_transfer",
+      "sha256": "1811ad8288bad27e90a85ebb3d8cffabfaebaf6b5151d0eeb5f2689199d7b014"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0015_bite_010_withdrawal.npz",
+      "record_id": "trial_0015_bite_010_withdrawal",
+      "sha256": "6274c4c969e3d55388386916adc838ea9f1361e0442bd9bdca104611b6e87b4c"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0015_bite_010_withdrawal.npz",
+      "record_id": "trial_0015_bite_010_withdrawal",
+      "sha256": "c8cdaccd136f867fe3a015f6e2d85f37a02f819d4b2c630ea395afbec27329dd"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0015_bite_011_transfer.npz",
+      "record_id": "trial_0015_bite_011_transfer",
+      "sha256": "bb8a079770aa36fb204010abb9eee874835b43df04615ce7fbd808f93c981521"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0015_bite_011_transfer.npz",
+      "record_id": "trial_0015_bite_011_transfer",
+      "sha256": "27c5770ccd4729b1c6fa2c0517356808872dbf58c425efd22ae3a7a93b60c604"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0015_bite_011_withdrawal.npz",
+      "record_id": "trial_0015_bite_011_withdrawal",
+      "sha256": "71e840ceef513b20e46b9096e51da7f503845a111fc59ac8359a594b044ffa69"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0015_bite_011_withdrawal.npz",
+      "record_id": "trial_0015_bite_011_withdrawal",
+      "sha256": "df8c89c5e42bc288bb0c54953536dd68bef448f7ee3b7c7cba6ce7e29478b063"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0015_bite_012_transfer.npz",
+      "record_id": "trial_0015_bite_012_transfer",
+      "sha256": "f69ea77fa16b59cf41fb04c083f7ef4e8bcd4d14af14c34fb0f1728d3ca14f3c"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0015_bite_012_transfer.npz",
+      "record_id": "trial_0015_bite_012_transfer",
+      "sha256": "27539d15a613d6122f47dc18934395a9840a8d829ecb2758d230c6936fd93bb9"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0015_bite_012_withdrawal.npz",
+      "record_id": "trial_0015_bite_012_withdrawal",
+      "sha256": "ff9b37005c9cf3a8a1ed85430f6e10407bb35b5d4a9f9cc42ca73917a6b8b053"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0015_bite_012_withdrawal.npz",
+      "record_id": "trial_0015_bite_012_withdrawal",
+      "sha256": "8c901e5ee38a9638fe727babbefc4a3bff51d945e262f5aadf3e5b2be1852b83"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0015_bite_013_transfer.npz",
+      "record_id": "trial_0015_bite_013_transfer",
+      "sha256": "38e0109fe7ee6ed9625062c6dba0794822100421c05c979034f6c3c47662413d"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0015_bite_013_transfer.npz",
+      "record_id": "trial_0015_bite_013_transfer",
+      "sha256": "349652e268baff0f7586ba2d533667297a97ecf91cfaca49f304b9a9df74c33e"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0015_bite_013_withdrawal.npz",
+      "record_id": "trial_0015_bite_013_withdrawal",
+      "sha256": "b665f563f0f0ffac8d82627195f460ca151deddc908b3eb863f9d0e4007773b3"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0015_bite_013_withdrawal.npz",
+      "record_id": "trial_0015_bite_013_withdrawal",
+      "sha256": "c52a79cf189246a2fafabf254e7cf996132b78a81e4733fe9201d4fdf7fe5334"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0015_bite_014_transfer.npz",
+      "record_id": "trial_0015_bite_014_transfer",
+      "sha256": "f3903c90c0b8efccabb80b038aba8dc0d9486e73be076dd8e0d6b66cad397b80"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0015_bite_014_transfer.npz",
+      "record_id": "trial_0015_bite_014_transfer",
+      "sha256": "e06e7dcb1cd0653756f068ae4a2c951c20ebd990bd7ab0730f098d193a415b76"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0015_bite_014_withdrawal.npz",
+      "record_id": "trial_0015_bite_014_withdrawal",
+      "sha256": "dc4ef376a3b6318a5f086d740aea08e9eb5f555a4a1db5aaf4e522e071c9f12a"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0015_bite_014_withdrawal.npz",
+      "record_id": "trial_0015_bite_014_withdrawal",
+      "sha256": "019987943582e31f2df16ef09678175bb1fb448d8e8dbd2a96e2708d95dc638e"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0015_bite_015_transfer.npz",
+      "record_id": "trial_0015_bite_015_transfer",
+      "sha256": "e27247579e3b7a973d73f3aa3611eeaea70ca6b3b2f70cd69ea1e10d81d7ce91"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0015_bite_015_transfer.npz",
+      "record_id": "trial_0015_bite_015_transfer",
+      "sha256": "f4741d1f1a77f4bf66abe1975e960b80bc0b137d68be0540f2be164fc2d243ac"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0015_bite_015_withdrawal.npz",
+      "record_id": "trial_0015_bite_015_withdrawal",
+      "sha256": "774f5a6ba3483ce6d27daeb395aa3bc0804afb1a74ae125b6315855baf3ce587"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0015_bite_015_withdrawal.npz",
+      "record_id": "trial_0015_bite_015_withdrawal",
+      "sha256": "1121c0e2e219bfe5426ac6eee3f7da53408723c81f01714364c4993c04a2a499"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0015_bite_016_transfer.npz",
+      "record_id": "trial_0015_bite_016_transfer",
+      "sha256": "cdfa03d3bbcab98d3c4758c805342b5174fd866cd4dd4544dec256d90bbefec5"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0015_bite_016_transfer.npz",
+      "record_id": "trial_0015_bite_016_transfer",
+      "sha256": "455cdec24584f35dd4ec507ca0a7b68802b223fc257f504ffde0f15f3705a499"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0015_bite_016_withdrawal.npz",
+      "record_id": "trial_0015_bite_016_withdrawal",
+      "sha256": "df76f04cb5a332c0da4491e6d29cdec361fa710178e7fce2cf1db002e590f072"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0015_bite_016_withdrawal.npz",
+      "record_id": "trial_0015_bite_016_withdrawal",
+      "sha256": "82077e49e408118201bdd1657c436aefd77e377286cecc6172a42c1951d661bc"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0015_bite_017_transfer.npz",
+      "record_id": "trial_0015_bite_017_transfer",
+      "sha256": "2c4a8543e47eacc3ead66f4663200c125d5bb13011350a5d109bf03be7f03412"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0015_bite_017_transfer.npz",
+      "record_id": "trial_0015_bite_017_transfer",
+      "sha256": "ba856db217d8d55229a2e2b6961e491b9fbb9d8d32876954613d16edcc278bb4"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0015_bite_017_withdrawal.npz",
+      "record_id": "trial_0015_bite_017_withdrawal",
+      "sha256": "a41fef42c9a949a1c305bfbbaa8ddfc1c12469358c2fa3f647938a3d312de106"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0015_bite_017_withdrawal.npz",
+      "record_id": "trial_0015_bite_017_withdrawal",
+      "sha256": "9a801555408350e995317619ab39efcaeb7b357d6dc597b24e82a9d41a252001"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0015_bite_018_transfer.npz",
+      "record_id": "trial_0015_bite_018_transfer",
+      "sha256": "32e1db770e249471e6faf9e27b57738a350e5efed0e68c5afa210c5fa1d07ab0"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0015_bite_018_transfer.npz",
+      "record_id": "trial_0015_bite_018_transfer",
+      "sha256": "70dd283cc6bf141a4696327f3ce9f59fbe3e227aaa20e999196779760bfa386c"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0015_bite_018_withdrawal.npz",
+      "record_id": "trial_0015_bite_018_withdrawal",
+      "sha256": "9e9a7abcfd8d3721a0246d2791762477cd7bc6b42fb6b909b113c301e33f10e6"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0015_bite_018_withdrawal.npz",
+      "record_id": "trial_0015_bite_018_withdrawal",
+      "sha256": "7b0fc23501076ec4ef6aa7b2a178608fde9156df27724cee972468235a29b931"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0015_bite_019_transfer.npz",
+      "record_id": "trial_0015_bite_019_transfer",
+      "sha256": "1762453298d90d35ddadfda1603b032ba488ebee495dc15533a05a5bbe45a9e0"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0015_bite_019_transfer.npz",
+      "record_id": "trial_0015_bite_019_transfer",
+      "sha256": "b358da190a2102f58113027767924775dceba08dbd32117a19da1aa135187e54"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0015_bite_019_withdrawal.npz",
+      "record_id": "trial_0015_bite_019_withdrawal",
+      "sha256": "6436f569575020f9c187797283e4fd303f1d43920d4506b8a366e13932280686"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0015_bite_019_withdrawal.npz",
+      "record_id": "trial_0015_bite_019_withdrawal",
+      "sha256": "b6f558825a6974f31c2d70a84350a813127abdcf2bdfd174f77485ab3af9d3d2"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0017_bite_001_transfer.npz",
+      "record_id": "trial_0017_bite_001_transfer",
+      "sha256": "3c20fab97299dce35c82915568ffe77acb1d136cefcc5d0c7fa49094088fb5a7"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0017_bite_001_transfer.npz",
+      "record_id": "trial_0017_bite_001_transfer",
+      "sha256": "b3379bdbba129651a588c2f47265d088afe949d023aba73be4e5f63c2e0483d3"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0017_bite_001_withdrawal.npz",
+      "record_id": "trial_0017_bite_001_withdrawal",
+      "sha256": "ace7372a027b420de6400ad7eb3e2e35a47e76f9cf2edd404b14688fbfa2bdb3"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0017_bite_001_withdrawal.npz",
+      "record_id": "trial_0017_bite_001_withdrawal",
+      "sha256": "f924275c3725bd9dc164c33d9272df1cc3a582e0db314f4bc8043cfcbfda8808"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0017_bite_002_transfer.npz",
+      "record_id": "trial_0017_bite_002_transfer",
+      "sha256": "9d4e1a3192aa0cd5f6d4b770fbfe5ea280a301cd6881dd2dac63c6107923c119"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0017_bite_002_transfer.npz",
+      "record_id": "trial_0017_bite_002_transfer",
+      "sha256": "2fea377fd60947ce96ad70646aa3b8a37474e9d74d2171a7dc39e0cfab1bd593"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0017_bite_002_withdrawal.npz",
+      "record_id": "trial_0017_bite_002_withdrawal",
+      "sha256": "14fb5bfc9d2f5f707ea362c7b2981aa9faeec68cc29e67f294482eb05672c351"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0017_bite_002_withdrawal.npz",
+      "record_id": "trial_0017_bite_002_withdrawal",
+      "sha256": "f1c58b02ef61a8048bc4253c108a4bb4aa82713af970b97096aff15bb60d154e"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0017_bite_003_transfer.npz",
+      "record_id": "trial_0017_bite_003_transfer",
+      "sha256": "a14f485177d9b1c69267c9e7918b3dfc76ffcea823190b22206a95a7dfee1856"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0017_bite_003_transfer.npz",
+      "record_id": "trial_0017_bite_003_transfer",
+      "sha256": "db8feaae690dc4cd9bb05988ed07f72775de7bb99d8867375a6d9664126fc303"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0017_bite_003_withdrawal.npz",
+      "record_id": "trial_0017_bite_003_withdrawal",
+      "sha256": "c049312cfd99f52bfd53a36eafc81fb424926fa9dc5fd369ec60ed781c073987"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0017_bite_003_withdrawal.npz",
+      "record_id": "trial_0017_bite_003_withdrawal",
+      "sha256": "cab2983f0bd60e13eb1275ad01f3ce344ab276bc719cd28045c84ac44f9e4b06"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0017_bite_004_transfer.npz",
+      "record_id": "trial_0017_bite_004_transfer",
+      "sha256": "9362bb12959a1a686eaa1a7ff5f4f9aa81c402633c222e4e0dd873b51d86524a"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0017_bite_004_transfer.npz",
+      "record_id": "trial_0017_bite_004_transfer",
+      "sha256": "1a948c5ce90287f6829104125517dbd66a7a8584a472440255a1d1a5258e88bd"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0017_bite_004_withdrawal.npz",
+      "record_id": "trial_0017_bite_004_withdrawal",
+      "sha256": "2a235fdd8c833d8e0dab3fddeef8a6fde3596546b65fa0f9f9cedb84cad5cf1a"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0017_bite_004_withdrawal.npz",
+      "record_id": "trial_0017_bite_004_withdrawal",
+      "sha256": "6a32f701bc105cef0c5fb7ef34ae5747e940002374b27d04b8f4918169b693bf"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0017_bite_005_transfer.npz",
+      "record_id": "trial_0017_bite_005_transfer",
+      "sha256": "8a818e64b3e992defe8cb43822e9ccedb2c19920cd5905ec2b1692b8dcbd55e9"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0017_bite_005_transfer.npz",
+      "record_id": "trial_0017_bite_005_transfer",
+      "sha256": "e4499766064af0fc1041b6dbf3a95d049b028d2960e4481dd38b16c16da9131b"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0017_bite_005_withdrawal.npz",
+      "record_id": "trial_0017_bite_005_withdrawal",
+      "sha256": "7f65559e992c67742de57136c26f8b2e9bf2e11527b6f6b8db0f07c5dddb0937"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0017_bite_005_withdrawal.npz",
+      "record_id": "trial_0017_bite_005_withdrawal",
+      "sha256": "4cb8f80fa421490a7fe78df9355a9897877c8a37db73de19c2c7049b5349d4e8"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0017_bite_006_transfer.npz",
+      "record_id": "trial_0017_bite_006_transfer",
+      "sha256": "1df394141ffedf2ea8c787f50f0f621eb74b63430261ac70920bb70c7dc1ebae"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0017_bite_006_transfer.npz",
+      "record_id": "trial_0017_bite_006_transfer",
+      "sha256": "a60d0840522f089acc59f145fcb1548e217d753a04415b1dce81768cb97a6522"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0017_bite_006_withdrawal.npz",
+      "record_id": "trial_0017_bite_006_withdrawal",
+      "sha256": "d4461815c34052cf6a7baae7fa24c1346f429ea2d0f593fbc39a1b34b6261220"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0017_bite_006_withdrawal.npz",
+      "record_id": "trial_0017_bite_006_withdrawal",
+      "sha256": "a1e36efd257b1fd5f3bb3800be1f0c526b833c51deab0b1f43dc9b41a8a8ae1c"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0017_bite_007_transfer.npz",
+      "record_id": "trial_0017_bite_007_transfer",
+      "sha256": "ef56662bf48db3d87ed5667a57b74d26a8e99d3e0f9c4a8ebfd884c5db6b2b07"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0017_bite_007_transfer.npz",
+      "record_id": "trial_0017_bite_007_transfer",
+      "sha256": "8504b18227705a795f8dedfb6d424d09564671fb1c48935affb3f97478e5cf63"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0017_bite_007_withdrawal.npz",
+      "record_id": "trial_0017_bite_007_withdrawal",
+      "sha256": "389197e7241952e64d9971c12ad725ef7e0bdf1b183d432cf2586c0fa97aeeb9"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0017_bite_007_withdrawal.npz",
+      "record_id": "trial_0017_bite_007_withdrawal",
+      "sha256": "aca0730fd4036c7ccf0faa6938c23e34d2da86714899f634a6a6ed5db730b0e4"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0017_bite_008_transfer.npz",
+      "record_id": "trial_0017_bite_008_transfer",
+      "sha256": "5187b96678cd0a12212141c812caa29a5b20f2314e2bce2c5a556eb6c24557da"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0017_bite_008_transfer.npz",
+      "record_id": "trial_0017_bite_008_transfer",
+      "sha256": "f6137ea4bf80205848b95d2ca2547cd9e484f470ee820899e139e667f375ec13"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0017_bite_008_withdrawal.npz",
+      "record_id": "trial_0017_bite_008_withdrawal",
+      "sha256": "173207c8b03829e4a320286e592bc0096f1bd0500b04a16bdfa40eb46cff3abe"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0017_bite_008_withdrawal.npz",
+      "record_id": "trial_0017_bite_008_withdrawal",
+      "sha256": "caf62d46ec48c8efeef24c1a6839dfcaf62f4abadaea03f5b7e713cdf774344a"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0017_bite_009_transfer.npz",
+      "record_id": "trial_0017_bite_009_transfer",
+      "sha256": "ba1482b024457aa589eeaa05ca138bbe0bc8c5a3c4bfc28d5c1e301f8e05ab0c"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0017_bite_009_transfer.npz",
+      "record_id": "trial_0017_bite_009_transfer",
+      "sha256": "783eb2512ae6e09449ed211601afd4a26be10c0b24c831c4635bde5baf6a9c7d"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0017_bite_009_withdrawal.npz",
+      "record_id": "trial_0017_bite_009_withdrawal",
+      "sha256": "350ad39a4cdde6dba86d3ee472bbe57cb7696f09b20ee8a0294309c9e0da7f37"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0017_bite_009_withdrawal.npz",
+      "record_id": "trial_0017_bite_009_withdrawal",
+      "sha256": "e40ff0dc4b22ed8b43da9215dd235181647a64e15903bdc544b4f6d0cbdd9de6"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0017_bite_010_transfer.npz",
+      "record_id": "trial_0017_bite_010_transfer",
+      "sha256": "084105126ffc45789418585472a1357eab45141d6cd2060cc72e292de3f4012a"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0017_bite_010_transfer.npz",
+      "record_id": "trial_0017_bite_010_transfer",
+      "sha256": "b7509f2570face068c3454d176683f9be243f5e3bb25a9bf70238876ea37f773"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0017_bite_010_withdrawal.npz",
+      "record_id": "trial_0017_bite_010_withdrawal",
+      "sha256": "86c9ca281c8c46b8cb075b57ade3554be581e4e6f3cce8c0d57fe47090398546"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0017_bite_010_withdrawal.npz",
+      "record_id": "trial_0017_bite_010_withdrawal",
+      "sha256": "41486cd407cd18d95a958f8e1a7aece89a97df3f63977cfe8c0c44a5ad732efe"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0017_bite_011_transfer.npz",
+      "record_id": "trial_0017_bite_011_transfer",
+      "sha256": "ceb52bb8c7edcd5b4d3b7ed66061dec6b66569553c83081de76c19e461d61068"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0017_bite_011_transfer.npz",
+      "record_id": "trial_0017_bite_011_transfer",
+      "sha256": "5f2022f0dde558da23aa00901efcc5eaa096f53fe8999b6a9dc40c6ee04de7ae"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0017_bite_011_withdrawal.npz",
+      "record_id": "trial_0017_bite_011_withdrawal",
+      "sha256": "16e9d4600c36810f97716f9a19bb7997d0383757b18217d1fb76c001902f2f46"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0017_bite_011_withdrawal.npz",
+      "record_id": "trial_0017_bite_011_withdrawal",
+      "sha256": "f3a342f9fe65a038633c28a107c0e8e351dec7dae35b49175a2896254dd48cb1"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0017_bite_012_transfer.npz",
+      "record_id": "trial_0017_bite_012_transfer",
+      "sha256": "67bef6b523b686e8f3983e7ee8b0dadab8340cde4f19cb8474a7f6d68acbd4e4"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0017_bite_012_transfer.npz",
+      "record_id": "trial_0017_bite_012_transfer",
+      "sha256": "838d1d44eb8e40ccb6c706de6fd559142b9023f053c88be299fd76668af93a56"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0017_bite_012_withdrawal.npz",
+      "record_id": "trial_0017_bite_012_withdrawal",
+      "sha256": "9a46dc1ec62094847bf54faf0339c33d0963b2edb13ca10e863618ad280ba0ce"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0017_bite_012_withdrawal.npz",
+      "record_id": "trial_0017_bite_012_withdrawal",
+      "sha256": "2e6af4974302bd97d5464cfaad25733132047af899d755e21d018f27cd11283a"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0017_bite_013_transfer.npz",
+      "record_id": "trial_0017_bite_013_transfer",
+      "sha256": "41ce57c8d1c3d30486396b7a50408765535a5e8b0de76c1de9ad79689cc90bb9"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0017_bite_013_transfer.npz",
+      "record_id": "trial_0017_bite_013_transfer",
+      "sha256": "4efa8ec0bce782ece86b50093d350aa4952de07c403492003d7cd3f079c2d099"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0017_bite_013_withdrawal.npz",
+      "record_id": "trial_0017_bite_013_withdrawal",
+      "sha256": "5254fc2d1c4f7188af8fdd7470e354a410da24b2d71f3c8fe515d5f67c649bf3"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0017_bite_013_withdrawal.npz",
+      "record_id": "trial_0017_bite_013_withdrawal",
+      "sha256": "0a07af8dbca13ad703668d7ee5869d837c7654b82076818c0289ded2d425774c"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0017_bite_014_transfer.npz",
+      "record_id": "trial_0017_bite_014_transfer",
+      "sha256": "7778250d277575148bab20100fbb009c87be0a3c16b15f456de096dcab252288"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0017_bite_014_transfer.npz",
+      "record_id": "trial_0017_bite_014_transfer",
+      "sha256": "fbd462834a561020c96b064d50aef7f9e000b2c3d61fa7daa4b7e7842524b654"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0017_bite_014_withdrawal.npz",
+      "record_id": "trial_0017_bite_014_withdrawal",
+      "sha256": "560a9b4c21a2e5391548cdc4b1aec2b3f85c794f4c84e13040eddae002bd8163"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0017_bite_014_withdrawal.npz",
+      "record_id": "trial_0017_bite_014_withdrawal",
+      "sha256": "0ed7a830ae28c5a7a5afcdfd922c8a38693bebefa11a06ec9e2deec3ba80d3d5"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0017_bite_015_transfer.npz",
+      "record_id": "trial_0017_bite_015_transfer",
+      "sha256": "bb77cc837b30eb3bf9b292c9c9d4312f3e0ab9c5f9b0961650de7ff53cdc06ec"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0017_bite_015_transfer.npz",
+      "record_id": "trial_0017_bite_015_transfer",
+      "sha256": "218a6ea859716bef69c53c3a649787a8b3634eed8836db04fcfb2e3989f2d5c5"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0017_bite_015_withdrawal.npz",
+      "record_id": "trial_0017_bite_015_withdrawal",
+      "sha256": "9411f502011b7a679116a80b74be621c1a3f7a256311a405781e4c49776ac577"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0017_bite_015_withdrawal.npz",
+      "record_id": "trial_0017_bite_015_withdrawal",
+      "sha256": "f444b9c048791e93f8240879adb796e321d2a409e6a5ddb719928239bc7305bb"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_001_transfer.npz",
+      "record_id": "trial_0019_bite_001_transfer",
+      "sha256": "25f7affe27b4184d172468b47cbc9b1b1e21db3edf6fc05a25c4095aa78fd2b4"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_001_transfer.npz",
+      "record_id": "trial_0019_bite_001_transfer",
+      "sha256": "d21368f48b72f69b31bfb258feb736a786df38c9509a4cab18aa902522c8fd37"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_001_withdrawal.npz",
+      "record_id": "trial_0019_bite_001_withdrawal",
+      "sha256": "8e62a5125ac464b4622c3b4aeb7712b160c2685ccf9ceee1b9c2f227951b8c50"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_001_withdrawal.npz",
+      "record_id": "trial_0019_bite_001_withdrawal",
+      "sha256": "b6f8bf4c06b2fb500d3bd7c217ec9f9b1d2098468c6d6d678e8d84a98c71ad55"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_002_transfer.npz",
+      "record_id": "trial_0019_bite_002_transfer",
+      "sha256": "024ddfd9c067cc58d2e8e29276e086ee614e644f3305f60a54733fecd51ba629"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_002_transfer.npz",
+      "record_id": "trial_0019_bite_002_transfer",
+      "sha256": "8d59c8877c4065dc455d21493891a339742df58fb603784de67b64609ef5449c"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_002_withdrawal.npz",
+      "record_id": "trial_0019_bite_002_withdrawal",
+      "sha256": "6b6612e7bb80398296e66069019c60ea578be702edfc4ac89d15e0eab54e3b40"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_002_withdrawal.npz",
+      "record_id": "trial_0019_bite_002_withdrawal",
+      "sha256": "fb14e09527cdef3619283e033e0b9c1b247b2342db6e47f1da665e4acf20d032"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_003_transfer.npz",
+      "record_id": "trial_0019_bite_003_transfer",
+      "sha256": "c508d58e70def4239388f098b003ab51f3e33064abe502dc2b1dfaafd0691ad5"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_003_transfer.npz",
+      "record_id": "trial_0019_bite_003_transfer",
+      "sha256": "8a49a0f5fb612f63956a128a71d91d765a3c1fc78aa6856fdea875b3a35b8084"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_003_withdrawal.npz",
+      "record_id": "trial_0019_bite_003_withdrawal",
+      "sha256": "4e31b21802662814c932692900940ee4e934fdf0f3f230892dcb41656e63c2d9"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_003_withdrawal.npz",
+      "record_id": "trial_0019_bite_003_withdrawal",
+      "sha256": "e86d233935d7d9c4ff99dbb3acb3ed566b9f19d5b28e643fc884b9c8ba165761"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_004_transfer.npz",
+      "record_id": "trial_0019_bite_004_transfer",
+      "sha256": "014ec5a40ba5342ccc59f5433857d5e674f55b855dbf2f9f452f6dc4913f42fa"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_004_transfer.npz",
+      "record_id": "trial_0019_bite_004_transfer",
+      "sha256": "80310012b8744fb4e3efd33a954df6995df4b9042b8721e74176231ba23dad75"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_004_withdrawal.npz",
+      "record_id": "trial_0019_bite_004_withdrawal",
+      "sha256": "11b82bd5c29c838fdbf5c830b4fb711806331375e61f18e459cf2aa25d77aa1a"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_004_withdrawal.npz",
+      "record_id": "trial_0019_bite_004_withdrawal",
+      "sha256": "ce8ded7d69b55e05393c44bc7bb8df93a62875020e521ccb818e3e02616052e2"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_005_transfer.npz",
+      "record_id": "trial_0019_bite_005_transfer",
+      "sha256": "ae101046601cc8f1e01726953a69e96888a16de3e0b665ef27e5ed49a294c290"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_005_transfer.npz",
+      "record_id": "trial_0019_bite_005_transfer",
+      "sha256": "1852e6cf5fcb68df586c07ff8277a5e195fcb888428df605d466dea11af55379"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_005_withdrawal.npz",
+      "record_id": "trial_0019_bite_005_withdrawal",
+      "sha256": "981721c033e636750511898491eaaa1bd3b60ebe9c096f5af2ca53aa55715bbe"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_005_withdrawal.npz",
+      "record_id": "trial_0019_bite_005_withdrawal",
+      "sha256": "1a119ab509093d3bd7d85e07eb846647937a72ab569972eae7c004fdd5e853c3"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_006_transfer.npz",
+      "record_id": "trial_0019_bite_006_transfer",
+      "sha256": "d86b84d8101da9a53347e5efb9d64a6e5bfe24ff414b6b907eb87e119af4b745"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_006_transfer.npz",
+      "record_id": "trial_0019_bite_006_transfer",
+      "sha256": "88d1fe218e52c17d7fdefc33ed96163e6eb404ce3a6ab619301ad3a690f324dc"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_006_withdrawal.npz",
+      "record_id": "trial_0019_bite_006_withdrawal",
+      "sha256": "f4fca14aea513a6596de47597c6a4c6db74b8d41d115f5a84a474fd5254855ba"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_006_withdrawal.npz",
+      "record_id": "trial_0019_bite_006_withdrawal",
+      "sha256": "b17dfb6d576330f25b869eedc315db7154448f957dbc3f2b17b126a652a27d7f"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_007_transfer.npz",
+      "record_id": "trial_0019_bite_007_transfer",
+      "sha256": "1f514fa88ff7bfb6d4358319169b1d959a3da2853b2b30588ea3085851708146"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_007_transfer.npz",
+      "record_id": "trial_0019_bite_007_transfer",
+      "sha256": "3bfa4277dc3462c6686d57dc8c068e1f83b86bcdeb3743f9da983e3f971d9d03"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_007_withdrawal.npz",
+      "record_id": "trial_0019_bite_007_withdrawal",
+      "sha256": "8579c980dc85413aa8feb01c6897a8a3de6471d737f78aca6be23826ecae8296"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_007_withdrawal.npz",
+      "record_id": "trial_0019_bite_007_withdrawal",
+      "sha256": "cca0c8457d15347a7732a31bb5150ebb97438f3452c8a69307ee44184d09c4be"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_008_transfer.npz",
+      "record_id": "trial_0019_bite_008_transfer",
+      "sha256": "63916dff361d3f46accf8e83b266b651b330d3451fc16336de42ff057825cfd3"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_008_transfer.npz",
+      "record_id": "trial_0019_bite_008_transfer",
+      "sha256": "f34032c49231d8e32e305dabe39c2459a44f46a8034b32c675ec5d1286256080"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_008_withdrawal.npz",
+      "record_id": "trial_0019_bite_008_withdrawal",
+      "sha256": "18134a183c434755e96a71ee77b52236d1d7e824ccb539351a5419af30006d7c"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_008_withdrawal.npz",
+      "record_id": "trial_0019_bite_008_withdrawal",
+      "sha256": "1e830835646eee66bdacedbe4fb56f0011c9b48865eeb302e0dbaf9d8c268e22"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_009_transfer.npz",
+      "record_id": "trial_0019_bite_009_transfer",
+      "sha256": "dd972cdb3ea72bf8807835fd26325e00ba8be62944732ee6bfd237cf01a6c635"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_009_transfer.npz",
+      "record_id": "trial_0019_bite_009_transfer",
+      "sha256": "ea14da6d6d92dc2a0c57a12c4a03616a8e9b39a3ff144e87b8179ad8e635196f"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_009_withdrawal.npz",
+      "record_id": "trial_0019_bite_009_withdrawal",
+      "sha256": "b76cf0be6d2d874e2afffe22ca48106f39aab066fc159c42ca34dfd945a4dcd6"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_009_withdrawal.npz",
+      "record_id": "trial_0019_bite_009_withdrawal",
+      "sha256": "e6dad5d939fde01ceed0fa85c11eeb13622acb6911235741cdd8c0f6ef54f1df"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_010_transfer.npz",
+      "record_id": "trial_0019_bite_010_transfer",
+      "sha256": "c54f1fd3dfe255aac151d56379a996e2aa51b024fd60f3e86e19e16adf1eb6a7"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_010_transfer.npz",
+      "record_id": "trial_0019_bite_010_transfer",
+      "sha256": "ce41fd1357707f9537f330c5ef4ffede3dee13f9dda92570db8b874cb6c6cf4e"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_010_withdrawal.npz",
+      "record_id": "trial_0019_bite_010_withdrawal",
+      "sha256": "409ca01a1c9a2ec41478ad38650a0af6b28f8768ceaa082c1ecf5cd9c6d9956f"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_010_withdrawal.npz",
+      "record_id": "trial_0019_bite_010_withdrawal",
+      "sha256": "8b726ec781e173d11463d5fe74b5764741964afbbe569c79ef89f7ca5a523581"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_011_transfer.npz",
+      "record_id": "trial_0019_bite_011_transfer",
+      "sha256": "faf2e63ec46997a51a8f56b72335ab2307f7f96802b94f4c5c5de9e33c2735bf"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_011_transfer.npz",
+      "record_id": "trial_0019_bite_011_transfer",
+      "sha256": "5b3d3165918e73e006035c1f7f36d0808c68d3e1d8530f049c894c14dc50dd14"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_011_withdrawal.npz",
+      "record_id": "trial_0019_bite_011_withdrawal",
+      "sha256": "0e87b59c01f3be70094247158cd7742b9b21eed191d6f78261c6a4ce15915d21"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_011_withdrawal.npz",
+      "record_id": "trial_0019_bite_011_withdrawal",
+      "sha256": "09dadc67850c4c09c78d3a460a9f5494ef229937a31af894ca1203256d42c0d7"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_012_transfer.npz",
+      "record_id": "trial_0019_bite_012_transfer",
+      "sha256": "404c683dadb0aa50d6164f8bccbb432554d6c0bcd8d5b95f425d319ac32943b7"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_012_transfer.npz",
+      "record_id": "trial_0019_bite_012_transfer",
+      "sha256": "35236a4fb923a1c35e6fe39cbb2c7bb6b2503c29944f00d36bfd9cb3442a1686"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_012_withdrawal.npz",
+      "record_id": "trial_0019_bite_012_withdrawal",
+      "sha256": "8a15a944ede2710218f988501f823dfc00181bf472feb8a8a0d92df8ebef9034"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_012_withdrawal.npz",
+      "record_id": "trial_0019_bite_012_withdrawal",
+      "sha256": "90825f3fbadbbaffb9b2a40bead974ff89bb23040681eee0cc9caf42d9e5ef0e"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_013_transfer.npz",
+      "record_id": "trial_0019_bite_013_transfer",
+      "sha256": "b15993e64aed543abd2cf9d775e338db519ca9854a1992df7900f054ef4181e8"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_013_transfer.npz",
+      "record_id": "trial_0019_bite_013_transfer",
+      "sha256": "b575dc87abd3a9e11b46cda86a16f69dac1e86ed81ed5e796a54ecb10feeb17a"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_013_withdrawal.npz",
+      "record_id": "trial_0019_bite_013_withdrawal",
+      "sha256": "80086d7a14ba429bc0c51ff099d96ceb7f641d4bded7ca746ceb24ae45951d8a"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_013_withdrawal.npz",
+      "record_id": "trial_0019_bite_013_withdrawal",
+      "sha256": "33187afb9de2be679b34c386a284d476de09011c4ad7aa44f8a07da533371689"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_014_transfer.npz",
+      "record_id": "trial_0019_bite_014_transfer",
+      "sha256": "10ea80b45801aae190d4c5cced08ce16da46182cfbd577de6a2fcdaa68a19408"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_014_transfer.npz",
+      "record_id": "trial_0019_bite_014_transfer",
+      "sha256": "0bd719a5de1d781c2f475bf91aa226d4d9ce543c6d133b623d9a39c6a2e22c6d"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_014_withdrawal.npz",
+      "record_id": "trial_0019_bite_014_withdrawal",
+      "sha256": "10e0f46a0aff7259eeec7891b62181724641c477394149f463a846b20c21b0cf"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_014_withdrawal.npz",
+      "record_id": "trial_0019_bite_014_withdrawal",
+      "sha256": "beb40f9a7351480904dc8384db18438c035ea6c5b47e51b9f83fc47939aedff7"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_015_transfer.npz",
+      "record_id": "trial_0019_bite_015_transfer",
+      "sha256": "19024c49ff328c0fbd5fed1bb8ff728a8eee30f50ec002c2aa59fb06895c2a8d"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_015_transfer.npz",
+      "record_id": "trial_0019_bite_015_transfer",
+      "sha256": "f1b486aaeecf1a2fecdf319abe73d74a0ce86f529520055617278d7f8b6e4586"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_015_withdrawal.npz",
+      "record_id": "trial_0019_bite_015_withdrawal",
+      "sha256": "c95bf5ba695df9722008e74b7cb2645699153ce3853e623b27f7c3df5e3d319a"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_015_withdrawal.npz",
+      "record_id": "trial_0019_bite_015_withdrawal",
+      "sha256": "b64ef9833bd12fdc9ef165a00af36605847618cf9e93c073e971e6576df524da"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_016_transfer.npz",
+      "record_id": "trial_0019_bite_016_transfer",
+      "sha256": "9745f9eeece5d02aab33a3484dd6bd17cb2c321d53262fea64c52f9cc8c8833d"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_016_transfer.npz",
+      "record_id": "trial_0019_bite_016_transfer",
+      "sha256": "a81fc02b6b0ce49859b389516f5c0e524496d6f92b6bf3a4cc6d98fc45c23fba"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_016_withdrawal.npz",
+      "record_id": "trial_0019_bite_016_withdrawal",
+      "sha256": "47bb776737a0f37e75ce77b4bc31deb735790c70394b91f92157d502086eafe6"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_016_withdrawal.npz",
+      "record_id": "trial_0019_bite_016_withdrawal",
+      "sha256": "8e424f64ff9f5828cfb95770c451344a3821985091571328331a0e704a48a6ca"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_017_transfer.npz",
+      "record_id": "trial_0019_bite_017_transfer",
+      "sha256": "8f221c8d5d6971727a966a5319f08585a565ada9c2f1747f4f244d6c51694a29"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_017_transfer.npz",
+      "record_id": "trial_0019_bite_017_transfer",
+      "sha256": "ce33ee80aeef76bcad3baadf53550f0fe70bb3e6c251984e7185e1589ae3b124"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_017_withdrawal.npz",
+      "record_id": "trial_0019_bite_017_withdrawal",
+      "sha256": "8c0b27907849a5d5c402059545d6e2d731d425f9a707e6647a95ed6ce59ec82e"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_017_withdrawal.npz",
+      "record_id": "trial_0019_bite_017_withdrawal",
+      "sha256": "2fd29dca242bec9f91b93fb46cc5d41f0a0ac888bc158e8ff64d92b79b1774a6"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_018_transfer.npz",
+      "record_id": "trial_0019_bite_018_transfer",
+      "sha256": "3306555a97039d35cd4a740b9993bc2711a00862c43145f87e8de159d9634b71"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_018_transfer.npz",
+      "record_id": "trial_0019_bite_018_transfer",
+      "sha256": "fb274832383547e931ef51855605b9f2f56c171eb0939d075f97195c12a1faac"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_018_withdrawal.npz",
+      "record_id": "trial_0019_bite_018_withdrawal",
+      "sha256": "0e2639bf7f2f45ed79222f3d4f3dee9ec4b56726e6d4ab7c5217d66a9ebf81d5"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_018_withdrawal.npz",
+      "record_id": "trial_0019_bite_018_withdrawal",
+      "sha256": "9567ce4ca489e22b45ce45a74598e289c610624ec766854f2457e319dfc91602"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_019_transfer.npz",
+      "record_id": "trial_0019_bite_019_transfer",
+      "sha256": "17fc191d3d951c607cec0fbf0672cdfe61baad53df0ec03c361f88fd84d9ae17"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_019_transfer.npz",
+      "record_id": "trial_0019_bite_019_transfer",
+      "sha256": "89c62fb0337b23bbfe7fb6b40f074f51750ee076f156a79e64093110b94e8394"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_019_withdrawal.npz",
+      "record_id": "trial_0019_bite_019_withdrawal",
+      "sha256": "074f33766f11b5deff4c7befb584c915afec323f9007e5558a0fc0024fc2ae73"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_019_withdrawal.npz",
+      "record_id": "trial_0019_bite_019_withdrawal",
+      "sha256": "cbeea089229e5ab8b05670ba701f5730010b2199b09d1607f173fa203cd821e8"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_020_transfer.npz",
+      "record_id": "trial_0019_bite_020_transfer",
+      "sha256": "b9470e4042fb8691ef9a8ed9d9dffbef4f4b53bb417c9f027556fa7ed16545f9"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_020_transfer.npz",
+      "record_id": "trial_0019_bite_020_transfer",
+      "sha256": "6d81a8f511980bb13020049e4ae855ed19baa73978e9c9841e64d17c657209d6"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_020_withdrawal.npz",
+      "record_id": "trial_0019_bite_020_withdrawal",
+      "sha256": "36377de9822f073e0ffacdebc7bf4aaba4c3eb71208cae0ff310304ef2f409ea"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_020_withdrawal.npz",
+      "record_id": "trial_0019_bite_020_withdrawal",
+      "sha256": "d4b30d029df810545c9a051a9fd5ae731b2ce27e12c8754cfa3e35f70add1793"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_021_transfer.npz",
+      "record_id": "trial_0019_bite_021_transfer",
+      "sha256": "8fa374a0170cf0843df790c5f88324dd10fac97a87a2911b4ee9084f37f86805"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_021_transfer.npz",
+      "record_id": "trial_0019_bite_021_transfer",
+      "sha256": "082c8c55fde662f9fcc948207fb30b1793ba80be1a5959d11d4cfab672d29b7c"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_021_withdrawal.npz",
+      "record_id": "trial_0019_bite_021_withdrawal",
+      "sha256": "663dcc12d433b64c422e026b65bdc9f24339dc20870c10d0ab63fe316ad0245c"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_021_withdrawal.npz",
+      "record_id": "trial_0019_bite_021_withdrawal",
+      "sha256": "7ae1a76207d686cc238f6776ad7380f9faa7a299d9bda9b0420fba545966f74e"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_022_transfer.npz",
+      "record_id": "trial_0019_bite_022_transfer",
+      "sha256": "e3f6a2556538f2940ddfaabd836eadb91ad0ab39dc9ff85c046085b9b7f80fbd"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_022_transfer.npz",
+      "record_id": "trial_0019_bite_022_transfer",
+      "sha256": "cbb965b1728e4bb948621ad30906b24606985b27a97ca9daeb2e0a51e930fe94"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_022_withdrawal.npz",
+      "record_id": "trial_0019_bite_022_withdrawal",
+      "sha256": "a6e7f3a8616c588c1bd834b940ab8d0b556a549b98011339b11992d4b0c38ef1"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_022_withdrawal.npz",
+      "record_id": "trial_0019_bite_022_withdrawal",
+      "sha256": "c100171723a0e27b107eab01d8cb2b05efe198a6700be7a2ebb7c9a619d059e7"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_023_transfer.npz",
+      "record_id": "trial_0019_bite_023_transfer",
+      "sha256": "e61d19baf8733eae4d6f2d446955d517c7869da7ecce52f8aed1d2bad369ffba"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_023_transfer.npz",
+      "record_id": "trial_0019_bite_023_transfer",
+      "sha256": "4a5af2e9dec4d3b388296a43792c2f5b8fc136315c59072de10283f9f1baba39"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_023_withdrawal.npz",
+      "record_id": "trial_0019_bite_023_withdrawal",
+      "sha256": "f2d2aa5d5398d9dca6d2f7a7ef9c334e56e151c4e1e86dd244ad9c885d678fbf"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_023_withdrawal.npz",
+      "record_id": "trial_0019_bite_023_withdrawal",
+      "sha256": "3bf111523617cf2a9dab7c2bd35c562502975c2c5efd9f6d57487af5dd2cd5ce"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_024_transfer.npz",
+      "record_id": "trial_0019_bite_024_transfer",
+      "sha256": "239ab46df81cee88d1596dd1ffde80dfb8f0eeea3755c71489901cc3908ad5a9"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_024_transfer.npz",
+      "record_id": "trial_0019_bite_024_transfer",
+      "sha256": "376128831c3368666cb2ddd19fb2baac3cb5bd26b29ea01bd4ae55b66e637cd8"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_024_withdrawal.npz",
+      "record_id": "trial_0019_bite_024_withdrawal",
+      "sha256": "e3b70803904a2af36182bff93391bfe2f2051b5e2ef7adb01946b7ab892263f1"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_024_withdrawal.npz",
+      "record_id": "trial_0019_bite_024_withdrawal",
+      "sha256": "4d05a4b4695300f78fe2df8d6858c8cc893b5b3752885acdaf65645eaec72756"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_025_transfer.npz",
+      "record_id": "trial_0019_bite_025_transfer",
+      "sha256": "1cd6df367c6e6441f66bc6ed6a9ee674b8fb08ed1e3d86b0e6a1385002c9c5de"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_025_transfer.npz",
+      "record_id": "trial_0019_bite_025_transfer",
+      "sha256": "79fa33c3d1c27d0da7ccae12f7194677ef08bc43a32ccc6f712e8569b701671e"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_025_withdrawal.npz",
+      "record_id": "trial_0019_bite_025_withdrawal",
+      "sha256": "0ddade4523a047ddc258a6d58d85dc188c6a33144f865a571deb6955b4ed0a1e"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_025_withdrawal.npz",
+      "record_id": "trial_0019_bite_025_withdrawal",
+      "sha256": "b5b1b3ea90507d862137a9834398567ced3651c292ae3700aa22504d99579ec9"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_026_transfer.npz",
+      "record_id": "trial_0019_bite_026_transfer",
+      "sha256": "918356a08cf0c85a140f0f2117cd38ddd95704f3f1f742967efd2cc422ae4730"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_026_transfer.npz",
+      "record_id": "trial_0019_bite_026_transfer",
+      "sha256": "cc323391af639b52e26370292b0bdf638c592c862c5c8151230ac8e06ac7134d"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0019_bite_026_withdrawal.npz",
+      "record_id": "trial_0019_bite_026_withdrawal",
+      "sha256": "7a535e73d5c17706c78e1bdf1e259e96e23e0743a6c8f26e2b08ff2a9c61fc19"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0019_bite_026_withdrawal.npz",
+      "record_id": "trial_0019_bite_026_withdrawal",
+      "sha256": "f8bda34cd8921651168d1a4c00c9c3178f3e67e821e1efb9b14d95e13c9b1e5a"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0020_bite_001_transfer.npz",
+      "record_id": "trial_0020_bite_001_transfer",
+      "sha256": "c6f0a66f1efb9340dfa1dcaf137520cb25bbe20ca2e93c78ea39b8d622e01292"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0020_bite_001_transfer.npz",
+      "record_id": "trial_0020_bite_001_transfer",
+      "sha256": "b0d46482b3271c45f193ca6fc6ddf8c4b190bdeb404152c05e636ee345dd8708"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0020_bite_001_withdrawal.npz",
+      "record_id": "trial_0020_bite_001_withdrawal",
+      "sha256": "1f91a8f478b00edd2e107f2323fb0b09981e25d94d4ea946ba0c4e378c1fee93"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0020_bite_001_withdrawal.npz",
+      "record_id": "trial_0020_bite_001_withdrawal",
+      "sha256": "086a0b230aa56625265839de7b1464b92107b04958bc98d97757276b8e698a51"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0020_bite_002_transfer.npz",
+      "record_id": "trial_0020_bite_002_transfer",
+      "sha256": "663eb2d625548e7abefbee4eaf45c2d009731fb770624b91f2040b2e4b8872fb"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0020_bite_002_transfer.npz",
+      "record_id": "trial_0020_bite_002_transfer",
+      "sha256": "2b277766d09d9de25a6fc0f6b8093a7417aadbe9afc91b43a91da0579d377da8"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0020_bite_002_withdrawal.npz",
+      "record_id": "trial_0020_bite_002_withdrawal",
+      "sha256": "91e5c24dee165ac7ad9544e1dc4605d87fc7c7bbb5b14a9529142f61038074f9"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0020_bite_002_withdrawal.npz",
+      "record_id": "trial_0020_bite_002_withdrawal",
+      "sha256": "e23307939a25e7aa5e062431b91e5f74b16ff5ee017a3dc5aa2c77db70011f28"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0020_bite_003_transfer.npz",
+      "record_id": "trial_0020_bite_003_transfer",
+      "sha256": "647606f0a9012119944f9fd321e4cf35c549dfd859a6f7306b131b39f351ea4a"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0020_bite_003_transfer.npz",
+      "record_id": "trial_0020_bite_003_transfer",
+      "sha256": "af8b1a9f33e81f09aea2fca18ec497fa9618e7b47685a37f258ec67df9e8def7"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0020_bite_003_withdrawal.npz",
+      "record_id": "trial_0020_bite_003_withdrawal",
+      "sha256": "1688c9605eb8c3c651036c09b661b2849fe85b7a3900c27670b3a6d2e0ba0742"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0020_bite_003_withdrawal.npz",
+      "record_id": "trial_0020_bite_003_withdrawal",
+      "sha256": "a552e5f5c88a6e13edeabc6a4f5adcd72816070f3bb1bea1f334697f7d1abe81"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0020_bite_004_transfer.npz",
+      "record_id": "trial_0020_bite_004_transfer",
+      "sha256": "e8a188d0597111ff1a0eba2f85cf31d8534510e65ca79af5b884a483c99be58f"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0020_bite_004_transfer.npz",
+      "record_id": "trial_0020_bite_004_transfer",
+      "sha256": "616ad88c8b4fe4f9941f12574f8f15021e1491ec903fdf21697ccce945028b8d"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0020_bite_004_withdrawal.npz",
+      "record_id": "trial_0020_bite_004_withdrawal",
+      "sha256": "84fa85f7b498bd29fe27ea07d6759fe319608dbd9ed137d92397e3a086c8dbfa"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0020_bite_004_withdrawal.npz",
+      "record_id": "trial_0020_bite_004_withdrawal",
+      "sha256": "78022ba229ec6be0092b5a58fa13f59792b17f02549eb943c3f2ddbb37fb80bd"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0020_bite_005_transfer.npz",
+      "record_id": "trial_0020_bite_005_transfer",
+      "sha256": "5e289e8f4dd6113c3e266d932ca69c44af32ef983ed72d021fe9dc5373cacfa9"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0020_bite_005_transfer.npz",
+      "record_id": "trial_0020_bite_005_transfer",
+      "sha256": "803058ecbcf65027dbf1cde285cc9c3f8e9209176667c2508fe5780ebe2b162d"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0020_bite_005_withdrawal.npz",
+      "record_id": "trial_0020_bite_005_withdrawal",
+      "sha256": "da08a7dece71472faa3a2636eab6a475bd4df8d21181061d6cbbb3029a11a106"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0020_bite_005_withdrawal.npz",
+      "record_id": "trial_0020_bite_005_withdrawal",
+      "sha256": "d2b9eef8b6e6d7bf22758ac8b019445324a01c7379f8a26e5cebd1c1072cd42c"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0020_bite_006_transfer.npz",
+      "record_id": "trial_0020_bite_006_transfer",
+      "sha256": "b512f0abf6fe988db58e160a9b6d1b69d73e57eff7ae478937899a70af2c82b0"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0020_bite_006_transfer.npz",
+      "record_id": "trial_0020_bite_006_transfer",
+      "sha256": "dda0243c32193cd293ffa03a6e4706a07b76fee59b759bc563cd750e69a38d0b"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0020_bite_006_withdrawal.npz",
+      "record_id": "trial_0020_bite_006_withdrawal",
+      "sha256": "4e109d40a62f4408e923e84ae5208d20a737e977bb0901af7933c15328c25f8d"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0020_bite_006_withdrawal.npz",
+      "record_id": "trial_0020_bite_006_withdrawal",
+      "sha256": "1d8a9527e3bc989a2934591295918c4c2e8eec26f7bd4328361a5298621e8011"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0020_bite_007_transfer.npz",
+      "record_id": "trial_0020_bite_007_transfer",
+      "sha256": "d589d9e36c6375fe51c17228235f016aa810ebbd8bacff737efbff0cbf1220a7"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0020_bite_007_transfer.npz",
+      "record_id": "trial_0020_bite_007_transfer",
+      "sha256": "bb3458e3da1fd81fb00a22ac5b7b7e5e5312dcbf34ca668b22ff14264d371607"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0020_bite_007_withdrawal.npz",
+      "record_id": "trial_0020_bite_007_withdrawal",
+      "sha256": "a130635603f18e7baa74ebf7eec7a840cc09add81bfbf4f5fe51baf0647a0d8f"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0020_bite_007_withdrawal.npz",
+      "record_id": "trial_0020_bite_007_withdrawal",
+      "sha256": "af0e14d978de3c89478b8c39d6c1a54aca5e9c3528cb58a1f30fbe08abb1fb62"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0020_bite_008_transfer.npz",
+      "record_id": "trial_0020_bite_008_transfer",
+      "sha256": "5a018654ea72ec6a3318913dadc5b5b845b38f2a90b698ea34c4844f9c5e1f72"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0020_bite_008_transfer.npz",
+      "record_id": "trial_0020_bite_008_transfer",
+      "sha256": "d9bea0857d8c484e8eca0ca11cadfc6a4d4d646927329cdfe24cf25d01745e63"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0020_bite_008_withdrawal.npz",
+      "record_id": "trial_0020_bite_008_withdrawal",
+      "sha256": "f1dab457b52436446ddf9abb4c72edfa991524d07268b76a77607c08cbf4cc44"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0020_bite_008_withdrawal.npz",
+      "record_id": "trial_0020_bite_008_withdrawal",
+      "sha256": "ac322df9ded1c7ed15ee3b400700d7d1cbc9287840679b1df27190759e817548"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0020_bite_009_transfer.npz",
+      "record_id": "trial_0020_bite_009_transfer",
+      "sha256": "4183c8ce7add4df1ce6fd63e48fad44eb3e51eadd093f887019f1d2fbcb188fc"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0020_bite_009_transfer.npz",
+      "record_id": "trial_0020_bite_009_transfer",
+      "sha256": "44241dbb7f074032999bcc8b30874de919a6b8b5556d006abf23891550c08e40"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0020_bite_009_withdrawal.npz",
+      "record_id": "trial_0020_bite_009_withdrawal",
+      "sha256": "9e6edd178f991e079d27d5e61787f3500b993c14d2949125e8cb7720af49f6f9"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0020_bite_009_withdrawal.npz",
+      "record_id": "trial_0020_bite_009_withdrawal",
+      "sha256": "0ac7c53a484ab64114c99c0901aeb01ec87038da06348e0931200ff07ecabb3f"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0020_bite_010_transfer.npz",
+      "record_id": "trial_0020_bite_010_transfer",
+      "sha256": "0238ec8c96ceacffd88254da5f97935edca011dc4d79d39989926e863d1f016d"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0020_bite_010_transfer.npz",
+      "record_id": "trial_0020_bite_010_transfer",
+      "sha256": "2dc403261aa611176cc5e426c3278d1bc28806a45e62e7309784e9472935d5ef"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0020_bite_010_withdrawal.npz",
+      "record_id": "trial_0020_bite_010_withdrawal",
+      "sha256": "236f4e84603441210c261ddaa7729260a76842104a07fb8589142a3a4d78f9ba"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0020_bite_010_withdrawal.npz",
+      "record_id": "trial_0020_bite_010_withdrawal",
+      "sha256": "90ab395003c3cf80d475d36329709fd0c669d9ece174d72775a93dba967473d4"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0020_bite_011_transfer.npz",
+      "record_id": "trial_0020_bite_011_transfer",
+      "sha256": "ea74d1d5f7ac35041ec086baf675d86efc51496a93240bff40fcafa76fb92600"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0020_bite_011_transfer.npz",
+      "record_id": "trial_0020_bite_011_transfer",
+      "sha256": "5c1f3e655fc21ca902b09787df249ee8aceeaeb8aa2308a61961da805c7f6504"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0020_bite_011_withdrawal.npz",
+      "record_id": "trial_0020_bite_011_withdrawal",
+      "sha256": "e1984ba162d6b7fe2ea63ef4a23f33452ee3b3afcbfd43e9357f1bd2015a4c82"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0020_bite_011_withdrawal.npz",
+      "record_id": "trial_0020_bite_011_withdrawal",
+      "sha256": "1dccedaefccd3c2e3d18d4db893fd8cbe13eb2cd58f9517fe1cb3a677889a6f8"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0020_bite_012_transfer.npz",
+      "record_id": "trial_0020_bite_012_transfer",
+      "sha256": "9910ea62b330fb1bd037e82f015e657b6a101895754d2836c7556b67bd315de5"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0020_bite_012_transfer.npz",
+      "record_id": "trial_0020_bite_012_transfer",
+      "sha256": "beed1d14c8557c6ee4d069a3d28f105f3be3720542d421a14c6f308341341513"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0020_bite_012_withdrawal.npz",
+      "record_id": "trial_0020_bite_012_withdrawal",
+      "sha256": "23ea631230da272f872db945dbefb7e69eefb730c1429687a21c2f7a23b3236f"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0020_bite_012_withdrawal.npz",
+      "record_id": "trial_0020_bite_012_withdrawal",
+      "sha256": "d38372a290c9037f1d7eda895dfdc9f109badcf338eb2a7406e4ab8f52f48b9e"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0020_bite_013_transfer.npz",
+      "record_id": "trial_0020_bite_013_transfer",
+      "sha256": "2ad33a55d7897a98297262bcd770cc7334a17e8549ab1526c140963bc366ae18"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0020_bite_013_transfer.npz",
+      "record_id": "trial_0020_bite_013_transfer",
+      "sha256": "17016cb0e75052d6d48a15e15737d90b61552df590c7994f76ec70c60ed2da2c"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0020_bite_013_withdrawal.npz",
+      "record_id": "trial_0020_bite_013_withdrawal",
+      "sha256": "b6759b1d2862025df7231fa9c78ed33590128252115d1186fe22469595d1149b"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0020_bite_013_withdrawal.npz",
+      "record_id": "trial_0020_bite_013_withdrawal",
+      "sha256": "90506508c43c6d68bc036976422c79fa61ff9ff8677a2cee4605d4947d038fea"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0020_bite_014_transfer.npz",
+      "record_id": "trial_0020_bite_014_transfer",
+      "sha256": "0017d56235aebda8bea325d86191d06a6afee158f54aa6548067cf6723388575"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0020_bite_014_transfer.npz",
+      "record_id": "trial_0020_bite_014_transfer",
+      "sha256": "f3f66b599601e78fa003a06f54b1a47e5e7fbcb3374c8afc3a883a71d01e689f"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0020_bite_014_withdrawal.npz",
+      "record_id": "trial_0020_bite_014_withdrawal",
+      "sha256": "fc0570621b81d851dc95e678c1416b36395e114227df531c2322ab37dcd29d1c"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0020_bite_014_withdrawal.npz",
+      "record_id": "trial_0020_bite_014_withdrawal",
+      "sha256": "85468a3be6d779ab4c575aa5d444dd20337e9962f7cbfb4d52f4b310590ccfb2"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0020_bite_015_transfer.npz",
+      "record_id": "trial_0020_bite_015_transfer",
+      "sha256": "7c4e159b919f867b687584a6e223895311f06c2d5b619ff13cd8b080950328b2"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0020_bite_015_transfer.npz",
+      "record_id": "trial_0020_bite_015_transfer",
+      "sha256": "5ae525ea1730cc102165a7ce930af8048b36427fe0f25ce6fc539dee3b98b864"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0020_bite_015_withdrawal.npz",
+      "record_id": "trial_0020_bite_015_withdrawal",
+      "sha256": "27b715e70e082f1882d4b3580d43c8aa73c571691b9f9310922937cb4e078bd2"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0020_bite_015_withdrawal.npz",
+      "record_id": "trial_0020_bite_015_withdrawal",
+      "sha256": "f2b352b4a28e27501f9f0800e43b445bbdedb14cc1a4fbb52d865f9b776b83ba"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0020_bite_016_transfer.npz",
+      "record_id": "trial_0020_bite_016_transfer",
+      "sha256": "9b6b1e65ebae7c8910e6b682c5f61014fe2a498696d584c7f5833ac41c90b0cd"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0020_bite_016_transfer.npz",
+      "record_id": "trial_0020_bite_016_transfer",
+      "sha256": "7ef0c94d34ce52cf42db4cade80c43a32456069c53d55286e4716bc9f60cf30c"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0020_bite_016_withdrawal.npz",
+      "record_id": "trial_0020_bite_016_withdrawal",
+      "sha256": "04ff03eaf13d4b359019a374bb13b1b587fa3de88e715e12c4e4c4d32f0ac760"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0020_bite_016_withdrawal.npz",
+      "record_id": "trial_0020_bite_016_withdrawal",
+      "sha256": "bd9744b2425e26946ffcb881b4033c585118328eac4ae6ed35adcf806a528a9a"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0020_bite_017_transfer.npz",
+      "record_id": "trial_0020_bite_017_transfer",
+      "sha256": "be2a950441f338a4a6ef2e7789a7024bfbe13ad3ce95eb5853d472a61cf02d7f"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0020_bite_017_transfer.npz",
+      "record_id": "trial_0020_bite_017_transfer",
+      "sha256": "400b30b4dc68473c117ffafa625b51fc7b6cd98dd75e56f1cb9330ed4fc96cb9"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0020_bite_017_withdrawal.npz",
+      "record_id": "trial_0020_bite_017_withdrawal",
+      "sha256": "d2f2b389db4bbfe249a965d2cecf26bc0cbe727bb4516191a3248c79b48fff89"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0020_bite_017_withdrawal.npz",
+      "record_id": "trial_0020_bite_017_withdrawal",
+      "sha256": "46b47dbe29865bf9d55c17bb0ccce4b45684aa67f409d057e5c7ec3f7cfedc90"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0020_bite_018_transfer.npz",
+      "record_id": "trial_0020_bite_018_transfer",
+      "sha256": "d42fe62b3c916c8ccb9251a53911177dc9b039c30e27d4d400e2aba41f006405"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0020_bite_018_transfer.npz",
+      "record_id": "trial_0020_bite_018_transfer",
+      "sha256": "32f5975976612c486c191c3cb5fc43434435f1c73c381d3de64d76b0230ac35f"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0020_bite_018_withdrawal.npz",
+      "record_id": "trial_0020_bite_018_withdrawal",
+      "sha256": "26adc78a4f5b60d9f63c267898603e23dd5fd705596a50a824036adc3c9d35f9"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0020_bite_018_withdrawal.npz",
+      "record_id": "trial_0020_bite_018_withdrawal",
+      "sha256": "ccd432ee2d3d2e4670bad562020de726afa9b45b908fa475b0e45791f668c006"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0020_bite_019_transfer.npz",
+      "record_id": "trial_0020_bite_019_transfer",
+      "sha256": "3a6079a0d0184cdd96e08e735b68445ffe4981f72a79bade7c356ec36ab8a43d"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0020_bite_019_transfer.npz",
+      "record_id": "trial_0020_bite_019_transfer",
+      "sha256": "beec6e74fa8f0319287528cc6e016bc63ab3baf61522b633bde07c90ead7f32a"
+    },
+    {
+      "generator": "retrieval",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\retrieval\\trial_0020_bite_019_withdrawal.npz",
+      "record_id": "trial_0020_bite_019_withdrawal",
+      "sha256": "0a9d34ef9adff1ef0bf6221610a0b8635d0008e52e9d00346784dd497d1229a9"
+    },
+    {
+      "generator": "contextual_promp",
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g0\\generated\\contextual_promp\\trial_0020_bite_019_withdrawal.npz",
+      "record_id": "trial_0020_bite_019_withdrawal",
+      "sha256": "684b9c54f052f78867ce1e7e56ed9c8c646642952056de608b9b11a3808e74a9"
+    }
+  ],
+  "mouth_proxy_is_independently_measured": false,
+  "pairwise_bootstrap": "pairwise_bootstrap.csv",
+  "plots": [
+    "plots/position_error.png",
+    "plots/orientation_error.png",
+    "plots/path_length_error.png",
+    "plots/transfer_withdrawal.png",
+    "plots/example_trajectories.png"
+  ],
+  "record_metrics": "record_metrics.csv",
+  "representative_examples": "representative_examples.json",
+  "schema_version": "generator-g0-v1",
+  "source_phase1_manifest_sha256": "0bf9e8e05afdd03690f289d547b57a4f72201e135d9c19cc3d7c17440aab2015",
+  "summary": "summary.json"
+}

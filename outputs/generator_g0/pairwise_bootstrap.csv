@@ -1,0 +1,13 @@
+group,metric,comparison,convention,mean_difference,ci95_low,ci95_high,n_parent_bites,seed,resamples
+overall,rms_position_error_m,contextual_promp_minus_retrieval,negative favors contextual_promp,-0.01883258366025426,-0.022387605639565072,-0.015386152721774397,127,20260915,2000
+overall,rms_orientation_error_rad,contextual_promp_minus_retrieval,negative favors contextual_promp,-0.09480770202720971,-0.11669119995194445,-0.07204161371821784,127,20260915,2000
+overall,final_position_error_m,contextual_promp_minus_retrieval,negative favors contextual_promp,-0.018363280529219716,-0.025308376769582194,-0.011819184543982926,127,20260915,2000
+overall,path_length_absolute_error_m,contextual_promp_minus_retrieval,negative favors contextual_promp,-0.009480841441907266,-0.016002030634046593,-0.002622231965148627,127,20260915,2000
+transfer,rms_position_error_m,contextual_promp_minus_retrieval,negative favors contextual_promp,-0.010765299038575761,-0.014644916989092706,-0.006697316649243358,127,20260915,2000
+transfer,rms_orientation_error_rad,contextual_promp_minus_retrieval,negative favors contextual_promp,-0.04711529806204515,-0.06469594731705511,-0.02967840370545588,127,20260915,2000
+transfer,final_position_error_m,contextual_promp_minus_retrieval,negative favors contextual_promp,-0.0034815897600101024,-0.00895747481726645,0.0013521273591982474,127,20260915,2000
+transfer,path_length_absolute_error_m,contextual_promp_minus_retrieval,negative favors contextual_promp,-0.010928892873777322,-0.016603248540582875,-0.005939180145937276,127,20260915,2000
+withdrawal,rms_position_error_m,contextual_promp_minus_retrieval,negative favors contextual_promp,-0.02689986828193276,-0.033531634741669855,-0.02029014851291986,127,20260915,2000
+withdrawal,rms_orientation_error_rad,contextual_promp_minus_retrieval,negative favors contextual_promp,-0.14250010599237428,-0.1897046000463027,-0.09879412070426552,127,20260915,2000
+withdrawal,final_position_error_m,contextual_promp_minus_retrieval,negative favors contextual_promp,-0.03324497129842933,-0.046147615934919554,-0.020121768780674575,127,20260915,2000
+withdrawal,path_length_absolute_error_m,contextual_promp_minus_retrieval,negative favors contextual_promp,-0.008032790010037214,-0.02010178572000236,0.004068364134947383,127,20260915,2000

@@ -1,0 +1,9 @@
+{
+  "phase1_output_path": "outputs/phase1",
+  "output_path": "outputs/generator_g0",
+  "basis_functions": 12,
+  "alphas": [0.001, 0.01, 0.1, 1.0, 10.0, 100.0],
+  "bootstrap_seed": 20260915,
+  "bootstrap_resamples": 2000,
+  "generated_samples": 101
+}

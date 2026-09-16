@@ -1,0 +1,39 @@
+{
+  "contextual_promp_favorable": {
+    "contextual_promp_rms_position_error_m": 0.07687760125509335,
+    "parent_bite_id": "trial_0020_bite_005",
+    "phase": "withdrawal",
+    "record_id": "trial_0020_bite_005_withdrawal",
+    "retrieval_minus_promp_m": 0.11632303203866964,
+    "retrieval_rms_position_error_m": 0.193200633293763,
+    "take": "trial_0020"
+  },
+  "difficult_ood": {
+    "contextual_promp_rms_position_error_m": 0.155674023512939,
+    "parent_bite_id": "trial_0013_bite_012",
+    "phase": "withdrawal",
+    "record_id": "trial_0013_bite_012_withdrawal",
+    "retrieval_minus_promp_m": 0.11536639100564458,
+    "retrieval_rms_position_error_m": 0.2710404145185836,
+    "take": "trial_0013"
+  },
+  "retrieval_favorable": {
+    "contextual_promp_rms_position_error_m": 0.12792359476107937,
+    "parent_bite_id": "trial_0020_bite_015",
+    "phase": "withdrawal",
+    "record_id": "trial_0020_bite_015_withdrawal",
+    "retrieval_minus_promp_m": -0.06034141088307633,
+    "retrieval_rms_position_error_m": 0.06758218387800304,
+    "take": "trial_0020"
+  },
+  "selection": "deterministic from OOF RMS position errors; no visual selection",
+  "typical": {
+    "contextual_promp_rms_position_error_m": 0.07617193159089745,
+    "parent_bite_id": "trial_0012_bite_002",
+    "phase": "transfer",
+    "record_id": "trial_0012_bite_002_transfer",
+    "retrieval_minus_promp_m": 0.015683196274632383,
+    "retrieval_rms_position_error_m": 0.09185512786552984,
+    "take": "trial_0012"
+  }
+}

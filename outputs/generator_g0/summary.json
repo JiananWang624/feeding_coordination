@@ -1,0 +1,1404 @@
+{
+  "context_audit": {
+    "all_mouth_proxy_constant_within_record": true,
+    "final_fork_to_mouth_proxy_distance_m_by_phase": {
+      "transfer": {
+        "max": 0.18000035298579956,
+        "mean": 0.17999993697353966,
+        "median": 0.17999994869907435
+      },
+      "withdrawal": {
+        "max": 0.7676043577039765,
+        "mean": 0.41845808021420017,
+        "median": 0.40069232840378927
+      }
+    },
+    "finite_mouth_proxy_fraction": {
+      "mean": 1.0,
+      "min": 1.0
+    },
+    "max_mouth_proxy_deviation_m": 0.0,
+    "relative_rotation_rad": {
+      "max": 2.1778879217844804,
+      "pi_margin": 0.9637047318053127
+    },
+    "valid_plate_fraction": {
+      "mean": 1.0,
+      "min": 1.0
+    }
+  },
+  "dataset": {
+    "excluded_records": 0,
+    "parent_bites": 127,
+    "records_by_phase": {
+      "transfer": 127,
+      "withdrawal": 127
+    },
+    "takes": 7,
+    "usable_records": 254
+  },
+  "duration": {
+    "diagnostics": [
+      {
+        "group": "overall",
+        "mae_s": 0.25486220472440946,
+        "n_records": 254,
+        "rmse_s": 0.3731857689010076
+      },
+      {
+        "group": "transfer",
+        "mae_s": 0.305,
+        "n_records": 127,
+        "rmse_s": 0.4408239868718294
+      },
+      {
+        "group": "withdrawal",
+        "mae_s": 0.2047244094488189,
+        "n_records": 127,
+        "rmse_s": 0.290188643504355
+      }
+    ],
+    "timing_model": "training_phase_median",
+    "timing_physical_limits_validated": false
+  },
+  "generated_artifact_contract": {
+    "contains_pose_time_phase_plate_context": true,
+    "feature_count_reconstructable": 19,
+    "future_feature_contract": "strong-local-l3-v1",
+    "g1_requires_retraining_g0": false,
+    "paths": "generated/{retrieval,contextual_promp}/<record_id>.npz",
+    "spatial_samples": 101
+  },
+  "generation": {
+    "attempts": 508,
+    "grid_samples": 101,
+    "initial_pose_exact": true,
+    "success_rate": 1.0,
+    "successes": 508
+  },
+  "generators": {
+    "contextual_promp": {
+      "alpha_selection": "inner leave-one-training-take-out, mean trajectory position RMS",
+      "basis": "12 normalized Gaussian RBFs",
+      "channels": 6,
+      "conditioner": "standardized relative context -> multi-output ridge weight mean",
+      "inner_scores": {
+        "trial_0012:transfer": [
+          {
+            "alpha": 0.001,
+            "inner_position_rms_m": 0.045617384122358176
+          },
+          {
+            "alpha": 0.01,
+            "inner_position_rms_m": 0.045615007805566835
+          },
+          {
+            "alpha": 0.1,
+            "inner_position_rms_m": 0.0455915427121009
+          },
+          {
+            "alpha": 1.0,
+            "inner_position_rms_m": 0.045385004239002824
+          },
+          {
+            "alpha": 10.0,
+            "inner_position_rms_m": 0.045034673760588055
+          },
+          {
+            "alpha": 100.0,
+            "inner_position_rms_m": 0.05727110339924609
+          }
+        ],
+        "trial_0012:withdrawal": [
+          {
+            "alpha": 0.001,
+            "inner_position_rms_m": 0.09303901928939518
+          },
+          {
+            "alpha": 0.01,
+            "inner_position_rms_m": 0.09303699242348726
+          },
+          {
+            "alpha": 0.1,
+            "inner_position_rms_m": 0.09301680158275853
+          },
+          {
+            "alpha": 1.0,
+            "inner_position_rms_m": 0.09282248571796216
+          },
+          {
+            "alpha": 10.0,
+            "inner_position_rms_m": 0.09148593957574537
+          },
+          {
+            "alpha": 100.0,
+            "inner_position_rms_m": 0.09282563596203611
+          }
+        ],
+        "trial_0013:transfer": [
+          {
+            "alpha": 0.001,
+            "inner_position_rms_m": 0.045630018513711235
+          },
+          {
+            "alpha": 0.01,
+            "inner_position_rms_m": 0.04562869954930052
+          },
+          {
+            "alpha": 0.1,
+            "inner_position_rms_m": 0.04561595668354175
+          },
+          {
+            "alpha": 1.0,
+            "inner_position_rms_m": 0.04553011469941927
+          },
+          {
+            "alpha": 10.0,
+            "inner_position_rms_m": 0.04697221230497004
+          },
+          {
+            "alpha": 100.0,
+            "inner_position_rms_m": 0.06836918052975388
+          }
+        ],
+        "trial_0013:withdrawal": [
+          {
+            "alpha": 0.001,
+            "inner_position_rms_m": 0.08883167250503168
+          },
+          {
+            "alpha": 0.01,
+            "inner_position_rms_m": 0.08883041382568427
+          },
+          {
+            "alpha": 0.1,
+            "inner_position_rms_m": 0.08881795913047164
+          },
+          {
+            "alpha": 1.0,
+            "inner_position_rms_m": 0.08870601280852679
+          },
+          {
+            "alpha": 10.0,
+            "inner_position_rms_m": 0.08841932059219242
+          },
+          {
+            "alpha": 100.0,
+            "inner_position_rms_m": 0.0947323352629876
+          }
+        ],
+        "trial_0014:transfer": [
+          {
+            "alpha": 0.001,
+            "inner_position_rms_m": 0.04873196705879832
+          },
+          {
+            "alpha": 0.01,
+            "inner_position_rms_m": 0.04873016483794989
+          },
+          {
+            "alpha": 0.1,
+            "inner_position_rms_m": 0.04871277738813581
+          },
+          {
+            "alpha": 1.0,
+            "inner_position_rms_m": 0.04859691924762605
+          },
+          {
+            "alpha": 10.0,
+            "inner_position_rms_m": 0.05024897624933178
+          },
+          {
+            "alpha": 100.0,
+            "inner_position_rms_m": 0.07101498646120932
+          }
+        ],
+        "trial_0014:withdrawal": [
+          {
+            "alpha": 0.001,
+            "inner_position_rms_m": 0.09476563212375572
+          },
+          {
+            "alpha": 0.01,
+            "inner_position_rms_m": 0.09476264474528849
+          },
+          {
+            "alpha": 0.1,
+            "inner_position_rms_m": 0.09473298064140506
+          },
+          {
+            "alpha": 1.0,
+            "inner_position_rms_m": 0.09445656732201789
+          },
+          {
+            "alpha": 10.0,
+            "inner_position_rms_m": 0.0931558087104783
+          },
+          {
+            "alpha": 100.0,
+            "inner_position_rms_m": 0.10147519284080218
+          }
+        ],
+        "trial_0015:transfer": [
+          {
+            "alpha": 0.001,
+            "inner_position_rms_m": 0.046718992766825125
+          },
+          {
+            "alpha": 0.01,
+            "inner_position_rms_m": 0.04671789652242423
+          },
+          {
+            "alpha": 0.1,
+            "inner_position_rms_m": 0.04670751159876807
+          },
+          {
+            "alpha": 1.0,
+            "inner_position_rms_m": 0.046655729747689306
+          },
+          {
+            "alpha": 10.0,
+            "inner_position_rms_m": 0.04839868421966882
+          },
+          {
+            "alpha": 100.0,
+            "inner_position_rms_m": 0.06606296261144017
+          }
+        ],
+        "trial_0015:withdrawal": [
+          {
+            "alpha": 0.001,
+            "inner_position_rms_m": 0.08278597705814189
+          },
+          {
+            "alpha": 0.01,
+            "inner_position_rms_m": 0.08278487371096385
+          },
+          {
+            "alpha": 0.1,
+            "inner_position_rms_m": 0.08277397808715607
+          },
+          {
+            "alpha": 1.0,
+            "inner_position_rms_m": 0.0826782095400788
+          },
+          {
+            "alpha": 10.0,
+            "inner_position_rms_m": 0.08261880218135685
+          },
+          {
+            "alpha": 100.0,
+            "inner_position_rms_m": 0.09300003835418401
+          }
+        ],
+        "trial_0017:transfer": [
+          {
+            "alpha": 0.001,
+            "inner_position_rms_m": 0.04195231884437874
+          },
+          {
+            "alpha": 0.01,
+            "inner_position_rms_m": 0.04195057513928641
+          },
+          {
+            "alpha": 0.1,
+            "inner_position_rms_m": 0.041933737643234
+          },
+          {
+            "alpha": 1.0,
+            "inner_position_rms_m": 0.04182140076927237
+          },
+          {
+            "alpha": 10.0,
+            "inner_position_rms_m": 0.04370623970096511
+          },
+          {
+            "alpha": 100.0,
+            "inner_position_rms_m": 0.06731475595149623
+          }
+        ],
+        "trial_0017:withdrawal": [
+          {
+            "alpha": 0.001,
+            "inner_position_rms_m": 0.09782648430653394
+          },
+          {
+            "alpha": 0.01,
+            "inner_position_rms_m": 0.09782435122944737
+          },
+          {
+            "alpha": 0.1,
+            "inner_position_rms_m": 0.09780314447096172
+          },
+          {
+            "alpha": 1.0,
+            "inner_position_rms_m": 0.09760308565202856
+          },
+          {
+            "alpha": 10.0,
+            "inner_position_rms_m": 0.09649988745192149
+          },
+          {
+            "alpha": 100.0,
+            "inner_position_rms_m": 0.10148746533480203
+          }
+        ],
+        "trial_0019:transfer": [
+          {
+            "alpha": 0.001,
+            "inner_position_rms_m": 0.04973486542880331
+          },
+          {
+            "alpha": 0.01,
+            "inner_position_rms_m": 0.04973124197129452
+          },
+          {
+            "alpha": 0.1,
+            "inner_position_rms_m": 0.04969570743685033
+          },
+          {
+            "alpha": 1.0,
+            "inner_position_rms_m": 0.04940565776843895
+          },
+          {
+            "alpha": 10.0,
+            "inner_position_rms_m": 0.050079363737498335
+          },
+          {
+            "alpha": 100.0,
+            "inner_position_rms_m": 0.07014373962394974
+          }
+        ],
+        "trial_0019:withdrawal": [
+          {
+            "alpha": 0.001,
+            "inner_position_rms_m": 0.09587039786591596
+          },
+          {
+            "alpha": 0.01,
+            "inner_position_rms_m": 0.0958698011636711
+          },
+          {
+            "alpha": 0.1,
+            "inner_position_rms_m": 0.09586396434231746
+          },
+          {
+            "alpha": 1.0,
+            "inner_position_rms_m": 0.09581797946881383
+          },
+          {
+            "alpha": 10.0,
+            "inner_position_rms_m": 0.09615912471795421
+          },
+          {
+            "alpha": 100.0,
+            "inner_position_rms_m": 0.1055380165772441
+          }
+        ],
+        "trial_0020:transfer": [
+          {
+            "alpha": 0.001,
+            "inner_position_rms_m": 0.04762659756447701
+          },
+          {
+            "alpha": 0.01,
+            "inner_position_rms_m": 0.04762603714164647
+          },
+          {
+            "alpha": 0.1,
+            "inner_position_rms_m": 0.04762084130389572
+          },
+          {
+            "alpha": 1.0,
+            "inner_position_rms_m": 0.047607035951882835
+          },
+          {
+            "alpha": 10.0,
+            "inner_position_rms_m": 0.04962404777374413
+          },
+          {
+            "alpha": 100.0,
+            "inner_position_rms_m": 0.07156511979612758
+          }
+        ],
+        "trial_0020:withdrawal": [
+          {
+            "alpha": 0.001,
+            "inner_position_rms_m": 0.08861361738993008
+          },
+          {
+            "alpha": 0.01,
+            "inner_position_rms_m": 0.08861250565388686
+          },
+          {
+            "alpha": 0.1,
+            "inner_position_rms_m": 0.08860147616067099
+          },
+          {
+            "alpha": 1.0,
+            "inner_position_rms_m": 0.08849966109673695
+          },
+          {
+            "alpha": 10.0,
+            "inner_position_rms_m": 0.08809581520843551
+          },
+          {
+            "alpha": 100.0,
+            "inner_position_rms_m": 0.093079173947826
+          }
+        ]
+      },
+      "sampling": "conditional mean only; residual covariance estimated, never sampled",
+      "selected_alphas": {
+        "trial_0012:transfer": 10.0,
+        "trial_0012:withdrawal": 10.0,
+        "trial_0013:transfer": 1.0,
+        "trial_0013:withdrawal": 10.0,
+        "trial_0014:transfer": 1.0,
+        "trial_0014:withdrawal": 10.0,
+        "trial_0015:transfer": 1.0,
+        "trial_0015:withdrawal": 10.0,
+        "trial_0017:transfer": 1.0,
+        "trial_0017:withdrawal": 10.0,
+        "trial_0019:transfer": 1.0,
+        "trial_0019:withdrawal": 1.0,
+        "trial_0020:transfer": 1.0,
+        "trial_0020:withdrawal": 10.0
+      }
+    },
+    "retrieval": {
+      "candidate_pool": "outer-training records of same phase",
+      "context_scaling": "outer-training same-phase only",
+      "distance": "Euclidean in standardized six-dimensional relative context",
+      "endpoint_adaptation": "translation-only cubic smoothstep; mouth_proxy for transfer, plate for withdrawal",
+      "retrieval_context_distance": {
+        "max": 6.8214222822822235,
+        "mean": 1.6798511710616788,
+        "median": 1.383302761006852,
+        "p95": 3.5577167760065973
+      },
+      "tie_break": "stable record_id"
+    }
+  },
+  "input_contract": {
+    "context": "[R0.T@(plate-p0), R0.T@(mouth_proxy-p0)]",
+    "excluded": [
+      "take ID",
+      "demonstrator ID",
+      "recipient ID",
+      "absolute coordinates",
+      "human psi",
+      "robot q",
+      "Exact-SEW",
+      "StrongLocal",
+      "robot outcomes"
+    ],
+    "initial_fork_pose": "tracked fork rigid-body SE(3)",
+    "phase": [
+      "transfer",
+      "withdrawal"
+    ]
+  },
+  "interpretation": {
+    "accuracy_is_against_held_out_measured_fork_trajectory": true,
+    "generation_success_is_numerical_only": true,
+    "physical_task_success_threshold_calibrated": false
+  },
+  "metrics": {
+    "overall": [
+      {
+        "final_orientation_error_rad": 0.4340206507525516,
+        "final_position_error_m": 0.08037405159700345,
+        "generator": "contextual_promp",
+        "group": "overall",
+        "grouping": "overall",
+        "max_orientation_error_rad": 0.512951538957845,
+        "max_position_error_m": 0.10785128273924365,
+        "mean_orientation_error_rad": 0.27701728651074387,
+        "mean_position_error_m": 0.058418380137506075,
+        "n_bites": 127,
+        "n_records": 254,
+        "p95_orientation_error_rad": 0.4968640295747431,
+        "p95_position_error_m": 0.10580495315626244,
+        "path_length_absolute_error_m": 0.05058650741483865,
+        "path_length_relative_error": 0.110161383558589,
+        "rms_orientation_error_rad": 0.32435456828789416,
+        "rms_position_error_m": 0.06792782638906147,
+        "translation_displacement_error_m": 0.08037405159700345
+      },
+      {
+        "final_orientation_error_rad": 0.5232894674557155,
+        "final_position_error_m": 0.09873733212622315,
+        "generator": "retrieval",
+        "group": "overall",
+        "grouping": "overall",
+        "max_orientation_error_rad": 0.6697262321088219,
+        "max_position_error_m": 0.13973405422686,
+        "mean_orientation_error_rad": 0.35615808330032533,
+        "mean_position_error_m": 0.07389965339440063,
+        "n_bites": 127,
+        "n_records": 254,
+        "p95_orientation_error_rad": 0.6498916472061804,
+        "p95_position_error_m": 0.13715735860061407,
+        "path_length_absolute_error_m": 0.06006734885674593,
+        "path_length_relative_error": 0.14443253111331025,
+        "rms_orientation_error_rad": 0.4191622703151039,
+        "rms_position_error_m": 0.08676041004931573,
+        "translation_displacement_error_m": 0.09873733212622315
+      }
+    ],
+    "per_phase": [
+      {
+        "final_orientation_error_rad": 0.23227554348042295,
+        "final_position_error_m": 0.03757716794179186,
+        "generator": "contextual_promp",
+        "group": "transfer",
+        "grouping": "phase",
+        "max_orientation_error_rad": 0.25902972323221907,
+        "max_position_error_m": 0.07297626995420937,
+        "mean_orientation_error_rad": 0.14867781816149941,
+        "mean_position_error_m": 0.0408021768517331,
+        "n_bites": 127,
+        "n_records": 127,
+        "p95_orientation_error_rad": 0.24551284921540603,
+        "p95_position_error_m": 0.07139572711457437,
+        "path_length_absolute_error_m": 0.02536706608564148,
+        "path_length_relative_error": 0.0563044108893192,
+        "rms_orientation_error_rad": 0.16464576441524012,
+        "rms_position_error_m": 0.04607300070963789,
+        "translation_displacement_error_m": 0.03757716794179186
+      },
+      {
+        "final_orientation_error_rad": 0.6357657580246803,
+        "final_position_error_m": 0.12317093525221501,
+        "generator": "contextual_promp",
+        "group": "withdrawal",
+        "grouping": "phase",
+        "max_orientation_error_rad": 0.7668733546834706,
+        "max_position_error_m": 0.14272629552427787,
+        "mean_orientation_error_rad": 0.4053567548599883,
+        "mean_position_error_m": 0.07603458342327904,
+        "n_bites": 127,
+        "n_records": 127,
+        "p95_orientation_error_rad": 0.7482152099340802,
+        "p95_position_error_m": 0.14021417919795046,
+        "path_length_absolute_error_m": 0.07580594874403582,
+        "path_length_relative_error": 0.1640183562278588,
+        "rms_orientation_error_rad": 0.4840633721605481,
+        "rms_position_error_m": 0.08978265206848506,
+        "translation_displacement_error_m": 0.12317093525221501
+      },
+      {
+        "final_orientation_error_rad": 0.2701070330648173,
+        "final_position_error_m": 0.04105875770180196,
+        "generator": "retrieval",
+        "group": "transfer",
+        "grouping": "phase",
+        "max_orientation_error_rad": 0.322798053612225,
+        "max_position_error_m": 0.09178632386495439,
+        "mean_orientation_error_rad": 0.19232069718976405,
+        "mean_position_error_m": 0.04964602339953786,
+        "n_bites": 127,
+        "n_records": 127,
+        "p95_orientation_error_rad": 0.30959625914924804,
+        "p95_position_error_m": 0.08992744932199205,
+        "path_length_absolute_error_m": 0.0362959589594188,
+        "path_length_relative_error": 0.08867884675580279,
+        "rms_orientation_error_rad": 0.2117610624772853,
+        "rms_position_error_m": 0.056838299748213666,
+        "translation_displacement_error_m": 0.04105875770180196
+      },
+      {
+        "final_orientation_error_rad": 0.7764719018466137,
+        "final_position_error_m": 0.15641590655064436,
+        "generator": "retrieval",
+        "group": "withdrawal",
+        "grouping": "phase",
+        "max_orientation_error_rad": 1.0166544106054187,
+        "max_position_error_m": 0.1876817845887656,
+        "mean_orientation_error_rad": 0.5199954694108867,
+        "mean_position_error_m": 0.09815328338926341,
+        "n_bites": 127,
+        "n_records": 127,
+        "p95_orientation_error_rad": 0.9901870352631128,
+        "p95_position_error_m": 0.18438726787923604,
+        "path_length_absolute_error_m": 0.08383873875407305,
+        "path_length_relative_error": 0.2001862154708178,
+        "rms_orientation_error_rad": 0.6265634781529223,
+        "rms_position_error_m": 0.11668252035041782,
+        "translation_displacement_error_m": 0.15641590655064436
+      }
+    ],
+    "per_take": [
+      {
+        "final_orientation_error_rad": 0.4039858042485222,
+        "final_position_error_m": 0.08594167946173856,
+        "generator": "contextual_promp",
+        "group": "trial_0012",
+        "grouping": "take",
+        "max_orientation_error_rad": 0.5690095528105861,
+        "max_position_error_m": 0.1243793165510292,
+        "mean_orientation_error_rad": 0.2988762792285294,
+        "mean_position_error_m": 0.06888600907682402,
+        "n_bites": 15,
+        "n_records": 30,
+        "p95_orientation_error_rad": 0.5529243855324029,
+        "p95_position_error_m": 0.12165751264508479,
+        "path_length_absolute_error_m": 0.05050689890919228,
+        "path_length_relative_error": 0.07788293361453028,
+        "rms_orientation_error_rad": 0.3482866245278227,
+        "rms_position_error_m": 0.07812323004024371,
+        "translation_displacement_error_m": 0.08594167946173857
+      },
+      {
+        "final_orientation_error_rad": 0.4741375832004806,
+        "final_position_error_m": 0.08459687313763954,
+        "generator": "contextual_promp",
+        "group": "trial_0013",
+        "grouping": "take",
+        "max_orientation_error_rad": 0.5143363940172149,
+        "max_position_error_m": 0.12076821578321684,
+        "mean_orientation_error_rad": 0.27125613679112,
+        "mean_position_error_m": 0.06459995990502243,
+        "n_bites": 12,
+        "n_records": 24,
+        "p95_orientation_error_rad": 0.49673359190672745,
+        "p95_position_error_m": 0.11817954821929728,
+        "path_length_absolute_error_m": 0.07670738464955602,
+        "path_length_relative_error": 0.15374751317526528,
+        "rms_orientation_error_rad": 0.3174130848880287,
+        "rms_position_error_m": 0.07533737671369757,
+        "translation_displacement_error_m": 0.08459687313763954
+      },
+      {
+        "final_orientation_error_rad": 0.316011603230705,
+        "final_position_error_m": 0.07434002531847453,
+        "generator": "contextual_promp",
+        "group": "trial_0014",
+        "grouping": "take",
+        "max_orientation_error_rad": 0.4149580353867127,
+        "max_position_error_m": 0.09466529998922787,
+        "mean_orientation_error_rad": 0.24021521636894277,
+        "mean_position_error_m": 0.05272003705720464,
+        "n_bites": 21,
+        "n_records": 42,
+        "p95_orientation_error_rad": 0.4047156130868559,
+        "p95_position_error_m": 0.09310728894282594,
+        "path_length_absolute_error_m": 0.02734522456709678,
+        "path_length_relative_error": 0.07693060302234825,
+        "rms_orientation_error_rad": 0.2736717892163402,
+        "rms_position_error_m": 0.060922180110891136,
+        "translation_displacement_error_m": 0.07434002531847453
+      },
+      {
+        "final_orientation_error_rad": 0.6384084665493832,
+        "final_position_error_m": 0.1190764901513123,
+        "generator": "contextual_promp",
+        "group": "trial_0015",
+        "grouping": "take",
+        "max_orientation_error_rad": 0.6826486420825748,
+        "max_position_error_m": 0.12798797819001706,
+        "mean_orientation_error_rad": 0.34220189513754073,
+        "mean_position_error_m": 0.06749449012802591,
+        "n_bites": 19,
+        "n_records": 38,
+        "p95_orientation_error_rad": 0.6519432079621337,
+        "p95_position_error_m": 0.1246486625284224,
+        "path_length_absolute_error_m": 0.05908815027946945,
+        "path_length_relative_error": 0.13794619870827307,
+        "rms_orientation_error_rad": 0.4077330013892163,
+        "rms_position_error_m": 0.07872312472093886,
+        "translation_displacement_error_m": 0.1190764901513123
+      },
+      {
+        "final_orientation_error_rad": 0.29420074102878113,
+        "final_position_error_m": 0.05426382443538646,
+        "generator": "contextual_promp",
+        "group": "trial_0017",
+        "grouping": "take",
+        "max_orientation_error_rad": 0.3984813809848807,
+        "max_position_error_m": 0.09770546608175178,
+        "mean_orientation_error_rad": 0.2252744224444305,
+        "mean_position_error_m": 0.049912571143956974,
+        "n_bites": 15,
+        "n_records": 30,
+        "p95_orientation_error_rad": 0.38664281591726013,
+        "p95_position_error_m": 0.09568515228820253,
+        "path_length_absolute_error_m": 0.05833119633963451,
+        "path_length_relative_error": 0.11009021072600911,
+        "rms_orientation_error_rad": 0.25812389724431745,
+        "rms_position_error_m": 0.058900541480329444,
+        "translation_displacement_error_m": 0.05426382443538646
+      },
+      {
+        "final_orientation_error_rad": 0.42685429828027477,
+        "final_position_error_m": 0.059243462678191014,
+        "generator": "contextual_promp",
+        "group": "trial_0019",
+        "grouping": "take",
+        "max_orientation_error_rad": 0.498911980606331,
+        "max_position_error_m": 0.09030326646697605,
+        "mean_orientation_error_rad": 0.2863312160180046,
+        "mean_position_error_m": 0.05068276947142961,
+        "n_bites": 26,
+        "n_records": 52,
+        "p95_orientation_error_rad": 0.4832480976696063,
+        "p95_position_error_m": 0.0890295608928912,
+        "path_length_absolute_error_m": 0.05902632662861987,
+        "path_length_relative_error": 0.12979909996009467,
+        "rms_orientation_error_rad": 0.3286818326561261,
+        "rms_position_error_m": 0.05828559727217419,
+        "translation_displacement_error_m": 0.059243462678191014
+      },
+      {
+        "final_orientation_error_rad": 0.47862932528623725,
+        "final_position_error_m": 0.09080713907973799,
+        "generator": "contextual_promp",
+        "group": "trial_0020",
+        "grouping": "take",
+        "max_orientation_error_rad": 0.5160152775817488,
+        "max_position_error_m": 0.11310498765621775,
+        "mean_orientation_error_rad": 0.2669944238130229,
+        "mean_position_error_m": 0.06077305044212256,
+        "n_bites": 19,
+        "n_records": 38,
+        "p95_orientation_error_rad": 0.5051063824132851,
+        "p95_position_error_m": 0.11160990837683744,
+        "path_length_absolute_error_m": 0.03367459650496667,
+        "path_length_relative_error": 0.09024375530739825,
+        "rms_orientation_error_rad": 0.328850162017188,
+        "rms_position_error_m": 0.07246832510182939,
+        "translation_displacement_error_m": 0.09080713907973799
+      },
+      {
+        "final_orientation_error_rad": 0.42173869768151706,
+        "final_position_error_m": 0.08414186545691539,
+        "generator": "retrieval",
+        "group": "trial_0012",
+        "grouping": "take",
+        "max_orientation_error_rad": 0.6604888564159279,
+        "max_position_error_m": 0.1443182432919515,
+        "mean_orientation_error_rad": 0.3618733928076187,
+        "mean_position_error_m": 0.0800206577165104,
+        "n_bites": 15,
+        "n_records": 30,
+        "p95_orientation_error_rad": 0.642637108321676,
+        "p95_position_error_m": 0.14143926606694085,
+        "path_length_absolute_error_m": 0.04774881218313602,
+        "path_length_relative_error": 0.07516061582560525,
+        "rms_orientation_error_rad": 0.41721552084807956,
+        "rms_position_error_m": 0.09165697638026733,
+        "translation_displacement_error_m": 0.08414186545691535
+      },
+      {
+        "final_orientation_error_rad": 0.5971987003379892,
+        "final_position_error_m": 0.11687004635387516,
+        "generator": "retrieval",
+        "group": "trial_0013",
+        "grouping": "take",
+        "max_orientation_error_rad": 0.6588394071935001,
+        "max_position_error_m": 0.14493412966559024,
+        "mean_orientation_error_rad": 0.3552709306470147,
+        "mean_position_error_m": 0.07910560629466801,
+        "n_bites": 12,
+        "n_records": 24,
+        "p95_orientation_error_rad": 0.6414654370256162,
+        "p95_position_error_m": 0.14268650558760862,
+        "path_length_absolute_error_m": 0.06505838621927997,
+        "path_length_relative_error": 0.13719143678197773,
+        "rms_orientation_error_rad": 0.42101324735106255,
+        "rms_position_error_m": 0.09210253896585041,
+        "translation_displacement_error_m": 0.11687004635387516
+      },
+      {
+        "final_orientation_error_rad": 0.41813347409193197,
+        "final_position_error_m": 0.09325858225763632,
+        "generator": "retrieval",
+        "group": "trial_0014",
+        "grouping": "take",
+        "max_orientation_error_rad": 0.5599568236969061,
+        "max_position_error_m": 0.123436300533185,
+        "mean_orientation_error_rad": 0.3072188054062555,
+        "mean_position_error_m": 0.06348987242349355,
+        "n_bites": 21,
+        "n_records": 42,
+        "p95_orientation_error_rad": 0.5432256949296427,
+        "p95_position_error_m": 0.1212490200314152,
+        "path_length_absolute_error_m": 0.06317175675123662,
+        "path_length_relative_error": 0.17687492274331124,
+        "rms_orientation_error_rad": 0.35447926351441456,
+        "rms_position_error_m": 0.0754254480856753,
+        "translation_displacement_error_m": 0.09325858225763632
+      },
+      {
+        "final_orientation_error_rad": 0.6695376671286328,
+        "final_position_error_m": 0.13614715114993467,
+        "generator": "retrieval",
+        "group": "trial_0015",
+        "grouping": "take",
+        "max_orientation_error_rad": 0.8032258083032082,
+        "max_position_error_m": 0.15377335307674894,
+        "mean_orientation_error_rad": 0.42951448740187853,
+        "mean_position_error_m": 0.07904100170678137,
+        "n_bites": 19,
+        "n_records": 38,
+        "p95_orientation_error_rad": 0.7747159385627141,
+        "p95_position_error_m": 0.15040085313154153,
+        "path_length_absolute_error_m": 0.06887998385573195,
+        "path_length_relative_error": 0.17023975063719027,
+        "rms_orientation_error_rad": 0.5034219009360844,
+        "rms_position_error_m": 0.09347897135371737,
+        "translation_displacement_error_m": 0.13614715114993467
+      },
+      {
+        "final_orientation_error_rad": 0.4219723607796987,
+        "final_position_error_m": 0.07182154452554396,
+        "generator": "retrieval",
+        "group": "trial_0017",
+        "grouping": "take",
+        "max_orientation_error_rad": 0.581072383721118,
+        "max_position_error_m": 0.12681362607051294,
+        "mean_orientation_error_rad": 0.30544936050024013,
+        "mean_position_error_m": 0.06880480537846388,
+        "n_bites": 15,
+        "n_records": 30,
+        "p95_orientation_error_rad": 0.5612060478279735,
+        "p95_position_error_m": 0.12517010352152655,
+        "path_length_absolute_error_m": 0.03850135692486137,
+        "path_length_relative_error": 0.07190999547403557,
+        "rms_orientation_error_rad": 0.36074895518805133,
+        "rms_position_error_m": 0.07943460129013,
+        "translation_displacement_error_m": 0.07182154452554397
+      },
+      {
+        "final_orientation_error_rad": 0.4716412956918867,
+        "final_position_error_m": 0.07144580689791408,
+        "generator": "retrieval",
+        "group": "trial_0019",
+        "grouping": "take",
+        "max_orientation_error_rad": 0.6240506169297373,
+        "max_position_error_m": 0.1336965378891437,
+        "mean_orientation_error_rad": 0.3340526193252771,
+        "mean_position_error_m": 0.07301633584900014,
+        "n_bites": 26,
+        "n_records": 52,
+        "p95_orientation_error_rad": 0.6046041574770441,
+        "p95_position_error_m": 0.13189466166250183,
+        "path_length_absolute_error_m": 0.06227887416653787,
+        "path_length_relative_error": 0.14074132819876478,
+        "rms_orientation_error_rad": 0.3908814168483189,
+        "rms_position_error_m": 0.0850553266199588,
+        "translation_displacement_error_m": 0.07144580689791408
+      },
+      {
+        "final_orientation_error_rad": 0.6774220929756896,
+        "final_position_error_m": 0.12604907344431907,
+        "generator": "retrieval",
+        "group": "trial_0020",
+        "grouping": "take",
+        "max_orientation_error_rad": 0.8042126470459756,
+        "max_position_error_m": 0.15526690976917484,
+        "mean_orientation_error_rad": 0.4032234650071054,
+        "mean_position_error_m": 0.07737450914379138,
+        "n_bites": 19,
+        "n_records": 38,
+        "p95_orientation_error_rad": 0.7859976888429244,
+        "p95_position_error_m": 0.15128942621134814,
+        "path_length_absolute_error_m": 0.06839593790476586,
+        "path_length_relative_error": 0.2043353614541066,
+        "rms_orientation_error_rad": 0.4915781437694141,
+        "rms_position_error_m": 0.09344708347253652,
+        "translation_displacement_error_m": 0.12604907344431907
+      }
+    ]
+  },
+  "paired_parent_bite_bootstrap": [
+    {
+      "ci95_high": -0.015386152721774397,
+      "ci95_low": -0.022387605639565072,
+      "comparison": "contextual_promp_minus_retrieval",
+      "convention": "negative favors contextual_promp",
+      "group": "overall",
+      "mean_difference": -0.01883258366025426,
+      "metric": "rms_position_error_m",
+      "n_parent_bites": 127,
+      "resamples": 2000,
+      "seed": 20260915
+    },
+    {
+      "ci95_high": -0.07204161371821784,
+      "ci95_low": -0.11669119995194445,
+      "comparison": "contextual_promp_minus_retrieval",
+      "convention": "negative favors contextual_promp",
+      "group": "overall",
+      "mean_difference": -0.09480770202720971,
+      "metric": "rms_orientation_error_rad",
+      "n_parent_bites": 127,
+      "resamples": 2000,
+      "seed": 20260915
+    },
+    {
+      "ci95_high": -0.011819184543982926,
+      "ci95_low": -0.025308376769582194,
+      "comparison": "contextual_promp_minus_retrieval",
+      "convention": "negative favors contextual_promp",
+      "group": "overall",
+      "mean_difference": -0.018363280529219716,
+      "metric": "final_position_error_m",
+      "n_parent_bites": 127,
+      "resamples": 2000,
+      "seed": 20260915
+    },
+    {
+      "ci95_high": -0.002622231965148627,
+      "ci95_low": -0.016002030634046593,
+      "comparison": "contextual_promp_minus_retrieval",
+      "convention": "negative favors contextual_promp",
+      "group": "overall",
+      "mean_difference": -0.009480841441907266,
+      "metric": "path_length_absolute_error_m",
+      "n_parent_bites": 127,
+      "resamples": 2000,
+      "seed": 20260915
+    },
+    {
+      "ci95_high": -0.006697316649243358,
+      "ci95_low": -0.014644916989092706,
+      "comparison": "contextual_promp_minus_retrieval",
+      "convention": "negative favors contextual_promp",
+      "group": "transfer",
+      "mean_difference": -0.010765299038575761,
+      "metric": "rms_position_error_m",
+      "n_parent_bites": 127,
+      "resamples": 2000,
+      "seed": 20260915
+    },
+    {
+      "ci95_high": -0.02967840370545588,
+      "ci95_low": -0.06469594731705511,
+      "comparison": "contextual_promp_minus_retrieval",
+      "convention": "negative favors contextual_promp",
+      "group": "transfer",
+      "mean_difference": -0.04711529806204515,
+      "metric": "rms_orientation_error_rad",
+      "n_parent_bites": 127,
+      "resamples": 2000,
+      "seed": 20260915
+    },
+    {
+      "ci95_high": 0.0013521273591982474,
+      "ci95_low": -0.00895747481726645,
+      "comparison": "contextual_promp_minus_retrieval",
+      "convention": "negative favors contextual_promp",
+      "group": "transfer",
+      "mean_difference": -0.0034815897600101024,
+      "metric": "final_position_error_m",
+      "n_parent_bites": 127,
+      "resamples": 2000,
+      "seed": 20260915
+    },
+    {
+      "ci95_high": -0.005939180145937276,
+      "ci95_low": -0.016603248540582875,
+      "comparison": "contextual_promp_minus_retrieval",
+      "convention": "negative favors contextual_promp",
+      "group": "transfer",
+      "mean_difference": -0.010928892873777322,
+      "metric": "path_length_absolute_error_m",
+      "n_parent_bites": 127,
+      "resamples": 2000,
+      "seed": 20260915
+    },
+    {
+      "ci95_high": -0.02029014851291986,
+      "ci95_low": -0.033531634741669855,
+      "comparison": "contextual_promp_minus_retrieval",
+      "convention": "negative favors contextual_promp",
+      "group": "withdrawal",
+      "mean_difference": -0.02689986828193276,
+      "metric": "rms_position_error_m",
+      "n_parent_bites": 127,
+      "resamples": 2000,
+      "seed": 20260915
+    },
+    {
+      "ci95_high": -0.09879412070426552,
+      "ci95_low": -0.1897046000463027,
+      "comparison": "contextual_promp_minus_retrieval",
+      "convention": "negative favors contextual_promp",
+      "group": "withdrawal",
+      "mean_difference": -0.14250010599237428,
+      "metric": "rms_orientation_error_rad",
+      "n_parent_bites": 127,
+      "resamples": 2000,
+      "seed": 20260915
+    },
+    {
+      "ci95_high": -0.020121768780674575,
+      "ci95_low": -0.046147615934919554,
+      "comparison": "contextual_promp_minus_retrieval",
+      "convention": "negative favors contextual_promp",
+      "group": "withdrawal",
+      "mean_difference": -0.03324497129842933,
+      "metric": "final_position_error_m",
+      "n_parent_bites": 127,
+      "resamples": 2000,
+      "seed": 20260915
+    },
+    {
+      "ci95_high": 0.004068364134947383,
+      "ci95_low": -0.02010178572000236,
+      "comparison": "contextual_promp_minus_retrieval",
+      "convention": "negative favors contextual_promp",
+      "group": "withdrawal",
+      "mean_difference": -0.008032790010037214,
+      "metric": "path_length_absolute_error_m",
+      "n_parent_bites": 127,
+      "resamples": 2000,
+      "seed": 20260915
+    }
+  ],
+  "provenance": {
+    "code_revision": "001886a6df2bb377ff49023a66120e4c2e89c567",
+    "code_worktree_dirty": true,
+    "config": {
+      "alphas": [
+        0.001,
+        0.01,
+        0.1,
+        1.0,
+        10.0,
+        100.0
+      ],
+      "basis_functions": 12,
+      "bootstrap_resamples": 2000,
+      "bootstrap_seed": 20260915,
+      "generated_samples": 101,
+      "output_path": "outputs/generator_g0",
+      "phase1_output_path": "outputs/phase1"
+    },
+    "outer_folds": [
+      "trial_0012",
+      "trial_0013",
+      "trial_0014",
+      "trial_0015",
+      "trial_0017",
+      "trial_0019",
+      "trial_0020"
+    ],
+    "source_files_read": [
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\manifest.json",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0012_bite_001_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0012_bite_001_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0012_bite_002_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0012_bite_002_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0012_bite_003_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0012_bite_003_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0012_bite_004_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0012_bite_004_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0012_bite_005_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0012_bite_005_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0012_bite_006_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0012_bite_006_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0012_bite_007_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0012_bite_007_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0012_bite_008_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0012_bite_008_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0012_bite_009_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0012_bite_009_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0012_bite_010_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0012_bite_010_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0012_bite_011_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0012_bite_011_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0012_bite_012_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0012_bite_012_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0012_bite_013_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0012_bite_013_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0012_bite_014_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0012_bite_014_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0012_bite_015_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0012_bite_015_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0013_bite_001_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0013_bite_001_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0013_bite_002_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0013_bite_002_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0013_bite_003_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0013_bite_003_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0013_bite_004_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0013_bite_004_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0013_bite_005_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0013_bite_005_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0013_bite_006_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0013_bite_006_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0013_bite_007_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0013_bite_007_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0013_bite_008_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0013_bite_008_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0013_bite_009_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0013_bite_009_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0013_bite_010_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0013_bite_010_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0013_bite_011_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0013_bite_011_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0013_bite_012_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0013_bite_012_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0014_bite_001_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0014_bite_001_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0014_bite_002_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0014_bite_002_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0014_bite_003_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0014_bite_003_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0014_bite_004_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0014_bite_004_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0014_bite_005_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0014_bite_005_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0014_bite_006_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0014_bite_006_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0014_bite_007_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0014_bite_007_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0014_bite_008_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0014_bite_008_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0014_bite_009_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0014_bite_009_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0014_bite_010_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0014_bite_010_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0014_bite_011_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0014_bite_011_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0014_bite_012_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0014_bite_012_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0014_bite_013_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0014_bite_013_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0014_bite_014_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0014_bite_014_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0014_bite_015_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0014_bite_015_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0014_bite_016_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0014_bite_016_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0014_bite_017_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0014_bite_017_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0014_bite_018_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0014_bite_018_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0014_bite_019_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0014_bite_019_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0014_bite_020_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0014_bite_020_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0014_bite_021_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0014_bite_021_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0015_bite_001_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0015_bite_001_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0015_bite_002_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0015_bite_002_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0015_bite_003_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0015_bite_003_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0015_bite_004_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0015_bite_004_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0015_bite_005_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0015_bite_005_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0015_bite_006_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0015_bite_006_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0015_bite_007_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0015_bite_007_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0015_bite_008_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0015_bite_008_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0015_bite_009_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0015_bite_009_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0015_bite_010_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0015_bite_010_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0015_bite_011_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0015_bite_011_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0015_bite_012_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0015_bite_012_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0015_bite_013_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0015_bite_013_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0015_bite_014_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0015_bite_014_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0015_bite_015_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0015_bite_015_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0015_bite_016_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0015_bite_016_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0015_bite_017_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0015_bite_017_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0015_bite_018_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0015_bite_018_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0015_bite_019_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0015_bite_019_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0017_bite_001_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0017_bite_001_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0017_bite_002_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0017_bite_002_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0017_bite_003_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0017_bite_003_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0017_bite_004_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0017_bite_004_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0017_bite_005_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0017_bite_005_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0017_bite_006_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0017_bite_006_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0017_bite_007_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0017_bite_007_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0017_bite_008_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0017_bite_008_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0017_bite_009_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0017_bite_009_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0017_bite_010_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0017_bite_010_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0017_bite_011_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0017_bite_011_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0017_bite_012_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0017_bite_012_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0017_bite_013_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0017_bite_013_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0017_bite_014_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0017_bite_014_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0017_bite_015_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0017_bite_015_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_001_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_001_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_002_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_002_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_003_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_003_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_004_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_004_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_005_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_005_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_006_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_006_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_007_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_007_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_008_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_008_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_009_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_009_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_010_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_010_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_011_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_011_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_012_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_012_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_013_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_013_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_014_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_014_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_015_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_015_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_016_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_016_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_017_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_017_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_018_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_018_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_019_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_019_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_020_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_020_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_021_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_021_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_022_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_022_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_023_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_023_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_024_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_024_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_025_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_025_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_026_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0019_bite_026_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0020_bite_001_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0020_bite_001_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0020_bite_002_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0020_bite_002_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0020_bite_003_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0020_bite_003_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0020_bite_004_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0020_bite_004_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0020_bite_005_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0020_bite_005_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0020_bite_006_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0020_bite_006_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0020_bite_007_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0020_bite_007_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0020_bite_008_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0020_bite_008_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0020_bite_009_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0020_bite_009_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0020_bite_010_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0020_bite_010_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0020_bite_011_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0020_bite_011_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0020_bite_012_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0020_bite_012_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0020_bite_013_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0020_bite_013_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0020_bite_014_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0020_bite_014_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0020_bite_015_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0020_bite_015_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0020_bite_016_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0020_bite_016_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0020_bite_017_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0020_bite_017_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0020_bite_018_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0020_bite_018_withdrawal.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0020_bite_019_transfer.npz",
+      "F:\\code\\feeding_coordination\\outputs\\phase1\\demos\\trial_0020_bite_019_withdrawal.npz"
+    ],
+    "source_manifest": "F:\\code\\feeding_coordination\\outputs\\phase1\\manifest.json",
+    "source_manifest_sha256": "0bf9e8e05afdd03690f289d547b57a4f72201e135d9c19cc3d7c17440aab2015",
+    "source_schema": "phase1-v1.5"
+  },
+  "representative_examples": {
+    "contextual_promp_favorable": {
+      "contextual_promp_rms_position_error_m": 0.07687760125509335,
+      "parent_bite_id": "trial_0020_bite_005",
+      "phase": "withdrawal",
+      "record_id": "trial_0020_bite_005_withdrawal",
+      "retrieval_minus_promp_m": 0.11632303203866964,
+      "retrieval_rms_position_error_m": 0.193200633293763,
+      "take": "trial_0020"
+    },
+    "difficult_ood": {
+      "contextual_promp_rms_position_error_m": 0.155674023512939,
+      "parent_bite_id": "trial_0013_bite_012",
+      "phase": "withdrawal",
+      "record_id": "trial_0013_bite_012_withdrawal",
+      "retrieval_minus_promp_m": 0.11536639100564458,
+      "retrieval_rms_position_error_m": 0.2710404145185836,
+      "take": "trial_0013"
+    },
+    "retrieval_favorable": {
+      "contextual_promp_rms_position_error_m": 0.12792359476107937,
+      "parent_bite_id": "trial_0020_bite_015",
+      "phase": "withdrawal",
+      "record_id": "trial_0020_bite_015_withdrawal",
+      "retrieval_minus_promp_m": -0.06034141088307633,
+      "retrieval_rms_position_error_m": 0.06758218387800304,
+      "take": "trial_0020"
+    },
+    "selection": "deterministic from OOF RMS position errors; no visual selection",
+    "typical": {
+      "contextual_promp_rms_position_error_m": 0.07617193159089745,
+      "parent_bite_id": "trial_0012_bite_002",
+      "phase": "transfer",
+      "record_id": "trial_0012_bite_002_transfer",
+      "retrieval_minus_promp_m": 0.015683196274632383,
+      "retrieval_rms_position_error_m": 0.09185512786552984,
+      "take": "trial_0012"
+    }
+  },
+  "schema_version": "generator-g0-v1",
+  "scope": {
+    "calibration_started": false,
+    "collision_started": false,
+    "complex_model_added": false,
+    "g1_started": false,
+    "retiming_started": false,
+    "robot_ik_started": false
+  },
+  "semantic_boundary": {
+    "deployment_context_validated": false,
+    "mouth_proxy_is_independently_measured": false,
+    "physical_mouth_position_generalization_claimed": false,
+    "upstream_field_alias": "mouth_target_position -> mouth_proxy"
+  }
+}
