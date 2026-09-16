@@ -1,0 +1,62 @@
+{
+  "schema_version": "generator-g1-visualization-presets-v1",
+  "presets": {
+    "promp_clean_transfer": {
+      "record_id": "trial_0014_bite_004_transfer",
+      "generator": "contextual_promp",
+      "strategy": "StrongLocal",
+      "mode": "split",
+      "speed": 0.5,
+      "description": "Clean contextual-ProMP transfer example selected by frozen G1 metrics."
+    },
+    "promp_clean_withdrawal": {
+      "record_id": "trial_0017_bite_011_withdrawal",
+      "generator": "contextual_promp",
+      "strategy": "StrongLocal",
+      "mode": "split",
+      "speed": 0.5,
+      "description": "Clean contextual-ProMP withdrawal example from the frozen G1 video selection."
+    },
+    "retrieval_clean_example": {
+      "record_id": "trial_0020_bite_008_transfer",
+      "generator": "retrieval",
+      "strategy": "StrongLocal",
+      "mode": "split",
+      "speed": 0.5,
+      "description": "Clean retrieval transfer example selected by frozen G1 metrics."
+    },
+    "promp_advantage": {
+      "record_id": "trial_0012_bite_010_withdrawal",
+      "generator": "contextual_promp",
+      "strategy": "StrongLocal",
+      "mode": "split",
+      "speed": 0.5,
+      "description": "Frozen G1 contextual-ProMP advantage example."
+    },
+    "generator_error_propagation": {
+      "record_id": "trial_0012_bite_010_withdrawal",
+      "generator": "retrieval",
+      "strategy": "StrongLocal",
+      "mode": "split",
+      "speed": 0.5,
+      "description": "Frozen G1 generator-error propagation example."
+    },
+    "robot_failure_example": {
+      "record_id": "trial_0015_bite_019_transfer",
+      "generator": "contextual_promp",
+      "strategy": "StrongLocal",
+      "mode": "split",
+      "speed": 0.5,
+      "description": "Valid generated-U example with a saved downstream robot failure."
+    },
+    "promp_vs_retrieval": {
+      "record_id": "trial_0012_bite_010_withdrawal",
+      "generator": "contextual_promp",
+      "compare_generator": "retrieval",
+      "strategy": "StrongLocal",
+      "mode": "split",
+      "speed": 0.5,
+      "description": "Same-record contextual-ProMP versus retrieval comparison."
+    }
+  }
+}

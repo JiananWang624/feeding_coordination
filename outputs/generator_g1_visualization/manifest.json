@@ -1,0 +1,91 @@
+{
+  "presentation_only": true,
+  "presets_sha256": "221f949debbddb24dc4ff41f4fe857d10cdb34f5eecc6402c0d78afb5e446984",
+  "schema_version": "generator-g1-visualization-v1",
+  "snapshots": [
+    "snapshots/generator_error_propagation_comparison_midpoint.png",
+    "snapshots/generator_error_propagation_failure.png",
+    "snapshots/measured_vs_promp_stronglocal_transfer_midpoint.png",
+    "snapshots/measured_vs_promp_stronglocal_withdrawal_midpoint.png",
+    "snapshots/measured_vs_retrieval_stronglocal_midpoint.png",
+    "snapshots/promp_vs_retrieval_same_record_midpoint.png"
+  ],
+  "source_g1_manifest": "F:\\code\\feeding_coordination\\outputs\\generator_g1\\manifest.json",
+  "source_g1_manifest_sha256": "ba9760ed41aff822ed656539166a48484a3f5665e7ffff7929924b15fe146a79",
+  "source_phase1_manifest_sha256": "0bf9e8e05afdd03690f289d547b57a4f72201e135d9c19cc3d7c17440aab2015",
+  "timing_physically_retimed": false,
+  "videos": [
+    {
+      "frames_checked": 10,
+      "generator": "contextual_promp",
+      "max_orientation_error_rad": 0.0,
+      "max_position_error_m": 0.0,
+      "mode": "split",
+      "output": "F:\\code\\feeding_coordination\\outputs\\generator_g1_visualization\\videos\\measured_vs_promp_stronglocal_transfer.mp4",
+      "record_id": "trial_0014_bite_004_transfer",
+      "strategy": "StrongLocal",
+      "timing": "stored provisional G0 timing; not physically retimed",
+      "viewer_recomputed_q": false
+    },
+    {
+      "frames_checked": 10,
+      "generator": "contextual_promp",
+      "max_orientation_error_rad": 0.0,
+      "max_position_error_m": 0.0,
+      "mode": "split",
+      "output": "F:\\code\\feeding_coordination\\outputs\\generator_g1_visualization\\videos\\measured_vs_promp_stronglocal_withdrawal.mp4",
+      "record_id": "trial_0017_bite_011_withdrawal",
+      "strategy": "StrongLocal",
+      "timing": "stored provisional G0 timing; not physically retimed",
+      "viewer_recomputed_q": false
+    },
+    {
+      "frames_checked": 10,
+      "generator": "retrieval",
+      "max_orientation_error_rad": 0.0,
+      "max_position_error_m": 0.0,
+      "mode": "split",
+      "output": "F:\\code\\feeding_coordination\\outputs\\generator_g1_visualization\\videos\\measured_vs_retrieval_stronglocal.mp4",
+      "record_id": "trial_0020_bite_008_transfer",
+      "strategy": "StrongLocal",
+      "timing": "stored provisional G0 timing; not physically retimed",
+      "viewer_recomputed_q": false
+    },
+    {
+      "frames_checked": 10,
+      "generator": "retrieval",
+      "max_orientation_error_rad": 0.0,
+      "max_position_error_m": 0.0,
+      "mode": "split",
+      "output": "F:\\code\\feeding_coordination\\outputs\\generator_g1_visualization\\videos\\generator_error_propagation_comparison.mp4",
+      "record_id": "trial_0012_bite_010_withdrawal",
+      "strategy": "StrongLocal",
+      "timing": "stored provisional G0 timing; not physically retimed",
+      "viewer_recomputed_q": false
+    },
+    {
+      "generators": [
+        "contextual_promp",
+        "retrieval"
+      ],
+      "left_fk_parity": {
+        "frames_checked": 10,
+        "max_orientation_error_rad": 0.0,
+        "max_position_error_m": 0.0,
+        "viewer_recomputed_q": false
+      },
+      "mode": "split",
+      "output": "F:\\code\\feeding_coordination\\outputs\\generator_g1_visualization\\videos\\promp_vs_retrieval_same_record.mp4",
+      "record_id": "trial_0012_bite_010_withdrawal",
+      "right_fk_parity": {
+        "frames_checked": 10,
+        "max_orientation_error_rad": 0.0,
+        "max_position_error_m": 0.0,
+        "viewer_recomputed_q": false
+      },
+      "strategy": "StrongLocal",
+      "timing": "stored provisional G0 timing; not physically retimed"
+    }
+  ],
+  "viewer_recomputes_q": false
+}
