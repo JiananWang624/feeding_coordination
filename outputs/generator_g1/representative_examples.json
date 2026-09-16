@@ -1,0 +1,58 @@
+{
+  "clean_promp": {
+    "end_to_end_q_rms_deviation_rad": 0.02627422407798638,
+    "generated_vs_measured_reference_delta_psi_mae_rad": 0.0063574896854394596,
+    "generator": "contextual_promp",
+    "parent_bite_id": "trial_0014_bite_004",
+    "phase": "transfer",
+    "record_id": "trial_0014_bite_004_transfer",
+    "stronglocal_complete_pipeline_success": true,
+    "take": "trial_0014",
+    "tool_rms_position_error_m": 0.0097911364889089
+  },
+  "clean_retrieval": {
+    "end_to_end_q_rms_deviation_rad": 0.027727045575462482,
+    "generated_vs_measured_reference_delta_psi_mae_rad": 0.011706813015404683,
+    "generator": "retrieval",
+    "parent_bite_id": "trial_0020_bite_008",
+    "phase": "transfer",
+    "record_id": "trial_0020_bite_008_transfer",
+    "stronglocal_complete_pipeline_success": true,
+    "take": "trial_0020",
+    "tool_rms_position_error_m": 0.0142193184502179
+  },
+  "generator_error_propagation": {
+    "end_to_end_q_rms_deviation_rad": 2.1491523726172423,
+    "generated_vs_measured_reference_delta_psi_mae_rad": 0.07129470164642009,
+    "generator": "retrieval",
+    "parent_bite_id": "trial_0012_bite_010",
+    "phase": "withdrawal",
+    "record_id": "trial_0012_bite_010_withdrawal",
+    "stronglocal_complete_pipeline_success": false,
+    "take": "trial_0012",
+    "tool_rms_position_error_m": 0.0945112465963368
+  },
+  "promp_advantage": {
+    "end_to_end_q_rms_deviation_rad": 0.9392043305675051,
+    "generated_vs_measured_reference_delta_psi_mae_rad": 0.07830813282712329,
+    "generator": "contextual_promp",
+    "parent_bite_id": "trial_0012_bite_010",
+    "phase": "withdrawal",
+    "record_id": "trial_0012_bite_010_withdrawal",
+    "stronglocal_complete_pipeline_success": false,
+    "take": "trial_0012",
+    "tool_rms_position_error_m": 0.0719481103815206
+  },
+  "robot_failure_despite_valid_generated_u": {
+    "end_to_end_q_rms_deviation_rad": 0.09592327580246389,
+    "generated_vs_measured_reference_delta_psi_mae_rad": 0.038772173649441764,
+    "generator": "contextual_promp",
+    "parent_bite_id": "trial_0015_bite_019",
+    "phase": "transfer",
+    "record_id": "trial_0015_bite_019_transfer",
+    "stronglocal_complete_pipeline_success": false,
+    "take": "trial_0015",
+    "tool_rms_position_error_m": 0.0205901340499176
+  },
+  "selection": "deterministic from OOF tool, coordination, and stored robot metrics; never visual preference"
+}

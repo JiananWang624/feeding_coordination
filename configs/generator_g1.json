@@ -1,0 +1,15 @@
+{
+  "phase1_output_path": "outputs/phase1",
+  "phase32_output_path": "outputs/phase32",
+  "generator_g0_output_path": "outputs/generator_g0",
+  "robot_r0_output_path": "outputs/robot_r0",
+  "output_path": "outputs/generator_g1",
+  "parity_tolerance": 1e-10,
+  "task_position_tolerance_m": 1e-8,
+  "task_orientation_tolerance_rad": 1e-8,
+  "task_psi_tolerance_rad": 1e-8,
+  "continuity_threshold_rad": 0.5,
+  "bootstrap_seed": 20260915,
+  "bootstrap_resamples": 2000,
+  "generated_samples": 101
+}

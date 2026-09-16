@@ -1,0 +1,43 @@
+{
+  "alpha": 10.0,
+  "bite_weighting": "each row weight = 1 / rows in parent_bite",
+  "feature_contract_version": "strong-local-l3-v1",
+  "feature_count": 19,
+  "feature_order": [
+    "relative_tool_position_x",
+    "relative_tool_position_y",
+    "relative_tool_position_z",
+    "relative_tool_rotation_x",
+    "relative_tool_rotation_y",
+    "relative_tool_rotation_z",
+    "linear_velocity_x",
+    "linear_velocity_y",
+    "linear_velocity_z",
+    "angular_velocity_x",
+    "angular_velocity_y",
+    "angular_velocity_z",
+    "normalized_phase_s",
+    "phase_transfer",
+    "phase_withdrawal",
+    "plate_relative_x",
+    "plate_relative_y",
+    "plate_relative_z",
+    "plate_valid_mask"
+  ],
+  "held_out_take": "trial_0019",
+  "phase1_manifest_sha256": "0bf9e8e05afdd03690f289d547b57a4f72201e135d9c19cc3d7c17440aab2015",
+  "phase32_oof_parity_max_abs_delta_error": 3.692879335659427e-14,
+  "phase32_oof_parity_passed": true,
+  "phase32_oof_parity_tolerance": 1e-10,
+  "scaler": "bite-weighted mean and population standard deviation; scale<1e-12 -> 1",
+  "schema_version": "generator-g1-fold-stronglocal-v1",
+  "target": "delta_psi=psi_unwrapped-psi0",
+  "training_takes": [
+    "trial_0012",
+    "trial_0013",
+    "trial_0014",
+    "trial_0015",
+    "trial_0017",
+    "trial_0020"
+  ]
+}

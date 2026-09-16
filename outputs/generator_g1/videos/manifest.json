@@ -1,0 +1,46 @@
+[
+  {
+    "frames_checked": 5,
+    "generator": "contextual_promp",
+    "max_orientation_error_rad": 0.0,
+    "max_position_error_m": 0.0,
+    "output": "F:\\code\\feeding_coordination\\outputs\\generator_g1\\videos\\promp_clean_transfer.mp4",
+    "record_id": "trial_0014_bite_004_transfer",
+    "strategy": "StrongLocal",
+    "timing": "stored provisional G0 timing; not physically retimed",
+    "viewer_recomputed_q": false
+  },
+  {
+    "frames_checked": 5,
+    "generator": "contextual_promp",
+    "max_orientation_error_rad": 0.0,
+    "max_position_error_m": 0.0,
+    "output": "F:\\code\\feeding_coordination\\outputs\\generator_g1\\videos\\promp_clean_withdrawal.mp4",
+    "record_id": "trial_0017_bite_011_withdrawal",
+    "strategy": "StrongLocal",
+    "timing": "stored provisional G0 timing; not physically retimed",
+    "viewer_recomputed_q": false
+  },
+  {
+    "frames_checked": 5,
+    "generator": "retrieval",
+    "max_orientation_error_rad": 0.0,
+    "max_position_error_m": 0.0,
+    "output": "F:\\code\\feeding_coordination\\outputs\\generator_g1\\videos\\retrieval_clean_example.mp4",
+    "record_id": "trial_0020_bite_008_transfer",
+    "strategy": "StrongLocal",
+    "timing": "stored provisional G0 timing; not physically retimed",
+    "viewer_recomputed_q": false
+  },
+  {
+    "frames_checked": 5,
+    "generator": "retrieval",
+    "max_orientation_error_rad": 0.0,
+    "max_position_error_m": 0.0,
+    "output": "F:\\code\\feeding_coordination\\outputs\\generator_g1\\videos\\generator_error_propagation.mp4",
+    "record_id": "trial_0012_bite_010_withdrawal",
+    "strategy": "StrongLocal",
+    "timing": "stored provisional G0 timing; not physically retimed",
+    "viewer_recomputed_q": false
+  }
+]

@@ -1,0 +1,8 @@
+held_out_take,training_takes,alpha,test_frames,max_abs_delta_prediction_error,tolerance,parity_passed
+trial_0012,trial_0013|trial_0014|trial_0015|trial_0017|trial_0019|trial_0020,1.0,4327,3.3822944445205394e-13,1e-10,True
+trial_0013,trial_0012|trial_0014|trial_0015|trial_0017|trial_0019|trial_0020,10.0,2756,3.799738301779598e-14,1e-10,True
+trial_0014,trial_0012|trial_0013|trial_0015|trial_0017|trial_0019|trial_0020,1.0,4670,1.1704526237110713e-13,1e-10,True
+trial_0015,trial_0012|trial_0013|trial_0014|trial_0017|trial_0019|trial_0020,1.0,5559,1.7094659021665848e-13,1e-10,True
+trial_0017,trial_0012|trial_0013|trial_0014|trial_0015|trial_0019|trial_0020,10.0,3846,2.4623532379752788e-14,1e-10,True
+trial_0019,trial_0012|trial_0013|trial_0014|trial_0015|trial_0017|trial_0020,10.0,6491,3.692879335659427e-14,1e-10,True
+trial_0020,trial_0012|trial_0013|trial_0014|trial_0015|trial_0017|trial_0019,10.0,4567,2.478572902475662e-14,1e-10,True

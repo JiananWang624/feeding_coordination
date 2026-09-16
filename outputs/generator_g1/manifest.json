@@ -1,0 +1,47 @@
+{
+  "coordination_metrics": "coordination_metrics.csv",
+  "deployment_context_validated": false,
+  "eligibility": "eligibility.csv",
+  "fold_model_parity": "fold_model_parity.csv",
+  "fold_models": [
+    "fold_models/heldout_trial_0012",
+    "fold_models/heldout_trial_0013",
+    "fold_models/heldout_trial_0014",
+    "fold_models/heldout_trial_0015",
+    "fold_models/heldout_trial_0017",
+    "fold_models/heldout_trial_0019",
+    "fold_models/heldout_trial_0020"
+  ],
+  "mouth_proxy_is_independently_measured": false,
+  "pairwise_bootstrap": "pairwise_bootstrap.csv",
+  "per_take_metrics": "per_take_metrics.csv",
+  "pipeline_metrics": "pipeline_metrics.csv",
+  "plots": [
+    "plots/pipeline_success.png",
+    "plots/generated_vs_measured_u.png",
+    "plots/coordination_propagation.png",
+    "plots/robot_deviation.png",
+    "plots/transfer_withdrawal.png"
+  ],
+  "representative_examples": "representative_examples.json",
+  "result_counts": {
+    "contextual_promp": 246,
+    "measured_reference": 246,
+    "retrieval": 246
+  },
+  "robot_metrics": "robot_metrics.csv",
+  "run_fingerprint": "cfcb3ab3f27f1e6cbe6b85f0346557efe4c7eaf7ff26d7a888ee044c92b4f4d3",
+  "schema_version": "generator-g1-v1",
+  "summary": "summary.json",
+  "visualization": {
+    "timing_physically_retimed": false,
+    "videos": [
+      "videos/promp_clean_transfer.mp4",
+      "videos/promp_clean_withdrawal.mp4",
+      "videos/retrieval_clean_example.mp4",
+      "videos/generator_error_propagation.mp4"
+    ],
+    "videos_manifest": "videos/manifest.json",
+    "viewer_recomputes_q": false
+  }
+}
