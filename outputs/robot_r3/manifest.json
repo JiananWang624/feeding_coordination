@@ -1,0 +1,38 @@
+{
+  "schema_version": "robot-r3-v1",
+  "config": {
+    "robot_r0_output_path": "outputs/robot_r0",
+    "robot_r1_output_path": "outputs/robot_r1",
+    "output_path": "outputs/robot_r3",
+    "offsets_rad": [
+      -0.25,
+      0.0,
+      0.25
+    ],
+    "continuity_threshold_rad": 0.5,
+    "bootstrap_seed": 20260915,
+    "bootstrap_resamples": 2000
+  },
+  "robot_r0_manifest": "F:\\code\\feeding_coordination\\outputs\\robot_r0\\manifest.json",
+  "robot_r0_manifest_sha256": "1bf8e72f7bd7125f2bc22b1c722598e9619987bf3b376c54db9871d7e2403dbc",
+  "robot_r1_manifest": "F:\\code\\feeding_coordination\\outputs\\robot_r1\\manifest.json",
+  "robot_r1_manifest_sha256": "672f7c6904fd3fc7307aedf9ebeae6511530305ea85113f2973ac4d8399316f4",
+  "frozen_delta_psi_reused": true,
+  "tool_trajectory_bit_identical": true,
+  "robot_smooth_settings": {
+    "local_offsets_rad": [
+      0.0,
+      0.05,
+      -0.05,
+      0.1,
+      -0.1,
+      0.2,
+      -0.2,
+      0.4,
+      -0.4
+    ],
+    "global_recovery_points": 32,
+    "implementation": "feeding_coordination.robot_r1.robot_smooth_run"
+  },
+  "read_only_inputs_verified_before_after": true
+}

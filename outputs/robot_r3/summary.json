@@ -1,0 +1,1453 @@
+{
+  "schema_version": "robot-r3-v1",
+  "strategies": [
+    "B0",
+    "B2",
+    "B3",
+    "StrongLocal",
+    "H_star",
+    "HumanGT",
+    "RobotSmooth"
+  ],
+  "conditions": {
+    "psi0_minus_025": -0.25,
+    "psi0_nominal": 0.0,
+    "psi0_plus_025": 0.25
+  },
+  "scientific_scope": "redundancy-policy robustness under the current fixed simulation task geometry",
+  "common_initial_state_validation": {
+    "runs_checked": 864,
+    "successful_first_frames_checked": 849,
+    "first_target_position_equal": true,
+    "first_target_rotation_equal": true,
+    "first_target_psi_equal": true,
+    "first_status_equal": true,
+    "max_first_q_abs_difference_rad": 0.0
+  },
+  "initial_state_feasibility": [
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "source_runs": 288,
+      "initial_success_runs": 283,
+      "initial_state_success_percent": 98.26388888888889,
+      "INITIAL_JOINT_LIMIT": 0,
+      "INITIAL_NO_VALID_BRANCH": 5,
+      "other_initial_status": 0,
+      "initial_status_counts_json": "{\"NO_VALID_BRANCH\": 5, \"SUCCESS_EXACT\": 283}"
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "condition": "psi0_nominal",
+      "offset_rad": 0.0,
+      "source_runs": 288,
+      "initial_success_runs": 283,
+      "initial_state_success_percent": 98.26388888888889,
+      "INITIAL_JOINT_LIMIT": 0,
+      "INITIAL_NO_VALID_BRANCH": 5,
+      "other_initial_status": 0,
+      "initial_status_counts_json": "{\"NO_VALID_BRANCH\": 5, \"SUCCESS_EXACT\": 283}"
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "source_runs": 288,
+      "initial_success_runs": 283,
+      "initial_state_success_percent": 98.26388888888889,
+      "INITIAL_JOINT_LIMIT": 0,
+      "INITIAL_NO_VALID_BRANCH": 5,
+      "other_initial_status": 0,
+      "initial_status_counts_json": "{\"NO_VALID_BRANCH\": 5, \"SUCCESS_EXACT\": 283}"
+    }
+  ],
+  "ranking_stability": {
+    "psi0_minus_025": {
+      "psi_mae": [
+        "HumanGT",
+        "H_star",
+        "B3",
+        "B2",
+        "StrongLocal",
+        "RobotSmooth"
+      ],
+      "elbow_mean": [
+        "HumanGT",
+        "H_star",
+        "B3",
+        "StrongLocal",
+        "B2",
+        "RobotSmooth"
+      ],
+      "travel": [
+        "B2",
+        "HumanGT",
+        "StrongLocal",
+        "B3",
+        "H_star",
+        "RobotSmooth"
+      ],
+      "rms_velocity": [
+        "HumanGT",
+        "B2",
+        "B3",
+        "StrongLocal",
+        "H_star",
+        "RobotSmooth"
+      ],
+      "violations": [
+        "RobotSmooth",
+        "HumanGT",
+        "B3",
+        "B2",
+        "StrongLocal",
+        "H_star"
+      ],
+      "min_margin": [
+        "HumanGT",
+        "H_star",
+        "StrongLocal",
+        "B2",
+        "B3",
+        "RobotSmooth"
+      ]
+    },
+    "psi0_nominal": {
+      "psi_mae": [
+        "HumanGT",
+        "H_star",
+        "B3",
+        "B2",
+        "StrongLocal",
+        "RobotSmooth"
+      ],
+      "elbow_mean": [
+        "HumanGT",
+        "H_star",
+        "B3",
+        "B2",
+        "StrongLocal",
+        "RobotSmooth"
+      ],
+      "travel": [
+        "B2",
+        "HumanGT",
+        "StrongLocal",
+        "B3",
+        "RobotSmooth",
+        "H_star"
+      ],
+      "rms_velocity": [
+        "B2",
+        "RobotSmooth",
+        "HumanGT",
+        "StrongLocal",
+        "B3",
+        "H_star"
+      ],
+      "violations": [
+        "RobotSmooth",
+        "HumanGT",
+        "H_star",
+        "B2",
+        "B3",
+        "StrongLocal"
+      ],
+      "min_margin": [
+        "HumanGT",
+        "StrongLocal",
+        "B2",
+        "H_star",
+        "B3",
+        "RobotSmooth"
+      ]
+    },
+    "psi0_plus_025": {
+      "psi_mae": [
+        "HumanGT",
+        "H_star",
+        "B2",
+        "B3",
+        "StrongLocal",
+        "RobotSmooth"
+      ],
+      "elbow_mean": [
+        "HumanGT",
+        "H_star",
+        "StrongLocal",
+        "B2",
+        "B3",
+        "RobotSmooth"
+      ],
+      "travel": [
+        "HumanGT",
+        "B2",
+        "StrongLocal",
+        "B3",
+        "H_star",
+        "RobotSmooth"
+      ],
+      "rms_velocity": [
+        "HumanGT",
+        "RobotSmooth",
+        "B2",
+        "StrongLocal",
+        "H_star",
+        "B3"
+      ],
+      "violations": [
+        "RobotSmooth",
+        "B2",
+        "StrongLocal",
+        "HumanGT",
+        "B3",
+        "H_star"
+      ],
+      "min_margin": [
+        "HumanGT",
+        "StrongLocal",
+        "H_star",
+        "B2",
+        "B3",
+        "RobotSmooth"
+      ]
+    }
+  },
+  "ranking_changes_from_nominal": {
+    "psi0_minus_025": {
+      "psi_mae": {
+        "changed_from_nominal": false,
+        "ordering": [
+          "HumanGT",
+          "H_star",
+          "B3",
+          "B2",
+          "StrongLocal",
+          "RobotSmooth"
+        ]
+      },
+      "elbow_mean": {
+        "changed_from_nominal": true,
+        "ordering": [
+          "HumanGT",
+          "H_star",
+          "B3",
+          "StrongLocal",
+          "B2",
+          "RobotSmooth"
+        ]
+      },
+      "travel": {
+        "changed_from_nominal": true,
+        "ordering": [
+          "B2",
+          "HumanGT",
+          "StrongLocal",
+          "B3",
+          "H_star",
+          "RobotSmooth"
+        ]
+      },
+      "rms_velocity": {
+        "changed_from_nominal": true,
+        "ordering": [
+          "HumanGT",
+          "B2",
+          "B3",
+          "StrongLocal",
+          "H_star",
+          "RobotSmooth"
+        ]
+      },
+      "violations": {
+        "changed_from_nominal": true,
+        "ordering": [
+          "RobotSmooth",
+          "HumanGT",
+          "B3",
+          "B2",
+          "StrongLocal",
+          "H_star"
+        ]
+      },
+      "min_margin": {
+        "changed_from_nominal": true,
+        "ordering": [
+          "HumanGT",
+          "H_star",
+          "StrongLocal",
+          "B2",
+          "B3",
+          "RobotSmooth"
+        ]
+      }
+    },
+    "psi0_plus_025": {
+      "psi_mae": {
+        "changed_from_nominal": true,
+        "ordering": [
+          "HumanGT",
+          "H_star",
+          "B2",
+          "B3",
+          "StrongLocal",
+          "RobotSmooth"
+        ]
+      },
+      "elbow_mean": {
+        "changed_from_nominal": true,
+        "ordering": [
+          "HumanGT",
+          "H_star",
+          "StrongLocal",
+          "B2",
+          "B3",
+          "RobotSmooth"
+        ]
+      },
+      "travel": {
+        "changed_from_nominal": true,
+        "ordering": [
+          "HumanGT",
+          "B2",
+          "StrongLocal",
+          "B3",
+          "H_star",
+          "RobotSmooth"
+        ]
+      },
+      "rms_velocity": {
+        "changed_from_nominal": true,
+        "ordering": [
+          "HumanGT",
+          "RobotSmooth",
+          "B2",
+          "StrongLocal",
+          "H_star",
+          "B3"
+        ]
+      },
+      "violations": {
+        "changed_from_nominal": true,
+        "ordering": [
+          "RobotSmooth",
+          "B2",
+          "StrongLocal",
+          "HumanGT",
+          "B3",
+          "H_star"
+        ]
+      },
+      "min_margin": {
+        "changed_from_nominal": true,
+        "ordering": [
+          "HumanGT",
+          "StrongLocal",
+          "H_star",
+          "B2",
+          "B3",
+          "RobotSmooth"
+        ]
+      }
+    }
+  },
+  "robustness_deltas": [
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "B0",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "trajectory_frame_success_percent",
+      "value": 95.1514775266948,
+      "nominal_value": 94.40029798857711,
+      "delta_from_nominal": 0.7511795381176967
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "B0",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "violations",
+      "value": 76.0,
+      "nominal_value": 26.0,
+      "delta_from_nominal": 50.0
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "B0",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "travel",
+      "value": 5.251476881606638,
+      "nominal_value": 4.970185367951569,
+      "delta_from_nominal": 0.2812915136550691
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "B0",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "rms_velocity",
+      "value": 1.001475605479995,
+      "nominal_value": 0.9745781387474288,
+      "delta_from_nominal": 0.0268974667325661
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "B0",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "min_margin",
+      "value": 0.444224494651803,
+      "nominal_value": 0.3543700174686467,
+      "delta_from_nominal": 0.08985447718315631
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "B0",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "min_jp_sigma",
+      "value": 0.23570835033473497,
+      "nominal_value": 0.22647726101788637,
+      "delta_from_nominal": 0.0092310893168486
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "B0",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "min_jr_sigma",
+      "value": 1.2396534065882951,
+      "nominal_value": 1.3012175833900954,
+      "delta_from_nominal": -0.06156417680180026
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "B0",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "trajectory_frame_success_percent",
+      "value": 93.72671964241371,
+      "nominal_value": 94.40029798857711,
+      "delta_from_nominal": -0.6735783461633957
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "B0",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "violations",
+      "value": 42.0,
+      "nominal_value": 26.0,
+      "delta_from_nominal": 16.0
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "B0",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "travel",
+      "value": 4.806077737155569,
+      "nominal_value": 4.970185367951569,
+      "delta_from_nominal": -0.16410763079599988
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "B0",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "rms_velocity",
+      "value": 0.974796251822466,
+      "nominal_value": 0.9745781387474288,
+      "delta_from_nominal": 0.00021811307503716293
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "B0",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "min_margin",
+      "value": 0.2477029253097818,
+      "nominal_value": 0.3543700174686467,
+      "delta_from_nominal": -0.10666709215886491
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "B0",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "min_jp_sigma",
+      "value": 0.21662976209271875,
+      "nominal_value": 0.22647726101788637,
+      "delta_from_nominal": -0.00984749892516762
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "B0",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "min_jr_sigma",
+      "value": 1.3325791383850178,
+      "nominal_value": 1.3012175833900954,
+      "delta_from_nominal": 0.031361554994922436
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "B2",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "trajectory_frame_success_percent",
+      "value": 95.27874348149987,
+      "nominal_value": 94.97454680903898,
+      "delta_from_nominal": 0.30419667246088977
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "B2",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "violations",
+      "value": 40.0,
+      "nominal_value": 18.0,
+      "delta_from_nominal": 22.0
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "B2",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "travel",
+      "value": 5.024753425066244,
+      "nominal_value": 4.784198798602082,
+      "delta_from_nominal": 0.2405546264641618
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "B2",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "rms_velocity",
+      "value": 0.9920565696175271,
+      "nominal_value": 0.9419724664332936,
+      "delta_from_nominal": 0.05008410318423351
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "B2",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "min_margin",
+      "value": 0.47960538020713334,
+      "nominal_value": 0.38365944340384855,
+      "delta_from_nominal": 0.09594593680328478
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "B2",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "min_jp_sigma",
+      "value": 0.2360106799036794,
+      "nominal_value": 0.22600394777005178,
+      "delta_from_nominal": 0.010006732133627627
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "B2",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "min_jr_sigma",
+      "value": 1.2540664508211992,
+      "nominal_value": 1.314796097117509,
+      "delta_from_nominal": -0.060729646296309836
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "B2",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "trajectory_frame_success_percent",
+      "value": 94.39408989322077,
+      "nominal_value": 94.97454680903898,
+      "delta_from_nominal": -0.5804569158182176
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "B2",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "violations",
+      "value": 19.0,
+      "nominal_value": 18.0,
+      "delta_from_nominal": 1.0
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "B2",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "travel",
+      "value": 4.614674976778295,
+      "nominal_value": 4.784198798602082,
+      "delta_from_nominal": -0.16952382182378756
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "B2",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "rms_velocity",
+      "value": 0.9353238941961491,
+      "nominal_value": 0.9419724664332936,
+      "delta_from_nominal": -0.0066485722371444345
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "B2",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "min_margin",
+      "value": 0.26939916776842954,
+      "nominal_value": 0.38365944340384855,
+      "delta_from_nominal": -0.11426027563541902
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "B2",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "min_jp_sigma",
+      "value": 0.21584377487777698,
+      "nominal_value": 0.22600394777005178,
+      "delta_from_nominal": -0.010160172892274805
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "B2",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "min_jr_sigma",
+      "value": 1.3409345581393746,
+      "nominal_value": 1.314796097117509,
+      "delta_from_nominal": 0.026138461021865567
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "B3",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "trajectory_frame_success_percent",
+      "value": 95.27563943382171,
+      "nominal_value": 94.97765085671716,
+      "delta_from_nominal": 0.2979885771045474
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "B3",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "violations",
+      "value": 35.0,
+      "nominal_value": 19.0,
+      "delta_from_nominal": 16.0
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "B3",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "travel",
+      "value": 5.268617664201157,
+      "nominal_value": 4.9918591780143515,
+      "delta_from_nominal": 0.27675848618680554
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "B3",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "rms_velocity",
+      "value": 1.0241319728920772,
+      "nominal_value": 0.9709678321908761,
+      "delta_from_nominal": 0.053164140701201124
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "B3",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "min_margin",
+      "value": 0.4750103213697809,
+      "nominal_value": 0.3772263908925202,
+      "delta_from_nominal": 0.0977839304772607
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "B3",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "min_jp_sigma",
+      "value": 0.23591912663749007,
+      "nominal_value": 0.22593451281220522,
+      "delta_from_nominal": 0.009984613825284844
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "B3",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "min_jr_sigma",
+      "value": 1.2526294810037923,
+      "nominal_value": 1.313929732715032,
+      "delta_from_nominal": -0.06130025171123976
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "B3",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "trajectory_frame_success_percent",
+      "value": 94.29165631984107,
+      "nominal_value": 94.97765085671716,
+      "delta_from_nominal": -0.6859945368760947
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "B3",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "violations",
+      "value": 24.0,
+      "nominal_value": 19.0,
+      "delta_from_nominal": 5.0
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "B3",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "travel",
+      "value": 4.788333980607977,
+      "nominal_value": 4.9918591780143515,
+      "delta_from_nominal": -0.20352519740637476
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "B3",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "rms_velocity",
+      "value": 0.9555799577963868,
+      "nominal_value": 0.9709678321908761,
+      "delta_from_nominal": -0.015387874394489298
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "B3",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "min_margin",
+      "value": 0.26279343554094886,
+      "nominal_value": 0.3772263908925202,
+      "delta_from_nominal": -0.11443295535157133
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "B3",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "min_jp_sigma",
+      "value": 0.2157441682527059,
+      "nominal_value": 0.22593451281220522,
+      "delta_from_nominal": -0.010190344559499326
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "B3",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "min_jr_sigma",
+      "value": 1.3408114410615992,
+      "nominal_value": 1.313929732715032,
+      "delta_from_nominal": 0.026881708346567112
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "H_star",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "trajectory_frame_success_percent",
+      "value": 95.30357586292526,
+      "nominal_value": 94.97454680903898,
+      "delta_from_nominal": 0.32902905388627346
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "H_star",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "violations",
+      "value": 57.0,
+      "nominal_value": 17.0,
+      "delta_from_nominal": 40.0
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "H_star",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "travel",
+      "value": 5.371958421298811,
+      "nominal_value": 5.0808008925938895,
+      "delta_from_nominal": 0.29115752870492173
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "H_star",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "rms_velocity",
+      "value": 1.0446813662594936,
+      "nominal_value": 0.9737271303435773,
+      "delta_from_nominal": 0.07095423591591632
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "H_star",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "min_margin",
+      "value": 0.4798011484577315,
+      "nominal_value": 0.3835894166130435,
+      "delta_from_nominal": 0.09621173184468795
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "H_star",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "min_jp_sigma",
+      "value": 0.23625098079914342,
+      "nominal_value": 0.2263294366085945,
+      "delta_from_nominal": 0.009921544190548914
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "H_star",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "min_jr_sigma",
+      "value": 1.250871404718228,
+      "nominal_value": 1.3125449318805662,
+      "delta_from_nominal": -0.06167352716233809
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "H_star",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "trajectory_frame_success_percent",
+      "value": 94.24199155699031,
+      "nominal_value": 94.97454680903898,
+      "delta_from_nominal": -0.7325552520486696
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "H_star",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "violations",
+      "value": 24.0,
+      "nominal_value": 17.0,
+      "delta_from_nominal": 7.0
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "H_star",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "travel",
+      "value": 4.85488577568899,
+      "nominal_value": 5.0808008925938895,
+      "delta_from_nominal": -0.22591511690489963
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "H_star",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "rms_velocity",
+      "value": 0.9545251270778345,
+      "nominal_value": 0.9737271303435773,
+      "delta_from_nominal": -0.01920200326574273
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "H_star",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "min_margin",
+      "value": 0.26946713337141553,
+      "nominal_value": 0.3835894166130435,
+      "delta_from_nominal": -0.11412228324162799
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "H_star",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "min_jp_sigma",
+      "value": 0.21612058211448432,
+      "nominal_value": 0.2263294366085945,
+      "delta_from_nominal": -0.010208854494110187
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "H_star",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "min_jr_sigma",
+      "value": 1.3402758635568432,
+      "nominal_value": 1.3125449318805662,
+      "delta_from_nominal": 0.02773093167627705
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "HumanGT",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "trajectory_frame_success_percent",
+      "value": 95.26011919543085,
+      "nominal_value": 94.76967966227961,
+      "delta_from_nominal": 0.4904395331512319
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "HumanGT",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "violations",
+      "value": 21.0,
+      "nominal_value": 15.0,
+      "delta_from_nominal": 6.0
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "HumanGT",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "travel",
+      "value": 5.082663722598748,
+      "nominal_value": 4.802443288488455,
+      "delta_from_nominal": 0.2802204341102934
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "HumanGT",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "rms_velocity",
+      "value": 0.9841777130734104,
+      "nominal_value": 0.9493233010479678,
+      "delta_from_nominal": 0.034854412025442594
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "HumanGT",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "min_margin",
+      "value": 0.49230537436377886,
+      "nominal_value": 0.39810889309773706,
+      "delta_from_nominal": 0.0941964812660418
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "HumanGT",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "min_jp_sigma",
+      "value": 0.2367744377798182,
+      "nominal_value": 0.2265233039505077,
+      "delta_from_nominal": 0.010251133829310477
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "HumanGT",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "min_jr_sigma",
+      "value": 1.2482550690364254,
+      "nominal_value": 1.3139435547239697,
+      "delta_from_nominal": -0.06568848568754437
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "HumanGT",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "trajectory_frame_success_percent",
+      "value": 93.83536131114974,
+      "nominal_value": 94.76967966227961,
+      "delta_from_nominal": -0.9343183511298747
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "HumanGT",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "violations",
+      "value": 23.0,
+      "nominal_value": 15.0,
+      "delta_from_nominal": 8.0
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "HumanGT",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "travel",
+      "value": 4.581976209875999,
+      "nominal_value": 4.802443288488455,
+      "delta_from_nominal": -0.2204670786124554
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "HumanGT",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "rms_velocity",
+      "value": 0.9066371808037128,
+      "nominal_value": 0.9493233010479678,
+      "delta_from_nominal": -0.042686120244255
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "HumanGT",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "min_margin",
+      "value": 0.2830599407817403,
+      "nominal_value": 0.39810889309773706,
+      "delta_from_nominal": -0.11504895231599677
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "HumanGT",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "min_jp_sigma",
+      "value": 0.21608246056152763,
+      "nominal_value": 0.2265233039505077,
+      "delta_from_nominal": -0.010440843388980076
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "HumanGT",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "min_jr_sigma",
+      "value": 1.3413947309445098,
+      "nominal_value": 1.3139435547239697,
+      "delta_from_nominal": 0.027451176220540052
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "RobotSmooth",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "trajectory_frame_success_percent",
+      "value": 95.38428110255774,
+      "nominal_value": 95.38428110255774,
+      "delta_from_nominal": 0.0
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "RobotSmooth",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "violations",
+      "value": 1.0,
+      "nominal_value": 3.0,
+      "delta_from_nominal": -2.0
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "RobotSmooth",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "travel",
+      "value": 5.452526619902134,
+      "nominal_value": 5.025624580374311,
+      "delta_from_nominal": 0.4269020395278229
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "RobotSmooth",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "rms_velocity",
+      "value": 1.04708922990057,
+      "nominal_value": 0.9425859382731533,
+      "delta_from_nominal": 0.10450329162741678
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "RobotSmooth",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "min_margin",
+      "value": 0.4593404689168764,
+      "nominal_value": 0.36520453636908445,
+      "delta_from_nominal": 0.09413593254779196
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "RobotSmooth",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "min_jp_sigma",
+      "value": 0.23686942384768575,
+      "nominal_value": 0.22726249624382475,
+      "delta_from_nominal": 0.009606927603861004
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "RobotSmooth",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "min_jr_sigma",
+      "value": 1.2379521363929018,
+      "nominal_value": 1.301271933212025,
+      "delta_from_nominal": -0.06331979681912325
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "RobotSmooth",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "trajectory_frame_success_percent",
+      "value": 95.38428110255774,
+      "nominal_value": 95.38428110255774,
+      "delta_from_nominal": 0.0
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "RobotSmooth",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "violations",
+      "value": 2.0,
+      "nominal_value": 3.0,
+      "delta_from_nominal": -1.0
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "RobotSmooth",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "travel",
+      "value": 4.909499853405448,
+      "nominal_value": 5.025624580374311,
+      "delta_from_nominal": -0.116124726968863
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "RobotSmooth",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "rms_velocity",
+      "value": 0.9262142263691031,
+      "nominal_value": 0.9425859382731533,
+      "delta_from_nominal": -0.01637171190405018
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "RobotSmooth",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "min_margin",
+      "value": 0.2573686260083832,
+      "nominal_value": 0.36520453636908445,
+      "delta_from_nominal": -0.10783591036070128
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "RobotSmooth",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "min_jp_sigma",
+      "value": 0.21711317593020368,
+      "nominal_value": 0.22726249624382475,
+      "delta_from_nominal": -0.010149320313621063
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "RobotSmooth",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "min_jr_sigma",
+      "value": 1.3323430156846323,
+      "nominal_value": 1.301271933212025,
+      "delta_from_nominal": 0.03107108247260726
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "StrongLocal",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "trajectory_frame_success_percent",
+      "value": 95.30667991060342,
+      "nominal_value": 94.99006704742985,
+      "delta_from_nominal": 0.3166128631735745
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "StrongLocal",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "violations",
+      "value": 56.0,
+      "nominal_value": 21.0,
+      "delta_from_nominal": 35.0
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "StrongLocal",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "travel",
+      "value": 5.249028107703437,
+      "nominal_value": 4.969931228677837,
+      "delta_from_nominal": 0.2790968790255999
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "StrongLocal",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "rms_velocity",
+      "value": 1.0344954951926812,
+      "nominal_value": 0.9570886502270308,
+      "delta_from_nominal": 0.07740684496565042
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "StrongLocal",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "min_margin",
+      "value": 0.479679327657475,
+      "nominal_value": 0.38430391253965207,
+      "delta_from_nominal": 0.09537541511782294
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "StrongLocal",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "min_jp_sigma",
+      "value": 0.23621625443029773,
+      "nominal_value": 0.2264241066752862,
+      "delta_from_nominal": 0.009792147755011527
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "StrongLocal",
+      "condition": "psi0_minus_025",
+      "offset_rad": -0.25,
+      "metric": "min_jr_sigma",
+      "value": 1.2498744265988697,
+      "nominal_value": 1.3121833928302113,
+      "delta_from_nominal": -0.062308966231341634
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "StrongLocal",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "trajectory_frame_success_percent",
+      "value": 94.4127141792898,
+      "nominal_value": 94.99006704742985,
+      "delta_from_nominal": -0.5773528681400535
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "StrongLocal",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "violations",
+      "value": 19.0,
+      "nominal_value": 21.0,
+      "delta_from_nominal": -2.0
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "StrongLocal",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "travel",
+      "value": 4.764744631601803,
+      "nominal_value": 4.969931228677837,
+      "delta_from_nominal": -0.20518659707603426
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "StrongLocal",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "rms_velocity",
+      "value": 0.9499128118132129,
+      "nominal_value": 0.9570886502270308,
+      "delta_from_nominal": -0.00717583841381797
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "StrongLocal",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "min_margin",
+      "value": 0.26961039252773367,
+      "nominal_value": 0.38430391253965207,
+      "delta_from_nominal": -0.1146935200119184
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "StrongLocal",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "min_jp_sigma",
+      "value": 0.21611573391450764,
+      "nominal_value": 0.2264241066752862,
+      "delta_from_nominal": -0.010308372760778561
+    },
+    {
+      "grouping": "overall",
+      "group": "overall",
+      "strategy": "StrongLocal",
+      "condition": "psi0_plus_025",
+      "offset_rad": 0.25,
+      "metric": "min_jr_sigma",
+      "value": 1.3397238920549923,
+      "nominal_value": 1.3121833928302113,
+      "delta_from_nominal": 0.027540499224780968
+    }
+  ],
+  "physical_interpretation_limits": [
+    "P-to-U translation is virtual",
+    "base mounting is provisional",
+    "fork tip is not calibrated",
+    "human collision is not modeled"
+  ],
+  "rows": {
+    "initial_state_feasibility": 30,
+    "strategy_metrics": 63,
+    "human_consistency": 180,
+    "robustness_deltas": 294,
+    "pairwise_bootstrap": 216,
+    "per_bite": 8382,
+    "per_take": 147
+  }
+}

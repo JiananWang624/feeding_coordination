@@ -1,0 +1,23 @@
+{
+  "selection_rules": "deterministic metric criteria; ties record_id",
+  "stable": {
+    "record_id": "trial_0017_bite_013_transfer",
+    "score": 0.006364518307031886,
+    "criterion": "all conditions complete; minimize cross-condition motion range"
+  },
+  "sensitive": {
+    "record_id": "trial_0012_bite_006_withdrawal",
+    "score": 275.0,
+    "criterion": "maximize feasibility plus branch-change range"
+  },
+  "humangt_vs_robotsmooth": {
+    "record_id": "trial_0014_bite_004_withdrawal",
+    "score": 7.176889367157732,
+    "criterion": "maximize change in travel plus psi tradeoff"
+  },
+  "stronglocal_vs_b2": {
+    "record_id": "trial_0015_bite_015_withdrawal",
+    "score": 0.00015104672092669524,
+    "criterion": "minimize change in StrongLocal-B2 velocity plus psi difference"
+  }
+}
