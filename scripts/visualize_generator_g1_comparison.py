@@ -14,13 +14,16 @@ sys.path.insert(0, str(ROOT / "src"))
 from feeding_coordination.generator_g1_visual_comparison import (
     export_generator_pair_video,
     export_split_video,
+    export_split_playlist_video,
     interactive_overlay,
+    interactive_playlist,
     load_comparison_record,
 )
 
 
 OUTPUT = ROOT / "outputs" / "generator_g1_visualization"
 PRESETS = OUTPUT / "presets.json"
+DEFAULT_SPEED = 0.25
 
 
 def load_presets() -> dict[str, dict]:
@@ -71,7 +74,8 @@ def export_required_videos() -> list[dict]:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Read-only measured/generated G1 stored-q comparison")
-    parser.add_argument("--record-id")
+    parser.add_argument("--record-id", action="append", help="record id; repeat for a same-take playlist")
+    parser.add_argument("--playlist", type=Path, help="text file with one record id per line")
     parser.add_argument("--generator", choices=("contextual_promp", "retrieval"), default="contextual_promp")
     parser.add_argument("--compare-generator", choices=("contextual_promp", "retrieval"))
     parser.add_argument("--mode", choices=("overlay", "split"))
@@ -99,27 +103,42 @@ def main() -> None:
     item = presets.get(args.preset, {}) if args.preset else {}
     if args.preset and not item:
         parser.error(f"unknown preset {args.preset!r}; use --list-presets")
-    record_id = args.record_id or item.get("record_id")
+    selected_ids = list(args.record_id or [])
+    if args.playlist:
+        selected_ids.extend(line.strip() for line in args.playlist.read_text().splitlines()
+                            if line.strip() and not line.lstrip().startswith("#"))
+    if not selected_ids and item.get("record_id"):
+        selected_ids = [item["record_id"]]
+    record_id = selected_ids[0] if selected_ids else None
     generator = item.get("generator", args.generator)
     compare_generator = args.compare_generator or item.get("compare_generator")
-    mode = args.mode or item.get("mode", "overlay")
-    speed = args.speed if args.speed is not None else item.get("speed", .5)
+    mode = args.mode or item.get("mode", "split" if args.record_video else "overlay")
+    speed = args.speed if args.speed is not None else item.get("speed", DEFAULT_SPEED)
     strategy = "B0" if args.compare_b0 else "RobotSmooth" if args.compare_robotsmooth else item.get("strategy", args.strategy)
     if not record_id:
         parser.error("--record-id or --preset is required")
-    record = load_comparison_record(record_id, generator, ROOT)
+    records = [load_comparison_record(selected, generator, ROOT) for selected in selected_ids]
     if args.record_video:
         if mode != "split":
             parser.error("video export uses the reliable composed split mode; pass --mode split")
         if compare_generator:
+            if len(records) != 1:
+                parser.error("--compare-generator video export accepts one record; omit it for a playlist")
             other = load_comparison_record(record_id, compare_generator, ROOT)
-            report = export_generator_pair_video(record, other, args.record_video, strategy, speed, args.show_mouth_proxy)
+            report = export_generator_pair_video(records[0], other, args.record_video, strategy, speed, args.show_mouth_proxy)
+        elif len(records) > 1:
+            report = export_split_playlist_video(records, strategy, args.record_video, speed, args.show_mouth_proxy)
         else:
-            report = export_split_video(record, strategy, args.record_video, speed, args.show_mouth_proxy)
+            report = export_split_video(records[0], strategy, args.record_video, speed, args.show_mouth_proxy)
         print(json.dumps(report, indent=2)); return
     if mode != "overlay":
         parser.error("interactive viewing supports overlay mode; split mode is available through --record-video")
-    interactive_overlay(record, strategy, speed, args.show_mouth_proxy)
+    if compare_generator:
+        parser.error("--compare-generator is supported for video export only")
+    if len(records) > 1:
+        interactive_playlist(records, strategy, speed, args.show_mouth_proxy)
+    else:
+        interactive_overlay(records[0], strategy, speed, args.show_mouth_proxy)
 
 
 if __name__ == "__main__":

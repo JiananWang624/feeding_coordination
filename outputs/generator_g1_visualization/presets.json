@@ -6,7 +6,7 @@
       "generator": "contextual_promp",
       "strategy": "StrongLocal",
       "mode": "split",
-      "speed": 0.5,
+      "speed": 0.25,
       "description": "Clean contextual-ProMP transfer example selected by frozen G1 metrics."
     },
     "promp_clean_withdrawal": {
@@ -14,7 +14,7 @@
       "generator": "contextual_promp",
       "strategy": "StrongLocal",
       "mode": "split",
-      "speed": 0.5,
+      "speed": 0.25,
       "description": "Clean contextual-ProMP withdrawal example from the frozen G1 video selection."
     },
     "retrieval_clean_example": {
@@ -22,7 +22,7 @@
       "generator": "retrieval",
       "strategy": "StrongLocal",
       "mode": "split",
-      "speed": 0.5,
+      "speed": 0.25,
       "description": "Clean retrieval transfer example selected by frozen G1 metrics."
     },
     "promp_advantage": {
@@ -30,7 +30,7 @@
       "generator": "contextual_promp",
       "strategy": "StrongLocal",
       "mode": "split",
-      "speed": 0.5,
+      "speed": 0.25,
       "description": "Frozen G1 contextual-ProMP advantage example."
     },
     "generator_error_propagation": {
@@ -38,7 +38,7 @@
       "generator": "retrieval",
       "strategy": "StrongLocal",
       "mode": "split",
-      "speed": 0.5,
+      "speed": 0.25,
       "description": "Frozen G1 generator-error propagation example."
     },
     "robot_failure_example": {
@@ -46,7 +46,7 @@
       "generator": "contextual_promp",
       "strategy": "StrongLocal",
       "mode": "split",
-      "speed": 0.5,
+      "speed": 0.25,
       "description": "Valid generated-U example with a saved downstream robot failure."
     },
     "promp_vs_retrieval": {
@@ -55,7 +55,7 @@
       "compare_generator": "retrieval",
       "strategy": "StrongLocal",
       "mode": "split",
-      "speed": 0.5,
+      "speed": 0.25,
       "description": "Same-record contextual-ProMP versus retrieval comparison."
     }
   }

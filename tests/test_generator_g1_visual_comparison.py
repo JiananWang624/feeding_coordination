@@ -5,7 +5,7 @@ import json
 import numpy as np
 
 from feeding_coordination.generator_g1_visual_comparison import (
-    FRAME_COUNT, export_split_video, fk_parity, hud_state, interactive_overlay,
+    FRAME_COUNT, export_split_playlist_video, export_split_video, fk_parity, hud_state, interactive_overlay,
     load_comparison_record, replay_frame,
 )
 from feeding_coordination.generator_g1_visualization import mount_g1_record
@@ -91,3 +91,13 @@ def test_preset_file_resolves_required_presentation_examples():
     names = set(presets if isinstance(presets, list) else presets.get("presets", presets))
     assert {"promp_clean_transfer", "promp_clean_withdrawal", "retrieval_clean_example",
             "generator_error_propagation", "robot_failure_example"} <= names
+
+
+def test_playlist_rejects_empty_or_mixed_take_inputs_before_rendering():
+    record = load_comparison_record(RECORD, root=ROOT)
+    import pytest
+    with pytest.raises(ValueError, match="at least one"):
+        export_split_playlist_video([], "StrongLocal", ROOT / "unused.mp4")
+    other = load_comparison_record("trial_0015_bite_019_transfer", root=ROOT)
+    with pytest.raises(ValueError, match="same take"):
+        export_split_playlist_video([record, other], "StrongLocal", ROOT / "unused.mp4")
