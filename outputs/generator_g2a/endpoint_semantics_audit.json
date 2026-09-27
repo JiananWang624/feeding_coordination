@@ -1,0 +1,18 @@
+{
+  "claim": "offline provisional endpoint verification only; no independent mouth sensing or leakage-free deployment claim",
+  "contains_position_only": true,
+  "deterministic_relation": "mouth_proxy ~= fork_final - 0.180 m * fork_final_R[:,1]",
+  "fork_rigid_body_convention": "Hand + 0.100 m * ForkPlusY",
+  "indirect_future_endpoint_information": true,
+  "phase1_coordinate_frame": "B/world metres",
+  "physical_mouth_pose_validated": false,
+  "physical_tool_calibration_validated": false,
+  "recorded_relation_residual_max_m": 3.462759602133684e-06,
+  "recorded_relation_residual_mean_m": 6.775652630148337e-07,
+  "recorded_relation_uses_measured_orientation_for_audit_only": true,
+  "upstream_construction": "Hand_final + 0.080 m * ForkMinusY_final",
+  "upstream_coordinate_frame": "Motive Global millimetres",
+  "upstream_field": "Phase1.5 mouth_target_position (aliased mouth_proxy)",
+  "virtual_endpoint_constraint": true,
+  "virtual_goal_construction": "mouth_proxy_B + 0.180 m * G0_nominal_final_R_B[:,1]"
+}

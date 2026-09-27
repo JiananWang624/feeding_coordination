@@ -19,6 +19,10 @@ from feeding_coordination.generator_g1_visual_comparison import (
     interactive_playlist,
     load_comparison_record,
 )
+from feeding_coordination.generator_g2_visual_comparison import (
+    export_g2_playlist,
+    load_g2_comparison_record,
+)
 
 
 OUTPUT = ROOT / "outputs" / "generator_g1_visualization"
@@ -77,6 +81,7 @@ def main() -> None:
     parser.add_argument("--record-id", action="append", help="record id; repeat for a same-take playlist")
     parser.add_argument("--playlist", type=Path, help="text file with one record id per line")
     parser.add_argument("--generator", choices=("contextual_promp", "retrieval"), default="contextual_promp")
+    parser.add_argument("--g2-method", choices=("g2a", "g2b"), help="use G2 endpoint-constrained trajectory visualization")
     parser.add_argument("--compare-generator", choices=("contextual_promp", "retrieval"))
     parser.add_argument("--mode", choices=("overlay", "split"))
     parser.add_argument("--strategy", choices=("B0", "StrongLocal", "RobotSmooth"), default="StrongLocal")
@@ -121,7 +126,14 @@ def main() -> None:
     if args.record_video:
         if mode != "split":
             parser.error("video export uses the reliable composed split mode; pass --mode split")
-        if compare_generator:
+        if args.g2_method:
+            if compare_generator or args.compare_b0 or args.compare_robotsmooth:
+                parser.error("--g2-method cannot be combined with generator/robot strategy comparisons")
+            if mode != "split":
+                parser.error("G2 video export requires --mode split")
+            g2_records = [load_g2_comparison_record(selected, args.g2_method, ROOT) for selected in selected_ids]
+            report = export_g2_playlist(g2_records, args.record_video, speed, args.show_mouth_proxy)
+        elif compare_generator:
             if len(records) != 1:
                 parser.error("--compare-generator video export accepts one record; omit it for a playlist")
             other = load_comparison_record(record_id, compare_generator, ROOT)
@@ -133,6 +145,8 @@ def main() -> None:
         print(json.dumps(report, indent=2)); return
     if mode != "overlay":
         parser.error("interactive viewing supports overlay mode; split mode is available through --record-video")
+    if args.g2_method:
+        parser.error("--g2-method is supported for video export only")
     if compare_generator:
         parser.error("--compare-generator is supported for video export only")
     if len(records) > 1:

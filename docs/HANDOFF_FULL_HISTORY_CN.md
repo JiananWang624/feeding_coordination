@@ -170,11 +170,26 @@ Exact-SEW pinned commit 为 `52d74327d98a89b82012d311dde8d6dba066b843`，见 `DE
 ### G1V — 只读演示与当前文件状态
 
 - **为什么做 / 问题：**让导师能够看到 measured/generated U、human/reference/generated ψ 与两个或三个 stored-q 手臂的区别，以及 failure/continuity，而不是只看 CSV。
-- **实现与验证：**`src/feeding_coordination/generator_g1_visual_comparison.py` 读取 G1 saved q，FK 仅用于 realized-U 展示/与保存结果的 parity；交互 viewer 与视频共享 replay frame，不调用 IK、不重训或改写 G1。展示 ψ 曲线/移动光标、tool error、wrapped q/elbow/arm-plane 差、plate、可选且明确标「derived mouth proxy」；failure 只 viewer hold，不能伪装成功。当前未提交工作树的说明/代码又加入 measured U + measured HumanGT q、measured-reference StrongLocal q、generated StrongLocal q 的三路 split 与同 take playlist；HumanGT 展示是从保存的 R1 q 在 G1 101 网格上**仅为显示**匹配，不是新的 G1 科学结果。
-- **现状与冲突：**提交 `c59b6b3` 的 G1V 版本生成过五个比较 MP4 与截图，`outputs/generator_g1_visualization/manifest.json` 仍列出其路径、抽检 FK error 0；但截至本审计，工作树把那五个 MP4/六张截图标记为删除，当前目录只有新建的三路/playlist 视频与一张 smoke 截图。**不能声称旧五视频在当前磁盘可直接打开**，也不能为了写文档而恢复、重编码或删改用户展示工作。G1V 算法/展示工具已实现；完整会议产物清单须在提交/交付展示时重新核对。G1V 不改变前述科学结论。
+- **实现与验证：**`src/feeding_coordination/generator_g1_visual_comparison.py` 读取 G1 saved q，FK 仅用于 realized-U 展示/与保存结果的 parity；交互 viewer 与视频共享 replay frame，不调用 IK、不重训或改写 G1。展示 ψ 曲线/移动光标、tool error、wrapped q/elbow/arm-plane 差、plate、可选且明确标「derived mouth proxy」；failure 只 viewer hold，不能伪装成功。后续说明/代码又加入 measured U + measured HumanGT q、measured-reference StrongLocal q、generated StrongLocal q 的三路 split 与同 take playlist；HumanGT 展示是从保存的 R1 q 在 G1 101 网格上**仅为显示**匹配，不是新的 G1 科学结果。
+- **现状与冲突：**提交 `c59b6b3` 的 G1V 版本生成过五个比较 MP4 与截图，`outputs/generator_g1_visualization/manifest.json` 仍列出其路径、抽检 FK error 0；但截至本审计，那五个旧 MP4/六张截图不在当前目录，实际仅见三个三路/playlist 视频与两张截图。**不能声称旧五视频在当前磁盘可直接打开**，也不能为了写文档而恢复、重编码或删改用户展示工作。G1V 算法/展示工具已实现；完整会议产物清单须在提交/交付展示时重新核对。G1V 不改变前述科学结论。
 - **位置：**`docs/GENERATOR_G1_VISUAL_COMPARISON.md`、`scripts/visualize_generator_g1_comparison.py`、`outputs/generator_g1_visualization/manifest.json`、`presets.json`、`videos/`。
 
-## 5. 六次重大路线转折：原假设 → 验证 → 观察 → 决策
+### G2A — 派生代理目标的 transfer 末段位置约束
+
+- **为什么做 / 问题：**在不改动冻结 G0 的前提下，检验末段平滑修正能否精确到达一个由现有上下文构造的虚拟叉子刚体目标，并量化该目标与实测终点的差异；只处理 127 条 transfer，不处理 withdrawal、G1 或机器人层。
+- **目标语义：**上游 `mouth_proxy` 由留出 transfer 最终帧的派生 `Hand−0.08 m × fork +Y` 构造，Phase 1.5 的派生 `Hand≈fork origin−0.10 m × fork +Y`，故 `mouth_proxy≈实测最终 fork origin−0.18 m × 实测最终 fork +Y`。G2A 的虚拟目标是 `mouth_proxy_B+0.18 m × G0 预测最终 fork +Y`；**目标方向来自 G0，代理点本身却间接含留出终点信息**，不是独立感知的嘴部目标。姿态全程保留 G0，不施加姿态约束。
+- **方法与验证：**保留 frozen G0 Contextual ProMP 名义路径，在每 fold 由训练 take 内层留一选 `s_a∈{0.50,0.65,0.80}`；`s_a` 后加五次 smoothstep `10u³−15u⁴+6u⁵` 乘终点位置差，之前路径不变，修正项在两端的一、二阶导数为零。对保存的 G0 名义路径做 parity 检查；不重训 G1/StrongLocal，不运行 Exact-SEW。
+- **结果与解释：**127/127 条都以数值精度到达**虚拟目标**（最大虚拟终点误差 0）；到留出实测 fork 刚体终点的 bite-balanced 平均误差仍为 `0.036594 m`（3.66 cm）。全轨位置 RMS `0.046073→0.045880 m`，paired parent-bite CI 跨零；不能把虚拟目标命中说成真实嘴部/实测叉子终点命中。此阶段主要揭示代理目标与预测方向的目标构造误差。
+- **位置：**`docs/GENERATOR_G2A.md`、`src/feeding_coordination/generator_g2a.py`、`scripts/run_generator_g2a.py`、`tests/test_generator_g2a.py`、`outputs/generator_g2a/summary.json`、`manifest.json`、`record_metrics.csv`、`generated/`、`plots/`。当前 G2A 源文件与产物为本地未跟踪新增，不能当作已提交冻结版本。
+
+### G2B — 已知 oracle 终点的 transfer 完整位姿约束
+
+- **为什么做 / 问题：**将「目标是否正确」与「平滑约束能否到达已知正确目标」分开；在相同 G0 名义路径及 G2A 选定的适配起点上，并排比较 G0、oracle 仅位置约束、oracle 完整位姿约束，仍只覆盖 127 条 transfer。
+- **同帧 oracle 目标：**从留出记录最终帧读取 B-frame `hand_xyz[-1]` 与 `tool_orientation[-1]`，重建 `p_U=p_H+0.10 m × R_U[:,1]`、`R_U=实测最终叉子姿态`。这里 10 cm 是派生 Hand 到 tracked fork rigid-body origin 的逆变换，**不是**在 G2A 的 18 cm 上再叠加；重建与实测叉子原点最大残差 `2.01×10⁻⁶ m`。G2B 的新增终点构造不使用 `mouth_proxy`，但冻结 G0 名义模型原有上下文仍含它；且 oracle 明确读取留出最终帧，所以不是无泄漏部署泛化实验。
+- **方法与结果：**位置仍用 G2A 的五次末段修正；完整位姿版另以 `SO(3)` log/exp 将 G0 最终姿态平滑接到 oracle 姿态，起点前路径完全不变。仅位置版及完整位姿版的位置终点误差均为 0；完整位姿版的姿态终点平均误差约 `4.87×10⁻¹⁷ rad`，仅位置版保留 G0 的平均终点姿态误差 `13.31°`。完整位姿版最后 20% 位置/姿态 RMS 为 `0.015909 m / 4.584°`，相对 G0 的 `0.035597 m / 12.182°` 改善；但中段仍为 `0.041302 m / 8.647°`。这证明**给定 oracle 叉子刚体终点时**末段约束的数值可达性，不证明从可部署上下文获得正确终点、整条人类轨迹复现或真实喂食可行。
+- **位置：**`docs/GENERATOR_G2B.md`、`docs/TRANSFER_ENDPOINT_CONVENTION_CN.md`、`src/feeding_coordination/generator_g2b.py`、`scripts/run_generator_g2b.py`、`tests/test_generator_g2b.py`、`outputs/generator_g2b/summary.json`、`manifest.json`、`record_metrics.csv`、`generated/`、`plots/`。当前 G2B 源文件与产物亦为本地未跟踪新增。
+
+## 5. 七次重大路线转折：原假设 → 验证 → 观察 → 决策
 
 | 转折 | 原假设或早期做法 | 验证与实际观察 | 最终决策 |
 | --- | --- | --- | --- |
@@ -184,6 +199,7 @@ Exact-SEW pinned commit 为 `52d74327d98a89b82012d311dde8d6dba066b843`，见 `DE
 | 4. full-plan/PCRC → local | 未来完整计划可显著增加 `ψ` 信息 | Phase 3.1 去除 raw `ψ₀` OOD 后，H*/F*/P* 对 L3 均无可靠增益 | 停止 PCRC，冻结 19D StrongLocal |
 | 5. 「StrongLocal 最好」→ 受限 claim | 预测 ψ 更好应使机器人全面更好 | R2/R3 显示 B2/B3 竞争、初始 `ψ₀` 改变排序、HumanGT/RobotSmooth tradeoff | 分开报告 human consistency、feasibility、motion、robustness |
 | 6. 固定 U 科学 → 生成 U 工程链 | 仅 measured U 不构成完整模拟流程 | G0/G1 LOTO：ProMP 相对 Retrieval 在 tool/ψ/q/complete success 有优势 | 加 Contextual ProMP 工程生成器；不把 ProMP 说成 novelty |
+| 7. 虚拟代理终点 → 已知 oracle 终点 | G2A 的虚拟目标精确命中可被误当成实测终点准确 | G2A 到实测叉子终点仍差 3.66 cm；G2B 使用同帧 Hand+10 cm×实测方向后数值命中 oracle 位姿，末段误差下降但中段仍有形状误差 | 将目标获取误差与末段适配算法分开；G2B 仅作 oracle 可达性验证 |
 
 ## 6. 已拒绝/停止的路线及原因
 
@@ -215,9 +231,14 @@ phase + plate + derived mouth proxy + initial tracked fork pose
        [B0/RobotSmooth controls]
     → frozen Exact-SEW + provisional virtual tool/base
     → Gen3 q → MuJoCo/read-only G1V presentation
+
+独立的 transfer 终点适配实验（不回写 G0/G1 或机器人链）：
+frozen G0 Contextual ProMP U
+    ├─ G2A: mouth_proxy + 0.18 m × G0 最终方向 → 仅位置约束
+    └─ G2B: 留出最终帧 Hand + 0.10 m × 实测方向 → oracle 位置/完整位姿约束
 ```
 
-Contextual ProMP＝engineering generator；StrongLocal＝冻结 human coordination predictor；RobotSmooth＝robot-centric causal engineering control；HumanGT＝离线 oracle/reference；Exact-SEW＝冻结 robot realization。G1 中 MeasuredUReference/StrongLocal 用 measured U 和**同一 fold model**，但**不用 human measured ψ 随时间的真值**。G1V 的 HumanGT 额外视觉轨迹来自 R1 stored q，不改变 G1 定量 reference 定义。
+Contextual ProMP＝engineering generator；StrongLocal＝冻结 human coordination predictor；RobotSmooth＝robot-centric causal engineering control；HumanGT＝离线 oracle/reference；Exact-SEW＝冻结 robot realization。G1 中 MeasuredUReference/StrongLocal 用 measured U 和**同一 fold model**，但**不用 human measured ψ 随时间的真值**。G1V 的 HumanGT 额外视觉轨迹来自 R1 stored q，不改变 G1 定量 reference 定义。G2A/G2B 共享 G0 名义路径和五次末段修正，只比较 transfer 终点的**来源与姿态约束**；不是 G1 已接入的下游策略。
 
 ## 8. 关键数字速查：每行写明口径
 
@@ -236,14 +257,16 @@ Contextual ProMP＝engineering generator；StrongLocal＝冻结 human coordinati
 | G1 eligible | 246/254；8 个初始 ψ 无效排除 | `outputs/generator_g1/summary.json` |
 | G1 StrongLocal full pipeline | ProMP `224/246=91.057%`；Retrieval `201/246=81.707%` | record rate，**不是** paired bite-bootstrap 差；`pipeline_metrics.csv` |
 | G1 tool → ψ → q | ProMP/ Retrieval：tool RMS `0.068842/0.087681 m`；ψ propagation MAE `0.038297/0.050763 rad`；q RMS `0.2294/0.3099 rad` | eligible record 平均；同上 |
+| G2A 虚拟目标 / 实测终点 | 虚拟目标最大误差 `0`；实测叉子终点平均 `0.036594 m` | 127 transfer，bite-balanced；`outputs/generator_g2a/summary.json`；前者不是独立嘴部准确度 |
+| G2B oracle 完整位姿 | 终点位置 `0 m`、姿态约 `4.87×10⁻¹⁷ rad`；最后 20% 位置/姿态 RMS `0.015909 m / 4.584°` | 127 transfer，bite-balanced；留出最终帧提供 oracle，`outputs/generator_g2b/summary.json` |
 
-`summary.json`、CSV 的分组和支持集优先于此四舍五入速查表。尤其不要把 32,216 frames 当 32,216 个独立统计单位，也不要把 G0 的 254-record 误差与 G1 的 246-record 误差直接相减。完整轨迹成功率、逐帧成功率、数值生成成功率是三个不同概念。
+`summary.json`、CSV 的分组和支持集优先于此四舍五入速查表。尤其不要把 32,216 frames 当 32,216 个独立统计单位，也不要把 G0 的 254-record 误差与 G1 的 246-record 误差直接相减。完整轨迹成功率、逐帧成功率、数值生成成功率是三个不同概念；G2 的**给定目标数值命中**是第四种口径，不是上述三者。
 
 ## 9. 冻结项与 provisional 项要分别管理
 
-**科学/复现契约冻结：**pinned Exact-SEW commit/API 与内部 `R_robot_align`；人体 Stereo-SEW 定义和 reference；tracked fork rigid-body `U` 定义；Phase 1.5 exact frame join 与状态掩码；19D `strong-local-l3-v1` 顺序/`Δψ` 目标/OOF 训练；PCRC 的当前 kill decision；RobotSmooth causal 策略定义；`0.5 rad` continuity threshold；模拟比较的 90° virtual `P→U` orientation；完整 take 外层留一、训练内调参、parent-bite bootstrap unit。不要因工程展示变化而静默改变这些定义。
+**科学/复现契约冻结：**pinned Exact-SEW commit/API 与内部 `R_robot_align`；人体 Stereo-SEW 定义和 reference；tracked fork rigid-body `U` 定义；Phase 1.5 exact frame join 与状态掩码；19D `strong-local-l3-v1` 顺序/`Δψ` 目标/OOF 训练；PCRC 的当前 kill decision；RobotSmooth causal 策略定义；`0.5 rad` continuity threshold；模拟比较的 90° virtual `P→U` orientation；完整 take 外层留一、训练内调参、parent-bite bootstrap unit。G2A/G2B 是尚未提交的独立本地实验，不能把其新增定义冒称既有已提交冻结契约，也不要因此改写 G0/G1。
 
-**只是在模拟里暂定：**zero virtual `P→U` translation、每 take 的 Gen3 fixed mounting 和 `[0,0.15,0.2] m` offset、G0 duration、G1 initial human `ψ₀` 的已知来源、可视化中的 mouth proxy。这里的「冻结」只意味着**当前实验可复现**，不是物理校准完成。
+**只是在模拟里暂定：**zero virtual `P→U` translation、每 take 的 Gen3 fixed mounting 和 `[0,0.15,0.2] m` offset、G0 duration、G1 initial human `ψ₀` 的已知来源、可视化中的 mouth proxy。G2A 的代理目标含间接留出终点信息；G2B 的 oracle 直接读取留出最终帧。这里的「冻结」只意味着**当前实验可复现**，不是物理校准完成。
 
 **未解决或待测：**真实 mouth pose/感知、recipient identity 与泛化、叉尖/food-point 与 held-fork 物理变换、真实 Gen3 base/OptiTrack 外参、plate/recipient workspace、碰撞模型、权威速度/加速度限值、retiming、部署初始冗余选择、real Gen3、人体/环境 clearance、安全、舒适/偏好、真实 feeding outcome；跨传感器同步精度亦未建立。
 
@@ -251,11 +274,11 @@ Contextual ProMP＝engineering generator；StrongLocal＝冻结 human coordinati
 
 **最初想讲：**完整 planned utensil trajectory 含有当前局部状态之外的人体冗余信息，因此用 PCRC/full-plan 预测 `ψ`。**数据实际显示：**原 M3 的差表现主要含 raw `ψ₀` 环形 OOD 伪影；改成 L3 后 history/future/full-plan 无可靠增益，P* 甚至点估计更差。StrongLocal 明显优于 hold `ψ₀`，但对 pose-only/pose+velocity 的优势取决于 RMSE/MAE，机器人层面也没有整体可靠压过 B2/B3。
 
-**目前可辩护的叙事（仍需论文阶段严格审稿/复核）：**清晰的 fork-task 与人类 `ψ` 表征、完整 take 外推的透明负结果、同一虚拟工具目标下人体一致性与机器人连续性的 tradeoff、由 G0/G1 证实的模拟 generated-U 误差向 ψ/q/完整链的传播。价值来自表征、受控实验、系统链与负结果；**不应**把 ProMP、ridge、Stereo-SEW、Exact-SEW 本体、真实 feeding、安全或跨受试者普适性夸成新发现。
+**目前可辩护的叙事（仍需论文阶段严格审稿/复核）：**清晰的 fork-task 与人类 `ψ` 表征、完整 take 外推的透明负结果、同一虚拟工具目标下人体一致性与机器人连续性的 tradeoff、由 G0/G1 证实的模拟 generated-U 误差向 ψ/q/完整链的传播。G2A/G2B 进一步将**终点目标构造**与**已知终点时的适配可达性**分离；G2B 的 oracle 结果不属于部署预测性能。价值来自表征、受控实验、系统链与负结果；**不应**把 ProMP、ridge、Stereo-SEW、Exact-SEW 本体、真实 feeding、安全或跨受试者普适性夸成新发现。
 
 ## 11. 当前停点、下一条主线与未来 Agent 禁止事项
 
-**Current stopping point：**G1V 展示工具已实现，G0/G1、R0–R3 与 Phase 3.2 的科学产物冻结；但本审计时 G1V 旧 manifest 与工作区实际 MP4/截图不一致，展示交付前需另行核实。下一条**建议**主线是 *Physical Calibration Accuracy Validation*，不是复活 PCRC：
+**Current stopping point：**在 G1V 后，本地新增 G2A（代理目标位置）和 G2B（同帧留出 oracle 位置/位姿）transfer 末段适配实验，已有 127 条轨迹的汇总与产物；这两阶段尚未提交，未重跑或改写 G1/机器人。G2B 只回答「已知正确叉子刚体终点时能否数值到达」；G2A 主要量化代理点加预测方向的目标差异。G0/G1、R0–R3 与 Phase 3.2 的既有科学产物维持原口径。本审计时 G1V 旧 manifest 与工作区实际 MP4/截图不一致，展示交付前需另行核实。下一条**建议**主线仍是 *Physical Calibration Accuracy Validation*，不是复活 PCRC，也不是把 G2B oracle 当成真实目标感知已解决：
 
 ```text
 P0  Gen3 base / OptiTrack / tracked-fork 外参标定
@@ -269,7 +292,7 @@ P0  Gen3 base / OptiTrack / tracked-fork 外参标定
 
 这是一条未来工作**建议**，没有仓库实验产物可证明这些步骤已经完成。每一步在明确安全、权限和设备条件前都不能从当前模拟结果自动推出。
 
-未来 Agent **不要**：重写 Exact-SEW / `R_robot_align`；把 PCRC 当当前方法；把 `mouth_proxy` 写成 measured mouth；把 virtual `P→U` 写成 physical calibration；用 full-data model 报既有 held-out 结果；隐藏 solver failure；把 robot elbow XYZ 与 human elbow XYZ 逐点相等当必要目标；把 trial_0015 当通用跨示范者证据；把零位模型接触当已验证 collision metric；声称 safety、comfort、preference 或 real feeding success。
+未来 Agent **不要**：重写 Exact-SEW / `R_robot_align`；把 PCRC 当当前方法；把 `mouth_proxy` 写成 measured mouth；把 G2A 虚拟目标命中写成实测叉子终点命中，或把 G2B oracle 写成部署泛化；把 18 cm 与 10 cm 叠加在同一目标上；把 virtual `P→U` 写成 physical calibration；用 full-data model 报既有 held-out 结果；隐藏 solver failure；把 robot elbow XYZ 与 human elbow XYZ 逐点相等当必要目标；把 trial_0015 当通用跨示范者证据；把零位模型接触当已验证 collision metric；声称 safety、comfort、preference 或 real feeding success。
 
 ## 12. 关键文件索引与冲突处理记录
 
@@ -285,10 +308,13 @@ P0  Gen3 base / OptiTrack / tracked-fork 外参标定
 | R3 初始状态稳健性 | `docs/ROBOT_R3.md`；`outputs/robot_r3/summary.json` |
 | G0/G1 生成、统计、代表样本 | `docs/GENERATOR_G0.md`；`docs/GENERATOR_G1.md`；`outputs/generator_g0/summary.json`；`outputs/generator_g1/summary.json`；`outputs/generator_g1/pipeline_metrics.csv`；`outputs/generator_g1/representative_examples.json` |
 | G1V 当前展示入口/产物 | `docs/GENERATOR_G1_VISUAL_COMPARISON.md`；`scripts/visualize_generator_g1_comparison.py`；`outputs/generator_g1_visualization/manifest.json` 与实际 `videos/` |
+| G2A 代理目标、末段位置约束与敏感性 | `docs/GENERATOR_G2A.md`；`src/feeding_coordination/generator_g2a.py`；`outputs/generator_g2a/summary.json`；`record_metrics.csv` |
+| G2B oracle 位姿约束及偏移统一口径 | `docs/GENERATOR_G2B.md`；`docs/TRANSFER_ENDPOINT_CONVENTION_CN.md`；`src/feeding_coordination/generator_g2b.py`；`outputs/generator_g2b/summary.json`；`record_metrics.csv` |
 
 **已发现并裁决的内部描述冲突：**
 
 1. `ARCHITECTURE.md`/Phase 2 contract 的 `P→U=I` 与 Robot R0 之后的 90° orientation 不冲突于时间线，但作为「当前系统描述」已过时；以 R0 summary/manifest 与当前代码为准。
 2. 早期 Phase 3 的 M3/history 结论被 Phase 3.1 特征审计修正；以 3.1/3.2 summary 和最终 model contract 为准。
 3. 根目录 README 未覆盖 R0–G1V，不代表这些阶段不存在；以提交、各阶段产物与当前代码为准。
-4. G1V manifest 列出历史生成的五视频/六截图，但当前未提交工作树标记它们删除，另有新三路/playlist 文件；manifest **不是当前磁盘文件存在性的证明**。本文不对用户工作树做恢复或清理。
+4. G1V manifest 列出历史生成的五视频/六截图，但当前磁盘不见这些旧文件，另有三路/playlist 视频与两张截图；manifest **不是当前磁盘文件存在性的证明**。本文不对用户工作树做恢复或清理。
+5. G2A 的 18 cm 虚拟目标与 G2B 的 10 cm oracle 重建不矛盾：前者把派生 Hand→代理点的 8 cm 与 Hand→叉子原点的 10 cm 合成，再乘 **G0 预测方向**；后者仅逆转同一实测帧的 Hand→叉子原点偏移。两种目标平均相差约 3.659 cm，不能将 G2A 的虚拟目标误差与 G2B 的 oracle 命中误差混称同一指标。

@@ -1,0 +1,1544 @@
+{
+  "bite_metrics": "bite_metrics.csv",
+  "endpoint_semantics_audit": "endpoint_semantics_audit.json",
+  "generated_artifacts": [
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0012_bite_001_transfer.npz",
+      "record_id": "trial_0012_bite_001_transfer",
+      "sha256": "f8d0dd3473b82cb5489f75f108897b9c1b13541db6239b585e868fcf27e8d72b",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0012_bite_001_transfer.npz",
+      "record_id": "trial_0012_bite_001_transfer",
+      "sha256": "f8d0dd3473b82cb5489f75f108897b9c1b13541db6239b585e868fcf27e8d72b",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0012_bite_002_transfer.npz",
+      "record_id": "trial_0012_bite_002_transfer",
+      "sha256": "47fda4550d8553ca91b665b3310bd8e472f86ddfd638d6ae2abd37b8b202b9b0",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0012_bite_002_transfer.npz",
+      "record_id": "trial_0012_bite_002_transfer",
+      "sha256": "47fda4550d8553ca91b665b3310bd8e472f86ddfd638d6ae2abd37b8b202b9b0",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0012_bite_003_transfer.npz",
+      "record_id": "trial_0012_bite_003_transfer",
+      "sha256": "f66abd89b0cfd35a8a4c92dda3fef405350a082797f070a5cfc1d56e773268c7",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0012_bite_003_transfer.npz",
+      "record_id": "trial_0012_bite_003_transfer",
+      "sha256": "f66abd89b0cfd35a8a4c92dda3fef405350a082797f070a5cfc1d56e773268c7",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0012_bite_004_transfer.npz",
+      "record_id": "trial_0012_bite_004_transfer",
+      "sha256": "f4b30983abdd251b3f54f9bdc0abe06ebb73a6e3be3421b7d3b2639cde89f8b7",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0012_bite_004_transfer.npz",
+      "record_id": "trial_0012_bite_004_transfer",
+      "sha256": "f4b30983abdd251b3f54f9bdc0abe06ebb73a6e3be3421b7d3b2639cde89f8b7",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0012_bite_005_transfer.npz",
+      "record_id": "trial_0012_bite_005_transfer",
+      "sha256": "1c349914347290fe1fdd29313c9ea5f366f7fecde87d5f24126370a0875e85c8",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0012_bite_005_transfer.npz",
+      "record_id": "trial_0012_bite_005_transfer",
+      "sha256": "1c349914347290fe1fdd29313c9ea5f366f7fecde87d5f24126370a0875e85c8",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0012_bite_006_transfer.npz",
+      "record_id": "trial_0012_bite_006_transfer",
+      "sha256": "e9305b50cc3d40a6ab7855421db06303350ff9e0d3dc952a487ca96270490443",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0012_bite_006_transfer.npz",
+      "record_id": "trial_0012_bite_006_transfer",
+      "sha256": "e9305b50cc3d40a6ab7855421db06303350ff9e0d3dc952a487ca96270490443",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0012_bite_007_transfer.npz",
+      "record_id": "trial_0012_bite_007_transfer",
+      "sha256": "5e63bf6f08e0faf2a37dd4f50ad1b5c898382994e0f1a48e414d2b2a113d7841",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0012_bite_007_transfer.npz",
+      "record_id": "trial_0012_bite_007_transfer",
+      "sha256": "5e63bf6f08e0faf2a37dd4f50ad1b5c898382994e0f1a48e414d2b2a113d7841",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0012_bite_008_transfer.npz",
+      "record_id": "trial_0012_bite_008_transfer",
+      "sha256": "5bea799b15555dc5d31a013552b330f563e25b639126650ff1e5a6893669fd85",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0012_bite_008_transfer.npz",
+      "record_id": "trial_0012_bite_008_transfer",
+      "sha256": "5bea799b15555dc5d31a013552b330f563e25b639126650ff1e5a6893669fd85",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0012_bite_009_transfer.npz",
+      "record_id": "trial_0012_bite_009_transfer",
+      "sha256": "beb8ad94997e38850f5656c9850a8e0c5c20891bc8687e53ddf0a91b21921bd8",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0012_bite_009_transfer.npz",
+      "record_id": "trial_0012_bite_009_transfer",
+      "sha256": "beb8ad94997e38850f5656c9850a8e0c5c20891bc8687e53ddf0a91b21921bd8",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0012_bite_010_transfer.npz",
+      "record_id": "trial_0012_bite_010_transfer",
+      "sha256": "486c56bf8940f93bf3402ffe8f9eaa29c22cc8d3a002d62d72a4bafccbbf11ca",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0012_bite_010_transfer.npz",
+      "record_id": "trial_0012_bite_010_transfer",
+      "sha256": "486c56bf8940f93bf3402ffe8f9eaa29c22cc8d3a002d62d72a4bafccbbf11ca",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0012_bite_011_transfer.npz",
+      "record_id": "trial_0012_bite_011_transfer",
+      "sha256": "dba2288999224283738a85a42d502c51b6ed7d7ff4c49b9a6fdf85ad13ae8372",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0012_bite_011_transfer.npz",
+      "record_id": "trial_0012_bite_011_transfer",
+      "sha256": "dba2288999224283738a85a42d502c51b6ed7d7ff4c49b9a6fdf85ad13ae8372",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0012_bite_012_transfer.npz",
+      "record_id": "trial_0012_bite_012_transfer",
+      "sha256": "11c9ae857335892c600622707bb16255fa88819af6f54578b789feafacfb6aba",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0012_bite_012_transfer.npz",
+      "record_id": "trial_0012_bite_012_transfer",
+      "sha256": "11c9ae857335892c600622707bb16255fa88819af6f54578b789feafacfb6aba",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0012_bite_013_transfer.npz",
+      "record_id": "trial_0012_bite_013_transfer",
+      "sha256": "e9b3c96c0817736c6d3f976cac7d6da802096fc10d6a8d646c15278c7cf22246",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0012_bite_013_transfer.npz",
+      "record_id": "trial_0012_bite_013_transfer",
+      "sha256": "e9b3c96c0817736c6d3f976cac7d6da802096fc10d6a8d646c15278c7cf22246",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0012_bite_014_transfer.npz",
+      "record_id": "trial_0012_bite_014_transfer",
+      "sha256": "0708d3855362f6cee453a38a3941ec776de491c9e346f5344c5c716e654a6c37",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0012_bite_014_transfer.npz",
+      "record_id": "trial_0012_bite_014_transfer",
+      "sha256": "0708d3855362f6cee453a38a3941ec776de491c9e346f5344c5c716e654a6c37",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0012_bite_015_transfer.npz",
+      "record_id": "trial_0012_bite_015_transfer",
+      "sha256": "662577a9dbc7e012310a2bbaeec3176da4ee1daa310da4736645ecab8a4fdcb4",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0012_bite_015_transfer.npz",
+      "record_id": "trial_0012_bite_015_transfer",
+      "sha256": "662577a9dbc7e012310a2bbaeec3176da4ee1daa310da4736645ecab8a4fdcb4",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0013_bite_001_transfer.npz",
+      "record_id": "trial_0013_bite_001_transfer",
+      "sha256": "47073c40aa037fceadfa01538e87b2f5632c7ff5333511b7475403dc1829fa40",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0013_bite_001_transfer.npz",
+      "record_id": "trial_0013_bite_001_transfer",
+      "sha256": "47073c40aa037fceadfa01538e87b2f5632c7ff5333511b7475403dc1829fa40",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0013_bite_002_transfer.npz",
+      "record_id": "trial_0013_bite_002_transfer",
+      "sha256": "38154cedf94eb0961fa2dbdc75e5f738bb2745bfbb0897bc114a9b7291d0ac39",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0013_bite_002_transfer.npz",
+      "record_id": "trial_0013_bite_002_transfer",
+      "sha256": "38154cedf94eb0961fa2dbdc75e5f738bb2745bfbb0897bc114a9b7291d0ac39",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0013_bite_003_transfer.npz",
+      "record_id": "trial_0013_bite_003_transfer",
+      "sha256": "668be6584fc600a8979eb7a01a58d13f33777fb2457a813cb29ffe07faa62b5c",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0013_bite_003_transfer.npz",
+      "record_id": "trial_0013_bite_003_transfer",
+      "sha256": "668be6584fc600a8979eb7a01a58d13f33777fb2457a813cb29ffe07faa62b5c",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0013_bite_004_transfer.npz",
+      "record_id": "trial_0013_bite_004_transfer",
+      "sha256": "cc0660859752c540849af781dcfcfce111fc104313b9d80a5aa3e2e6e1e534cb",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0013_bite_004_transfer.npz",
+      "record_id": "trial_0013_bite_004_transfer",
+      "sha256": "cc0660859752c540849af781dcfcfce111fc104313b9d80a5aa3e2e6e1e534cb",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0013_bite_005_transfer.npz",
+      "record_id": "trial_0013_bite_005_transfer",
+      "sha256": "61187a9b9ae44d9edac950be186c6eea0d3b86fbdb47e53cc0a9e72a5cbcb167",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0013_bite_005_transfer.npz",
+      "record_id": "trial_0013_bite_005_transfer",
+      "sha256": "61187a9b9ae44d9edac950be186c6eea0d3b86fbdb47e53cc0a9e72a5cbcb167",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0013_bite_006_transfer.npz",
+      "record_id": "trial_0013_bite_006_transfer",
+      "sha256": "5b856be66a1816605b26f00b7c0ec35913e4e47c5141a1f378f9f527f2f0d1c4",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0013_bite_006_transfer.npz",
+      "record_id": "trial_0013_bite_006_transfer",
+      "sha256": "5b856be66a1816605b26f00b7c0ec35913e4e47c5141a1f378f9f527f2f0d1c4",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0013_bite_007_transfer.npz",
+      "record_id": "trial_0013_bite_007_transfer",
+      "sha256": "4bfbcf4ecb5861161b23a9ad9b33b8778d7941ffad2ec4fe1b58138daf80d1a4",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0013_bite_007_transfer.npz",
+      "record_id": "trial_0013_bite_007_transfer",
+      "sha256": "4bfbcf4ecb5861161b23a9ad9b33b8778d7941ffad2ec4fe1b58138daf80d1a4",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0013_bite_008_transfer.npz",
+      "record_id": "trial_0013_bite_008_transfer",
+      "sha256": "d2db6b570f088198394ea83bd8b8aa299ec26510f189323c1e324ffb192fb98d",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0013_bite_008_transfer.npz",
+      "record_id": "trial_0013_bite_008_transfer",
+      "sha256": "d2db6b570f088198394ea83bd8b8aa299ec26510f189323c1e324ffb192fb98d",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0013_bite_009_transfer.npz",
+      "record_id": "trial_0013_bite_009_transfer",
+      "sha256": "7e86de14de40ee0a83d5ad06731607033f588f36df293390fff48a675972cef9",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0013_bite_009_transfer.npz",
+      "record_id": "trial_0013_bite_009_transfer",
+      "sha256": "7e86de14de40ee0a83d5ad06731607033f588f36df293390fff48a675972cef9",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0013_bite_010_transfer.npz",
+      "record_id": "trial_0013_bite_010_transfer",
+      "sha256": "d56ddd917e48599f62b4d141c8e47e31904b78fbcea43ad558bc2b9ac4698120",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0013_bite_010_transfer.npz",
+      "record_id": "trial_0013_bite_010_transfer",
+      "sha256": "d56ddd917e48599f62b4d141c8e47e31904b78fbcea43ad558bc2b9ac4698120",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0013_bite_011_transfer.npz",
+      "record_id": "trial_0013_bite_011_transfer",
+      "sha256": "07437e95c3ea66da6d638e6ee758723fa0925abdb8916ecaebe5d98a21be4a5a",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0013_bite_011_transfer.npz",
+      "record_id": "trial_0013_bite_011_transfer",
+      "sha256": "07437e95c3ea66da6d638e6ee758723fa0925abdb8916ecaebe5d98a21be4a5a",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0013_bite_012_transfer.npz",
+      "record_id": "trial_0013_bite_012_transfer",
+      "sha256": "f0c4fcf757c1224b4ae14aa23395dbe59f471f61eba8441ba9508f8d246a18c4",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0013_bite_012_transfer.npz",
+      "record_id": "trial_0013_bite_012_transfer",
+      "sha256": "f0c4fcf757c1224b4ae14aa23395dbe59f471f61eba8441ba9508f8d246a18c4",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0014_bite_001_transfer.npz",
+      "record_id": "trial_0014_bite_001_transfer",
+      "sha256": "ab8391ee359c48e2bf71b49647efbd8fb6d49e6a8996ab6871f1148535ee8719",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0014_bite_001_transfer.npz",
+      "record_id": "trial_0014_bite_001_transfer",
+      "sha256": "ab8391ee359c48e2bf71b49647efbd8fb6d49e6a8996ab6871f1148535ee8719",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0014_bite_002_transfer.npz",
+      "record_id": "trial_0014_bite_002_transfer",
+      "sha256": "173b5a321dc31755465cc16e015ddebbe9ef050f1364e09fb617f5eb9f694997",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0014_bite_002_transfer.npz",
+      "record_id": "trial_0014_bite_002_transfer",
+      "sha256": "173b5a321dc31755465cc16e015ddebbe9ef050f1364e09fb617f5eb9f694997",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0014_bite_003_transfer.npz",
+      "record_id": "trial_0014_bite_003_transfer",
+      "sha256": "6843e438367456f195c04987e7dd7532370ff5b70d1aa1f4988b188db455a1e1",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0014_bite_003_transfer.npz",
+      "record_id": "trial_0014_bite_003_transfer",
+      "sha256": "6843e438367456f195c04987e7dd7532370ff5b70d1aa1f4988b188db455a1e1",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0014_bite_004_transfer.npz",
+      "record_id": "trial_0014_bite_004_transfer",
+      "sha256": "4ba63b7a6553905955d4541be36b64849e953234131df1502987f72750788347",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0014_bite_004_transfer.npz",
+      "record_id": "trial_0014_bite_004_transfer",
+      "sha256": "4ba63b7a6553905955d4541be36b64849e953234131df1502987f72750788347",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0014_bite_005_transfer.npz",
+      "record_id": "trial_0014_bite_005_transfer",
+      "sha256": "fd9710f681fabaff91ff861472605201c752ed5a838b6b0d5c38ef59391a618b",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0014_bite_005_transfer.npz",
+      "record_id": "trial_0014_bite_005_transfer",
+      "sha256": "fd9710f681fabaff91ff861472605201c752ed5a838b6b0d5c38ef59391a618b",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0014_bite_006_transfer.npz",
+      "record_id": "trial_0014_bite_006_transfer",
+      "sha256": "f9771717542930ca490be903c687b822bf5b112b32cb2e3538e3fb75908aba78",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0014_bite_006_transfer.npz",
+      "record_id": "trial_0014_bite_006_transfer",
+      "sha256": "f9771717542930ca490be903c687b822bf5b112b32cb2e3538e3fb75908aba78",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0014_bite_007_transfer.npz",
+      "record_id": "trial_0014_bite_007_transfer",
+      "sha256": "7501a53b421099477523c213fee73353cb9dc6a2305a7c962cb3ccd15ce806e3",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0014_bite_007_transfer.npz",
+      "record_id": "trial_0014_bite_007_transfer",
+      "sha256": "7501a53b421099477523c213fee73353cb9dc6a2305a7c962cb3ccd15ce806e3",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0014_bite_008_transfer.npz",
+      "record_id": "trial_0014_bite_008_transfer",
+      "sha256": "b7a66d4def3e3897229779810ac9d44d8fab4345396ce40d91477b51ddca4e24",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0014_bite_008_transfer.npz",
+      "record_id": "trial_0014_bite_008_transfer",
+      "sha256": "b7a66d4def3e3897229779810ac9d44d8fab4345396ce40d91477b51ddca4e24",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0014_bite_009_transfer.npz",
+      "record_id": "trial_0014_bite_009_transfer",
+      "sha256": "a71db3063c13d4ec81b9c4f357e9205b6c3744420b952993227ff5158cc0e8a8",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0014_bite_009_transfer.npz",
+      "record_id": "trial_0014_bite_009_transfer",
+      "sha256": "a71db3063c13d4ec81b9c4f357e9205b6c3744420b952993227ff5158cc0e8a8",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0014_bite_010_transfer.npz",
+      "record_id": "trial_0014_bite_010_transfer",
+      "sha256": "3660e43e7fa11ac1616ccc362b397b14fe87065c56840085e3cb699e1bd12b9c",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0014_bite_010_transfer.npz",
+      "record_id": "trial_0014_bite_010_transfer",
+      "sha256": "3660e43e7fa11ac1616ccc362b397b14fe87065c56840085e3cb699e1bd12b9c",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0014_bite_011_transfer.npz",
+      "record_id": "trial_0014_bite_011_transfer",
+      "sha256": "90a15d78ff5d3511fbfc030808b2e04b45294d154d5ce45f059ba12f6896db54",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0014_bite_011_transfer.npz",
+      "record_id": "trial_0014_bite_011_transfer",
+      "sha256": "90a15d78ff5d3511fbfc030808b2e04b45294d154d5ce45f059ba12f6896db54",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0014_bite_012_transfer.npz",
+      "record_id": "trial_0014_bite_012_transfer",
+      "sha256": "059646bbef529659d52339f49e3b27bd98f05e6898484b723d480fec9f511332",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0014_bite_012_transfer.npz",
+      "record_id": "trial_0014_bite_012_transfer",
+      "sha256": "059646bbef529659d52339f49e3b27bd98f05e6898484b723d480fec9f511332",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0014_bite_013_transfer.npz",
+      "record_id": "trial_0014_bite_013_transfer",
+      "sha256": "381c0230c1c6e860b20152ec01b6088d5531872c6e4c95d06fe11d3de19b1b49",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0014_bite_013_transfer.npz",
+      "record_id": "trial_0014_bite_013_transfer",
+      "sha256": "381c0230c1c6e860b20152ec01b6088d5531872c6e4c95d06fe11d3de19b1b49",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0014_bite_014_transfer.npz",
+      "record_id": "trial_0014_bite_014_transfer",
+      "sha256": "3844994d486bb39a09f02fdc133cf1292084c850726e98c8725c45bf4aa87fcb",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0014_bite_014_transfer.npz",
+      "record_id": "trial_0014_bite_014_transfer",
+      "sha256": "3844994d486bb39a09f02fdc133cf1292084c850726e98c8725c45bf4aa87fcb",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0014_bite_015_transfer.npz",
+      "record_id": "trial_0014_bite_015_transfer",
+      "sha256": "ef873248a98742de763644d9fa1414b5df254231a0b9175c0cbfe53cb25ae566",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0014_bite_015_transfer.npz",
+      "record_id": "trial_0014_bite_015_transfer",
+      "sha256": "ef873248a98742de763644d9fa1414b5df254231a0b9175c0cbfe53cb25ae566",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0014_bite_016_transfer.npz",
+      "record_id": "trial_0014_bite_016_transfer",
+      "sha256": "a71dda9106389806bcd27def133fbe59f41b626abc8d14eab4890085f4705c43",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0014_bite_016_transfer.npz",
+      "record_id": "trial_0014_bite_016_transfer",
+      "sha256": "a71dda9106389806bcd27def133fbe59f41b626abc8d14eab4890085f4705c43",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0014_bite_017_transfer.npz",
+      "record_id": "trial_0014_bite_017_transfer",
+      "sha256": "f3d53a4ede90ca2ef02bb65a0e2e00eb1b9527cb04ca34fbba9fdceceb1937e5",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0014_bite_017_transfer.npz",
+      "record_id": "trial_0014_bite_017_transfer",
+      "sha256": "f3d53a4ede90ca2ef02bb65a0e2e00eb1b9527cb04ca34fbba9fdceceb1937e5",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0014_bite_018_transfer.npz",
+      "record_id": "trial_0014_bite_018_transfer",
+      "sha256": "3b2d0f638fbaf7cdb9b1df48664468cf87b9f92ee04bf59a15ca6fbaf7289297",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0014_bite_018_transfer.npz",
+      "record_id": "trial_0014_bite_018_transfer",
+      "sha256": "3b2d0f638fbaf7cdb9b1df48664468cf87b9f92ee04bf59a15ca6fbaf7289297",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0014_bite_019_transfer.npz",
+      "record_id": "trial_0014_bite_019_transfer",
+      "sha256": "43cbbdb9c5ab1db83cbdad6ba1c128e0fe3cc8c5103dc4d9f9c303594fb212c3",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0014_bite_019_transfer.npz",
+      "record_id": "trial_0014_bite_019_transfer",
+      "sha256": "43cbbdb9c5ab1db83cbdad6ba1c128e0fe3cc8c5103dc4d9f9c303594fb212c3",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0014_bite_020_transfer.npz",
+      "record_id": "trial_0014_bite_020_transfer",
+      "sha256": "40a1ef42f362bef05749afbe373fe0cafa3c8a2f44e2cd28e8d091b10844ee14",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0014_bite_020_transfer.npz",
+      "record_id": "trial_0014_bite_020_transfer",
+      "sha256": "40a1ef42f362bef05749afbe373fe0cafa3c8a2f44e2cd28e8d091b10844ee14",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0014_bite_021_transfer.npz",
+      "record_id": "trial_0014_bite_021_transfer",
+      "sha256": "83f81ae812ecb0d0fff038b8044f9a8699c5de4fb7ceb325cb95d655abf7e572",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0014_bite_021_transfer.npz",
+      "record_id": "trial_0014_bite_021_transfer",
+      "sha256": "83f81ae812ecb0d0fff038b8044f9a8699c5de4fb7ceb325cb95d655abf7e572",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0015_bite_001_transfer.npz",
+      "record_id": "trial_0015_bite_001_transfer",
+      "sha256": "189a61dec21c66d0ba69e1e2e4049a1c8cb186ed86ff715386bdff71735bdcbd",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0015_bite_001_transfer.npz",
+      "record_id": "trial_0015_bite_001_transfer",
+      "sha256": "189a61dec21c66d0ba69e1e2e4049a1c8cb186ed86ff715386bdff71735bdcbd",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0015_bite_002_transfer.npz",
+      "record_id": "trial_0015_bite_002_transfer",
+      "sha256": "99f87d11d2608661c9f0d53a3add296bdbb814a2bbbb309949617725f5d047c0",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0015_bite_002_transfer.npz",
+      "record_id": "trial_0015_bite_002_transfer",
+      "sha256": "99f87d11d2608661c9f0d53a3add296bdbb814a2bbbb309949617725f5d047c0",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0015_bite_003_transfer.npz",
+      "record_id": "trial_0015_bite_003_transfer",
+      "sha256": "4f2c0b14f78b6de4f28a1f115cac1c1bc4a17071f0e7547e3a87a963891d95f9",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0015_bite_003_transfer.npz",
+      "record_id": "trial_0015_bite_003_transfer",
+      "sha256": "4f2c0b14f78b6de4f28a1f115cac1c1bc4a17071f0e7547e3a87a963891d95f9",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0015_bite_004_transfer.npz",
+      "record_id": "trial_0015_bite_004_transfer",
+      "sha256": "79c26790c2b7d939b162ed086ba2fafbd4a24dbab76032ec26136f777abd4e12",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0015_bite_004_transfer.npz",
+      "record_id": "trial_0015_bite_004_transfer",
+      "sha256": "79c26790c2b7d939b162ed086ba2fafbd4a24dbab76032ec26136f777abd4e12",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0015_bite_005_transfer.npz",
+      "record_id": "trial_0015_bite_005_transfer",
+      "sha256": "3bb265e67d4af01f81846d02d8bb5f8c4e6d0933f2f74290a1f800c41f49b91b",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0015_bite_005_transfer.npz",
+      "record_id": "trial_0015_bite_005_transfer",
+      "sha256": "3bb265e67d4af01f81846d02d8bb5f8c4e6d0933f2f74290a1f800c41f49b91b",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0015_bite_006_transfer.npz",
+      "record_id": "trial_0015_bite_006_transfer",
+      "sha256": "85bc33e0cc3804c3f9d0c04423cca13442701ca8be5db52f606fcc0ed5fe2f05",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0015_bite_006_transfer.npz",
+      "record_id": "trial_0015_bite_006_transfer",
+      "sha256": "85bc33e0cc3804c3f9d0c04423cca13442701ca8be5db52f606fcc0ed5fe2f05",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0015_bite_007_transfer.npz",
+      "record_id": "trial_0015_bite_007_transfer",
+      "sha256": "cca49cf2f887d7d1725413530613a06eb6178a7c47d3e8cdafdbc0123d9efd88",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0015_bite_007_transfer.npz",
+      "record_id": "trial_0015_bite_007_transfer",
+      "sha256": "cca49cf2f887d7d1725413530613a06eb6178a7c47d3e8cdafdbc0123d9efd88",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0015_bite_008_transfer.npz",
+      "record_id": "trial_0015_bite_008_transfer",
+      "sha256": "00b7759119bfa9982c8c903aff212faad7aeb07cf1d6fccf4da9ea16c0f78457",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0015_bite_008_transfer.npz",
+      "record_id": "trial_0015_bite_008_transfer",
+      "sha256": "00b7759119bfa9982c8c903aff212faad7aeb07cf1d6fccf4da9ea16c0f78457",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0015_bite_009_transfer.npz",
+      "record_id": "trial_0015_bite_009_transfer",
+      "sha256": "c2084454294d15a39cd276737ce41cf9cc8a2028ecae3eb22415f40514313a57",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0015_bite_009_transfer.npz",
+      "record_id": "trial_0015_bite_009_transfer",
+      "sha256": "c2084454294d15a39cd276737ce41cf9cc8a2028ecae3eb22415f40514313a57",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0015_bite_010_transfer.npz",
+      "record_id": "trial_0015_bite_010_transfer",
+      "sha256": "07ba06844f2e272e6c221586d99b62a1b14d5b4eecefa6de8a80e49a91ac0979",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0015_bite_010_transfer.npz",
+      "record_id": "trial_0015_bite_010_transfer",
+      "sha256": "07ba06844f2e272e6c221586d99b62a1b14d5b4eecefa6de8a80e49a91ac0979",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0015_bite_011_transfer.npz",
+      "record_id": "trial_0015_bite_011_transfer",
+      "sha256": "f3a1275ec2744f6415d5944ea0398cefe80d98504d6874022a7626db6bc62fa9",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0015_bite_011_transfer.npz",
+      "record_id": "trial_0015_bite_011_transfer",
+      "sha256": "f3a1275ec2744f6415d5944ea0398cefe80d98504d6874022a7626db6bc62fa9",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0015_bite_012_transfer.npz",
+      "record_id": "trial_0015_bite_012_transfer",
+      "sha256": "e0a1772922bc675c73813ec02369b86b3be3647e2304031e0a5e5fdd4a70f4aa",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0015_bite_012_transfer.npz",
+      "record_id": "trial_0015_bite_012_transfer",
+      "sha256": "e0a1772922bc675c73813ec02369b86b3be3647e2304031e0a5e5fdd4a70f4aa",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0015_bite_013_transfer.npz",
+      "record_id": "trial_0015_bite_013_transfer",
+      "sha256": "d8a3b8b9c1c5e77532057c0c7995d61ea644aeadfc27e6d2e20e93aca899e56e",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0015_bite_013_transfer.npz",
+      "record_id": "trial_0015_bite_013_transfer",
+      "sha256": "d8a3b8b9c1c5e77532057c0c7995d61ea644aeadfc27e6d2e20e93aca899e56e",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0015_bite_014_transfer.npz",
+      "record_id": "trial_0015_bite_014_transfer",
+      "sha256": "bafffc165437fbbd528607c24f1e63b2d2f191da5633d206e551209e924deb11",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0015_bite_014_transfer.npz",
+      "record_id": "trial_0015_bite_014_transfer",
+      "sha256": "bafffc165437fbbd528607c24f1e63b2d2f191da5633d206e551209e924deb11",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0015_bite_015_transfer.npz",
+      "record_id": "trial_0015_bite_015_transfer",
+      "sha256": "38d15629a4307253bfa06596e9e6fb0e1191d70c6ce5dd14ac20732813fed5ec",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0015_bite_015_transfer.npz",
+      "record_id": "trial_0015_bite_015_transfer",
+      "sha256": "38d15629a4307253bfa06596e9e6fb0e1191d70c6ce5dd14ac20732813fed5ec",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0015_bite_016_transfer.npz",
+      "record_id": "trial_0015_bite_016_transfer",
+      "sha256": "d5696cd1bc666d29d100e3555de69f8fb69108bbf2721dc72faf827902af837e",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0015_bite_016_transfer.npz",
+      "record_id": "trial_0015_bite_016_transfer",
+      "sha256": "d5696cd1bc666d29d100e3555de69f8fb69108bbf2721dc72faf827902af837e",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0015_bite_017_transfer.npz",
+      "record_id": "trial_0015_bite_017_transfer",
+      "sha256": "bdbeadd6db2183b0c96a10b6935b8d1800348151324d2ab583acc09fcc7c44ef",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0015_bite_017_transfer.npz",
+      "record_id": "trial_0015_bite_017_transfer",
+      "sha256": "bdbeadd6db2183b0c96a10b6935b8d1800348151324d2ab583acc09fcc7c44ef",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0015_bite_018_transfer.npz",
+      "record_id": "trial_0015_bite_018_transfer",
+      "sha256": "2d576217267dbdef03fd91fc1916a4001e0a6c1babee7c1e03422cde85dc41b8",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0015_bite_018_transfer.npz",
+      "record_id": "trial_0015_bite_018_transfer",
+      "sha256": "2d576217267dbdef03fd91fc1916a4001e0a6c1babee7c1e03422cde85dc41b8",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0015_bite_019_transfer.npz",
+      "record_id": "trial_0015_bite_019_transfer",
+      "sha256": "8513815f8241bab49334769a56d0cc20a0c3fb430f63994f47ef08429c5b3ac7",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0015_bite_019_transfer.npz",
+      "record_id": "trial_0015_bite_019_transfer",
+      "sha256": "8513815f8241bab49334769a56d0cc20a0c3fb430f63994f47ef08429c5b3ac7",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0017_bite_001_transfer.npz",
+      "record_id": "trial_0017_bite_001_transfer",
+      "sha256": "6d154204dd849e7633c2450fe0e2dc68b69541a2d469bf172e23a73f1a190dbc",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0017_bite_001_transfer.npz",
+      "record_id": "trial_0017_bite_001_transfer",
+      "sha256": "6d154204dd849e7633c2450fe0e2dc68b69541a2d469bf172e23a73f1a190dbc",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0017_bite_002_transfer.npz",
+      "record_id": "trial_0017_bite_002_transfer",
+      "sha256": "cee5c6339e0bf1ccad4239c66706408fef525480586528c287789ed4e8b6f08a",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0017_bite_002_transfer.npz",
+      "record_id": "trial_0017_bite_002_transfer",
+      "sha256": "cee5c6339e0bf1ccad4239c66706408fef525480586528c287789ed4e8b6f08a",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0017_bite_003_transfer.npz",
+      "record_id": "trial_0017_bite_003_transfer",
+      "sha256": "0ed6ce20a07d56bd0ea1470d9b61fb5c5e7e42a3f08b859d9dbeb42cccc73b04",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0017_bite_003_transfer.npz",
+      "record_id": "trial_0017_bite_003_transfer",
+      "sha256": "0ed6ce20a07d56bd0ea1470d9b61fb5c5e7e42a3f08b859d9dbeb42cccc73b04",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0017_bite_004_transfer.npz",
+      "record_id": "trial_0017_bite_004_transfer",
+      "sha256": "1b832da60b8c5d70dae6163ad19dabe548e13dd219a936d09d64adf3111fabe7",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0017_bite_004_transfer.npz",
+      "record_id": "trial_0017_bite_004_transfer",
+      "sha256": "1b832da60b8c5d70dae6163ad19dabe548e13dd219a936d09d64adf3111fabe7",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0017_bite_005_transfer.npz",
+      "record_id": "trial_0017_bite_005_transfer",
+      "sha256": "b4034268775bf150806fbf37cc7f8ab84cb8494bcec0622d3eeddc5871b8a002",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0017_bite_005_transfer.npz",
+      "record_id": "trial_0017_bite_005_transfer",
+      "sha256": "b4034268775bf150806fbf37cc7f8ab84cb8494bcec0622d3eeddc5871b8a002",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0017_bite_006_transfer.npz",
+      "record_id": "trial_0017_bite_006_transfer",
+      "sha256": "4ff43d6a626966ba7f5ca1d5ce119964a81d886cc2e83a250e8006a0cc852b57",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0017_bite_006_transfer.npz",
+      "record_id": "trial_0017_bite_006_transfer",
+      "sha256": "4ff43d6a626966ba7f5ca1d5ce119964a81d886cc2e83a250e8006a0cc852b57",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0017_bite_007_transfer.npz",
+      "record_id": "trial_0017_bite_007_transfer",
+      "sha256": "0f3f87c2cff51b5e1603bcf41ee3d80c19e605a0bee929bac92ae632be766510",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0017_bite_007_transfer.npz",
+      "record_id": "trial_0017_bite_007_transfer",
+      "sha256": "0f3f87c2cff51b5e1603bcf41ee3d80c19e605a0bee929bac92ae632be766510",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0017_bite_008_transfer.npz",
+      "record_id": "trial_0017_bite_008_transfer",
+      "sha256": "4c7275f44cb6f44ae37fadf7e0b9bfd4514c22a70411c0c528bc5ed4116963f9",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0017_bite_008_transfer.npz",
+      "record_id": "trial_0017_bite_008_transfer",
+      "sha256": "4c7275f44cb6f44ae37fadf7e0b9bfd4514c22a70411c0c528bc5ed4116963f9",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0017_bite_009_transfer.npz",
+      "record_id": "trial_0017_bite_009_transfer",
+      "sha256": "fdfccdbb7d3c46255d27e497fd7cad270f7e784651af54f3e4b29de90f5ecc72",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0017_bite_009_transfer.npz",
+      "record_id": "trial_0017_bite_009_transfer",
+      "sha256": "fdfccdbb7d3c46255d27e497fd7cad270f7e784651af54f3e4b29de90f5ecc72",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0017_bite_010_transfer.npz",
+      "record_id": "trial_0017_bite_010_transfer",
+      "sha256": "98cdd4f936c14b84b5bf2583d2724d41a50fc19a8888aca9a1989a852108a97f",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0017_bite_010_transfer.npz",
+      "record_id": "trial_0017_bite_010_transfer",
+      "sha256": "98cdd4f936c14b84b5bf2583d2724d41a50fc19a8888aca9a1989a852108a97f",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0017_bite_011_transfer.npz",
+      "record_id": "trial_0017_bite_011_transfer",
+      "sha256": "129dd0dd4ee70a5a4432f53e55f65de1efff5ed2a401d803b81e3fafc813c6f9",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0017_bite_011_transfer.npz",
+      "record_id": "trial_0017_bite_011_transfer",
+      "sha256": "129dd0dd4ee70a5a4432f53e55f65de1efff5ed2a401d803b81e3fafc813c6f9",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0017_bite_012_transfer.npz",
+      "record_id": "trial_0017_bite_012_transfer",
+      "sha256": "db81f352cea03219fc99f80192f40ea13b0ec9a94aa34695789a72f4e4784819",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0017_bite_012_transfer.npz",
+      "record_id": "trial_0017_bite_012_transfer",
+      "sha256": "db81f352cea03219fc99f80192f40ea13b0ec9a94aa34695789a72f4e4784819",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0017_bite_013_transfer.npz",
+      "record_id": "trial_0017_bite_013_transfer",
+      "sha256": "f7ac0e6a497c3e81c48cbb8c8b8f92496d10dc3316cafd20b9b17aee4d75f63c",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0017_bite_013_transfer.npz",
+      "record_id": "trial_0017_bite_013_transfer",
+      "sha256": "f7ac0e6a497c3e81c48cbb8c8b8f92496d10dc3316cafd20b9b17aee4d75f63c",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0017_bite_014_transfer.npz",
+      "record_id": "trial_0017_bite_014_transfer",
+      "sha256": "fa06b34249f55e7c4cb6f66c9c7ef4b2d8369208281c1de5040b6a6ec6c2a718",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0017_bite_014_transfer.npz",
+      "record_id": "trial_0017_bite_014_transfer",
+      "sha256": "fa06b34249f55e7c4cb6f66c9c7ef4b2d8369208281c1de5040b6a6ec6c2a718",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0017_bite_015_transfer.npz",
+      "record_id": "trial_0017_bite_015_transfer",
+      "sha256": "d47204234f778b8ef84ee679270b142f688712a9d7fb89310a973a6bdd2b56bc",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0017_bite_015_transfer.npz",
+      "record_id": "trial_0017_bite_015_transfer",
+      "sha256": "d47204234f778b8ef84ee679270b142f688712a9d7fb89310a973a6bdd2b56bc",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0019_bite_001_transfer.npz",
+      "record_id": "trial_0019_bite_001_transfer",
+      "sha256": "3fca4641f92c2ec3c045ad79e636499d21940749af6a6dfa7bb8ab6d7c94e77f",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0019_bite_001_transfer.npz",
+      "record_id": "trial_0019_bite_001_transfer",
+      "sha256": "3fca4641f92c2ec3c045ad79e636499d21940749af6a6dfa7bb8ab6d7c94e77f",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0019_bite_002_transfer.npz",
+      "record_id": "trial_0019_bite_002_transfer",
+      "sha256": "cab6e0fd20e8aed85ad99d584258eebad70a6b6306e0af59427cd724da821718",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0019_bite_002_transfer.npz",
+      "record_id": "trial_0019_bite_002_transfer",
+      "sha256": "cab6e0fd20e8aed85ad99d584258eebad70a6b6306e0af59427cd724da821718",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0019_bite_003_transfer.npz",
+      "record_id": "trial_0019_bite_003_transfer",
+      "sha256": "eb7ecedf4fc03123b4e6ed3dd158052cc191d3c46a707b296be00c01216591c4",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0019_bite_003_transfer.npz",
+      "record_id": "trial_0019_bite_003_transfer",
+      "sha256": "eb7ecedf4fc03123b4e6ed3dd158052cc191d3c46a707b296be00c01216591c4",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0019_bite_004_transfer.npz",
+      "record_id": "trial_0019_bite_004_transfer",
+      "sha256": "39485b41984695f4298aba89fef816c4498358268a7449367d552ebf3bd54e9c",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0019_bite_004_transfer.npz",
+      "record_id": "trial_0019_bite_004_transfer",
+      "sha256": "39485b41984695f4298aba89fef816c4498358268a7449367d552ebf3bd54e9c",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0019_bite_005_transfer.npz",
+      "record_id": "trial_0019_bite_005_transfer",
+      "sha256": "161e78ebaa6ef7cd1d3812c3ba11de704ed6f2c57e78aa62a427b42658cb36a4",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0019_bite_005_transfer.npz",
+      "record_id": "trial_0019_bite_005_transfer",
+      "sha256": "161e78ebaa6ef7cd1d3812c3ba11de704ed6f2c57e78aa62a427b42658cb36a4",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0019_bite_006_transfer.npz",
+      "record_id": "trial_0019_bite_006_transfer",
+      "sha256": "8a0f12d0e00be3f6a57cde728954ae8bf77fcb68b434da8abeaa538dfa2d7780",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0019_bite_006_transfer.npz",
+      "record_id": "trial_0019_bite_006_transfer",
+      "sha256": "8a0f12d0e00be3f6a57cde728954ae8bf77fcb68b434da8abeaa538dfa2d7780",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0019_bite_007_transfer.npz",
+      "record_id": "trial_0019_bite_007_transfer",
+      "sha256": "496e8a4d1955859fc96497ef31b16ba576ec543301016fc12a8094503fbb9b8a",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0019_bite_007_transfer.npz",
+      "record_id": "trial_0019_bite_007_transfer",
+      "sha256": "496e8a4d1955859fc96497ef31b16ba576ec543301016fc12a8094503fbb9b8a",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0019_bite_008_transfer.npz",
+      "record_id": "trial_0019_bite_008_transfer",
+      "sha256": "f7528c0d9c0b5f327c6944c8c87abe7499372e9d26517d632906b37002c35c51",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0019_bite_008_transfer.npz",
+      "record_id": "trial_0019_bite_008_transfer",
+      "sha256": "f7528c0d9c0b5f327c6944c8c87abe7499372e9d26517d632906b37002c35c51",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0019_bite_009_transfer.npz",
+      "record_id": "trial_0019_bite_009_transfer",
+      "sha256": "5f439661278b0faf6783200f0a5d55b86b1fbc4072fae29f26345aa2d70b25d2",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0019_bite_009_transfer.npz",
+      "record_id": "trial_0019_bite_009_transfer",
+      "sha256": "5f439661278b0faf6783200f0a5d55b86b1fbc4072fae29f26345aa2d70b25d2",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0019_bite_010_transfer.npz",
+      "record_id": "trial_0019_bite_010_transfer",
+      "sha256": "9edd89b7521cf2f8bc572cca81905fa15777e9629bcac439f909e41fe483354f",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0019_bite_010_transfer.npz",
+      "record_id": "trial_0019_bite_010_transfer",
+      "sha256": "9edd89b7521cf2f8bc572cca81905fa15777e9629bcac439f909e41fe483354f",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0019_bite_011_transfer.npz",
+      "record_id": "trial_0019_bite_011_transfer",
+      "sha256": "eb6fdee55dc8ca15eb5102fc76fdd878d07ec6a9ceea567a72d1ee738e827800",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0019_bite_011_transfer.npz",
+      "record_id": "trial_0019_bite_011_transfer",
+      "sha256": "eb6fdee55dc8ca15eb5102fc76fdd878d07ec6a9ceea567a72d1ee738e827800",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0019_bite_012_transfer.npz",
+      "record_id": "trial_0019_bite_012_transfer",
+      "sha256": "22b91d2b146d4ba8980f3575a9fbec7d9138ed93283c80573f9363fcac5047e6",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0019_bite_012_transfer.npz",
+      "record_id": "trial_0019_bite_012_transfer",
+      "sha256": "22b91d2b146d4ba8980f3575a9fbec7d9138ed93283c80573f9363fcac5047e6",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0019_bite_013_transfer.npz",
+      "record_id": "trial_0019_bite_013_transfer",
+      "sha256": "bd1626e97614c9927c7cb1b50f366921f2b4cf9edce85433a703c9e3b80a0119",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0019_bite_013_transfer.npz",
+      "record_id": "trial_0019_bite_013_transfer",
+      "sha256": "bd1626e97614c9927c7cb1b50f366921f2b4cf9edce85433a703c9e3b80a0119",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0019_bite_014_transfer.npz",
+      "record_id": "trial_0019_bite_014_transfer",
+      "sha256": "48ce4c0c1b675c5008dfe872c5069eba9241a26dec49a4bfe40a6226f82dfb41",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0019_bite_014_transfer.npz",
+      "record_id": "trial_0019_bite_014_transfer",
+      "sha256": "48ce4c0c1b675c5008dfe872c5069eba9241a26dec49a4bfe40a6226f82dfb41",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0019_bite_015_transfer.npz",
+      "record_id": "trial_0019_bite_015_transfer",
+      "sha256": "8b3bd73613430294cb38a92024f148e4c1f95ea37bf30e7d0eeed8979083298a",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0019_bite_015_transfer.npz",
+      "record_id": "trial_0019_bite_015_transfer",
+      "sha256": "8b3bd73613430294cb38a92024f148e4c1f95ea37bf30e7d0eeed8979083298a",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0019_bite_016_transfer.npz",
+      "record_id": "trial_0019_bite_016_transfer",
+      "sha256": "7f400181c2e77fb83f5fd068bf9c01e869762d158b7bec063ffe46660225ced0",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0019_bite_016_transfer.npz",
+      "record_id": "trial_0019_bite_016_transfer",
+      "sha256": "7f400181c2e77fb83f5fd068bf9c01e869762d158b7bec063ffe46660225ced0",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0019_bite_017_transfer.npz",
+      "record_id": "trial_0019_bite_017_transfer",
+      "sha256": "3b626b793c921b636f914ee763f03d61b1afad77492ced37598ccf80b7c654f9",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0019_bite_017_transfer.npz",
+      "record_id": "trial_0019_bite_017_transfer",
+      "sha256": "3b626b793c921b636f914ee763f03d61b1afad77492ced37598ccf80b7c654f9",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0019_bite_018_transfer.npz",
+      "record_id": "trial_0019_bite_018_transfer",
+      "sha256": "dc6efbcab7a47156d5a79d8359ae2cd18a478e1f64125e8d9ff4cec083613d38",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0019_bite_018_transfer.npz",
+      "record_id": "trial_0019_bite_018_transfer",
+      "sha256": "dc6efbcab7a47156d5a79d8359ae2cd18a478e1f64125e8d9ff4cec083613d38",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0019_bite_019_transfer.npz",
+      "record_id": "trial_0019_bite_019_transfer",
+      "sha256": "7547471b5787ce9b5c648f20c5a552399c52ddffc5643de4087df0cf9cb38c67",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0019_bite_019_transfer.npz",
+      "record_id": "trial_0019_bite_019_transfer",
+      "sha256": "7547471b5787ce9b5c648f20c5a552399c52ddffc5643de4087df0cf9cb38c67",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0019_bite_020_transfer.npz",
+      "record_id": "trial_0019_bite_020_transfer",
+      "sha256": "11ec72cf26c79d8b86eff9fb60f7a45048209b31e1d32938acb610c83c709740",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0019_bite_020_transfer.npz",
+      "record_id": "trial_0019_bite_020_transfer",
+      "sha256": "11ec72cf26c79d8b86eff9fb60f7a45048209b31e1d32938acb610c83c709740",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0019_bite_021_transfer.npz",
+      "record_id": "trial_0019_bite_021_transfer",
+      "sha256": "7a2e5bacf3f98105f5a42514dbf968a68f625842c9d32d64d9b59ba353d73e12",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0019_bite_021_transfer.npz",
+      "record_id": "trial_0019_bite_021_transfer",
+      "sha256": "7a2e5bacf3f98105f5a42514dbf968a68f625842c9d32d64d9b59ba353d73e12",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0019_bite_022_transfer.npz",
+      "record_id": "trial_0019_bite_022_transfer",
+      "sha256": "ebcb682a2b0a6ba80cc59aeb8c519b3e1805ca1128e2946a07fde376cbeaed87",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0019_bite_022_transfer.npz",
+      "record_id": "trial_0019_bite_022_transfer",
+      "sha256": "ebcb682a2b0a6ba80cc59aeb8c519b3e1805ca1128e2946a07fde376cbeaed87",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0019_bite_023_transfer.npz",
+      "record_id": "trial_0019_bite_023_transfer",
+      "sha256": "fbee8f39cd7b95df69f47b4f478a88f6a1021761155be86af4cef04d6f7cf0e3",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0019_bite_023_transfer.npz",
+      "record_id": "trial_0019_bite_023_transfer",
+      "sha256": "fbee8f39cd7b95df69f47b4f478a88f6a1021761155be86af4cef04d6f7cf0e3",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0019_bite_024_transfer.npz",
+      "record_id": "trial_0019_bite_024_transfer",
+      "sha256": "3861cca56cc090d3379e7bb1702ef4441b350852e4abb3e13c7272402e91414b",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0019_bite_024_transfer.npz",
+      "record_id": "trial_0019_bite_024_transfer",
+      "sha256": "3861cca56cc090d3379e7bb1702ef4441b350852e4abb3e13c7272402e91414b",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0019_bite_025_transfer.npz",
+      "record_id": "trial_0019_bite_025_transfer",
+      "sha256": "ad3775adb30fff154884aee053b512157c2c8edaa0bdc86f8d822977f2f8c660",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0019_bite_025_transfer.npz",
+      "record_id": "trial_0019_bite_025_transfer",
+      "sha256": "ad3775adb30fff154884aee053b512157c2c8edaa0bdc86f8d822977f2f8c660",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0019_bite_026_transfer.npz",
+      "record_id": "trial_0019_bite_026_transfer",
+      "sha256": "22b0bab78045897ddf7b7ae004fd976fad07cc10569bffa1a2153e055c4c0894",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0019_bite_026_transfer.npz",
+      "record_id": "trial_0019_bite_026_transfer",
+      "sha256": "22b0bab78045897ddf7b7ae004fd976fad07cc10569bffa1a2153e055c4c0894",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0020_bite_001_transfer.npz",
+      "record_id": "trial_0020_bite_001_transfer",
+      "sha256": "2cb6334bebcb9b45bfcec0185451d088d54fc3359b69756af051ecfe1342b3c6",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0020_bite_001_transfer.npz",
+      "record_id": "trial_0020_bite_001_transfer",
+      "sha256": "2cb6334bebcb9b45bfcec0185451d088d54fc3359b69756af051ecfe1342b3c6",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0020_bite_002_transfer.npz",
+      "record_id": "trial_0020_bite_002_transfer",
+      "sha256": "7e3236906f27e3e2d6f89329398f89c779f206934b27de36975483759c813661",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0020_bite_002_transfer.npz",
+      "record_id": "trial_0020_bite_002_transfer",
+      "sha256": "7e3236906f27e3e2d6f89329398f89c779f206934b27de36975483759c813661",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0020_bite_003_transfer.npz",
+      "record_id": "trial_0020_bite_003_transfer",
+      "sha256": "b990037bafd5566d4a840b74606be6b31e2cc497b6ba8f51dd641ae309e992d3",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0020_bite_003_transfer.npz",
+      "record_id": "trial_0020_bite_003_transfer",
+      "sha256": "b990037bafd5566d4a840b74606be6b31e2cc497b6ba8f51dd641ae309e992d3",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0020_bite_004_transfer.npz",
+      "record_id": "trial_0020_bite_004_transfer",
+      "sha256": "c6fdcbf473f1d42df715c28324d0e68435969bb2ea3fd89836db8729ce5693e6",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0020_bite_004_transfer.npz",
+      "record_id": "trial_0020_bite_004_transfer",
+      "sha256": "c6fdcbf473f1d42df715c28324d0e68435969bb2ea3fd89836db8729ce5693e6",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0020_bite_005_transfer.npz",
+      "record_id": "trial_0020_bite_005_transfer",
+      "sha256": "c480f2b34ff1d2465dc6d02ebcdf823c30e74b02f50506aaed63b351a26b0b19",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0020_bite_005_transfer.npz",
+      "record_id": "trial_0020_bite_005_transfer",
+      "sha256": "c480f2b34ff1d2465dc6d02ebcdf823c30e74b02f50506aaed63b351a26b0b19",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0020_bite_006_transfer.npz",
+      "record_id": "trial_0020_bite_006_transfer",
+      "sha256": "0e630de0eee2ba80b748d8e08fcf6d18cc932af49a4034659c34c9974c3bdfd5",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0020_bite_006_transfer.npz",
+      "record_id": "trial_0020_bite_006_transfer",
+      "sha256": "0e630de0eee2ba80b748d8e08fcf6d18cc932af49a4034659c34c9974c3bdfd5",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0020_bite_007_transfer.npz",
+      "record_id": "trial_0020_bite_007_transfer",
+      "sha256": "0c248d01ea179f3b1dc33b58b88578257c80db17f6527fcefda72bbf696f6483",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0020_bite_007_transfer.npz",
+      "record_id": "trial_0020_bite_007_transfer",
+      "sha256": "0c248d01ea179f3b1dc33b58b88578257c80db17f6527fcefda72bbf696f6483",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0020_bite_008_transfer.npz",
+      "record_id": "trial_0020_bite_008_transfer",
+      "sha256": "12b01e671d7c04836aab0e1ad5b013fb57e7169b879bc06d5e2e079c4d3ef90f",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0020_bite_008_transfer.npz",
+      "record_id": "trial_0020_bite_008_transfer",
+      "sha256": "12b01e671d7c04836aab0e1ad5b013fb57e7169b879bc06d5e2e079c4d3ef90f",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0020_bite_009_transfer.npz",
+      "record_id": "trial_0020_bite_009_transfer",
+      "sha256": "d7867330ac263de3b1bc29ba7dfdb6aa9e0b20c09cc41bd2e96be64ee56fd92d",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0020_bite_009_transfer.npz",
+      "record_id": "trial_0020_bite_009_transfer",
+      "sha256": "d7867330ac263de3b1bc29ba7dfdb6aa9e0b20c09cc41bd2e96be64ee56fd92d",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0020_bite_010_transfer.npz",
+      "record_id": "trial_0020_bite_010_transfer",
+      "sha256": "721409de1a9dc33c5b0ba31775a0708aff072b474ff394a57291a13d8d77ccb6",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0020_bite_010_transfer.npz",
+      "record_id": "trial_0020_bite_010_transfer",
+      "sha256": "721409de1a9dc33c5b0ba31775a0708aff072b474ff394a57291a13d8d77ccb6",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0020_bite_011_transfer.npz",
+      "record_id": "trial_0020_bite_011_transfer",
+      "sha256": "ade18296d427fc22641fb62afb3881cc0a8b88aa5ed420c3f2d5b0cc4c4c30da",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0020_bite_011_transfer.npz",
+      "record_id": "trial_0020_bite_011_transfer",
+      "sha256": "ade18296d427fc22641fb62afb3881cc0a8b88aa5ed420c3f2d5b0cc4c4c30da",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0020_bite_012_transfer.npz",
+      "record_id": "trial_0020_bite_012_transfer",
+      "sha256": "9e4d208306a48e2183407f1fe53f2d6924d3e16fb1d75fcd62e7bca4fb47b00f",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0020_bite_012_transfer.npz",
+      "record_id": "trial_0020_bite_012_transfer",
+      "sha256": "9e4d208306a48e2183407f1fe53f2d6924d3e16fb1d75fcd62e7bca4fb47b00f",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0020_bite_013_transfer.npz",
+      "record_id": "trial_0020_bite_013_transfer",
+      "sha256": "4d1d9e2c0b734814ddfe2b7104fa15d0c09a372dce34557e2667df19a61e04ee",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0020_bite_013_transfer.npz",
+      "record_id": "trial_0020_bite_013_transfer",
+      "sha256": "4d1d9e2c0b734814ddfe2b7104fa15d0c09a372dce34557e2667df19a61e04ee",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0020_bite_014_transfer.npz",
+      "record_id": "trial_0020_bite_014_transfer",
+      "sha256": "0d608ea8483a3bebe586acc1afff974aad75c4d3121c8d8827db883c0f07fc8b",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0020_bite_014_transfer.npz",
+      "record_id": "trial_0020_bite_014_transfer",
+      "sha256": "0d608ea8483a3bebe586acc1afff974aad75c4d3121c8d8827db883c0f07fc8b",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0020_bite_015_transfer.npz",
+      "record_id": "trial_0020_bite_015_transfer",
+      "sha256": "35f3c71dd607bfcad3baaf464a9b8ffef078f0e43279347ff436999bec4a208b",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0020_bite_015_transfer.npz",
+      "record_id": "trial_0020_bite_015_transfer",
+      "sha256": "35f3c71dd607bfcad3baaf464a9b8ffef078f0e43279347ff436999bec4a208b",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0020_bite_016_transfer.npz",
+      "record_id": "trial_0020_bite_016_transfer",
+      "sha256": "d60748962413a1b965cfea475953922e5d09be050a4701eb1d789dc13522c4f1",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0020_bite_016_transfer.npz",
+      "record_id": "trial_0020_bite_016_transfer",
+      "sha256": "d60748962413a1b965cfea475953922e5d09be050a4701eb1d789dc13522c4f1",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0020_bite_017_transfer.npz",
+      "record_id": "trial_0020_bite_017_transfer",
+      "sha256": "6f7d3c48a55b3feeb9e51931fe78a22f0d8b2a36741641181c8b0022ac0dc9b8",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0020_bite_017_transfer.npz",
+      "record_id": "trial_0020_bite_017_transfer",
+      "sha256": "6f7d3c48a55b3feeb9e51931fe78a22f0d8b2a36741641181c8b0022ac0dc9b8",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0020_bite_018_transfer.npz",
+      "record_id": "trial_0020_bite_018_transfer",
+      "sha256": "3fc9f9a5a8b1aeceafd9dade66f894b7f1bda238c9de4bac3f313e50a5cd27fc",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0020_bite_018_transfer.npz",
+      "record_id": "trial_0020_bite_018_transfer",
+      "sha256": "3fc9f9a5a8b1aeceafd9dade66f894b7f1bda238c9de4bac3f313e50a5cd27fc",
+      "variant": "oracle_full_pose_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_position_constrained\\trial_0020_bite_019_transfer.npz",
+      "record_id": "trial_0020_bite_019_transfer",
+      "sha256": "0b701818618cf4d0000ec88cc26715c95855a2b57e620e469c53c2f1e9d02d46",
+      "variant": "oracle_position_constrained"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2b\\generated\\oracle_full_pose_constrained\\trial_0020_bite_019_transfer.npz",
+      "record_id": "trial_0020_bite_019_transfer",
+      "sha256": "0b701818618cf4d0000ec88cc26715c95855a2b57e620e469c53c2f1e9d02d46",
+      "variant": "oracle_full_pose_constrained"
+    }
+  ],
+  "pairwise_bootstrap": "pairwise_bootstrap.csv",
+  "per_take_metrics": "per_take_metrics.csv",
+  "plots": [
+    "plots/final_approach_error.png",
+    "plots/terminal_pose_error.png",
+    "plots/orientation_error_by_phase.png",
+    "plots/correction_magnitude.png",
+    "plots/smoothness_diagnostics.png",
+    "plots/example_paths.png"
+  ],
+  "record_metrics": "record_metrics.csv",
+  "representative_examples": "representative_examples.json",
+  "schema_version": "generator-g2b-v1",
+  "summary": "summary.json"
+}

@@ -1,0 +1,200 @@
+{
+  "config": {
+    "bootstrap_resamples": 2000,
+    "bootstrap_seed": 20260915,
+    "g0_output_path": "outputs/generator_g0",
+    "output_path": "outputs/generator_g2a",
+    "phase1_output_path": "outputs/phase1",
+    "start_candidates": [
+      0.5,
+      0.65,
+      0.8
+    ]
+  },
+  "endpoint_max_error_m": 0.0,
+  "endpoint_semantics_audit": {
+    "claim": "offline provisional endpoint verification only; no independent mouth sensing or leakage-free deployment claim",
+    "contains_position_only": true,
+    "deterministic_relation": "mouth_proxy ~= fork_final - 0.180 m * fork_final_R[:,1]",
+    "fork_rigid_body_convention": "Hand + 0.100 m * ForkPlusY",
+    "indirect_future_endpoint_information": true,
+    "phase1_coordinate_frame": "B/world metres",
+    "physical_mouth_pose_validated": false,
+    "physical_tool_calibration_validated": false,
+    "recorded_relation_residual_max_m": 3.462759602133684e-06,
+    "recorded_relation_residual_mean_m": 6.775652630148337e-07,
+    "recorded_relation_uses_measured_orientation_for_audit_only": true,
+    "upstream_construction": "Hand_final + 0.080 m * ForkMinusY_final",
+    "upstream_coordinate_frame": "Motive Global millimetres",
+    "upstream_field": "Phase1.5 mouth_target_position (aliased mouth_proxy)",
+    "virtual_endpoint_constraint": true,
+    "virtual_goal_construction": "mouth_proxy_B + 0.180 m * G0_nominal_final_R_B[:,1]"
+  },
+  "metrics_bite_balanced": {
+    "adaptation_at_100pct_m": 0.010674060952324966,
+    "adaptation_at_80pct_m": 0.004395442429466358,
+    "adaptation_at_90pct_m": 0.008183867661491958,
+    "adaptation_first_nonzero_phase": 0.701338582677166,
+    "adaptation_max_m": 0.010674060952324966,
+    "adaptation_rms_m": 0.004088415201946865,
+    "adaptation_start_phase": 0.6913385826771641,
+    "constrained_early_rms_position_error_m": 0.04738997325882592,
+    "constrained_first_derivative_rms": 0.4784354108047669,
+    "constrained_last10_rms_position_error_m": 0.034686755205528975,
+    "constrained_last20_rms_position_error_m": 0.03427406578461473,
+    "constrained_late_rms_position_error_m": 0.03427406578461473,
+    "constrained_max_position_error_m": 0.07355398917431692,
+    "constrained_mean_position_error_m": 0.040373324254822575,
+    "constrained_measured_endpoint_error_m": 0.0365944056231783,
+    "constrained_middle_rms_position_error_m": 0.044579454842545135,
+    "constrained_p95_position_error_m": 0.07191433973369778,
+    "constrained_path_length_absolute_error_m": 0.02497577868768175,
+    "constrained_path_length_m": 0.43721727743859057,
+    "constrained_rms_position_error_m": 0.04588005410076003,
+    "constrained_second_derivative_rms": 1.5604578483636073,
+    "constrained_third_derivative_rms": 15.603301323954565,
+    "final_orientation_error_rad": 0.232275543480423,
+    "near_adaptation_start_first_derivative_change_max": 0.0020062333437750853,
+    "near_adaptation_start_second_derivative_change_max": 0.2864149190885574,
+    "near_adaptation_start_third_derivative_change_max": 19.253071801162505,
+    "near_endpoint_first_derivative_change_max": 0.005998489666697646,
+    "near_endpoint_second_derivative_change_max": 0.48537310321197996,
+    "near_endpoint_third_derivative_change_max": 13.703654551041582,
+    "nominal_early_rms_position_error_m": 0.04739665999948562,
+    "nominal_first_derivative_rms": 0.47500557974620455,
+    "nominal_last10_rms_position_error_m": 0.0359715834544591,
+    "nominal_last20_rms_position_error_m": 0.03559749636513839,
+    "nominal_late_rms_position_error_m": 0.03559749636513839,
+    "nominal_max_position_error_m": 0.07297626995420937,
+    "nominal_mean_position_error_m": 0.040802176851733096,
+    "nominal_measured_endpoint_error_m": 0.03757716794179186,
+    "nominal_middle_rms_position_error_m": 0.04516743122968982,
+    "nominal_p95_position_error_m": 0.07139572711457434,
+    "nominal_path_length_absolute_error_m": 0.025367066085641474,
+    "nominal_path_length_m": 0.43328559133617806,
+    "nominal_rms_position_error_m": 0.04607300070963786,
+    "nominal_second_derivative_rms": 1.524974978367585,
+    "nominal_third_derivative_rms": 13.610228065484373,
+    "rms_orientation_error_rad": 0.16464576441524012,
+    "virtual_endpoint_error_m": 0.0
+  },
+  "paired_parent_bite_bootstrap": [
+    {
+      "ci95_high_m": 0.0001096863808411582,
+      "ci95_low_m": -0.0005150629627471688,
+      "comparison": "constrained_minus_nominal",
+      "convention": "negative favors constrained",
+      "mean_difference_m": -0.00019294660887787032,
+      "metric": "rms_position_error_m",
+      "n_parent_bites": 127,
+      "resamples": 2000,
+      "seed": 20260915
+    },
+    {
+      "ci95_high_m": 0.0005505969052686637,
+      "ci95_low_m": -0.002697263531469703,
+      "comparison": "constrained_minus_nominal",
+      "convention": "negative favors constrained",
+      "mean_difference_m": -0.0009827623186135662,
+      "metric": "measured_endpoint_error_m",
+      "n_parent_bites": 127,
+      "resamples": 2000,
+      "seed": 20260915
+    },
+    {
+      "ci95_high_m": -3.630694139741845e-05,
+      "ci95_low_m": -0.0028445619645599417,
+      "comparison": "constrained_minus_nominal",
+      "convention": "negative favors constrained",
+      "mean_difference_m": -0.0013234305805236476,
+      "metric": "last20_rms_position_error_m",
+      "n_parent_bites": 127,
+      "resamples": 2000,
+      "seed": 20260915
+    },
+    {
+      "ci95_high_m": 0.0013227379435931121,
+      "ci95_low_m": -0.0022831160731378998,
+      "comparison": "constrained_minus_nominal",
+      "convention": "negative favors constrained",
+      "mean_difference_m": -0.00039128739795973036,
+      "metric": "path_length_absolute_error_m",
+      "n_parent_bites": 127,
+      "resamples": 2000,
+      "seed": 20260915
+    }
+  ],
+  "records": 127,
+  "representative_examples": {
+    "improvement_example": {
+      "adaptation_rms_m": 0.018132055232019276,
+      "constrained_last20_rms_position_error_m": 0.02832941329900932,
+      "nominal_last20_rms_position_error_m": 0.06339147567001856,
+      "parent_bite_id": "trial_0012_bite_010",
+      "record_id": "trial_0012_bite_010_transfer",
+      "take": "trial_0012"
+    },
+    "large_correction": {
+      "adaptation_rms_m": 0.021005816608691052,
+      "constrained_last20_rms_position_error_m": 0.021792959887123882,
+      "nominal_last20_rms_position_error_m": 0.052939403152221697,
+      "parent_bite_id": "trial_0012_bite_009",
+      "record_id": "trial_0012_bite_009_transfer",
+      "take": "trial_0012"
+    },
+    "minimal_correction": {
+      "adaptation_rms_m": 0.0006602158631546982,
+      "constrained_last20_rms_position_error_m": 0.02008098925741049,
+      "nominal_last20_rms_position_error_m": 0.02004874454961813,
+      "parent_bite_id": "trial_0014_bite_021",
+      "record_id": "trial_0014_bite_021_transfer",
+      "take": "trial_0014"
+    },
+    "shape_limited_example": {
+      "adaptation_rms_m": 0.0007887120862489788,
+      "constrained_last20_rms_position_error_m": 0.030920386380927076,
+      "nominal_last20_rms_position_error_m": 0.03151634418951634,
+      "parent_bite_id": "trial_0017_bite_013",
+      "record_id": "trial_0017_bite_013_transfer",
+      "take": "trial_0017"
+    },
+    "typical_correction": {
+      "adaptation_rms_m": 0.002388935322124735,
+      "constrained_last20_rms_position_error_m": 0.019211259971678947,
+      "nominal_last20_rms_position_error_m": 0.020703324537830307,
+      "parent_bite_id": "trial_0019_bite_014",
+      "record_id": "trial_0019_bite_014_transfer",
+      "take": "trial_0019"
+    }
+  },
+  "schema_version": "generator-g2a-v1",
+  "scope": {
+    "exact_sew_started": false,
+    "physical_calibration_started": false,
+    "robot_ik_started": false,
+    "stronglocal_started": false
+  },
+  "selected_adaptation_starts": {
+    "trial_0012": 0.5,
+    "trial_0013": 0.5,
+    "trial_0014": 0.8,
+    "trial_0015": 0.5,
+    "trial_0017": 0.8,
+    "trial_0019": 0.8,
+    "trial_0020": 0.8
+  },
+  "source": {
+    "g0_manifest_sha256": "c41d67ac2636605b6916b10d235b2f3c552e77d7910797f5c859323b3220acba",
+    "phase1_manifest_sha256": "0bf9e8e05afdd03690f289d547b57a4f72201e135d9c19cc3d7c17440aab2015"
+  },
+  "takes": [
+    "trial_0012",
+    "trial_0013",
+    "trial_0014",
+    "trial_0015",
+    "trial_0017",
+    "trial_0019",
+    "trial_0020"
+  ],
+  "withdrawal_endpoint_optimization_deferred": true
+}

@@ -22,6 +22,8 @@ Phase 3 → Phase 3.1：去除 ψ₀ 环形 OOD 后，full plan 无可靠增益
 19D StrongLocal（局部、Δψ）+ task-equivalent robot study
    ↓ Robot R2/R3：B2/B3 很有竞争力；HumanGT/RobotSmooth 是 tradeoff
 G0 Contextual ProMP 工具生成 → G1 完整模拟链 → G1V 展示
+   ↓ 独立的 transfer 末段适配实验，不回写 G1/机器人
+G2A 代理目标位置 ／ G2B 已知 oracle 终点位置/位姿（同一 G0 名义轨迹）
 ```
 
 另一条重要纠错链：起初因缺少手到工具标定，担心没有可用工具位姿；Phase 1.5 发现 OptiTrack **直接跟踪 fork rigid body**，可据此定义 `U`，但**不是已知叉尖**。Phase 2 在虚拟 `P→U=I` 下只有 35.79% exact replay；A/B/C/D 诊断发现主因是 raw fork 与旧 canonical orientation 固定约 90° 的目标语义差，而不是 solver、mount 或 adapter 退化。Robot R0 修正模拟朝向后 HumanGT replay 为 96.41%；这仍不是物理标定或真实可行率。
@@ -47,6 +49,8 @@ G0 Contextual ProMP 工具生成 → G1 完整模拟链 → G1V 展示
 
 在固定 measured U 的科学实验里，比较 B0/B1/B2/B3、StrongLocal、H*、HumanGT 与 RobotSmooth。HumanGT 是离线 oracle/reference，使用人的 measured `ψ`；RobotSmooth 是以机器人连续性为中心的因果启发式对照，不是人体预测器。G1 的 MeasuredUReference/StrongLocal 则使用 measured U 与**预测**的 StrongLocal `ψ`，不等于 HumanGT。
 
+G2A/G2B 是接在冻结 G0 ProMP 名义轨迹上的**独立 transfer 终点实验**，不是上图 G1→机器人流程的新环节。两者共用五次 smoothstep 末段修正；G2A 从派生 `mouth_proxy` 和 G0 预测最终方向构造虚拟目标、只约束位置，G2B 使用留出最终帧重建的 oracle 叉子目标，比较只约束位置和约束完整位姿。
+
 ## 4. 各阶段一眼看懂
 
 | 阶段 | 当时要回答什么 | 方法 | 实际观察与决定 |
@@ -66,6 +70,8 @@ G0 Contextual ProMP 工具生成 → G1 完整模拟链 → G1V 展示
 | G0 | 能从当前上下文生成工具轨迹吗？ | Retrieval vs 12-basis Contextual ProMP、LOTO | ProMP 工具 pose 误差更低；生成数值成功不等于真实喂食 |
 | G1 | 工具误差会传到 ψ/q 吗？ | generated U → fold-specific StrongLocal → Exact-SEW | ProMP 比 Retrieval 在 tool/ψ/q 与完整 pipeline 成功率上更好 |
 | G1V | 如何让人看见差异与失败？ | stored-q read-only MuJoCo/ψ panel/视频 | 已实现展示；当前工作区的旧 manifest 与部分视频文件存在性不一致，交付时须核对 |
+| G2A | 派生代理目标的末段能否命中？ | frozen G0 + `mouth_proxy+18 cm×G0 最终 fork +Y`、仅位置平滑修正 | 127/127 虚拟目标数值命中；到实测叉子终点平均仍差 3.66 cm，不是独立嘴部目标准确度 |
+| G2B | 已知正确叉子终点时，位置/姿态能否到达？ | frozen G0 + 同帧最终 `Hand+10 cm×实测 fork +Y` oracle；位置与完整位姿两版 | 终点位置/姿态数值命中；完整位姿版最后 20% RMS 为 1.59 cm/4.58°，中段仍有形状误差；非部署测试 |
 
 ## 5. 最值得记住的研究发现
 
@@ -80,8 +86,10 @@ G0 Contextual ProMP 工具生成 → G1 完整模拟链 → G1V 展示
 9. 初始 `ψ₀` 偏移能改变运动、余量和可行性排序；部署起始冗余选择仍未解决。
 10. G0 LOTO：ProMP vs Retrieval 工具位置 RMS `0.06793 vs 0.08676 m`，姿态 RMS `0.32435 vs 0.41916 rad`。
 11. G1 在 246 条 eligible 记录上，ProMP vs Retrieval 的 StrongLocal 完整 pipeline 成功 `224/246=91.06% vs 201/246=81.71%`；工具误差优势传播到 ψ/q，但这仍是模拟链。
+12. G2A 的虚拟终点全数命中，实测终点仍差 3.66 cm；它量化代理点与预测方向造成的目标差异，不能当真实目标已知。
+13. G2B 在留出最终帧提供正确 oracle 终点时可数值命中位置/姿态，末段误差下降但中段仍有形状误差；不是可部署预测或机器人验证。
 
-这些比较的统计单位以 parent bite 为主；每帧样本不能被当作彼此独立的显著性样本。G0 用 254 记录，G1 因 8 个初始 ψ 无效仅用 246，二者均按完整 take 做外层留出。具体置信区间、条件与支持集见详细 handoff 和 `outputs/*/summary.json`。
+这些比较的统计单位以 parent bite 为主；每帧样本不能被当作彼此独立的显著性样本。G0 用 254 记录，G1 因 8 个初始 ψ 无效仅用 246，G2A/G2B 只用 127 条 transfer。具体置信区间、条件与支持集见详细 handoff 和 `outputs/*/summary.json`。
 
 ## 6. 哪些路线已停止？哪些仍是 provisional？
 
@@ -89,13 +97,13 @@ G0 Contextual ProMP 工具生成 → G1 完整模拟链 → G1V 展示
 
 **尚未物理成立：**mouth proxy 是 derived/untrusted，不是真实测得嘴部；叉尖与 `P→U` 平移、真实 Gen3 base、plate/recipient workspace 未标定；G0/G1 timing 是 provisional，缺权威速度/加速度限值与 retiming；当前碰撞模型未验证；recipient identity、真实机器人执行、人体/环境安全及 feeding outcome 均未建立。虚拟 simulation geometry 不等于 physical calibration。
 
-**当前状态：**算法可行性研究和受控模拟比较已完成到 G1；G1V 展示工具可读 saved q 且不跑 IK。物理精度验证未完成，真实机器人执行未完成。本次审计时旧 G1V manifest 所列五个 MP4/六张图在未提交工作树中标为删除，当前另有三路/playlist 文件；演示产物交付前应按实际目录与 manifest 核对，不能只引用清单。
+**当前状态：**受控模拟链已完成到 G1，G1V 展示工具可读 saved q 且不跑 IK；另有本地未跟踪的 G2A/G2B transfer 末段适配代码和 127 条实验产物。G2A 代理点间接来自留出终点，G2B oracle 直接使用留出最终帧；冻结 G0 名义模型本身也含原有 `mouth_proxy` 上下文，因此二者都不能称无未来信息的部署泛化。物理精度验证和真实机器人执行均未完成。旧 G1V manifest 所列部分视频/截图当前不在磁盘，展示交付前须核对实际文件与清单。
 
 ## 7. 下一步：不要从旧 PCRC 计划接着做
 
-建议下一主线是 **Physical Calibration Accuracy Validation**，依次为：Gen3 base / OptiTrack / tracked-fork 外参（P0）→ fork rigid body 到 physical fork-tip/food point（P1）→ held-out 标定精度验证（P2）→ 真实 plate/recipient/workspace 摆位（P3）→ 无人体接触的 Gen3 执行（P4）→ mannequin/几何代理评估（P5）→ 论文主张和复现材料冻结。每一步需独立的测量、设备与安全条件，不能由当前模拟成功率自动授权实机动作。
+建议下一主线仍是 **Physical Calibration Accuracy Validation**，依次为：Gen3 base / OptiTrack / tracked-fork 外参（P0）→ fork rigid body 到 physical fork-tip/food point（P1）→ held-out 标定精度验证（P2）→ 真实 plate/recipient/workspace 摆位（P3）→ 无人体接触的 Gen3 执行（P4）→ mannequin/几何代理评估（P5）→ 论文主张和复现材料冻结。G2B 只证明已知 oracle 终点的数值可达性，不能替代真实目标感知与标定；每一步仍需独立的测量、设备与安全条件，不能由当前模拟成功率自动授权实机动作。
 
-## 8. 如果半年后回来，只记住这十句话
+## 8. 如果半年后回来，只记住这十一句话
 
 1. 本研究核心是**固定工具任务下人的冗余协调**，不是重做 IK。
 2. `U` 是 tracked fork rigid body，**不是**已标定叉尖。
@@ -106,4 +114,5 @@ G0 Contextual ProMP 工具生成 → G1 完整模拟链 → G1V 展示
 7. StrongLocal 对 hold 有益，但 B2/B3 在机器人层面同样强。
 8. RobotSmooth 是追求连续性的工程对照；HumanGT 是离线人的真值参考，二者有 tradeoff。
 9. Contextual ProMP 比 Retrieval 的完整**模拟**链更好；mouth proxy、初始 `ψ₀`、时间与几何仍是部署缺口。
-10. 下一步做物理标定与 held-out 精度验证，再谈实机、碰撞、安全或 feeding success。
+10. G2A 测代理目标差异；G2B 测已知 oracle 终点的末段可达性，二者都不证明真实目标感知。
+11. 下一步做物理标定与 held-out 精度验证，再谈实机、碰撞、安全或 feeding success。

@@ -1,0 +1,5 @@
+metric,comparison,convention,mean_difference_m,ci95_low_m,ci95_high_m,n_parent_bites,seed,resamples
+rms_position_error_m,constrained_minus_nominal,negative favors constrained,-0.00019294660887787032,-0.0005150629627471688,0.0001096863808411582,127,20260915,2000
+measured_endpoint_error_m,constrained_minus_nominal,negative favors constrained,-0.0009827623186135662,-0.002697263531469703,0.0005505969052686637,127,20260915,2000
+last20_rms_position_error_m,constrained_minus_nominal,negative favors constrained,-0.0013234305805236476,-0.0028445619645599417,-3.630694139741845e-05,127,20260915,2000
+path_length_absolute_error_m,constrained_minus_nominal,negative favors constrained,-0.00039128739795973036,-0.0022831160731378998,0.0013227379435931121,127,20260915,2000

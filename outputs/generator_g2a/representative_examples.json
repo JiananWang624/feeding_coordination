@@ -1,0 +1,42 @@
+{
+  "improvement_example": {
+    "adaptation_rms_m": 0.018132055232019276,
+    "constrained_last20_rms_position_error_m": 0.02832941329900932,
+    "nominal_last20_rms_position_error_m": 0.06339147567001856,
+    "parent_bite_id": "trial_0012_bite_010",
+    "record_id": "trial_0012_bite_010_transfer",
+    "take": "trial_0012"
+  },
+  "large_correction": {
+    "adaptation_rms_m": 0.021005816608691052,
+    "constrained_last20_rms_position_error_m": 0.021792959887123882,
+    "nominal_last20_rms_position_error_m": 0.052939403152221697,
+    "parent_bite_id": "trial_0012_bite_009",
+    "record_id": "trial_0012_bite_009_transfer",
+    "take": "trial_0012"
+  },
+  "minimal_correction": {
+    "adaptation_rms_m": 0.0006602158631546982,
+    "constrained_last20_rms_position_error_m": 0.02008098925741049,
+    "nominal_last20_rms_position_error_m": 0.02004874454961813,
+    "parent_bite_id": "trial_0014_bite_021",
+    "record_id": "trial_0014_bite_021_transfer",
+    "take": "trial_0014"
+  },
+  "shape_limited_example": {
+    "adaptation_rms_m": 0.0007887120862489788,
+    "constrained_last20_rms_position_error_m": 0.030920386380927076,
+    "nominal_last20_rms_position_error_m": 0.03151634418951634,
+    "parent_bite_id": "trial_0017_bite_013",
+    "record_id": "trial_0017_bite_013_transfer",
+    "take": "trial_0017"
+  },
+  "typical_correction": {
+    "adaptation_rms_m": 0.002388935322124735,
+    "constrained_last20_rms_position_error_m": 0.019211259971678947,
+    "nominal_last20_rms_position_error_m": 0.020703324537830307,
+    "parent_bite_id": "trial_0019_bite_014",
+    "record_id": "trial_0019_bite_014_transfer",
+    "take": "trial_0019"
+  }
+}

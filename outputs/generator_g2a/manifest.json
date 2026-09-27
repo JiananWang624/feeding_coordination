@@ -1,0 +1,654 @@
+{
+  "bite_metrics": "bite_metrics.csv",
+  "endpoint_semantics_audit": "endpoint_semantics_audit.json",
+  "fold_selection": "fold_selection.csv",
+  "generated_artifacts": [
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0012_bite_001_transfer.npz",
+      "record_id": "trial_0012_bite_001_transfer",
+      "sha256": "ebb0b2b1a1a194d9b1290975c2c121818f18adff8848c022831c74104abfc97b"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0012_bite_002_transfer.npz",
+      "record_id": "trial_0012_bite_002_transfer",
+      "sha256": "a62b88a9f35cb302ce3d7280ff9f73187a564607cfe6fc005eb0f4af6993b77c"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0012_bite_003_transfer.npz",
+      "record_id": "trial_0012_bite_003_transfer",
+      "sha256": "bfa2eb9a47a4eb517ce2f65aead412b1e4f511cadd18668aa918562565e8701c"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0012_bite_004_transfer.npz",
+      "record_id": "trial_0012_bite_004_transfer",
+      "sha256": "9a1551dfe425bf10877f9d97ddf60b5d4479efbeb424568f7ddbea8b0b8313c5"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0012_bite_005_transfer.npz",
+      "record_id": "trial_0012_bite_005_transfer",
+      "sha256": "549bc78caa97a447390621441fad0163b623be12d5779004eedea8a1b9887625"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0012_bite_006_transfer.npz",
+      "record_id": "trial_0012_bite_006_transfer",
+      "sha256": "835901cd87bd62426ec876aeab46d42c723abce60b6443d6f7c75a3473cbaeff"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0012_bite_007_transfer.npz",
+      "record_id": "trial_0012_bite_007_transfer",
+      "sha256": "aa7cfa7b0c7063530e3be54f348bb31c7385e0f01a6b41b2a0bad934704be001"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0012_bite_008_transfer.npz",
+      "record_id": "trial_0012_bite_008_transfer",
+      "sha256": "6c4bc69c17ebdb1e191909449021be5d3bc6ef5fb59ea6c96c01a834d13e878a"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0012_bite_009_transfer.npz",
+      "record_id": "trial_0012_bite_009_transfer",
+      "sha256": "9bf511478f34ce129e2e2982a105681c7d75a00a953205cf2494c2f8721f521b"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0012_bite_010_transfer.npz",
+      "record_id": "trial_0012_bite_010_transfer",
+      "sha256": "3441288f826cc74dce70763b27aa67722fdf15ee1212baa4a1a01b30213e5589"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0012_bite_011_transfer.npz",
+      "record_id": "trial_0012_bite_011_transfer",
+      "sha256": "0c9caf6be4525ff1f23bd2a24e5173b48dacf9bceee686fc62b9cf54e6bced86"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0012_bite_012_transfer.npz",
+      "record_id": "trial_0012_bite_012_transfer",
+      "sha256": "4bc202929748b87e78a3d1dec12ab84ebfd1330901b900eac6c07a2e07856779"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0012_bite_013_transfer.npz",
+      "record_id": "trial_0012_bite_013_transfer",
+      "sha256": "7128c83bd7928891b7b8e7278c83cdd253872e654666d7007ed43520f33e9638"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0012_bite_014_transfer.npz",
+      "record_id": "trial_0012_bite_014_transfer",
+      "sha256": "e7e830d692389c5d8f6d307ef6d5edb0ae95722c44f5492227469df5c6ac19ef"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0012_bite_015_transfer.npz",
+      "record_id": "trial_0012_bite_015_transfer",
+      "sha256": "ea8ccca182b70fd7da2905dadc28130d102a5b96815bdb9100e6b7ea10316754"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0013_bite_001_transfer.npz",
+      "record_id": "trial_0013_bite_001_transfer",
+      "sha256": "58a801f2bd0b79c9c2035536af91f3e6e031cc54c2b75374b8304794d3038a5b"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0013_bite_002_transfer.npz",
+      "record_id": "trial_0013_bite_002_transfer",
+      "sha256": "a25aae11eb26e2717beb7b597c3f34e1f1d1d9be2cc04836939ef6571de3c95d"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0013_bite_003_transfer.npz",
+      "record_id": "trial_0013_bite_003_transfer",
+      "sha256": "8ebea04cec18a12df0e578352646cd6b94c06fa157240392b061fb2417e96663"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0013_bite_004_transfer.npz",
+      "record_id": "trial_0013_bite_004_transfer",
+      "sha256": "225d4162394e32a05124a221bd3a8e1ccc00974fa61ece2156431c0efa380da6"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0013_bite_005_transfer.npz",
+      "record_id": "trial_0013_bite_005_transfer",
+      "sha256": "af94a8ec76afb3f8c54a85d17266f47901be1d33b47ddebd3c8fb1c213bc7efe"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0013_bite_006_transfer.npz",
+      "record_id": "trial_0013_bite_006_transfer",
+      "sha256": "33942b74f827d16ff49286e6661cf6a1ed34eb7ef3110ee62ccaa671f565bdb6"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0013_bite_007_transfer.npz",
+      "record_id": "trial_0013_bite_007_transfer",
+      "sha256": "bae9749aa53312c06b0df3b03dae549668bf24af2806a04f78708ad2b89a29b8"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0013_bite_008_transfer.npz",
+      "record_id": "trial_0013_bite_008_transfer",
+      "sha256": "2154dcbce4f25d305b01a67f8b076bc427b733628d5c537ecbaa41f464bf5029"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0013_bite_009_transfer.npz",
+      "record_id": "trial_0013_bite_009_transfer",
+      "sha256": "fbc70aa9b9110b4b7dcb64a295ca25bde51c79430fbb8bb57a103dfcbe3b40d1"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0013_bite_010_transfer.npz",
+      "record_id": "trial_0013_bite_010_transfer",
+      "sha256": "6909f37dcb2f29990deae4936189e4624de893d3c9c85b7a8c0f8df06aeb8353"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0013_bite_011_transfer.npz",
+      "record_id": "trial_0013_bite_011_transfer",
+      "sha256": "57cd3d208aa6ea5b4c0def222ca15b96bd9b7ce3e8a98bb08d2dc8fa0c4726a3"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0013_bite_012_transfer.npz",
+      "record_id": "trial_0013_bite_012_transfer",
+      "sha256": "f61b218763c23df8b1ee421fef19c8d9db866331f2337fbb589b361ab245e71a"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0014_bite_001_transfer.npz",
+      "record_id": "trial_0014_bite_001_transfer",
+      "sha256": "9f8ec0bc439ff12292cc960c32c1e221a8f3493ee6285ccbf2398f3d261bd680"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0014_bite_002_transfer.npz",
+      "record_id": "trial_0014_bite_002_transfer",
+      "sha256": "a6e4839d9312d02c53f482b518961d55877ad1e129f390b54e7f2cdbea0ca563"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0014_bite_003_transfer.npz",
+      "record_id": "trial_0014_bite_003_transfer",
+      "sha256": "7c191bae5c968e69471811c15e10179e1fcd68a6a5eb2d4be814d2c0b221e4cd"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0014_bite_004_transfer.npz",
+      "record_id": "trial_0014_bite_004_transfer",
+      "sha256": "50867b19c5705242d39796b9051f10fd031481d2942a2ff48430e1c74d75cbc3"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0014_bite_005_transfer.npz",
+      "record_id": "trial_0014_bite_005_transfer",
+      "sha256": "77af3bd309748378807d958771633c5d3bf7b7eec88716367cfbf0e3c39f3a44"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0014_bite_006_transfer.npz",
+      "record_id": "trial_0014_bite_006_transfer",
+      "sha256": "8464be5f18b18b8397a3a216334ca0e71203b18acd11f3138dddb0bd01feab00"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0014_bite_007_transfer.npz",
+      "record_id": "trial_0014_bite_007_transfer",
+      "sha256": "3ac776dfa096c5be903994cc8b6853c7887bc9aabfacd821de1015a6a3971dbb"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0014_bite_008_transfer.npz",
+      "record_id": "trial_0014_bite_008_transfer",
+      "sha256": "b1422db18cc5eaecb838b4b4d46e276ef8fdb2274f1b63919271f79cb3b8c800"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0014_bite_009_transfer.npz",
+      "record_id": "trial_0014_bite_009_transfer",
+      "sha256": "c9ef830e6cdae474375f50ee088020ea26fede1c6ff23b55253222e055112425"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0014_bite_010_transfer.npz",
+      "record_id": "trial_0014_bite_010_transfer",
+      "sha256": "14e7eb8bdd063d4e8bf37a144a9cf540b40233cabe6d8218c9a7756b54acb0b3"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0014_bite_011_transfer.npz",
+      "record_id": "trial_0014_bite_011_transfer",
+      "sha256": "a5e4ee5e59611983fc8c9f9840e18bc429a49e3df9e4212a0c0f4ef3800bd4be"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0014_bite_012_transfer.npz",
+      "record_id": "trial_0014_bite_012_transfer",
+      "sha256": "583e42a1f3fe07d40f3a6628a84e7b50acea2f4e22dfa978155527053dc77b4a"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0014_bite_013_transfer.npz",
+      "record_id": "trial_0014_bite_013_transfer",
+      "sha256": "4946db0b3f3a8cf7f2f3a91eaa59fc971c2ca106dbe74afdcf35b0595a131596"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0014_bite_014_transfer.npz",
+      "record_id": "trial_0014_bite_014_transfer",
+      "sha256": "ec2593055b706474f2cef7df33ae9864af1a1bb2ad80b2778fa9e75e103f1db2"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0014_bite_015_transfer.npz",
+      "record_id": "trial_0014_bite_015_transfer",
+      "sha256": "723d7a42b833a61cb9a6bf66d0d36daa3577e2e525acc513d599be5ba6dac19f"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0014_bite_016_transfer.npz",
+      "record_id": "trial_0014_bite_016_transfer",
+      "sha256": "bc64e5d809f0b70c2b04c5cb42971f80d9c0cc538e4f4fdcc2d955e5feb5eb47"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0014_bite_017_transfer.npz",
+      "record_id": "trial_0014_bite_017_transfer",
+      "sha256": "cae654379a3a71d3631afebc4f7e341eaa04c5e414fa34c94a9e32aac179b4ed"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0014_bite_018_transfer.npz",
+      "record_id": "trial_0014_bite_018_transfer",
+      "sha256": "b667361a772a7761ad832e91de239236f4589616222fa8af8cc36a2aeeb934af"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0014_bite_019_transfer.npz",
+      "record_id": "trial_0014_bite_019_transfer",
+      "sha256": "ac7d340d6e8344ee20fba003df0982ff033a88b57371f43d2ff5e096057e8358"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0014_bite_020_transfer.npz",
+      "record_id": "trial_0014_bite_020_transfer",
+      "sha256": "598f3b643837719636aa3cf8a3c58e241538a847bdc9d0cdc1016725ca73be1d"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0014_bite_021_transfer.npz",
+      "record_id": "trial_0014_bite_021_transfer",
+      "sha256": "100c03022e6f6c1942235101b25a8474674b8c786c8128bda0504ddea2b1afca"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0015_bite_001_transfer.npz",
+      "record_id": "trial_0015_bite_001_transfer",
+      "sha256": "a99487cfed0effddebbfaa4cab3ac638e0d19409482b50f35a12cb5159592854"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0015_bite_002_transfer.npz",
+      "record_id": "trial_0015_bite_002_transfer",
+      "sha256": "2e4b669918855fb7fb975fd34dfdc6e1672e1de07b27a3b727dc68f163588d90"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0015_bite_003_transfer.npz",
+      "record_id": "trial_0015_bite_003_transfer",
+      "sha256": "9f8b2d80a486c355e1496e11d468fadc67781bae0c95bf83be06564e582c4a14"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0015_bite_004_transfer.npz",
+      "record_id": "trial_0015_bite_004_transfer",
+      "sha256": "4dae766cb35f8a7697fd0737356b4d3c60a34fed9381c68de60241798c54bdd3"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0015_bite_005_transfer.npz",
+      "record_id": "trial_0015_bite_005_transfer",
+      "sha256": "69e11c87d56bdd36d80d7190ad84407f95fc6975036f4cb978897cba53d8df20"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0015_bite_006_transfer.npz",
+      "record_id": "trial_0015_bite_006_transfer",
+      "sha256": "bbc33bb8d8b5893c215903d6ad239bc41a8bd04efbbae728d9080bf38496c1bc"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0015_bite_007_transfer.npz",
+      "record_id": "trial_0015_bite_007_transfer",
+      "sha256": "7ff60302aa59e0707cf21a560ea4a2150c02efb6567aca4d5e315af455a06abe"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0015_bite_008_transfer.npz",
+      "record_id": "trial_0015_bite_008_transfer",
+      "sha256": "81f1096c8edbe09b483af80129abdca6f2252ca68a4113b53e1f2db916a0b416"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0015_bite_009_transfer.npz",
+      "record_id": "trial_0015_bite_009_transfer",
+      "sha256": "cf20c06fdca4d968a437f152a97a431bd08f004509af436df463202aaff6ae0e"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0015_bite_010_transfer.npz",
+      "record_id": "trial_0015_bite_010_transfer",
+      "sha256": "69577885228f0c21f4d7a7d6a50ce71da2c2dce06a4d630e0770fcaf78f42ebf"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0015_bite_011_transfer.npz",
+      "record_id": "trial_0015_bite_011_transfer",
+      "sha256": "351fedc2b7ee1d7303e25c1e99afb27177b0245cb519c9d37677d17de7ac2a2a"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0015_bite_012_transfer.npz",
+      "record_id": "trial_0015_bite_012_transfer",
+      "sha256": "87769554e3c7a58b5a9554ce97ab496d8df0bc363da1083ebc968c90c21f5903"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0015_bite_013_transfer.npz",
+      "record_id": "trial_0015_bite_013_transfer",
+      "sha256": "cc76b16dd5dc1b38902d439951a85116bcb3c0efb9c94c159444bbe31e39abc8"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0015_bite_014_transfer.npz",
+      "record_id": "trial_0015_bite_014_transfer",
+      "sha256": "3dd0a1139139046e3d5945cbeef76a156e0471c172f96652a44efc5521c5b0ea"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0015_bite_015_transfer.npz",
+      "record_id": "trial_0015_bite_015_transfer",
+      "sha256": "310bb1e25060d0077b98c59edec4ec9542e072e490410935be293bd79060fe7b"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0015_bite_016_transfer.npz",
+      "record_id": "trial_0015_bite_016_transfer",
+      "sha256": "514ebf409135a6282bdac9d4a061ccaf1258b5fe29ebea2e5f1ea22235db9995"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0015_bite_017_transfer.npz",
+      "record_id": "trial_0015_bite_017_transfer",
+      "sha256": "623be8f24c11ca836c1e7c261f5fc22af66542da1f1022a4c93116e95e530b89"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0015_bite_018_transfer.npz",
+      "record_id": "trial_0015_bite_018_transfer",
+      "sha256": "0651a6bc896e1c5b163c20396712d9cc289cd366f441dfe24c491645534b88c2"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0015_bite_019_transfer.npz",
+      "record_id": "trial_0015_bite_019_transfer",
+      "sha256": "ececc5f8b2e54de54fa5e3d341594e1ac1bd2254b824c4e6b460c081f6acc925"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0017_bite_001_transfer.npz",
+      "record_id": "trial_0017_bite_001_transfer",
+      "sha256": "64424c34d9e9dbee2dafa2ea377868ac0bfa0689ed217e2d0b0d862b922d72a9"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0017_bite_002_transfer.npz",
+      "record_id": "trial_0017_bite_002_transfer",
+      "sha256": "a51ad475aaf68c84981ee366d2fbe686896dc0f206172dc9c1041c8374b89c68"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0017_bite_003_transfer.npz",
+      "record_id": "trial_0017_bite_003_transfer",
+      "sha256": "79fb8ee67786858f25bf3ef0af6748cac120af71590622f41508336ed3aae1f8"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0017_bite_004_transfer.npz",
+      "record_id": "trial_0017_bite_004_transfer",
+      "sha256": "071f3ca7ba808291c2a384c1b5a3abc7e2e288464290ff18ecacaa21b7279b0b"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0017_bite_005_transfer.npz",
+      "record_id": "trial_0017_bite_005_transfer",
+      "sha256": "8a6563af935766947bc0678dbe906e71a0034c76a8711eb08530a6bb0377cccf"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0017_bite_006_transfer.npz",
+      "record_id": "trial_0017_bite_006_transfer",
+      "sha256": "068d1c23be81a37cffaf246edf946206638364659a95c8b8f11b79657ae1036d"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0017_bite_007_transfer.npz",
+      "record_id": "trial_0017_bite_007_transfer",
+      "sha256": "527676b5f9a84df4dbc18b570d7b18dc4795135f09078898e75b01b7814c3941"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0017_bite_008_transfer.npz",
+      "record_id": "trial_0017_bite_008_transfer",
+      "sha256": "a8ad0ea99d78534cfb026156cae79b18a993b8321e3b48c6085c5b0102ebf69c"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0017_bite_009_transfer.npz",
+      "record_id": "trial_0017_bite_009_transfer",
+      "sha256": "12d35bf90dd25800c4fb7a61ab8c47849d77c68ed95419fe552971c86a5a2b20"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0017_bite_010_transfer.npz",
+      "record_id": "trial_0017_bite_010_transfer",
+      "sha256": "0bb92ba87f380ca18b12b20b4acb366bf9ca7f69dbf72e8fab1335d8b83f9958"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0017_bite_011_transfer.npz",
+      "record_id": "trial_0017_bite_011_transfer",
+      "sha256": "1a289136e69b48baab1439d4efd1ac4f196b1ca6a83069a1ce6b78b839a502b7"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0017_bite_012_transfer.npz",
+      "record_id": "trial_0017_bite_012_transfer",
+      "sha256": "1b83db6b995652028b9b0aae4d30fb0ca150b11d344afb3060d5fc876f772653"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0017_bite_013_transfer.npz",
+      "record_id": "trial_0017_bite_013_transfer",
+      "sha256": "3ea8b19e8287e90fbaf1c1e696aa384a66d4d83df4b2d265cbb5741645bd76aa"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0017_bite_014_transfer.npz",
+      "record_id": "trial_0017_bite_014_transfer",
+      "sha256": "fccb95404d79c9204482f4b4253f97dd2471501a5a5d4eeb366a9f500a84fa25"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0017_bite_015_transfer.npz",
+      "record_id": "trial_0017_bite_015_transfer",
+      "sha256": "e4b8917324f221591638631894cbfbc843b065720d06f3fc3f898eae04cccc8a"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0019_bite_001_transfer.npz",
+      "record_id": "trial_0019_bite_001_transfer",
+      "sha256": "d1b29f0ba2109365494731b9ce33a28435e1c877d891ca233189022f4ef1a0bd"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0019_bite_002_transfer.npz",
+      "record_id": "trial_0019_bite_002_transfer",
+      "sha256": "e9816f34bf880671e23f8e56f512948578b070b94e5226c2231044ae8cf6efa1"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0019_bite_003_transfer.npz",
+      "record_id": "trial_0019_bite_003_transfer",
+      "sha256": "5f2bc6c72905a6f97ed6dd229a15c3d032d28ad78ed57265b14a531da42138c4"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0019_bite_004_transfer.npz",
+      "record_id": "trial_0019_bite_004_transfer",
+      "sha256": "b11cea4063e59c483e107f4c7e16099165cb5ee39d0f0658e355a62b0fcaddcd"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0019_bite_005_transfer.npz",
+      "record_id": "trial_0019_bite_005_transfer",
+      "sha256": "039355b44b6daf032eb6373de38056644a8625ba6eefe79a6a3ba9315a33637f"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0019_bite_006_transfer.npz",
+      "record_id": "trial_0019_bite_006_transfer",
+      "sha256": "49135a6bd1c686574e3ce1efa14af42f9bc657efd65b0a1f7ece5903c21f9d1f"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0019_bite_007_transfer.npz",
+      "record_id": "trial_0019_bite_007_transfer",
+      "sha256": "45f7ea9aeb55eadf97d94fb3b0f5be8586d36a3f9a3db2109bad57b0115da1bc"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0019_bite_008_transfer.npz",
+      "record_id": "trial_0019_bite_008_transfer",
+      "sha256": "9e547ad106859f7e8e9838ddf2a24bffd2da045b0088234038c7f8b002ccbe20"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0019_bite_009_transfer.npz",
+      "record_id": "trial_0019_bite_009_transfer",
+      "sha256": "3758ae04bd1e78caf34bf6256d695f23cdc643084f4db27b414e9377a2f186b2"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0019_bite_010_transfer.npz",
+      "record_id": "trial_0019_bite_010_transfer",
+      "sha256": "bc17ee96bebce246f4bfd88aa1d3344814187156b857abb1869b6658303fbe6a"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0019_bite_011_transfer.npz",
+      "record_id": "trial_0019_bite_011_transfer",
+      "sha256": "7f10ec6cb45b8bf22be56b4d6edba524b75ea7ee51020f15b348e44c93f38f41"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0019_bite_012_transfer.npz",
+      "record_id": "trial_0019_bite_012_transfer",
+      "sha256": "e3564ca1b21973fb7e5b9ceb7753c2a91208284b42de00afc12bbfc2d6e4fb13"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0019_bite_013_transfer.npz",
+      "record_id": "trial_0019_bite_013_transfer",
+      "sha256": "53e5f19e0ae6b411308f77accd97543618dc5478bf620cb8e7f56255a6e5b6c1"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0019_bite_014_transfer.npz",
+      "record_id": "trial_0019_bite_014_transfer",
+      "sha256": "0e93b00d5f0c10246ae4a5cec20b27dfb3a1ef893227a3df5fdc1ab5d326b380"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0019_bite_015_transfer.npz",
+      "record_id": "trial_0019_bite_015_transfer",
+      "sha256": "a6a69115c1385a75e7c1ec327b36f1d81765749964da7196fc20f66ef656a2b2"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0019_bite_016_transfer.npz",
+      "record_id": "trial_0019_bite_016_transfer",
+      "sha256": "59ed5205e8b12d39556711dd0a34f2e71fcb476388dd085ac775ae8b32ecc180"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0019_bite_017_transfer.npz",
+      "record_id": "trial_0019_bite_017_transfer",
+      "sha256": "20c28be4145829317ebcb5878cce5afd8b6e697321cc5333185b95c856401a74"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0019_bite_018_transfer.npz",
+      "record_id": "trial_0019_bite_018_transfer",
+      "sha256": "f924ec8d7249dc6925fa5bc59db015de656dfcdb5c42e34285c57a3c57febe1a"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0019_bite_019_transfer.npz",
+      "record_id": "trial_0019_bite_019_transfer",
+      "sha256": "cd4143beae77660cc2c6b221d8f183ac7957c3e71a070bf89a1d98d7e17972d3"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0019_bite_020_transfer.npz",
+      "record_id": "trial_0019_bite_020_transfer",
+      "sha256": "6bee28945c3a2ba7d32ca6b83123ce17f5808c0addc7b73a7140aaf550765259"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0019_bite_021_transfer.npz",
+      "record_id": "trial_0019_bite_021_transfer",
+      "sha256": "e45fd818d081f426add862372b5dc584a9301b0fe71fc5b013230ea289627068"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0019_bite_022_transfer.npz",
+      "record_id": "trial_0019_bite_022_transfer",
+      "sha256": "e80ab28e41ca56e80ef7d52b7b79d20053519e12278c9823154f055c7ed13a1b"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0019_bite_023_transfer.npz",
+      "record_id": "trial_0019_bite_023_transfer",
+      "sha256": "b17fa9719fc9f0b02a5cbc4b41c8bee5ab234de565e2a3dcc37d88f567d309b3"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0019_bite_024_transfer.npz",
+      "record_id": "trial_0019_bite_024_transfer",
+      "sha256": "d66c5e9ec05d3790213b22f12dca3cee3c9f7935ec5af8e95ce1bc563c6b391a"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0019_bite_025_transfer.npz",
+      "record_id": "trial_0019_bite_025_transfer",
+      "sha256": "3fdc0ece4f0d0927406efe8066464657c6b6ec22f1ce1e8445fcef33343ed443"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0019_bite_026_transfer.npz",
+      "record_id": "trial_0019_bite_026_transfer",
+      "sha256": "cf89961363efb812c3bdb952101a7c1464a098502d1e0a346af816e8cc721545"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0020_bite_001_transfer.npz",
+      "record_id": "trial_0020_bite_001_transfer",
+      "sha256": "7fd72cdb2ef1135ea530fba0f3ee3745602de917b958d42a6ebf203aa5b88ba9"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0020_bite_002_transfer.npz",
+      "record_id": "trial_0020_bite_002_transfer",
+      "sha256": "f96186b3919e641212ef24f82ac66c53319e4eebdd148d58e2297b4f769652aa"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0020_bite_003_transfer.npz",
+      "record_id": "trial_0020_bite_003_transfer",
+      "sha256": "4a79ed3049baa48633bbe974874db34f3d9d8a95e4ac3c0dd9e485db5ecf8c9f"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0020_bite_004_transfer.npz",
+      "record_id": "trial_0020_bite_004_transfer",
+      "sha256": "816efdf3991b5fffa2075f8a8602cc78d077d8752a31b7e4e6549081b8825330"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0020_bite_005_transfer.npz",
+      "record_id": "trial_0020_bite_005_transfer",
+      "sha256": "75f17140de5568fb60a06d8692393212c4314b27285f408cd563a8c4dfc94d8f"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0020_bite_006_transfer.npz",
+      "record_id": "trial_0020_bite_006_transfer",
+      "sha256": "262919d5a9be427259b186e7b40ca6b516b69fe024ee8e657e996b4b3776b9c5"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0020_bite_007_transfer.npz",
+      "record_id": "trial_0020_bite_007_transfer",
+      "sha256": "6dcce54cea0e226d68fba9694f080e3e5453b57a6633616d1691d6a350024ed2"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0020_bite_008_transfer.npz",
+      "record_id": "trial_0020_bite_008_transfer",
+      "sha256": "1778a23a75a3a2079cc49ad586d1dc27e3986cc5360801cc82024b6d41951f84"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0020_bite_009_transfer.npz",
+      "record_id": "trial_0020_bite_009_transfer",
+      "sha256": "96c1ea763e3021293c4417e28925c470a3d3742aa065bd1c939bb5f8abf9027d"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0020_bite_010_transfer.npz",
+      "record_id": "trial_0020_bite_010_transfer",
+      "sha256": "d6b81d260c8c173c231f2ae59e7dbfcedd8ef30b8612c570233142a2ae49ee27"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0020_bite_011_transfer.npz",
+      "record_id": "trial_0020_bite_011_transfer",
+      "sha256": "408c96566db463d25e00d8d3468742eb4b8e600e1dd6811c6ccff9067875f9e3"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0020_bite_012_transfer.npz",
+      "record_id": "trial_0020_bite_012_transfer",
+      "sha256": "a5e0d7cb1333a38e76e4fca95362699d050cd35d33f829c7942bcae7798059c4"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0020_bite_013_transfer.npz",
+      "record_id": "trial_0020_bite_013_transfer",
+      "sha256": "142f3dd58a00f4381fc4c4d068fa44c889f057212d8cdc84c6113c12836d6caa"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0020_bite_014_transfer.npz",
+      "record_id": "trial_0020_bite_014_transfer",
+      "sha256": "3772a9eeb9c27f7c083a90faa46cb8ab61142e8c4951117dbfdc33806c198b05"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0020_bite_015_transfer.npz",
+      "record_id": "trial_0020_bite_015_transfer",
+      "sha256": "0b0c3c11207b0464f8ea07db7582dde57ec151b18bdfbcdb4aef0adeeff95f00"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0020_bite_016_transfer.npz",
+      "record_id": "trial_0020_bite_016_transfer",
+      "sha256": "0f2947296450e1a8b4ed3fd564f20bc5773ee7cbdec83606940dae3dc83ad4cc"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0020_bite_017_transfer.npz",
+      "record_id": "trial_0020_bite_017_transfer",
+      "sha256": "1e8ce756eac41812b369b5e96f361a5b286fdc9fa89d8193ddf172b26b0442ff"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0020_bite_018_transfer.npz",
+      "record_id": "trial_0020_bite_018_transfer",
+      "sha256": "088d0e15ef2d4ca94fef57627902909c8dc864aa1a27b8cf0f651b0684d4bcf2"
+    },
+    {
+      "path": "F:\\code\\feeding_coordination\\outputs\\generator_g2a\\generated\\contextual_promp_endpoint_constrained\\trial_0020_bite_019_transfer.npz",
+      "record_id": "trial_0020_bite_019_transfer",
+      "sha256": "cd33f10e3501831fe2a3aa095c8cc0d171914c96406e44f90a0d54a3b3e06f4e"
+    }
+  ],
+  "pairwise_bootstrap": "pairwise_bootstrap.csv",
+  "plots": [
+    "plots/endpoint_accuracy.png",
+    "plots/trajectory_rms.png",
+    "plots/final_approach_error.png",
+    "plots/adaptation_magnitude.png",
+    "plots/example_paths.png"
+  ],
+  "record_metrics": "record_metrics.csv",
+  "representative_examples": "representative_examples.json",
+  "schema_version": "generator-g2a-v1",
+  "summary": "summary.json"
+}

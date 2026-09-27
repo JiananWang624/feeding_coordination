@@ -77,3 +77,33 @@ The lower video panel displays all three psi curves and a moving sample cursor. 
 - The optional mouth point is a **derived mouth proxy**, not an independently measured mouth.
 - This viewer does not perform collision analysis, smoothing, physical calibration, fork-tip calibration, or real-robot execution validation.
 - The G1 and upstream scientific output trees are opened read-only. G1V writes only presentation artifacts beneath `outputs/generator_g1_visualization/`.
+
+## G2A/G2B endpoint-constrained comparison
+
+The updated G2 visualizer keeps the three-panel layout while reading the endpoint-constrained artifacts:
+
+1. measured tool path + human ψ;
+2. measured tool path + predicted ψ;
+3. the constrained G2 tool path (G2A endpoint-constrained or G2B full-pose-constrained).
+
+The lower-left plot is the absolute redundancy-angle difference to human ψ. The lower-right plot is the tool-position distance difference to the measured path, comparing the G0 nominal path and the selected G2 path. The old lower-right numeric HUD is not rendered in these videos.
+
+G2A and G2B artifacts are trajectory-only experiments; they do not contain a new robot-q/IK realization. The third MuJoCo panel therefore overlays the constrained tool path on the saved human joint replay rather than claiming a new robot replay.
+
+Export eight consecutive transfer segments in 1920×1080:
+
+```powershell
+.venv\Scripts\python.exe scripts\visualize_generator_g1_comparison.py `
+  --record-id trial_0014_bite_001_transfer `
+  --record-id trial_0014_bite_002_transfer `
+  --record-id trial_0014_bite_003_transfer `
+  --record-id trial_0014_bite_004_transfer `
+  --record-id trial_0014_bite_005_transfer `
+  --record-id trial_0014_bite_006_transfer `
+  --record-id trial_0014_bite_007_transfer `
+  --record-id trial_0014_bite_008_transfer `
+  --g2-method g2a --mode split --speed 0.25 `
+  --record-video outputs/generator_g1_visualization/videos/g2a_three_way_8segment_1080p.mp4
+```
+
+Use `--g2-method g2b` and a different output name for G2B.

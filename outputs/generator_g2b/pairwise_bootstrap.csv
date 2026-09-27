@@ -1,0 +1,11 @@
+comparison,metric,convention,mean_difference,ci95_low,ci95_high,n_parent_bites,seed,resamples
+full_pose_minus_nominal,rms_position_error_m,negative favors full-pose,-0.003993169365326584,-0.0050606786099041765,-0.0030414929494447162,127,20260915,2000
+full_pose_minus_nominal,rms_orientation_error_rad,negative favors full-pose,-0.037552201176630114,-0.046352923675766156,-0.02965223036043517,127,20260915,2000
+full_pose_minus_nominal,last20_rms_position_error_m,negative favors full-pose,-0.019688782128930462,-0.02339640579190248,-0.01647498642965515,127,20260915,2000
+full_pose_minus_nominal,last20_rms_orientation_error_deg,negative favors full-pose,-7.598111761552355,-9.001530058684812,-6.303709011215834,127,20260915,2000
+full_pose_minus_nominal,path_length_absolute_error_m,negative favors full-pose,-0.007907613699360584,-0.011155940758684719,-0.004928542873454186,127,20260915,2000
+full_pose_minus_position_only,rms_position_error_m,negative favors full-pose,0.0,0.0,0.0,127,20260915,2000
+full_pose_minus_position_only,rms_orientation_error_rad,negative favors full-pose,-0.037552201176630114,-0.046361971193302334,-0.029654385854930347,127,20260915,2000
+full_pose_minus_position_only,last20_rms_position_error_m,negative favors full-pose,0.0,0.0,0.0,127,20260915,2000
+full_pose_minus_position_only,last20_rms_orientation_error_deg,negative favors full-pose,-7.598111761552355,-9.067447249931728,-6.315386937368017,127,20260915,2000
+full_pose_minus_position_only,path_length_absolute_error_m,negative favors full-pose,0.0,0.0,0.0,127,20260915,2000

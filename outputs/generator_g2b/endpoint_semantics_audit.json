@@ -1,0 +1,40 @@
+{
+  "algorithmic_feasibility_only": true,
+  "axis_sign_source": "phase15.py reconstructed_hand = tool_position - offset * tool_orientation[:,1]",
+  "deployment_generalization_test": false,
+  "exact_source_columns": [
+    "hand_xyz",
+    "tool_position",
+    "tool_orientation",
+    "tool_pose_valid"
+  ],
+  "fork_local_offset_vector_U_m": [
+    0.0,
+    -0.1,
+    0.0
+  ],
+  "frame_convention": "tracked fork rigid body: R_B_U; Hand_XYZ in B/world",
+  "frozen_g0_nominal_context_contains_mouth_proxy": true,
+  "mouth_offset_used": false,
+  "mouth_proxy_used": false,
+  "offset_m_source": "Phase 1.5 manifest config.legacy_hand_offset_m",
+  "oracle_terminal_pose": true,
+  "orientation_reconstruction_residual_rad": {
+    "max": 2.4815859908451014e-16,
+    "mean": 5.4941533331486456e-17
+  },
+  "physical_mouth_pose_validated": false,
+  "physical_tool_calibration_validated": false,
+  "position_reconstruction_against_g0_resampled_gt_residual_m": {
+    "max": 2.008895564837579e-06,
+    "mean": 3.877188511080426e-07
+  },
+  "position_reconstruction_residual_m": {
+    "max": 2.0088955648150104e-06,
+    "mean": 3.877188510999226e-07
+  },
+  "relation": "p_H = p_U - offset_m * R_U[:,1]; p_U = p_H + offset_m * R_U[:,1]",
+  "source_final_frame": "terminal recorded transfer frame (required valid)",
+  "units": "B/world metres",
+  "uses_heldout_terminal_information": true
+}

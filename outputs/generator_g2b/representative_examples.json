@@ -1,0 +1,56 @@
+{
+  "large_orientation_correction": {
+    "full_last20_rms_orientation_error_deg": 3.9170628834874255,
+    "nominal_last20_rms_orientation_error_deg": 42.099851967723566,
+    "parent_bite_id": "trial_0015_bite_010",
+    "position_correction_norm_m": 0.12175865574007748,
+    "record_id": "trial_0015_bite_010_transfer",
+    "take": "trial_0015",
+    "terminal_orientation_correction_deg": 45.76897291261082
+  },
+  "large_position_correction": {
+    "full_last20_rms_orientation_error_deg": 3.9170628834874255,
+    "nominal_last20_rms_orientation_error_deg": 42.099851967723566,
+    "parent_bite_id": "trial_0015_bite_010",
+    "position_correction_norm_m": 0.12175865574007748,
+    "record_id": "trial_0015_bite_010_transfer",
+    "take": "trial_0015",
+    "terminal_orientation_correction_deg": 45.76897291261082
+  },
+  "shape_limited": {
+    "full_last20_rms_orientation_error_deg": 2.862234402545818,
+    "nominal_last20_rms_orientation_error_deg": 6.507508239502522,
+    "parent_bite_id": "trial_0017_bite_013",
+    "position_correction_norm_m": 0.025429711415889074,
+    "record_id": "trial_0017_bite_013_transfer",
+    "take": "trial_0017",
+    "terminal_orientation_correction_deg": 8.334128637414409
+  },
+  "small_pose_correction": {
+    "full_last20_rms_orientation_error_deg": 0.3916709047903416,
+    "nominal_last20_rms_orientation_error_deg": 2.6892720517519484,
+    "parent_bite_id": "trial_0013_bite_004",
+    "position_correction_norm_m": 0.00949055819676897,
+    "record_id": "trial_0013_bite_004_transfer",
+    "take": "trial_0013",
+    "terminal_orientation_correction_deg": 2.8920899148683423
+  },
+  "strong_approach_improvement": {
+    "full_last20_rms_orientation_error_deg": 3.9170628834874255,
+    "nominal_last20_rms_orientation_error_deg": 42.099851967723566,
+    "parent_bite_id": "trial_0015_bite_010",
+    "position_correction_norm_m": 0.12175865574007748,
+    "record_id": "trial_0015_bite_010_transfer",
+    "take": "trial_0015",
+    "terminal_orientation_correction_deg": 45.76897291261082
+  },
+  "typical_pose_correction": {
+    "full_last20_rms_orientation_error_deg": 5.409318447153577,
+    "nominal_last20_rms_orientation_error_deg": 9.5125492273106,
+    "parent_bite_id": "trial_0019_bite_018",
+    "position_correction_norm_m": 0.0306725332954675,
+    "record_id": "trial_0019_bite_018_transfer",
+    "take": "trial_0019",
+    "terminal_orientation_correction_deg": 10.85660821336487
+  }
+}
